@@ -16,3 +16,6 @@ The approach I took was to create a result array the same size as the input.  Th
 Big-O is linear, O(n).  It will grow linearly based on the size of the input.
 
 ## Solution
+<img src="src/main/resources/ReverseArray.jpg"
+     alt="White Board Picture"
+     style="float: left; margin-right: 10px; width: 200px;" />
