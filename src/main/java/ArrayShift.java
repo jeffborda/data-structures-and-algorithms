@@ -22,6 +22,12 @@ public class ArrayShift {
         System.out.println(Arrays.toString(insertShiftArray(test5, 99)));
     }
 
+    /**
+     * Takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
+     * @param input
+     * @param insertionNumber
+     * @return
+     */
     public static int[] insertShiftArray(int[] input, int insertionNumber) {
 
         int[] result = new int[input.length + 1];
