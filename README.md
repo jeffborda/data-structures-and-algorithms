@@ -29,7 +29,7 @@ Once I knew the middle I entered a loop, where i starts at 0.  Inside the loop I
 Big-O is linear, O(n).  It will grow linearly based on the size of the input.
 
 ### Solution
-<img src="assets/ReverseArray.jpg"
+<img src="assets/ArrayShift.jpg"
      alt="White Board Picture"
      style="float: left; margin-right: 10px; width: 200px;" />
 
