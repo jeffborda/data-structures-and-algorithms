@@ -29,12 +29,10 @@ public class ArrayShiftTest {
         int[] test5 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23};
         int[] test5Expected = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 99, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23};
 
-        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test1Expected, ArrayShift.insertShiftArray(test1Expected, 99));
-        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test2Expected, ArrayShift.insertShiftArray(test2Expected, 99));
-        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test3Expected, ArrayShift.insertShiftArray(test3Expected, 99));
-        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test4Expected, ArrayShift.insertShiftArray(test4Expected, 99));
-        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test5Expected, ArrayShift.insertShiftArray(test5Expected, 99));
-
-
+        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test1Expected, ArrayShift.insertShiftArray(test1, 99));
+        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test2Expected, ArrayShift.insertShiftArray(test2, 99));
+        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test3Expected, ArrayShift.insertShiftArray(test3, 99));
+        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test4Expected, ArrayShift.insertShiftArray(test4, 99));
+        assertArrayEquals("insertArrayShift should insert number 99 to the middle", test5Expected, ArrayShift.insertShiftArray(test5, 99));
     }
 }
