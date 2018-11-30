@@ -21,7 +21,7 @@ public class ArrayShift {
         System.out.println(Arrays.toString(insertShiftArray(test5, 99)));
     }
 
-    /**
+    /*
      * Takes in an array and the value to be added. Without utilizing any of the built-in methods available to your
      * language, return an array with the new value added at the middle index.
      */
