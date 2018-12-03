@@ -24,36 +24,53 @@ public class LinkedListTest {
         System.setOut(originalOut);
     }
 
+
     @Test
-    public void insert() {
-
+    public void testInsert() {
         LinkedList testList = new LinkedList();
-
         assertFalse("Should return 'false' on empty list.", testList.includes("anything"));
-        testList.insert("Hello");
-        assertTrue("Make sure list contains Hello, should return 'true'", testList.includes("Hello"));
-        testList.insert("world");
-        assertTrue("Make sure list returns 'true' to find first thing in list.", testList.includes("Hello"));
-        assertTrue("Make sure list returns 'true' to find last thing in list.", testList.includes("world"));
-        assertFalse("Make sure list returns 'false', on filled list", testList.includes("nope"));
     }
 
     @Test
-    public void includes() {
+    public void testInsertOneValue() {
+        LinkedList testList = new LinkedList();
+        testList.insert("Hello");
+        assertTrue("Make sure list returns 'true' to find first thing in list.", testList.includes("Hello"));
+    }
 
+    @Test
+    public void testInsertManyValues() {
+        LinkedList testList = new LinkedList();
+        testList.insert("Hello");
+        testList.insert("word");
+        testList.insert("!");
+        assertTrue("Should return 'true' to a value in the end of list.", testList.includes("Hello"));
+    }
+
+    @Test
+    public void testIncludes() {
         LinkedList testList = new LinkedList();
         assertFalse("make sure it doesn't find things in list that haven't been inserted", testList.includes("Scout"));
-        assertFalse("make sure it doesn't find things in list that haven't been inserted", testList.includes("Dog"));
+    }
+
+    @Test
+    public void testIncludesOneValue() {
+        LinkedList testList = new LinkedList();
+        testList.insert("I");
+        assertTrue("Should contain string and return 'true'", testList.includes("I"));
+    }
+
+    @Test
+    public void testIncludesManyValues() {
+        LinkedList testList = new LinkedList();
         testList.insert("I");
         testList.insert("love");
         testList.insert("Java");
-        assertTrue("Should contain string and return 'true'", testList.includes("I"));
-        assertTrue("Should contain string and return 'true'", testList.includes("love"));
         assertTrue("Should contain string and return 'true'", testList.includes("Java"));
     }
 
     @Test
-    public void print() {
+    public void testPrint() {
         LinkedList testList = new LinkedList();
         testList.insert("three");
         testList.insert("two");
@@ -73,5 +90,23 @@ public class LinkedListTest {
         testList.insert("minus one");
         testList.print();
         assertEquals("Check output stream", "minus one" + newLine + "zero" + newLine + "one" + newLine + "two" + newLine + "three" + newLine, outContent.toString());
+    }
+
+    @Test
+    public void testPrintOnEmptyList() {
+        LinkedList testList = new LinkedList();
+        outContent.reset();
+        testList.print();
+        assertEquals("Empty list shouldn't print anything.", "", outContent.toString());
+    }
+
+    @Test
+    public void testPrintOnOneItemList() {
+        LinkedList testList = new LinkedList();
+        testList.insert("Test");
+        outContent.reset();
+        String newLine = System.lineSeparator();
+        testList.print();
+        assertEquals("Check output with one item in list.", "Test" + newLine, outContent.toString());
     }
 }
