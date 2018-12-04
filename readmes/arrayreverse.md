@@ -1,4 +1,4 @@
-##Reverse an Array
+## Reverse an Array
 Write a method that takes an array as an argument and returns that array in reverse order.
 
 ### Approach & Efficiency

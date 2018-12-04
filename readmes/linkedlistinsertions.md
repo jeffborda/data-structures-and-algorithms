@@ -1,4 +1,4 @@
- ##LinkedList Insertions
+ ## LinkedList Insertions
 In this code challenge I wrote the following methods to add to my LinkedList class: append(), insertBefore(), and insertAfter().  I also added the following helper functions: hasNext(), getHeadValue(), and getLastValue().  The last two I made to help test the code in the library, while hasNext() helps with iteration from within the class.  Lastly, I completed the stretch goal and wrote deleteValue(), which will delete the first value it finds in the list that matches the input value.
  
  ### Approach & Efficiency
