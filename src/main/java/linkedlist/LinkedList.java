@@ -14,8 +14,90 @@ public class LinkedList {
      */
     public void insert(String value) {
 
-        this.head = new Node(value, head);
+        head = new Node(value, head);
 
+    }
+
+    /**
+     * Adds a value to the last position of the list.
+     */
+    public void append(String value) {
+
+        current = head;
+        if(head == null) {
+            head = new Node(value, null);
+        }
+        else {
+            while(this.hasNext()) {
+                current = current.next;
+            }
+            current.next = new Node(value, null);
+        }
+    }
+
+    /**
+     * Checks if list contains a value, if so, it inserts the newValue before the search value and returns true.
+     * If value is not found in list, no insert is made, and method returns false.
+     */
+    public boolean insertBefore(String value, String newValue) {
+
+        current = head;
+        if(head == null) {
+            return false;
+        }
+        if(head.value == value) {
+            head = new Node(newValue, head);
+            return true;
+        }
+        while(current.next != null) {
+            if(current.next.value == value) {
+                current.next = new Node(newValue, current.next);
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    /**
+     * Checks if list contains a value, if so, it inserts the newValue after the search value and returns true.
+     * If value is not found in list, no insert is made, and method returns false.
+     */
+    public boolean insertAfter(String value, String newValue) {
+
+        current = head;
+        while(current != null) {
+            if(current.value == value) {
+                current.next = new Node(newValue, current.next);
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    /**
+     * Deletes a value from the list.  If multiple values exist in list, it will delete the first occurrence.
+     * Returns true if value found and deleted.  Returns false if value was not found.
+     */
+    public boolean deleteValue(String value) {
+
+        current = head;
+        if(head == null) {
+            return false;
+        }
+        if(head.value == value) {
+            head = current.next;
+            return true;
+        }
+        while(current.next != null) {
+            if(current.next.value == value) {
+                current.next = current.next.next;
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
     }
 
     /**
@@ -34,17 +116,51 @@ public class LinkedList {
     }
 
     /**
-     * Prints the entire list.
+     * Prints the entire list with commas in between values.
      */
     public void print() {
         current = head;
         while(current != null) {
-            System.out.println(current.value);
+            System.out.print(current.value);
+            if(current.next != null) {
+                System.out.print(", ");
+            }
             current = current.next;
+        }
+        if(head != null) {
+            System.out.println();
         }
     }
 
 
+    /**
+     * Helper function for testing, returns the value of head, or returns null for an empty list.
+     */
+    public String getHeadValue() {
+        if(head == null) {
+            return null;
+        }
+        return head.value;
+    }
 
+    /**
+     * Helper function for testing, returns the last value in the list, or returns null for an empty list.
+     */
+    public String getLastValue() {
+        if(head == null) {
+            return null;
+        }
+        current = head;
+        while(this.hasNext()) {
+            current = current.next;
+        }
+        return current.value;
+    }
 
+    private boolean hasNext() {
+        if(current.next != null) {
+            return true;
+        }
+        return false;
+    }
 }

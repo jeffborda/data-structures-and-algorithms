@@ -5,3 +5,4 @@
 * [Challenge 2 - Array Shift](readmes/arrayshift.md)
 * [Challenge 3 - Binary Search](readmes/binarysearch.md)
 * [Challenge 4 - Linked List](readmes/linkedlist.md)
+* [Challenge 6 - Linked List Insertions](linkedlistinsertions.md)

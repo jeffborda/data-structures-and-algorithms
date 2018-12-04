@@ -3,7 +3,6 @@ package linkedlist;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -28,44 +27,22 @@ public class LinkedListTest {
     @Test
     public void testInsert() {
         LinkedList testList = new LinkedList();
-        assertFalse("Should return 'false' on empty list.", testList.includes("anything"));
-    }
-
-    @Test
-    public void testInsertOneValue() {
-        LinkedList testList = new LinkedList();
+        assertEquals("Should return 'null' on empty list.", null, testList.getHeadValue());
         testList.insert("Hello");
-        assertTrue("Make sure list returns 'true' to find first thing in list.", testList.includes("Hello"));
-    }
-
-    @Test
-    public void testInsertManyValues() {
-        LinkedList testList = new LinkedList();
-        testList.insert("Hello");
-        testList.insert("word");
-        testList.insert("!");
-        assertTrue("Should return 'true' to a value in the end of list.", testList.includes("Hello"));
+        assertEquals("Make sure list returns first thing in list.", "Hello", testList.getHeadValue());
+        testList.insert("World");
+        assertEquals("Make sure list returns first thing in list.", "World", testList.getHeadValue());
+        assertTrue("List should still contain the first value inserted.", testList.includes("Hello"));
     }
 
     @Test
     public void testIncludes() {
         LinkedList testList = new LinkedList();
-        assertFalse("make sure it doesn't find things in list that haven't been inserted", testList.includes("Scout"));
-    }
-
-    @Test
-    public void testIncludesOneValue() {
-        LinkedList testList = new LinkedList();
         testList.insert("I");
         assertTrue("Should contain string and return 'true'", testList.includes("I"));
-    }
-
-    @Test
-    public void testIncludesManyValues() {
-        LinkedList testList = new LinkedList();
-        testList.insert("I");
         testList.insert("love");
         testList.insert("Java");
+        assertTrue("Should contain string and return 'true'", testList.includes("love"));
         assertTrue("Should contain string and return 'true'", testList.includes("Java"));
     }
 
@@ -78,35 +55,84 @@ public class LinkedListTest {
         // Finds the new line character being used depending on what system is being used.
         String newLine = System.lineSeparator();
         testList.print();
-        assertEquals("Check output stream", "one" + newLine + "two" + newLine + "three" + newLine, outContent.toString());
+        assertEquals("Check output stream", "one, two, three" + newLine, outContent.toString());
 
         // Clears the output stream for tests
         outContent.reset();
         testList.insert("zero");
         testList.print();
-        assertEquals("Check output stream", "zero" + newLine + "one" + newLine + "two" + newLine + "three" + newLine, outContent.toString());
+        assertEquals("Check output stream", "zero, one, two, three" + newLine, outContent.toString());
 
         outContent.reset();
-        testList.insert("minus one");
-        testList.print();
-        assertEquals("Check output stream", "minus one" + newLine + "zero" + newLine + "one" + newLine + "two" + newLine + "three" + newLine, outContent.toString());
+        LinkedList emptyTestList = new LinkedList();
+        emptyTestList.print();
+        assertEquals("Check output stream on empty list, should print nothing.", "", outContent.toString());
     }
 
     @Test
-    public void testPrintOnEmptyList() {
+    public void testAppend() {
         LinkedList testList = new LinkedList();
-        outContent.reset();
-        testList.print();
-        assertEquals("Empty list shouldn't print anything.", "", outContent.toString());
-    }
+        testList.append("3");
+        assertEquals("Inserted a '3' into empty list, last value should be '3'.", "3", testList.getHeadValue());
+        assertEquals("Inserted a '3' into empty list, last value should be '3'.", "3", testList.getLastValue());
+        testList.insert("2");
+        testList.insert("1");
 
-    @Test
-    public void testPrintOnOneItemList() {
-        LinkedList testList = new LinkedList();
-        testList.insert("Test");
+        testList.append("4");
         outContent.reset();
         String newLine = System.lineSeparator();
         testList.print();
-        assertEquals("Check output with one item in list.", "Test" + newLine, outContent.toString());
+        assertEquals("Check list order through the print method, '4' should be at the end.", "1, 2, 3, 4" + newLine, outContent.toString());
+        assertEquals("Check the last Node's value, should be '4'.", "4", testList.getLastValue());
+        testList.append("I am last");
+        assertEquals("Check the last Node's value after another append, should be 'I am last'.", "I am last", testList.getLastValue());
     }
+
+    @Test
+    public void testInsertBefore() {
+        LinkedList testList = new LinkedList();
+        assertFalse("Should return 'false' and not insert on an empty list", testList.insertBefore("2", "1"));
+        assertFalse("Make sure the value '1' was not inserted into empty list.", testList.includes("1"));
+        testList.insert("2");
+        assertTrue("Should return 'true' and insert '1' before '2'.", testList.insertBefore("2", "1"));
+        assertEquals("Confirm that '1' is at the first position.", "1", testList.getHeadValue());
+        testList.append("4");
+        assertTrue("Should return 'true' and insert '3' before '4'.", testList.insertBefore("4", "3"));
+        outContent.reset();
+        String newLine = System.lineSeparator();
+        testList.print();
+        assertEquals("Check that list prints as '1, 2, 3, 4'.", "1, 2, 3, 4" + newLine, outContent.toString());
+        assertFalse("Should return false if value not found.", testList.insertBefore("5", "99"));
+    }
+
+    @Test
+    public void testInsertAfter() {
+        LinkedList testList = new LinkedList();
+        assertFalse("Should return 'false' and not insert on an empty list.", testList.insertAfter("10", "99"));
+        assertFalse("Confirm that value '99' was not inserted into empty list.", testList.includes("99"));
+        testList.insert("1");
+        assertTrue("Should return 'true' and insert '2' after '1'.", testList.insertAfter("1", "2"));
+        assertEquals("Confirm that '2' is at the last position.", "2", testList.getLastValue());
+        assertTrue("Should return 'true' and insert '1.5' between '1' and '2'.", testList.insertAfter("1", "1.5"));
+        assertTrue("Confirm '1.5' is now contained in the list.", testList.includes("1.5"));
+        assertEquals("Confirm '1' is still the head.", "1", testList.getHeadValue());
+        assertEquals("Confirm '2' is still the tail.", "2", testList.getLastValue());
+        assertTrue("Should return 'true' and insert '3' after the '2'.", testList.insertAfter("2", "3"));
+        assertEquals("Confirm '3' is now the tail.", "3", testList.getLastValue());
+    }
+
+    @Test
+    public void testDeleteValue() {
+        LinkedList testList = new LinkedList();
+        assertFalse("Should return 'false' on an empty list.", testList.deleteValue("99"));
+        testList.insert("1");
+        assertTrue("Should return 'true' and delete '1' from the list.", testList.deleteValue("1"));
+        assertEquals("Head should now be pointing at null.", null, testList.getHeadValue());
+        testList.insert("3");
+        testList.insert("2");
+        testList.insert("1");
+        assertTrue("Should return 'true' and remove '2' from the middle of list.", testList.deleteValue("2"));
+        assertEquals("Confirm '3' is at the end of the list and list is intact.", "3", testList.getLastValue());
+    }
+
 }

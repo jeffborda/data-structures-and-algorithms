@@ -10,6 +10,6 @@
  Space: O(1)
  
  ### Solution
- <img src="assets/BinarySearch.jpg"
+ <img src="../assets/BinarySearch.jpg"
       alt="White Board Picture"
       style="float: left; margin-right: 10px; width: 200px;" />
