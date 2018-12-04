@@ -34,17 +34,30 @@ public class LinkedList {
     }
 
     /**
-     * Prints the entire list.
+     * Prints the entire list with commas in between values.
      */
     public void print() {
         current = head;
         while(current != null) {
-            System.out.println(current.value);
+            System.out.print(current.value);
+            if(current.next != null) {
+                System.out.print(", ");
+            }
             current = current.next;
+        }
+        if(head != null) {
+            System.out.println();
         }
     }
 
 
-
-
+    /**
+     * Helper function for testing, returns the value of head, or returns null for an empty list.
+     */
+    public String getHeadValue() {
+        if(head == null) {
+            return null;
+        }
+        return head.value;
+    }
 }
