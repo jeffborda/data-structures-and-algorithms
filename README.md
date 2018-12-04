@@ -1,5 +1,5 @@
-#Data Structures and Algorithms - Code Challenges
-
+# Data Structures and Algorithms - Code Challenges
+This repo is home to my Java 401 code challenges at Code Fellows.
 
 * [Challenge 1 - Reverse an Array](readmes/arrayreverse.md)
 * [Challenge 2 - Array Shift](readmes/arrayshift.md)

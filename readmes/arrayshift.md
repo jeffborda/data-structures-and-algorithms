@@ -1,4 +1,4 @@
-##Array Shift
+## Array Shift
 
 ### Approach & Efficiency
 The approach I took was to make a result array which one element longer than the input array.  To find the middle I took the length of the input array and divided by two, added 0.5 for rounding, and then truncated the decimal off.  This gives the correct middle position for even, odd, and edge case length arrays like 0 and 1.

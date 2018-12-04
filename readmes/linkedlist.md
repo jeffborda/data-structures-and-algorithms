@@ -1,4 +1,4 @@
- ##LinkedList
+ ## LinkedList
  In this code challenge I created a singly linked list, with methods:
  *insert() : Inserts value to the first position.
  *includes() : Returns true/false depending on if a value is found inside the list.
