@@ -116,6 +116,34 @@ public class LinkedList {
     }
 
     /**
+     * Takes in an int, and returns the kth from the end Node's String.  If in is out of bounds,
+     * the method returns null.
+     */
+    public String kFromEnd(int k) {
+
+        if(k < 0) {
+            return null;
+        }
+
+        current = head;
+        Node follower = head;
+        int count = 0;
+
+        while(this.hasNext()) {
+            current = current.next;
+            count++;
+            if(count > k) {
+                follower = follower.next;
+            }
+        }
+
+        if(count < k) {
+            return null;
+        }
+        return follower.value;
+    }
+
+    /**
      * Prints the entire list with commas in between values.
      */
     public void print() {

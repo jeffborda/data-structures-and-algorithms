@@ -135,4 +135,27 @@ public class LinkedListTest {
         assertEquals("Confirm '3' is at the end of the list and list is intact.", "3", testList.getLastValue());
     }
 
+    @Test
+    public void testKFromTheEnd() {
+        LinkedList testList = new LinkedList();
+        testList.insert("1");
+        assertEquals("Should return first and only value '1' if k is '0'.", "1", testList.kFromEnd(0));
+        assertEquals("Should return 'null' if too few elements in regards to k.", null, testList.kFromEnd(2));
+        testList.append("2");
+        testList.append("3");
+        testList.append("4");
+        testList.append("5");
+        // testList is now: {1, 2, 3, 4, 5}
+        assertEquals("Confirm '1' is at the head of list.", "1", testList.getHeadValue());
+        assertEquals("Confirm '5' is at the tail of list.", "5", testList.getLastValue());
+        assertEquals("Should return '5' when k is 0.", "5", testList.kFromEnd(0));
+        assertEquals("Should return '4' when k is 1.", "4", testList.kFromEnd(1));
+        assertEquals("Should return '3' when k is 2.", "3", testList.kFromEnd(2));
+        assertEquals("Should return '2' when k is 3.", "2", testList.kFromEnd(3));
+        assertEquals("Should return '1' when k is 4.", "1", testList.kFromEnd(4));
+        assertEquals("Should return 'null' when k is > 4.", null, testList.kFromEnd(5));
+        assertEquals("Should return 'null' when k is > 4.", null, testList.kFromEnd(100));
+        assertEquals("Should also return null if given negative k.", null, testList.kFromEnd(-1));
+    }
+
 }
