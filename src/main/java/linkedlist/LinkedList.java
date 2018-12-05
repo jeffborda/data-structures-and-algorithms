@@ -121,7 +121,7 @@ public class LinkedList {
      */
     public String kFromEnd(int k) {
 
-        if(k < 0) {
+        if(k < 0 || head == null) {
             return null;
         }
 
@@ -141,6 +141,37 @@ public class LinkedList {
             return null;
         }
         return follower.value;
+    }
+
+    /**
+     * Finds the Node in the middle of the LinkedList and returns its value.
+     */
+    public String findMiddleNode() {
+        //if empty list, return null
+        //set current to head
+        //make a follower pointer
+        //iterate through the list in while loop
+        //   current pointer will move two nodes at a time
+        //   follower pointer will move one node at a time
+        //when current reaches last node or becomes null, return followerer value
+
+        if(head == null) {
+            return null;
+        }
+
+        current = head;
+        Node follower = head;
+        while(current.next != null) {
+            if(current.next.next != null) {
+                current = current.next.next;
+            }
+            else {
+                return follower.next.value;
+            }
+
+            follower = follower.next;
+        }
+        return "super";
     }
 
     /**

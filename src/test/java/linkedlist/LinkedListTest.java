@@ -138,6 +138,7 @@ public class LinkedListTest {
     @Test
     public void testKFromTheEnd() {
         LinkedList testList = new LinkedList();
+        assertEquals("Should return 'null' if called on empty list.", null, testList.kFromEnd(0));
         testList.insert("1");
         assertEquals("Should return first and only value '1' if k is '0'.", "1", testList.kFromEnd(0));
         assertEquals("Should return 'null' if too few elements in regards to k.", null, testList.kFromEnd(2));
@@ -158,4 +159,23 @@ public class LinkedListTest {
         assertEquals("Should also return null if given negative k.", null, testList.kFromEnd(-1));
     }
 
+    @Test
+    public void testFindMiddleNode() {
+        LinkedList testList = new LinkedList();
+        assertEquals("Should return 'null' if called on empty list.", null, testList.findMiddleNode());
+        testList.insert("1");
+        assertEquals("Should return first and only value '1'.", "1", testList.findMiddleNode());
+        testList.append("2");
+        assertEquals("Should return '2' in two element list.", "2", testList.findMiddleNode());
+        testList.append("3");
+        assertEquals("Should return '2' in three element list.", "2", testList.findMiddleNode());
+        testList.append("4");
+        assertEquals("Should return '3' in four element list.", "3", testList.findMiddleNode());
+        testList.append("5");
+        assertEquals("Should return '3' in five element list.", "3", testList.findMiddleNode());
+        testList.append("6");
+        assertEquals("Should return '4' in six element list.", "4", testList.findMiddleNode());
+        testList.append("7");
+        assertEquals("Should return '4' in seven element list.", "4", testList.findMiddleNode());
+    }
 }
