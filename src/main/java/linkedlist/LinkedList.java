@@ -116,6 +116,65 @@ public class LinkedList {
     }
 
     /**
+     * Takes in an int, and returns the kth from the end Node's String.  If in is out of bounds,
+     * the method returns null.
+     */
+    public String kFromEnd(int k) {
+
+        if(k < 0 || head == null) {
+            return null;
+        }
+
+        current = head;
+        Node follower = head;
+        int count = 0;
+
+        while(this.hasNext()) {
+            current = current.next;
+            count++;
+            if(count > k) {
+                follower = follower.next;
+            }
+        }
+
+        if(count < k) {
+            return null;
+        }
+        return follower.value;
+    }
+
+    /**
+     * Finds the Node in the middle of the LinkedList and returns its value.
+     */
+    public String findMiddleNode() {
+        //if empty list, return null
+        //set current to head
+        //make a follower pointer
+        //iterate through the list in while loop
+        //   current pointer will move two nodes at a time
+        //   follower pointer will move one node at a time
+        //when current reaches last node or becomes null, return followerer value
+
+        if(head == null) {
+            return null;
+        }
+
+        current = head;
+        Node follower = head;
+        while(current.next != null) {
+            if(current.next.next != null) {
+                current = current.next.next;
+            }
+            else {
+                return follower.next.value;
+            }
+
+            follower = follower.next;
+        }
+        return "super";
+    }
+
+    /**
      * Prints the entire list with commas in between values.
      */
     public void print() {
