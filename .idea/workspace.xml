@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/linkedlist/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/linkedlist/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/linkedlist/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -44,19 +42,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/linkedlist/LinkedListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="156" column="87" selection-start-line="156" selection-start-column="87" selection-end-line="156" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/linkedlist/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+            <state relative-caret-position="348">
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="136">
+                <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readmes/linkedlistinsertions.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret selection-end-line="26" selection-end-column="64" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/linkedlist/LinkedListTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="148" column="62" selection-start-line="148" selection-start-column="62" selection-end-line="148" selection-end-column="62" />
+        <entry file="file://$PROJECT_DIR$/readmes/linkedlistkthfromend.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="153">
+                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -97,12 +131,13 @@
         <option value="$PROJECT_DIR$/readmes/binarysearch.md" />
         <option value="$PROJECT_DIR$/readmes/linkedlist.md" />
         <option value="$PROJECT_DIR$/readmes/linkedlistinsertions.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/../.gitignore" />
         <option value="$PROJECT_DIR$/../src/test/java/linkedlist/LinkedListTest.java" />
         <option value="$PROJECT_DIR$/../src/main/java/linkedlist/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/linkedlist/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/test/java/linkedlist/LinkedListTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/readmes/linkedlistkthfromend.md" />
       </list>
     </option>
   </component>
@@ -125,6 +160,11 @@
             <path>
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="readmes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -182,7 +222,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543980968607" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543982177249" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -339,24 +379,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinkedListTest_testDeleteValue - 2018.12.03 at 21h 08m 21s.xml">
-      <configuration name="LinkedListTest.testDeleteValue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedListTest_testDeleteValue - 2018.12.03 at 21h 09m 54s.xml">
-      <configuration name="LinkedListTest.testDeleteValue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedListTest_testDeleteValue - 2018.12.03 at 21h 10m 56s.xml">
-      <configuration name="LinkedListTest.testDeleteValue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedListTest_testDeleteValue - 2018.12.03 at 21h 13m 35s.xml">
-      <configuration name="LinkedListTest.testDeleteValue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedListTest_testDeleteValue - 2018.12.03 at 21h 14m 37s.xml">
-      <configuration name="LinkedListTest.testDeleteValue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedListTest_testKFromTheEnd - 2018.12.04 at 19h 23m 48s.xml">
-      <configuration name="LinkedListTest.testKFromTheEnd" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LinkedListTest_testKFromTheEnd - 2018.12.04 at 19h 25m 14s.xml">
       <configuration name="LinkedListTest.testKFromTheEnd" configurationId="JUnit" />
     </history-entry>
@@ -369,12 +391,30 @@
     <history-entry file="LinkedListTest_testKFromTheEnd - 2018.12.04 at 19h 32m 37s.xml">
       <configuration name="LinkedListTest.testKFromTheEnd" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LinkedListTest_testKFromTheEnd - 2018.12.04 at 19h 34m 50s.xml">
+      <configuration name="LinkedListTest.testKFromTheEnd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedListTest_testKFromTheEnd - 2018.12.04 at 19h 35m 14s.xml">
+      <configuration name="LinkedListTest.testKFromTheEnd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedListTest_testKFromTheEnd - 2018.12.04 at 19h 35m 24s.xml">
+      <configuration name="LinkedListTest.testKFromTheEnd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedListTest_testKFromTheEnd - 2018.12.04 at 19h 35m 35s.xml">
+      <configuration name="LinkedListTest.testKFromTheEnd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedListTest_testKFromTheEnd - 2018.12.04 at 19h 35m 41s.xml">
+      <configuration name="LinkedListTest.testKFromTheEnd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedListTest_testKFromTheEnd - 2018.12.04 at 19h 36m 10s.xml">
+      <configuration name="LinkedListTest.testKFromTheEnd" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2442953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2442953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -383,7 +423,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -458,17 +498,47 @@
     <entry file="file://$PROJECT_DIR$/../.gitignore" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/linkedlist/LinkedList.java" />
     <entry file="file://$PROJECT_DIR$/../src/test/java/linkedlist/LinkedListTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/linkedlist/LinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/linkedlist/LinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+        <state relative-caret-position="253">
+          <caret line="156" column="87" selection-start-line="156" selection-start-column="87" selection-end-line="156" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/linkedlist/LinkedListTest.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/linkedlistinsertions.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="26" selection-end-column="64" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedlist/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="148" column="62" selection-start-line="148" selection-start-column="62" selection-end-line="148" selection-end-column="62" />
+        <state relative-caret-position="348">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/linkedlistkthfromend.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
