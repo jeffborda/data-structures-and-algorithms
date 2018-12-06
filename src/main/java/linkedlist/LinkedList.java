@@ -219,7 +219,7 @@ public class LinkedList {
 
             follower = follower.next;
         }
-        return "super";
+        return follower.value;
     }
 
     /**
