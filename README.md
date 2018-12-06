@@ -7,3 +7,4 @@ This repo is home to my Java 401 code challenges at Code Fellows.
 * [Challenge 4 - Linked List](readmes/linkedlist.md)
 * [Challenge 6 - Linked List Insertions](readmes/linkedlistinsertions.md)
 * [Challenge 7 - Linked List kth From End](readmes/linkedlistkthfromend.md)
+* [Challenge 8 - Linked List Merge](readmes/linkedlistmerge.md)
