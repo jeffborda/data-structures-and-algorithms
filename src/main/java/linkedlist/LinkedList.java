@@ -6,7 +6,40 @@ public class LinkedList {
     private Node current;
 
     public LinkedList() {
+
         this.head = null;
+    }
+
+    /**
+     * Takes two LinkedLists and merges the nodes zipper style (L1, L2, L1, L2..) and returns a single LinkedList.
+     */
+    public static LinkedList merge(LinkedList one, LinkedList two) {
+
+        if(one.head == null) {
+            return two;
+        }
+        if(two.head == null) {
+            return one;
+        }
+
+        Node list1Leader = one.head.next;
+        Node list1Follower = one.head;
+        two.current = two.head;
+
+        while(list1Leader != null) {
+            two.head = two.current.next;
+            list1Follower.next = two.current;
+            two.current.next = list1Leader;
+            if(two.head == null) {
+                return one;
+            }
+            two.current = two.head;
+            list1Follower = list1Leader;
+            list1Leader = list1Leader.next;
+        }
+        list1Follower.next = two.current;
+        return one;
+
     }
 
     /**
@@ -17,6 +50,21 @@ public class LinkedList {
         head = new Node(value, head);
 
     }
+
+    public int size() {
+
+        if(this.isEmpty()) {
+            return 0;
+        }
+        int count = 0;
+        current = head;
+        while(current != null) {
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
+
 
     /**
      * Adds a value to the last position of the list.
@@ -173,6 +221,27 @@ public class LinkedList {
         }
         return "super";
     }
+
+    /**
+     * Returns true if list is empty, false if not empty.
+     */
+    public boolean isEmpty() {
+
+        if(head == null) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Deletes all Nodes in a list.
+     */
+    public void deleteAll() {
+
+        head = null;
+    }
+
+
 
     /**
      * Prints the entire list with commas in between values.

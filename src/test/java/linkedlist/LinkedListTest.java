@@ -178,4 +178,135 @@ public class LinkedListTest {
         testList.append("7");
         assertEquals("Should return '4' in seven element list.", "4", testList.findMiddleNode());
     }
+
+    @Test
+    public void testIsEmpty() {
+        LinkedList testList = new LinkedList();
+        assertTrue("List should be empty, returning 'true'.", testList.isEmpty());
+        testList.insert("Hello");
+        assertFalse("List should have one Node, returning 'false'.", testList.isEmpty());
+    }
+
+    @Test
+    public void testSize() {
+        LinkedList testList = new LinkedList();
+        assertTrue("List should be empty, returning 'true'.", testList.isEmpty());
+        assertEquals("List should be size '0'.", 0, testList.size());
+        testList.insert("1");
+        assertEquals("List should be size '1'.", 1, testList.size());
+        testList.insert("2");
+        assertEquals("List should be size '2'.", 2, testList.size());
+        testList.insert("3");
+        assertEquals("List should be size '3'.", 3, testList.size());
+    }
+
+    @Test
+    public void testDeleteAll() {
+        LinkedList testList = new LinkedList();
+        testList.insert("Hello");
+        testList.append("world!");
+        assertEquals("Confirm list is size '2'.", 2, testList.size());
+        testList.deleteAll();
+        assertTrue("List should now be empty, returns 'true'.", testList.isEmpty());
+        testList.insert("Good work");
+        assertEquals("Confirm new value is inserted after deleteAll runs.", "Good work", testList.getHeadValue());
+    }
+
+    @Test
+    public void testLinkedListMerge() {
+        // Test on lists of equal length
+        LinkedList list1 = new LinkedList();
+        LinkedList list2 = new LinkedList();
+        assertTrue("list1 should start empty.", list1.isEmpty());
+        assertTrue("list2 should start empty.", list2.isEmpty());
+        list1.insert("1");
+        list1.append("3");
+        list1.append("5");
+        list1.append("7");
+        list1.append("9"); //list1:{1, 3, 5, 7, 9}
+        list2.insert("2");
+        list2.append("4");
+        list2.append("6");
+        list2.append("8");
+        list2.append("10"); //list2:{2, 4, 6, 8, 10}
+        LinkedList testMerge = LinkedList.merge(list1, list2); //expect: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+        assertEquals("Merged list should be length '10'.", 10, testMerge.size());
+        assertEquals("Head value of merged list should be '1'.", "1", testMerge.getHeadValue());
+        assertEquals("Tail value of merged list should be '10'.", "10", testMerge.getLastValue());
+        assertTrue("Remove the tail value of '10', should return 'true'.", testMerge.deleteValue("10"));
+        assertEquals("Tail value of merged list should now be '9'.", "9", testMerge.getLastValue());
+        assertTrue("Remove the tail value of '9', should return 'true'.", testMerge.deleteValue("9"));
+        assertEquals("Tail value of merged list should now be '8'.", "8", testMerge.getLastValue());
+
+        //Test on lists where list1 > list2
+        list1.deleteAll();
+        list2.deleteAll();
+        testMerge.deleteAll();
+        list1.append("1");
+        list1.append("3");
+        list1.append("5");
+        list1.append("6");
+        list1.append("7"); //list1:{1, 3, 5, 6, 7}
+        list2.append("2");
+        list2.append("4"); //list2:{2, 4}
+        testMerge = LinkedList.merge(list1, list2); //expect: {1, 2, 3, 4, 5, 6, 7}
+        assertEquals("Merged list should be length '7'.", 7, testMerge.size());
+        assertEquals("Head value of merged list should be '1'.", "1", testMerge.getHeadValue());
+        assertEquals("Tail value of merged list should be '7'.", "7", testMerge.getLastValue());
+        assertTrue("Remove the tail value of '7', should return 'true'.", testMerge.deleteValue("7"));
+        assertEquals("Tail value of merged list should now be '6'.", "6", testMerge.getLastValue());
+        assertTrue("Remove the tail value of '6', should return 'true'.", testMerge.deleteValue("6"));
+        assertEquals("Tail value of merged list should now be '5'.", "5", testMerge.getLastValue());
+
+        //Test on lists where list1 < list2
+        list1.deleteAll();
+        list2.deleteAll();
+        testMerge.deleteAll();
+        list1.append("1");
+        list1.append("3");
+        list1.append("5"); //list1:{1, 3, 5}
+        list2.append("2");
+        list2.append("4");
+        list2.append("6");
+        list2.append("7");
+        list2.append("8");
+        list2.append("9"); //list2:{2, 4, 6, 7, 8, 9}
+        testMerge = LinkedList.merge(list1, list2); //expect: {1, 2, 3, 4, 5, 6, 7, 8, 9}
+        assertEquals("Merged list should be length '9'.", 9, testMerge.size());
+        assertEquals("Head value of merged list should be '1'.", "1", testMerge.getHeadValue());
+        assertEquals("Tail value of merged list should be '9'.", "9", testMerge.getLastValue());
+        assertTrue("Remove the tail value of '9', should return 'true'.", testMerge.deleteValue("9"));
+        assertEquals("Tail value of merged list should now be '8'.", "8", testMerge.getLastValue());
+        assertTrue("Remove the tail value of '8', should return 'true'.", testMerge.deleteValue("8"));
+        assertEquals("Tail value of merged list should now be '7'.", "7", testMerge.getLastValue());
+        testMerge.deleteValue("7");
+        testMerge.deleteValue("6");
+        System.out.println(testMerge.toString());
+        assertEquals("Tail value of merged list should now be '5'.", "5", testMerge.getLastValue());
+
+        // list1 = 0 < list2
+        list1.deleteAll();
+        list2.deleteAll();
+        testMerge.deleteAll();
+        list2.insert("3");
+        list2.insert("2");
+        list2.insert("1");
+        testMerge = LinkedList.merge(list1, list2);
+        assertEquals("Merged list should be length '3'.", 3, testMerge.size());
+        assertEquals("Head value of merged list should be '1'.", "1", testMerge.getHeadValue());
+        assertEquals("Tail value of merged list should be '3'.", "3", testMerge.getLastValue());
+
+        // list1 > list2 = 0
+        list1.deleteAll();
+        list2.deleteAll();
+        testMerge.deleteAll();
+        list1.insert("3");
+        list1.insert("2");
+        list1.insert("1");
+        testMerge = LinkedList.merge(list1, list2);
+        assertEquals("Merged list should be length '3'.", 3, testMerge.size());
+        assertEquals("Head value of merged list should be '1'.", "1", testMerge.getHeadValue());
+        assertEquals("Tail value of merged list should be '3'.", "3", testMerge.getLastValue());
+    }
+
 }
