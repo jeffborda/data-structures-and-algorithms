@@ -309,4 +309,23 @@ public class LinkedListTest {
         assertEquals("Tail value of merged list should be '3'.", "3", testMerge.getLastValue());
     }
 
+    @Test
+    public void testMergeLinkedList() {
+        LinkedList testList = new LinkedList();
+        testList.insert("5");
+        testList.insert("4");
+        testList.insert("3");
+        testList.insert("2");
+        testList.insert("1");
+
+        assertEquals("Confirm head value is '1' before reversing", "1", testList.getHeadValue());
+        assertEquals("Confirm last value is '5' before reversing", "5", testList.getLastValue());
+
+        testList.reverseList();
+
+        assertEquals("Now head value should be '5'.", "5", testList.getHeadValue());
+        assertEquals("Now last value should be '1'.", "1", testList.getHeadValue());
+        assertEquals("Middle value should be '3'.", "3", testList.findMiddleNode());
+    }
+
 }

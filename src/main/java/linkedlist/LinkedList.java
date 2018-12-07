@@ -223,6 +223,26 @@ public class LinkedList {
     }
 
     /**
+     * This method reverses the order of a linked list.
+     */
+    public void reverseList() {
+
+        if(head == null) {
+            return;
+        }
+        Node follow = head;
+        current = head;
+        Node leader = head.next;
+        while(leader != null) {
+            current = leader;
+            leader = leader.next;
+            current.next = follow;
+            follow = current;
+        }
+        return;
+    }
+
+    /**
      * Returns true if list is empty, false if not empty.
      */
     public boolean isEmpty() {
