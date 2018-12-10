@@ -38,6 +38,9 @@ public class Queue<T> {
         if(front != null) {
             Node<T> temp = front;
             front = front.next;
+            if(front == null) {
+                rear = null;
+            }
             return temp.value;
         }
         return null;
