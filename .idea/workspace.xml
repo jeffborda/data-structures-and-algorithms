@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readmes/stacksandqueues.md" beforeDir="false" afterPath="$PROJECT_DIR$/readmes/stacksandqueues.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -78,8 +78,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+            <state relative-caret-position="204">
+              <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readmes/stacksandqueues.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="34">
+                <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -143,8 +155,8 @@
         <option value="$PROJECT_DIR$/src/test/java/stacksandqueues/StackTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/readmes/stacksandqueues.md" />
         <option value="$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java" />
+        <option value="$PROJECT_DIR$/readmes/stacksandqueues.md" />
         <option value="$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java" />
       </list>
     </option>
@@ -230,7 +242,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544471990238" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544481987969" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -265,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StackTest">
+  <component name="RunManager" selected="JUnit.QueueTest">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -363,8 +375,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StackTest" />
         <item itemvalue="JUnit.QueueTest" />
+        <item itemvalue="JUnit.StackTest" />
         <item itemvalue="JUnit.QueueTest.testPeek" />
         <item itemvalue="JUnit.QueueTest.testDequeue" />
         <item itemvalue="JUnit.QueueTest.testEnqueue" />
@@ -385,9 +397,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QueueTest_testEnqueue - 2018.12.10 at 11h 08m 27s.xml">
-      <configuration name="QueueTest.testEnqueue" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="QueueTest_testEnqueue - 2018.12.10 at 11h 09m 29s.xml">
       <configuration name="QueueTest.testEnqueue" configurationId="JUnit" />
     </history-entry>
@@ -414,6 +423,9 @@
     </history-entry>
     <history-entry file="StackTest - 2018.12.10 at 11h 55m 32s.xml">
       <configuration name="StackTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest - 2018.12.10 at 14h 45m 03s.xml">
+      <configuration name="QueueTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -511,16 +523,6 @@
     <entry file="file://$PROJECT_DIR$/../src/test/java/stacksandqueues/QueueTest.java" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/stacksandqueues/Stack.java" />
     <entry file="file://$PROJECT_DIR$/../src/test/java/stacksandqueues/StackTest.java" />
-    <entry file="file://$PROJECT_DIR$/readmes/stacksandqueues.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="51">
-            <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readmes/linkedlistmerge.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -536,13 +538,6 @@
             <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -566,10 +561,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/stacksandqueues.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+        <state relative-caret-position="204">
+          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
         </state>
       </provider>
     </entry>
