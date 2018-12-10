@@ -1,11 +1,11 @@
 package stacksandqueues;
 
-public class Node {
+public class Node<T> {
 
-    protected String value;
+    protected T value;
     protected Node next = null;
 
-    protected Node(String value, Node next) {
+    protected Node(T value, Node next) {
         this.value = value;
         this.next = next;
     }
