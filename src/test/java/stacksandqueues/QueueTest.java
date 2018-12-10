@@ -90,6 +90,10 @@ public class QueueTest {
     @Test
     public void testPeek() {
         Queue<String> testQueue = new Queue<>();
-        
+        assertEquals("Should return 'null' when peek is called on an empty Queue.", null, testQueue.peek());
+        testQueue.enqueue("1");
+        assertEquals("Should return '1', the value of the first item in the list.", "1", testQueue.peek());
+        testQueue.enqueue("1");
+        assertEquals("Should still return '1', the value of the first item in the list.", "1", testQueue.peek());
     }
 }
