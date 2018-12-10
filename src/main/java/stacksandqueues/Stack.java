@@ -1,5 +1,9 @@
 package stacksandqueues;
 
+/**
+ * Data structure that can hold any Object type. It is structured like a stack of plates.  When values are added, they
+ * stack up, just like a stack of plates.  Values are always added and removed from the top of the Stack.
+ */
 public class Stack<T> {
 
     Node<T> top;

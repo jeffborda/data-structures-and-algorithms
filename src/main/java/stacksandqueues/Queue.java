@@ -1,5 +1,9 @@
 package stacksandqueues;
 
+/**
+ * Data structure that can hold any Object type. It is structured like a line of people.  So when new values are added
+ * to the Queue they are added to the back.  When values are removed from a queue, they are removed from the front.
+ */
 public class Queue<T> {
 
     Node<T> front;
