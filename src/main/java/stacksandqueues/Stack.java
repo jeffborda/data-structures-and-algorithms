@@ -21,9 +21,12 @@ public class Stack<T> {
      * @return value at the top of the stack.
      */
     public T pop() {
-        Node<T> temp = top;
-        top = top.next;
-        return temp.value;
+        if(top != null) {
+            Node<T> temp = top;
+            top = top.next;
+            return temp.value;
+        }
+        return null;
     }
 
     /**
