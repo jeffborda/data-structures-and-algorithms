@@ -310,7 +310,7 @@ public class LinkedListTest {
     }
 
     @Test
-    public void testMergeLinkedList() {
+    public void testReverseLinkedList() {
         LinkedList testList = new LinkedList();
         testList.insert("5");
         testList.insert("4");

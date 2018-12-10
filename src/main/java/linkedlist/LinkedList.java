@@ -233,12 +233,15 @@ public class LinkedList {
         Node follow = head;
         current = head;
         Node leader = head.next;
+        current.next = null;
+
         while(leader != null) {
             current = leader;
             leader = leader.next;
             current.next = follow;
             follow = current;
         }
+        head = current;
         return;
     }
 
@@ -311,4 +314,9 @@ public class LinkedList {
         }
         return false;
     }
+
+//    @Override
+//    public String toString() {
+//        return null;
+//    }
 }
