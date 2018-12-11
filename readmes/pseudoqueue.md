@@ -20,3 +20,9 @@ To make this work, I call Stack #1 the enqueue stack, and call Stack #2 the dequ
 |----------------------|----------------------------------------------------------------------------------|-------------|--------------|
 | ```enqueue()```      | Removes the front node of the queue and returns its value.                       | O(n)        | O(1)         |
 | ```dequeue()```      | Adds a new value to the back of the queue.                                       | O(n)        | O(1)         |
+
+
+### Solution
+  <img src="../assets/pseudo-queue.jpg"
+       alt="White Board Picture"
+       style="float: left; margin-right: 10px; width: 200px;" />
