@@ -9,3 +9,4 @@ This repo is home to my Java 401 code challenges at Code Fellows.
 * [Challenge 7 - Linked List kth From End](readmes/linkedlistkthfromend.md)
 * [Challenge 8 - Linked List Merge](readmes/linkedlistmerge.md)
 * [Challenge 10 - Stacks and Queues](readmes/stacksandqueues.md)
+* [Challenge 11 - Pseudo Queue](readmes/pseudoqueue.md)
