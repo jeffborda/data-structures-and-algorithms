@@ -6,7 +6,7 @@ package stacksandqueues;
  */
 public class Stack<T> {
 
-    Node<T> top;
+    private Node<T> top;
 
     public Stack() {
         this.top = null;
