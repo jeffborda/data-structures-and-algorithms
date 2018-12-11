@@ -3,6 +3,7 @@ package QueueWithStacks;
 import stacksandqueues.Stack;
 
 public class PseudoQueue<T> {
+
     protected Stack<T> stackOne;
     protected Stack<T> stackTwo;
 
@@ -19,10 +20,20 @@ public class PseudoQueue<T> {
     }
 
     public T dequeue() {
+        if(stackOne.isEmpty() && stackTwo.isEmpty()) {
+            return null;
+        }
         while(!stackTwo.isEmpty()) {
             stackOne.push(stackTwo.pop());
         }
         return stackOne.pop();
+    }
+
+    public boolean isEmpty() {
+        if(stackOne.isEmpty() && stackTwo.isEmpty()) {
+            return true;
+        }
+        return false;
     }
 
 }
