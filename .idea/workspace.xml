@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fifoanimalshelter/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fifoanimalshelter/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fifoanimalshelter/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fifoanimalshelter/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -39,40 +42,36 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fifoanimalshelter/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fifoanimalshelter/FIFOAnimalShelter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding>
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Cat.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Dog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="389">
+              <caret line="59" column="122" lean-forward="true" selection-start-line="59" selection-start-column="122" selection-end-line="59" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -82,8 +81,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -96,7 +95,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -143,15 +142,19 @@
         <option value="$PROJECT_DIR$/src/test/java/QueueWithStacks/PseudoQueueTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/readmes/pseudoqueue.md" />
+        <option value="$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Dog.java" />
         <option value="$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Cat.java" />
         <option value="$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" />
+        <option value="$PROJECT_DIR$/../src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-10" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -161,37 +164,57 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fifoanimalshelter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="fifoanimalshelter" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -200,14 +223,15 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544502414702" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544586872656" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-practice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -215,6 +239,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="fifoanimalshelter" />
       <recent name="QueueWithStacks" />
       <recent name="stacksandqueues" />
       <recent name="linkedlist" />
@@ -239,7 +264,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PseudoQueueTest">
+  <component name="RunManager" selected="JUnit.FIFOAnimalShelterTest.testDequeue">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -259,6 +284,68 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="FIFOAnimalShelterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fifoanimalshelter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fifoanimalshelter" />
+      <option name="MAIN_CLASS_NAME" value="fifoanimalshelter.FIFOAnimalShelterTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FIFOAnimalShelterTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fifoanimalshelter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fifoanimalshelter" />
+      <option name="MAIN_CLASS_NAME" value="fifoanimalshelter.FIFOAnimalShelterTest" />
+      <option name="METHOD_NAME" value="testConstructor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FIFOAnimalShelterTest.testDequeue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fifoanimalshelter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fifoanimalshelter" />
+      <option name="MAIN_CLASS_NAME" value="fifoanimalshelter.FIFOAnimalShelterTest" />
+      <option name="METHOD_NAME" value="testDequeue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FIFOAnimalShelterTest.testEnqueue_Cat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fifoanimalshelter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fifoanimalshelter" />
+      <option name="MAIN_CLASS_NAME" value="fifoanimalshelter.FIFOAnimalShelterTest" />
+      <option name="METHOD_NAME" value="testEnqueue_Cat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PseudoQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
@@ -273,75 +360,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PseudoQueueTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="QueueWithStacks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="QueueWithStacks" />
-      <option name="MAIN_CLASS_NAME" value="QueueWithStacks.PseudoQueueTest" />
-      <option name="METHOD_NAME" value="testConstructor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PseudoQueueTest.testDequeue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="QueueWithStacks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="QueueWithStacks" />
-      <option name="MAIN_CLASS_NAME" value="QueueWithStacks.PseudoQueueTest" />
-      <option name="METHOD_NAME" value="testDequeue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PseudoQueueTest.testEnqueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="QueueWithStacks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="QueueWithStacks" />
-      <option name="MAIN_CLASS_NAME" value="QueueWithStacks.PseudoQueueTest" />
-      <option name="METHOD_NAME" value="testEnqueue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stacksandqueues.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="stacksandqueues" />
-      <option name="MAIN_CLASS_NAME" value="stacksandqueues.QueueTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FIFOAnimalShelterTest.testDequeue" />
+        <item itemvalue="JUnit.FIFOAnimalShelterTest.testEnqueue_Cat" />
+        <item itemvalue="JUnit.FIFOAnimalShelterTest.testConstructor" />
+        <item itemvalue="JUnit.FIFOAnimalShelterTest" />
         <item itemvalue="JUnit.PseudoQueueTest" />
-        <item itemvalue="JUnit.PseudoQueueTest.testConstructor" />
-        <item itemvalue="JUnit.PseudoQueueTest.testDequeue" />
-        <item itemvalue="JUnit.PseudoQueueTest.testEnqueue" />
-        <item itemvalue="JUnit.QueueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -359,42 +384,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QueueTest - 2018.12.10 at 11h 55m 25s.xml">
-      <configuration name="QueueTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StackTest - 2018.12.10 at 11h 55m 32s.xml">
-      <configuration name="StackTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QueueTest - 2018.12.10 at 14h 45m 03s.xml">
-      <configuration name="QueueTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QueueTest - 2018.12.10 at 14h 50m 39s.xml">
-      <configuration name="QueueTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PseudoQueueTest_testEnqueue - 2018.12.10 at 19h 38m 49s.xml">
-      <configuration name="PseudoQueueTest.testEnqueue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PseudoQueueTest_testDequeue - 2018.12.10 at 19h 49m 17s.xml">
-      <configuration name="PseudoQueueTest.testDequeue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PseudoQueueTest_testDequeue - 2018.12.10 at 19h 50m 18s.xml">
-      <configuration name="PseudoQueueTest.testDequeue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PseudoQueueTest_testConstructor - 2018.12.10 at 19h 52m 34s.xml">
-      <configuration name="PseudoQueueTest.testConstructor" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PseudoQueueTest_testConstructor - 2018.12.10 at 19h 54m 33s.xml">
       <configuration name="PseudoQueueTest.testConstructor" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PseudoQueueTest - 2018.12.10 at 19h 54m 44s.xml">
       <configuration name="PseudoQueueTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FIFOAnimalShelterTest_testConstructor - 2018.12.11 at 19h 30m 56s.xml">
+      <configuration name="FIFOAnimalShelterTest.testConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FIFOAnimalShelterTest - 2018.12.11 at 19h 33m 02s.xml">
+      <configuration name="FIFOAnimalShelterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FIFOAnimalShelterTest_testConstructor - 2018.12.11 at 19h 37m 41s.xml">
+      <configuration name="FIFOAnimalShelterTest.testConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FIFOAnimalShelterTest_testConstructor - 2018.12.11 at 19h 37m 58s.xml">
+      <configuration name="FIFOAnimalShelterTest.testConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FIFOAnimalShelterTest_testEnqueue_Cat - 2018.12.11 at 19h 39m 38s.xml">
+      <configuration name="FIFOAnimalShelterTest.testEnqueue_Cat" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FIFOAnimalShelterTest_testEnqueue_Cat - 2018.12.11 at 19h 42m 41s.xml">
+      <configuration name="FIFOAnimalShelterTest.testEnqueue_Cat" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FIFOAnimalShelterTest_testDequeue - 2018.12.11 at 19h 46m 52s.xml">
+      <configuration name="FIFOAnimalShelterTest.testDequeue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FIFOAnimalShelterTest_testDequeue - 2018.12.11 at 19h 48m 17s.xml">
+      <configuration name="FIFOAnimalShelterTest.testDequeue" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13892618" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1409396" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -403,7 +428,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -489,34 +514,35 @@
     <entry file="file://$PROJECT_DIR$/../readmes/pseudoqueue.md" />
     <entry file="file://$PROJECT_DIR$/../readmes/linkedlistmerge.md" />
     <entry file="file://$PROJECT_DIR$/../readmes/stacksandqueues.md" />
-    <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Dog.java">
+    <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Dog.java" />
+    <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Cat.java" />
+    <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Animal.java" />
+    <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" />
+    <entry file="file://$PROJECT_DIR$/../src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/fifoanimalshelter/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Cat.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fifoanimalshelter/FIFOAnimalShelter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="536">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding>
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="59" column="122" lean-forward="true" selection-start-line="59" selection-start-column="122" selection-end-line="59" selection-end-column="122" />
         </state>
       </provider>
     </entry>

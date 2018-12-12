@@ -1,4 +1,4 @@
 package fifoanimalshelter;
 
-public class Cat {
+public class Cat extends Animal {
 }

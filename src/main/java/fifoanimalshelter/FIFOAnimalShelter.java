@@ -20,12 +20,28 @@ public class FIFOAnimalShelter {
         dogs.enqueue(dog);
     }
 
-    public Cat dequeue(Cat) {
-        return cats.dequeue();
+    public Animal dequeue(String preference) {
+        if(preference.toLowerCase().equals("cat")) {
+            return cats.dequeue();
+        }
+        if(preference.toLowerCase().equals("dog")) {
+            return dogs.dequeue();
+        }
+        return null;
     }
 
-    public Dog dequeue(Dog) {
-        return dogs.dequeue();
+    public boolean isEmpty() {
+        if(cats.isEmpty() && dogs.isEmpty()) {
+            return true;
+        }
+        return false;
     }
 
+    protected Queue<Cat> getCats() {
+        return cats;
+    }
+
+    protected Queue<Dog> getDogs() {
+        return dogs;
+    }
 }
