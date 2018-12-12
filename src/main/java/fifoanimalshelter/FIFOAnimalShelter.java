@@ -13,10 +13,12 @@ public class FIFOAnimalShelter {
     }
 
     public void enqueue(Cat cat) {
+
         cats.enqueue(cat);
     }
 
     public void enqueue(Dog dog) {
+
         dogs.enqueue(dog);
     }
 
