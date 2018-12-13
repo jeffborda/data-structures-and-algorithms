@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -42,40 +42,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Animal.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/multibracketvalidation/MultiBracketValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="51">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../readmes/pseudoqueue.md">
+        <entry file="file://$PROJECT_DIR$/readmes/multibracketvalidation.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="442">
-                <caret line="26" column="28" selection-end-line="27" selection-end-column="64" />
+              <first_editor relative-caret-position="353">
+                <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/multibracketvalidation/MultiBracketValidationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="28" column="122" selection-start-line="28" selection-start-column="122" selection-end-line="28" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -99,12 +90,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/ArrayReverse.java" />
         <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/../src/main/java/ArrayShift.java" />
@@ -150,16 +140,19 @@
         <option value="$PROJECT_DIR$/../src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" />
         <option value="$PROJECT_DIR$/src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/readmes/fifoanimalshelter.md" />
         <option value="$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/multibracketvalidation/MultiBracketValidationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/multibracketvalidation/MultiBracketValidation.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/readmes/multibracketvalidation.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -169,13 +162,67 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="readmes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fifoanimalshelter" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544587813370" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544676076290" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -187,11 +234,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="multibracketvalidation" />
       <recent name="fifoanimalshelter" />
       <recent name="QueueWithStacks" />
       <recent name="stacksandqueues" />
       <recent name="linkedlist" />
-      <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -212,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FIFOAnimalShelterTest.testDequeue">
+  <component name="RunManager" selected="JUnit.MultiBracketValidationTest">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -232,89 +279,91 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FIFOAnimalShelterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiBracketValidationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fifoanimalshelter.*" />
+          <option name="PATTERN" value="multibracketvalidation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fifoanimalshelter" />
-      <option name="MAIN_CLASS_NAME" value="fifoanimalshelter.FIFOAnimalShelterTest" />
+      <option name="PACKAGE_NAME" value="multibracketvalidation" />
+      <option name="MAIN_CLASS_NAME" value="multibracketvalidation.MultiBracketValidationTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FIFOAnimalShelterTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiBracketValidationTest.testAreMatchingBrackets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fifoanimalshelter.*" />
+          <option name="PATTERN" value="multibracketvalidation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fifoanimalshelter" />
-      <option name="MAIN_CLASS_NAME" value="fifoanimalshelter.FIFOAnimalShelterTest" />
-      <option name="METHOD_NAME" value="testConstructor" />
+      <option name="PACKAGE_NAME" value="multibracketvalidation" />
+      <option name="MAIN_CLASS_NAME" value="multibracketvalidation.MultiBracketValidationTest" />
+      <option name="METHOD_NAME" value="testAreMatchingBrackets" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FIFOAnimalShelterTest.testDequeue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiBracketValidationTest.testIsClosingBracket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fifoanimalshelter.*" />
+          <option name="PATTERN" value="multibracketvalidation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fifoanimalshelter" />
-      <option name="MAIN_CLASS_NAME" value="fifoanimalshelter.FIFOAnimalShelterTest" />
-      <option name="METHOD_NAME" value="testDequeue" />
+      <option name="PACKAGE_NAME" value="multibracketvalidation" />
+      <option name="MAIN_CLASS_NAME" value="multibracketvalidation.MultiBracketValidationTest" />
+      <option name="METHOD_NAME" value="testIsClosingBracket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FIFOAnimalShelterTest.testEnqueue_Cat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiBracketValidationTest.testIsOpeningBracket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fifoanimalshelter.*" />
+          <option name="PATTERN" value="multibracketvalidation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="fifoanimalshelter" />
-      <option name="MAIN_CLASS_NAME" value="fifoanimalshelter.FIFOAnimalShelterTest" />
-      <option name="METHOD_NAME" value="testEnqueue_Cat" />
+      <option name="PACKAGE_NAME" value="multibracketvalidation" />
+      <option name="MAIN_CLASS_NAME" value="multibracketvalidation.MultiBracketValidationTest" />
+      <option name="METHOD_NAME" value="testIsOpeningBracket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PseudoQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiBracketValidationTest.testValidateBrackets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="QueueWithStacks.*" />
+          <option name="PATTERN" value="multibracketvalidation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="QueueWithStacks" />
-      <option name="MAIN_CLASS_NAME" value="QueueWithStacks.PseudoQueueTest" />
+      <option name="PACKAGE_NAME" value="multibracketvalidation" />
+      <option name="MAIN_CLASS_NAME" value="multibracketvalidation.MultiBracketValidationTest" />
+      <option name="METHOD_NAME" value="testValidateBrackets" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FIFOAnimalShelterTest.testDequeue" />
-        <item itemvalue="JUnit.FIFOAnimalShelterTest.testEnqueue_Cat" />
-        <item itemvalue="JUnit.FIFOAnimalShelterTest.testConstructor" />
-        <item itemvalue="JUnit.FIFOAnimalShelterTest" />
-        <item itemvalue="JUnit.PseudoQueueTest" />
+        <item itemvalue="JUnit.MultiBracketValidationTest" />
+        <item itemvalue="JUnit.MultiBracketValidationTest.testValidateBrackets" />
+        <item itemvalue="JUnit.MultiBracketValidationTest.testAreMatchingBrackets" />
+        <item itemvalue="JUnit.MultiBracketValidationTest.testIsOpeningBracket" />
+        <item itemvalue="JUnit.MultiBracketValidationTest.testIsClosingBracket" />
       </list>
     </recent_temporary>
   </component>
@@ -332,42 +381,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FIFOAnimalShelterTest - 2018.12.11 at 19h 33m 02s.xml">
+    <history-entry file="FIFOAnimalShelterTest - 2018.12.12 at 18h 52m 14s.xml">
       <configuration name="FIFOAnimalShelterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest_testConstructor - 2018.12.11 at 19h 37m 41s.xml">
-      <configuration name="FIFOAnimalShelterTest.testConstructor" configurationId="JUnit" />
+    <history-entry file="MultiBracketValidationTest_testIsClosingBracket - 2018.12.12 at 19h 37m 05s.xml">
+      <configuration name="MultiBracketValidationTest.testIsClosingBracket" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest_testConstructor - 2018.12.11 at 19h 37m 58s.xml">
-      <configuration name="FIFOAnimalShelterTest.testConstructor" configurationId="JUnit" />
+    <history-entry file="MultiBracketValidationTest_testIsClosingBracket - 2018.12.12 at 19h 38m 28s.xml">
+      <configuration name="MultiBracketValidationTest.testIsClosingBracket" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest_testEnqueue_Cat - 2018.12.11 at 19h 39m 38s.xml">
-      <configuration name="FIFOAnimalShelterTest.testEnqueue_Cat" configurationId="JUnit" />
+    <history-entry file="MultiBracketValidationTest_testIsOpeningBracket - 2018.12.12 at 19h 41m 16s.xml">
+      <configuration name="MultiBracketValidationTest.testIsOpeningBracket" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest_testEnqueue_Cat - 2018.12.11 at 19h 42m 41s.xml">
-      <configuration name="FIFOAnimalShelterTest.testEnqueue_Cat" configurationId="JUnit" />
+    <history-entry file="MultiBracketValidationTest_testAreMatchingBrackets - 2018.12.12 at 19h 46m 44s.xml">
+      <configuration name="MultiBracketValidationTest.testAreMatchingBrackets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest_testDequeue - 2018.12.11 at 19h 46m 52s.xml">
-      <configuration name="FIFOAnimalShelterTest.testDequeue" configurationId="JUnit" />
+    <history-entry file="MultiBracketValidationTest_testValidateBrackets - 2018.12.12 at 19h 54m 00s.xml">
+      <configuration name="MultiBracketValidationTest.testValidateBrackets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest_testDequeue - 2018.12.11 at 19h 48m 17s.xml">
-      <configuration name="FIFOAnimalShelterTest.testDequeue" configurationId="JUnit" />
+    <history-entry file="MultiBracketValidationTest_testValidateBrackets - 2018.12.12 at 19h 56m 42s.xml">
+      <configuration name="MultiBracketValidationTest.testValidateBrackets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest_testDequeue - 2018.12.11 at 19h 51m 54s.xml">
-      <configuration name="FIFOAnimalShelterTest.testDequeue" configurationId="JUnit" />
+    <history-entry file="MultiBracketValidationTest_testValidateBrackets - 2018.12.12 at 19h 58m 43s.xml">
+      <configuration name="MultiBracketValidationTest.testValidateBrackets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest_testDequeue - 2018.12.11 at 19h 52m 56s.xml">
-      <configuration name="FIFOAnimalShelterTest.testDequeue" configurationId="JUnit" />
+    <history-entry file="MultiBracketValidationTest_testValidateBrackets - 2018.12.12 at 19h 59m 28s.xml">
+      <configuration name="MultiBracketValidationTest.testValidateBrackets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest_testDequeue - 2018.12.11 at 19h 54m 35s.xml">
-      <configuration name="FIFOAnimalShelterTest.testDequeue" configurationId="JUnit" />
+    <history-entry file="MultiBracketValidationTest - 2018.12.12 at 19h 59m 33s.xml">
+      <configuration name="MultiBracketValidationTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14295302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24832214" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -376,7 +425,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -455,66 +504,85 @@
     <entry file="file://$PROJECT_DIR$/../src/test/java/stacksandqueues/StackTest.java" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/stacksandqueues/Stack.java" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/stacksandqueues/Queue.java" />
-    <entry file="file://$PROJECT_DIR$/../README.md" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/ArrayShift.java" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/QueueWithStacks/PseudoQueue.java" />
     <entry file="file://$PROJECT_DIR$/../src/test/java/QueueWithStacks/PseudoQueueTest.java" />
-    <entry file="file://$PROJECT_DIR$/../readmes/pseudoqueue.md" />
     <entry file="file://$PROJECT_DIR$/../readmes/linkedlistmerge.md" />
     <entry file="file://$PROJECT_DIR$/../readmes/stacksandqueues.md" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Dog.java" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Cat.java" />
+    <entry file="file://$PROJECT_DIR$/../README.md" />
+    <entry file="file://$PROJECT_DIR$/../readmes/fifoanimalshelter.md" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Animal.java" />
+    <entry file="file://$PROJECT_DIR$/../readmes/pseudoqueue.md" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" />
     <entry file="file://$PROJECT_DIR$/../src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java" />
-    <entry file="file://$PROJECT_DIR$/../README.md">
+    <entry file="file://$PROJECT_DIR$/src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+          <first_editor relative-caret-position="238">
+            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../readmes/pseudoqueue.md">
+    <entry file="file://$PROJECT_DIR$/src/test/java/multibracketvalidation/MultiBracketValidationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="122" selection-start-line="28" selection-start-column="122" selection-end-line="28" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/multibracketvalidation/MultiBracketValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/stacksandqueues.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="442">
-            <caret line="26" column="28" selection-end-line="27" selection-end-column="64" />
+          <first_editor relative-caret-position="-35">
+            <caret line="9" lean-forward="true" selection-end-line="29" selection-end-column="136" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../readmes/fifoanimalshelter.md">
+    <entry file="file://$PROJECT_DIR$/readmes/linkedlistinsertions.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="289">
-            <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <first_editor relative-caret-position="271">
+            <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="30" selection-end-column="66" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
+    <entry file="file://$PROJECT_DIR$/readmes/linkedlist.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-35" />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+    <entry file="file://$PROJECT_DIR$/readmes/multibracketvalidation.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="353">
+            <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
