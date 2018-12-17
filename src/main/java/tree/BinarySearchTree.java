@@ -49,11 +49,11 @@ public class BinarySearchTree extends BinaryTree {
                 return current;
             }
 
-            if(current.value < value) {
+            if(current.value > value) {
                 current = current.left;
             }
             else {
-                current = current.left;
+                current = current.right;
             }
         }
         return null;

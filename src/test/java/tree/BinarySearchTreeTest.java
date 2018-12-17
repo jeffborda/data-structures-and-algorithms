@@ -37,7 +37,30 @@ public class BinarySearchTreeTest {
         ArrayList<Integer> expected2 = new ArrayList<>(Arrays.asList(arr2));
         assertTrue("Confirm that values were inserted in correct order.", testTree.inOrder().equals(expected2));
         assertFalse("Should return 'false' if trying to add a number already in BST.", testTree.add(0));
+    }
 
+    @Test
+    public void testFind() {
+
+        BinarySearchTree testTree = new BinarySearchTree();
+        assertEquals("Should return 'null' when trying to find a value in an empty tree.", null, testTree.find(1));
+        assertEquals("Should return 'null' when trying to find a value in an empty tree.", null, testTree.find(2));
+
+        testTree.add(10);
+        testTree.add(5);
+        testTree.add(15);
+        testTree.add(0);
+        testTree.add(7);
+        testTree.add(12);
+        testTree.add(20);
+        //              10
+        //          5        15
+        //        0   7     12  20
+
+        assertEquals("Make sure the value of the Node found matches input.", 7, testTree.find(7).value);
+        assertEquals("Make sure the value of the Node found matches input.", 15, testTree.find(15).value);
+        assertEquals("The right of '15' should contain the value of '20'.", 20, testTree.find(15).right.value);
+        assertEquals("Should return null if value not in the tree.", null, testTree.find(99));
 
     }
 }
