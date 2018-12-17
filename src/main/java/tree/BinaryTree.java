@@ -4,8 +4,11 @@ import java.util.ArrayList;
 
 public class BinaryTree {
 
-    public Node root = null;
+    public Node root;
 
+    public BinaryTree() {
+        this.root = null;
+    }
     public BinaryTree(Node root) {
         this.root  = root;
     }
