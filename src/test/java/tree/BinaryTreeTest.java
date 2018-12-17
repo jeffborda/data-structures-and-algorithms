@@ -53,20 +53,37 @@ public class BinaryTreeTest {
         //   2    6
         // 1   3  5   7
         BinaryTree testTree = new BinaryTree(n4);
-        //Expect: 1, 3, 5, 7, 2, 6, 4
+        //Expect: 4, 1, 2, 3, 5, 6, 7
         ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(4);
         expected.add(1);
+        expected.add(2);
         expected.add(3);
         expected.add(5);
-        expected.add(7);
-        expected.add(2);
         expected.add(6);
-        expected.add(4);
+        expected.add(7);
         assertTrue(testTree.preOrder().equals(expected));
     }
 
     @Test
     public void testPostOrder() {
         // POST-ORDER: Left, Right, Root
+
+        Node n4 = new Node(4, new Node(2, new Node(1, null, null), new Node(3, null, null)), new Node(6, new Node(5, null, null), new Node(7, null, null)));
+        //     4
+        //   2    6
+        // 1   3  5   7
+        BinaryTree testTree = new BinaryTree(n4);
+        //Expect: 1, 3, 2, 5, 7, 6, 4
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(1);
+        expected.add(3);
+        expected.add(2);
+        expected.add(5);
+        expected.add(7);
+        expected.add(6);
+        expected.add(4);
+        assertTrue(testTree.postOrder().equals(expected));
+
     }
 }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -40,7 +41,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-274">
@@ -53,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
+            <state relative-caret-position="256">
+              <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -153,8 +154,8 @@
         <option value="$PROJECT_DIR$/readmes/multibracketvalidation.md" />
         <option value="$PROJECT_DIR$/src/main/java/tree/Tree.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/Node.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" />
       </list>
     </option>
   </component>
@@ -242,7 +243,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545074293228" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545075413232" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -279,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BinaryTreeTest.testInOrder">
+  <component name="RunManager" selected="JUnit.BinaryTreeTest.testPostOrder">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -315,6 +316,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BinaryTreeTest.testPostOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.BinaryTreeTest" />
+      <option name="METHOD_NAME" value="testPostOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeTest.testPreOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.BinaryTreeTest" />
+      <option name="METHOD_NAME" value="testPreOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FIFOAnimalShelterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
@@ -343,45 +376,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiBracketValidationTest.testAreMatchingBrackets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="multibracketvalidation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="multibracketvalidation" />
-      <option name="MAIN_CLASS_NAME" value="multibracketvalidation.MultiBracketValidationTest" />
-      <option name="METHOD_NAME" value="testAreMatchingBrackets" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiBracketValidationTest.testValidateBrackets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="multibracketvalidation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="multibracketvalidation" />
-      <option name="MAIN_CLASS_NAME" value="multibracketvalidation.MultiBracketValidationTest" />
-      <option name="METHOD_NAME" value="testValidateBrackets" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinaryTreeTest.testPostOrder" />
+        <item itemvalue="JUnit.BinaryTreeTest.testPreOrder" />
         <item itemvalue="JUnit.BinaryTreeTest.testInOrder" />
         <item itemvalue="JUnit.FIFOAnimalShelterTest" />
         <item itemvalue="JUnit.MultiBracketValidationTest" />
-        <item itemvalue="JUnit.MultiBracketValidationTest.testValidateBrackets" />
-        <item itemvalue="JUnit.MultiBracketValidationTest.testAreMatchingBrackets" />
       </list>
     </recent_temporary>
   </component>
@@ -399,35 +400,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MultiBracketValidationTest_testValidateBrackets - 2018.12.12 at 19h 54m 00s.xml">
-      <configuration name="MultiBracketValidationTest.testValidateBrackets" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPreOrder - 2018.12.17 at 11h 19m 14s.xml">
+      <configuration name="BinaryTreeTest.testPreOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MultiBracketValidationTest_testValidateBrackets - 2018.12.12 at 19h 56m 42s.xml">
-      <configuration name="MultiBracketValidationTest.testValidateBrackets" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPreOrder - 2018.12.17 at 11h 20m 29s.xml">
+      <configuration name="BinaryTreeTest.testPreOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MultiBracketValidationTest_testValidateBrackets - 2018.12.12 at 19h 58m 43s.xml">
-      <configuration name="MultiBracketValidationTest.testValidateBrackets" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPreOrder - 2018.12.17 at 11h 26m 47s.xml">
+      <configuration name="BinaryTreeTest.testPreOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MultiBracketValidationTest_testValidateBrackets - 2018.12.12 at 19h 59m 28s.xml">
-      <configuration name="MultiBracketValidationTest.testValidateBrackets" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPreOrder - 2018.12.17 at 11h 27m 26s.xml">
+      <configuration name="BinaryTreeTest.testPreOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MultiBracketValidationTest - 2018.12.12 at 19h 59m 33s.xml">
-      <configuration name="MultiBracketValidationTest" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPreOrder - 2018.12.17 at 11h 33m 17s.xml">
+      <configuration name="BinaryTreeTest.testPreOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest - 2018.12.17 at 09h 15m 44s.xml">
-      <configuration name="FIFOAnimalShelterTest" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPreOrder - 2018.12.17 at 11h 33m 37s.xml">
+      <configuration name="BinaryTreeTest.testPreOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FIFOAnimalShelterTest - 2018.12.17 at 09h 16m 41s.xml">
-      <configuration name="FIFOAnimalShelterTest" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPreOrder - 2018.12.17 at 11h 34m 05s.xml">
+      <configuration name="BinaryTreeTest.testPreOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest_testInOrder - 2018.12.17 at 10h 55m 52s.xml">
-      <configuration name="BinaryTreeTest.testInOrder" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPostOrder - 2018.12.17 at 11h 35m 32s.xml">
+      <configuration name="BinaryTreeTest.testPostOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest_testInOrder - 2018.12.17 at 11h 03m 42s.xml">
-      <configuration name="BinaryTreeTest.testInOrder" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPostOrder - 2018.12.17 at 11h 36m 11s.xml">
+      <configuration name="BinaryTreeTest.testPostOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest_testInOrder - 2018.12.17 at 11h 10m 49s.xml">
-      <configuration name="BinaryTreeTest.testInOrder" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testPostOrder - 2018.12.17 at 11h 36m 56s.xml">
+      <configuration name="BinaryTreeTest.testPostOrder" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -566,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-274">
@@ -581,6 +575,13 @@
             <element signature="e#98#99#0" expanded="true" />
             <element signature="e#130#131#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
         </state>
       </provider>
     </entry>
