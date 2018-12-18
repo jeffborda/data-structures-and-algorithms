@@ -42,6 +42,12 @@ public class BinaryTreeTest {
         inOrderExpected2.add(4);
         assertTrue(testTree2.inOrder().equals(inOrderExpected2));
 
+        Node n7 = new Node(7, null, null);
+        BinaryTree testTree3 = new BinaryTree(n7);
+        ArrayList<Integer> inOrderExpected3 = new ArrayList<>();
+        inOrderExpected3.add(7);
+        assertTrue("Check on one node tree.", testTree3.inOrder().equals(inOrderExpected3));
+
     }
 
     @Test
@@ -63,6 +69,28 @@ public class BinaryTreeTest {
         expected.add(5);
         expected.add(7);
         assertTrue(testTree.preOrder().equals(expected));
+
+        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        BinaryTree testTree2 = new BinaryTree(n1);
+        ArrayList<Integer> expected2 = new ArrayList<>();
+        //Expect: 1, 3, 5, 7, 2, 6, 4
+        expected2.add(1);
+        expected2.add(3);
+        expected2.add(5);
+        expected2.add(7);
+        expected2.add(2);
+        expected2.add(6);
+        expected2.add(4);
+        assertTrue(testTree2.preOrder().equals(expected2));
+
+        Node n7 = new Node(7, null, null);
+        BinaryTree testTree3 = new BinaryTree(n7);
+        ArrayList<Integer> expected3 = new ArrayList<>();
+        expected3.add(7);
+        assertTrue("Check on one node tree.", testTree3.preOrder().equals(expected3));
     }
 
     @Test
@@ -84,6 +112,29 @@ public class BinaryTreeTest {
         expected.add(6);
         expected.add(4);
         assertTrue(testTree.postOrder().equals(expected));
+
+        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        BinaryTree testTree2 = new BinaryTree(n1);
+        ArrayList<Integer> expected2 = new ArrayList<>();
+        //Expect: 5, 7, 3, 6, 4, 2, 1
+        expected2.add(5);
+        expected2.add(7);
+        expected2.add(3);
+        expected2.add(6);
+        expected2.add(4);
+        expected2.add(2);
+        expected2.add(1);
+
+        assertTrue(testTree2.postOrder().equals(expected2));
+
+        Node n7 = new Node(7, null, null);
+        BinaryTree testTree3 = new BinaryTree(n7);
+        ArrayList<Integer> expected3 = new ArrayList<>();
+        expected3.add(7);
+        assertTrue("Check on one node tree.", testTree3.postOrder().equals(expected3));
 
     }
 
