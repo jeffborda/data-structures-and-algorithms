@@ -13,3 +13,4 @@ This repo is home to my Java 401 code challenges at Code Fellows.
 * [Challenge 12 - FIFO Animal Shelter](readmes/fifoanimalshelter.md)
 * [Challenge 13 - Multi-Bracket Validation](readmes/multibracketvalidation.md)
 * [Challenge 15 - Trees](readmes/trees.md)
+* [Challenge 16 - FizzBuzzTree](readmes/fizzbuzztree.md)

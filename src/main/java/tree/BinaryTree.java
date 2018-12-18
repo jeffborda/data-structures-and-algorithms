@@ -2,44 +2,36 @@ package tree;
 
 import java.util.ArrayList;
 
-public class BinaryTree {
+public class BinaryTree<T> {
 
-    public Node root;
+    public Node<T> root;
 
     public BinaryTree() {
         this.root = null;
     }
-    public BinaryTree(Node root) {
+    public BinaryTree(Node<T> root) {
         this.root  = root;
     }
 
-    public ArrayList<Integer> inOrder() {
-        ArrayList<Integer> result = new ArrayList<>();
-        Node current = root;
-
+    public ArrayList<T> inOrder() {
+        ArrayList<T> result = new ArrayList<>();
         preOrderHelper(result, root);
-
         return result;
     }
 
-    public ArrayList<Integer> preOrder() {
-        ArrayList<Integer> result = new ArrayList<>();
-        Node current = root;
-
-        inOrderHelper(result, current);
-
+    public ArrayList<T> preOrder() {
+        ArrayList<T> result = new ArrayList<>();
+        inOrderHelper(result, root);
         return result;
     }
 
-    public ArrayList<Integer> postOrder() {
-        ArrayList<Integer> result = new ArrayList<>();
-        Node current = root;
-
-        postOrderHelper(result, current);
+    public ArrayList<T> postOrder() {
+        ArrayList<T> result = new ArrayList<>();
+        postOrderHelper(result, root);
         return result;
     }
 
-    private void preOrderHelper(ArrayList list, Node current) {
+    private void preOrderHelper(ArrayList list, Node<T> current) {
         if(current == null) {
             return;
         }
@@ -49,17 +41,18 @@ public class BinaryTree {
         preOrderHelper(list, current.right);
     }
 
-    private void inOrderHelper(ArrayList list, Node current) {
+    //Call inOrderHelper
+    private void inOrderHelper(ArrayList list, Node<T> current) {
         if(current == null) {
             return;
         }
 
         list.add(current.value);
-        preOrderHelper(list, current.left);
-        preOrderHelper(list, current.right);
+        inOrderHelper(list, current.left);
+        inOrderHelper(list, current.right);
     }
 
-    private void postOrderHelper(ArrayList list, Node current) {
+    private void postOrderHelper(ArrayList list, Node<T> current) {
         if(current == null) {
             return;
         }

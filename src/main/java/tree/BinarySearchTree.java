@@ -1,16 +1,16 @@
 package tree;
 
-public class BinarySearchTree extends BinaryTree {
+public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree {
 
     public BinarySearchTree() {
         super();
     }
 
-    public boolean add(int value) {
-        Node current = root;
+    public boolean add(T value) {
+        Node<T> current = root;
 
         if (root == null) {
-            root = new Node(value, null, null);
+            root = new Node<T>(value, null, null);
             return true;
         }
 
@@ -18,12 +18,12 @@ public class BinarySearchTree extends BinaryTree {
             if (value == current.value) {
                 return false;
             }
-            else if (value < current.value) {
+            else if (value.compareTo(current.value) < 0) {
                 if (current.left != null) {
                     current = current.left;
                 }
                 else {
-                    current.left = new Node(value, null, null);
+                    current.left = new Node<T>(value, null, null);
                     return true;
                 }
             }
@@ -32,7 +32,7 @@ public class BinarySearchTree extends BinaryTree {
                     current = current.right;
                 }
                 else {
-                    current.right = new Node(value, null, null);
+                    current.right = new Node<T>(value, null, null);
                     return true;
                 }
             }
@@ -40,8 +40,8 @@ public class BinarySearchTree extends BinaryTree {
         return false;
     }
 
-    public Node find(int value) {
-        Node current = root;
+    public Node<T> find(T value) {
+        Node<T> current = root;
 
         while (current != null) {
 
@@ -49,7 +49,7 @@ public class BinarySearchTree extends BinaryTree {
                 return current;
             }
 
-            if(current.value > value) {
+            if(value.compareTo(current.value) < 0) {
                 current = current.left;
             }
             else {

@@ -53,14 +53,14 @@ public class BinaryTreeTest {
         //   2    6
         // 1   3  5   7
         BinaryTree testTree = new BinaryTree(n4);
-        //Expect: 4, 1, 2, 3, 5, 6, 7
+        //Expect: 4, 2, 1, 3, 6, 5, 7
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(4);
-        expected.add(1);
         expected.add(2);
+        expected.add(1);
         expected.add(3);
-        expected.add(5);
         expected.add(6);
+        expected.add(5);
         expected.add(7);
         assertTrue(testTree.preOrder().equals(expected));
     }
