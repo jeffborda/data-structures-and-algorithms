@@ -1,5 +1,7 @@
 package tree;
 
+import stacksandqueues.Queue;
+
 import java.util.ArrayList;
 
 public class BinaryTree<T> {
@@ -11,6 +13,31 @@ public class BinaryTree<T> {
     }
     public BinaryTree(Node<T> root) {
         this.root  = root;
+    }
+
+    /*
+     * This method prints the input tree with a breadth traversal.
+     */
+    public static void breadthFirst(BinaryTree input) {
+        Queue<Node> nodes = new Queue<>();
+        if(input.root != null) {
+            nodes.enqueue(input.root);
+        }
+        int printCount = 0;
+        while(nodes.size() > 0) {
+            Node temp = nodes.dequeue();
+            if(printCount > 0) {
+                System.out.print(", ");
+            }
+            System.out.print(temp.value);
+            printCount++;
+            if(temp.left != null) {
+                nodes.enqueue(temp.left);
+            }
+            if(temp.right != null) {
+                nodes.enqueue(temp.right);
+            }
+        }
     }
 
     public ArrayList<T> inOrder() {
