@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,17 +46,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="92" column="83" selection-start-line="92" selection-start-column="83" selection-end-line="92" selection-end-column="83" />
+            <state relative-caret-position="527">
+              <caret line="188" column="125" selection-start-line="188" selection-start-column="125" selection-end-line="188" selection-end-column="125" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinarySearchTreeTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/linkedlist/LinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
+            <state relative-caret-position="187">
+              <caret line="57" column="96" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -62,14 +64,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="236">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#118#119#0" expanded="true" />
                 <element signature="e#149#150#0" expanded="true" />
                 <element signature="e#98#99#0" expanded="true" />
                 <element signature="e#130#131#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tree/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -146,21 +158,21 @@
         <option value="$PROJECT_DIR$/src/main/java/tree/Tree.java" />
         <option value="$PROJECT_DIR$/readmes/trees.md" />
         <option value="$PROJECT_DIR$/src/test/java/tree/BinarySearchTreeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tree/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/tree/Node.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/fizzbuzztree/FizzBuzzTree.java" />
         <option value="$PROJECT_DIR$/src/test/java/fizzbuzztree/FizzBuzzTreeTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/readmes/fizzbuzztree.md" />
+        <option value="$PROJECT_DIR$/src/main/java/tree/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="979" />
-    <option name="height" value="1040" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -181,11 +193,6 @@
             <path>
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="readmes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -205,22 +212,46 @@
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="fizzbuzztree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stacksandqueues" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -230,7 +261,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545112051001" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545192553180" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -270,7 +301,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BinaryTreeTest.testPostOrder">
+  <component name="RunManager" selected="JUnit.BinaryTreeTest.testBreadthFirst">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -304,7 +335,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeTest.testBreadthFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
@@ -314,6 +361,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="tree" />
       <option name="MAIN_CLASS_NAME" value="tree.BinaryTreeTest" />
+      <option name="METHOD_NAME" value="testBreadthFirst" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -350,29 +399,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FizzBuzzTreeTest.testFizzBuzzTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fizzbuzztree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fizzbuzztree" />
-      <option name="MAIN_CLASS_NAME" value="fizzbuzztree.FizzBuzzTreeTest" />
-      <option name="METHOD_NAME" value="testFizzBuzzTree" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinaryTreeTest.testBreadthFirst" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.testAdd" />
+        <item itemvalue="JUnit.BinarySearchTreeTest" />
         <item itemvalue="JUnit.BinaryTreeTest.testPostOrder" />
         <item itemvalue="JUnit.BinaryTreeTest.testPreOrder" />
-        <item itemvalue="JUnit.BinaryTreeTest" />
-        <item itemvalue="JUnit.FizzBuzzTreeTest.testFizzBuzzTree" />
-        <item itemvalue="JUnit.BinarySearchTreeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -390,35 +423,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FizzBuzzTreeTest_testFizzBuzzTree - 2018.12.17 at 21h 09m 47s.xml">
-      <configuration name="FizzBuzzTreeTest.testFizzBuzzTree" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 19h 51m 12s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FizzBuzzTreeTest_testFizzBuzzTree - 2018.12.17 at 21h 10m 30s.xml">
-      <configuration name="FizzBuzzTreeTest.testFizzBuzzTree" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 19h 51m 43s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FizzBuzzTreeTest_testFizzBuzzTree - 2018.12.17 at 21h 11m 20s.xml">
-      <configuration name="FizzBuzzTreeTest.testFizzBuzzTree" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 19h 55m 23s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FizzBuzzTreeTest_testFizzBuzzTree - 2018.12.17 at 21h 12m 19s.xml">
-      <configuration name="FizzBuzzTreeTest.testFizzBuzzTree" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 19h 58m 55s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FizzBuzzTreeTest_testFizzBuzzTree - 2018.12.17 at 21h 13m 23s.xml">
-      <configuration name="FizzBuzzTreeTest.testFizzBuzzTree" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 19h 59m 34s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FizzBuzzTreeTest_testFizzBuzzTree - 2018.12.17 at 21h 13m 47s.xml">
-      <configuration name="FizzBuzzTreeTest.testFizzBuzzTree" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 20h 00m 35s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FizzBuzzTreeTest_testFizzBuzzTree - 2018.12.17 at 21h 40m 33s.xml">
-      <configuration name="FizzBuzzTreeTest.testFizzBuzzTree" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 20h 01m 07s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest - 2018.12.17 at 21h 40m 48s.xml">
-      <configuration name="BinaryTreeTest" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 20h 01m 10s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest_testPreOrder - 2018.12.17 at 21h 42m 31s.xml">
-      <configuration name="BinaryTreeTest.testPreOrder" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 20h 03m 23s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinaryTreeTest_testPreOrder - 2018.12.17 at 21h 43m 58s.xml">
-      <configuration name="BinaryTreeTest.testPreOrder" configurationId="JUnit" />
+    <history-entry file="BinaryTreeTest_testBreadthFirst - 2018.12.18 at 20h 05m 09s.xml">
+      <configuration name="BinaryTreeTest.testBreadthFirst" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -486,17 +519,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/ComparisonCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../src/test/java/ArrayShiftTest.java" />
-    <entry file="file://$PROJECT_DIR$/../src/main/java/BinarySearch.java" />
-    <entry file="file://$PROJECT_DIR$/../src/test/java/BinarySearchTest.java" />
-    <entry file="file://$PROJECT_DIR$/../readmes/arrayshift.md" />
     <entry file="file://$PROJECT_DIR$/../readmes/binarysearch.md" />
     <entry file="file://$PROJECT_DIR$/../readmes/arrayreverse.md" />
     <entry file="file://$PROJECT_DIR$/../.gitignore" />
@@ -558,24 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-          <folding>
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#133#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -631,21 +635,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinarySearchTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fizzbuzztree/FizzBuzzTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="49" />
+        <state relative-caret-position="34">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ArrayShiftTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/StackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BinarySearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/linkedlist/LinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="57" column="96" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="236">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#118#119#0" expanded="true" />
             <element signature="e#149#150#0" expanded="true" />
             <element signature="e#98#99#0" expanded="true" />
@@ -654,17 +715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinarySearchTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="92" column="83" selection-start-line="92" selection-start-column="83" selection-end-line="92" selection-end-column="83" />
+        <state relative-caret-position="527">
+          <caret line="188" column="125" selection-start-line="188" selection-start-column="125" selection-end-line="188" selection-end-column="125" />
         </state>
       </provider>
     </entry>
