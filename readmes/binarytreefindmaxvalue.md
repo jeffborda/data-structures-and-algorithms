@@ -1,5 +1,6 @@
 # Binary Tree - Find Maximum Value
 * [Code](../src/main/java/tree)
+* Parter: Dave Muench
 
 For this challenge I used recursion to compare max values in the tree.  To do this I made a wrapper function where the recursion occurs, and a simple helper function to find the max values. 
 
