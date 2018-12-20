@@ -40,6 +40,31 @@ public class BinaryTree<T> {
         }
     }
 
+    public static int findMaxValue(BinaryTree tree) throws IllegalStateException {
+        if(tree.root == null) {
+            throw new IllegalStateException();
+        }
+        return findMaxHelper(tree.root);
+    }
+
+    private static int findMaxHelper(Node root) {
+        int max = (int)root.value;
+        if(root.left != null) {
+            max = max(max, findMaxHelper(root.left));
+        }
+        if(root.right != null) {
+            max = max(max, findMaxHelper(root.right));
+        }
+        return max;
+    }
+
+    private static int max(int a, int b) {
+        if(a > b) {
+            return a;
+        }
+        return b;
+    }
+
     public ArrayList<T> inOrder() {
         ArrayList<T> result = new ArrayList<>();
         preOrderHelper(result, root);

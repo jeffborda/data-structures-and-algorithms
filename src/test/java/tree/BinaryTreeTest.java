@@ -192,4 +192,36 @@ public class BinaryTreeTest {
     }
 
 
+
+
+    @Test
+    public void testFindMaxValue() {
+
+        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+
+        BinaryTree testTree1 = new BinaryTree(n1);
+        assertEquals(7, BinaryTree.findMaxValue(testTree1));
+
+        Node n2 = new Node(4, new Node(2, new Node(1, null, new Node(99, null, null)), new Node(3, null, null)), new Node(6, new Node(5, null, null), new Node(7, new Node(66, null, null), null)));
+        //      4
+        //    2    6
+        //  1   3  5   7
+        //   99       66
+        BinaryTree testTree2 = new BinaryTree(n2);
+        assertEquals(99, BinaryTree.findMaxValue(testTree2));
+
+        Node n3 = new Node(1, null, null);
+        BinaryTree testTree3 = new BinaryTree(n3);
+        assertEquals(1, BinaryTree.findMaxValue(testTree3));
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testFindMaxValueEmptyTree() {
+        BinaryTree emptyTree = new BinaryTree();
+        BinaryTree.findMaxValue(emptyTree);
+    }
+
 }
