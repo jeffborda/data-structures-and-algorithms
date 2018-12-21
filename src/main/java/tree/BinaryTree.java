@@ -40,6 +40,25 @@ public class BinaryTree<T> {
         }
     }
 
+
+    /**
+     * This is a recursive method to find the sum of the odd numbers in a BinaryTree
+     */
+    public static int sumOfOdds(Node<Integer> root) {
+
+        if(root == null) {
+            return 0;
+        }
+        else {
+        int sum = 0;
+        if(root.value % 2 != 0) {
+            sum = root.value;
+        }
+            return sum + sumOfOdds(root.left) + sumOfOdds(root.right);
+        }
+
+    }
+
     public static int findMaxValue(BinaryTree tree) throws IllegalStateException {
         if(tree.root == null) {
             throw new IllegalStateException();

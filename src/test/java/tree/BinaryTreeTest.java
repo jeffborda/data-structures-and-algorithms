@@ -224,4 +224,34 @@ public class BinaryTreeTest {
         BinaryTree.findMaxValue(emptyTree);
     }
 
+    @Test
+    public void testSumOfOdds() {
+
+        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        BinaryTree testTree1 = new BinaryTree(n1);
+        assertEquals("Sum of odds in this tree is '16'.", 16, BinaryTree.sumOfOdds(testTree1.root));
+
+        Node n2 = new Node(4, new Node(2, new Node(1, null, new Node(99, null, null)), new Node(3, null, null)), new Node(6, new Node(5, null, null), new Node(7, new Node(66, null, null), null)));
+        //      4
+        //    2    6
+        //  1   3  5   7
+        //   99       66
+        BinaryTree testTree2 = new BinaryTree(n2);
+        assertEquals("Sum an odds in uneven tree, should be '115'.", 115, BinaryTree.sumOfOdds(testTree2.root));
+
+        Node n3 = new Node(1, null, null);
+        BinaryTree testTree3 = new BinaryTree(n3);
+        assertEquals("Sum a tree of one node with odd value, should be '1'.", 1, BinaryTree.sumOfOdds(testTree3.root));
+
+        Node n4 = new Node(2, null, null);
+        BinaryTree testTree4 = new BinaryTree(n4);
+        assertEquals("Sum a tree of one node with even value, should be '0'.", 0, BinaryTree.sumOfOdds(testTree4.root));
+
+        BinaryTree testTree5 = new BinaryTree();
+        assertEquals("Sum of empty tree, should be '0'.", 0, BinaryTree.sumOfOdds(testTree5.root));
+    }
+
 }
