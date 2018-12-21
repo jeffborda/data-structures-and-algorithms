@@ -49,14 +49,12 @@ public class BinaryTree<T> {
         if(root == null) {
             return 0;
         }
-        else {
+
         int sum = 0;
         if(root.value % 2 != 0) {
             sum = root.value;
         }
-            return sum + sumOfOdds(root.left) + sumOfOdds(root.right);
-        }
-
+        return sum + sumOfOdds(root.left) + sumOfOdds(root.right);
     }
 
     public static int findMaxValue(BinaryTree tree) throws IllegalStateException {
