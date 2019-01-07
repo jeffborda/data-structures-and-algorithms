@@ -13,15 +13,12 @@ public class Node<T> {
         this.neighbors = new LinkedList<>();
     }
 
+    // Adds edge between Nodes.
     protected boolean addEdge(Edge edge) {
         return neighbors.add(edge);
     }
 
-    //
-//    protected boolean hasNeighbors () {
-//
-//    }
-
+    // Helper function to determine if a Node is neighbors with the input Node.
     public boolean hasNeighbor(Node checkNode) {
         for(Edge edge : neighbors) {
             if(edge.vertex2 == checkNode) {
