@@ -12,10 +12,10 @@ public class Edge {
         this.weight = weight;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Start: " + this.vertex1 + " | End: " + this.vertex2 + " | Weight: " + this.weight;
-//    }
+    @Override
+    public String toString() {
+        return "Start: " + this.vertex1 + " | End: " + this.vertex2 + " | Weight: " + this.weight;
+    }
 
 
 }

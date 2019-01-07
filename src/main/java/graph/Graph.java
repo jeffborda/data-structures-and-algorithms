@@ -40,7 +40,22 @@ public class Graph<T> {
         return null;
     }
 
+    // Returns number of Nodes in the Graph
     public int size() {
         return graph.size();
+    }
+    // Returns true if the Graph has no Nodes added, otherwise false
+    public boolean isEmpty() {
+        return graph.isEmpty();
+    }
+
+    // Returns whether or not value is contained in list.
+    public boolean hasNodeValue(T inputValue) {
+        for(Node node : graph) {
+            if(node.getValue().equals(inputValue)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

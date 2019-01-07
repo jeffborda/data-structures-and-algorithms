@@ -17,13 +17,32 @@ public class Node<T> {
         return neighbors.add(edge);
     }
 
+    //
+//    protected boolean hasNeighbors () {
+//
+//    }
+
+    public boolean hasNeighbor(Node checkNode) {
+        for(Edge edge : neighbors) {
+            if(edge.vertex2 == checkNode) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public T getValue() {
+        return this.value;
+    }
+
     @Override
     public String toString() {
-        String neighborsString = "";
-        for(Edge edge : neighbors) {
-            neighborsString += "Neighbor: " + edge.vertex2 + " | Weight: " + edge.weight;
-        }
-        return "[Node(value: " + this.value + " | Neighbors: " + neighborsString;
+//        String neighborsString = "";
+//        for(Edge edge : neighbors) {
+//            neighborsString += "Neighbor: " + edge.vertex2 + " | Weight: " + edge.weight;
+//        }
+//        return "[Node(value: " + this.value + " | Neighbors: " + neighborsString;
+        return this.value.toString();
     }
 
 
