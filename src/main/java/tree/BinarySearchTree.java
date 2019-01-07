@@ -8,12 +8,12 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree {
 
     public boolean add(T value) {
         Node<T> current = root;
-
+        // Check if tree is empty, if so, set the root to new node
         if (root == null) {
             root = new Node<T>(value, null, null);
             return true;
         }
-
+        // Otherwise iterate through the tree
         while (current != null) {
             if (value == current.value) {
                 return false;
