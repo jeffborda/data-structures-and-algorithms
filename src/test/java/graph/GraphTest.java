@@ -95,4 +95,60 @@ public class GraphTest {
         assertFalse("The isEmpty() function should return 'false'.", testGraph.isEmpty());
     }
 
+    @Test
+    public void testBreadthFirst() {
+        Graph<String> testGraph = new Graph<>();
+        Node node1 = new Node("A");
+        Node node2 = new Node("B");
+        Node node3 = new Node("C");
+        Node node4 = new Node("D");
+        Node node5 = new Node("E");
+        Node node6 = new Node("F");
+        Node node7 = new Node("G");
+        Node node8 = new Node("H");
+        Node node9 = new Node("I");
+
+        testGraph.addNode(node1);
+        testGraph.addNode(node2);
+        testGraph.addNode(node3);
+        testGraph.addNode(node4);
+        testGraph.addNode(node5);
+        testGraph.addNode(node6);
+        testGraph.addNode(node7);
+        testGraph.addNode(node8);
+        testGraph.addNode(node9);
+
+        testGraph.addEdge(node1, node2, 10); // A - B
+        testGraph.addEdge(node1, node3, 10); // A - C
+        testGraph.addEdge(node1, node4, 10); // A - D
+        testGraph.addEdge(node1, node5, 10); // A - E
+        testGraph.addEdge(node1, node7, 10); // A - G
+        testGraph.addEdge(node3, node4, 10); // C - D
+        testGraph.addEdge(node6, node7, 10); // F - G
+        testGraph.addEdge(node7, node3, 10); // G - C
+        testGraph.addEdge(node7, node8, 10); // G - H
+        testGraph.addEdge(node8, node9, 10); // H - I
+
+        //                         I
+        //                       /
+        //                     H
+        //                    /
+        //            ┌---F--G - C
+        //            B      | /  \
+        //            └----- A    |
+        //                  / \  /
+        //                 E   D
+
+        List<Node> testResults = testGraph.breadthFirst(node1);
+        assertEquals("Size of list should be '8'", 8, testResults.size());
+        assertEquals("First should get surrounding neighbors, in order that edges were added.", "B",testResults.get(0).value);
+        assertEquals("First should get surrounding neighbors, in order that edges were added.", "C",testResults.get(1).value);
+        assertEquals("First should get surrounding neighbors, in order that edges were added.", "D",testResults.get(2).value);
+        assertEquals("First should get surrounding neighbors, in order that edges were added.", "E",testResults.get(3).value);
+        assertEquals("First should get surrounding neighbors, in order that edges were added.", "G",testResults.get(4).value);
+        assertEquals("First should get surrounding neighbors, in order that edges were added.", "F",testResults.get(5).value);
+        assertEquals("First should get surrounding neighbors, in order that edges were added.", "H",testResults.get(6).value);
+        assertEquals("First should get surrounding neighbors, in order that edges were added.", "I",testResults.get(7).value);
+    }
+
 }
