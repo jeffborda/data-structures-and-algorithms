@@ -6,7 +6,7 @@ import java.util.List;
 public class Node<T> {
 
     protected T value;
-    protected List<Edge> neighbors;
+    protected List<Edge<T>> neighbors;
 
     public Node(T value) {
         this.value = value;
@@ -14,14 +14,15 @@ public class Node<T> {
     }
 
     // Adds edge between Nodes.
-    protected boolean addEdge(Edge edge) {
+    protected boolean addEdge(Node<T> neighbor, Integer weight) {
+        Edge<T> edge = new Edge(neighbor, weight);
         return neighbors.add(edge);
     }
 
     // Helper function to determine if a Node is neighbors with the input Node.
     public boolean hasNeighbor(Node checkNode) {
         for(Edge edge : neighbors) {
-            if(edge.vertex2 == checkNode) {
+            if(edge.neighbor == checkNode) {
                 return true;
             }
         }

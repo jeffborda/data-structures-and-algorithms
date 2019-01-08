@@ -1,21 +1,16 @@
 package graph;
 
-public class Edge {
+public class Edge<T> {
 
-    protected Node vertex1;
-    protected Node vertex2;
+    protected Node<T> neighbor;
     protected Integer weight;
 
-    public Edge(Node start, Node end, Integer weight) {
-        this.vertex1 = start;
-        this.vertex2 = end;
+    protected Edge(Node<T> neighbor, Integer weight) {
+        this.neighbor = neighbor;
         this.weight = weight;
     }
 
-    @Override
-    public String toString() {
-        return "Start: " + this.vertex1 + " | End: " + this.vertex2 + " | Weight: " + this.weight;
+    public Node<T> getNeighborNode() {
+        return this.neighbor;
     }
-
-
 }
