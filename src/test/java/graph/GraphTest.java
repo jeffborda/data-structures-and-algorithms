@@ -31,6 +31,9 @@ public class GraphTest {
         Node node1 = new Node("Main St.");
         Node node2 = new Node("1st Ave.");
         Node node3 = new Node("2nd Ave.");
+        testGraph.addNode(node1);
+        testGraph.addNode(node2);
+        testGraph.addNode(node3);
         testGraph.addEdge(node1, node2, 10);
         assertTrue("Now node1 and node2 should be neighbors.", node1.hasNeighbor(node2));
         assertTrue("And node1 and node2 should be neighbors.", node2.hasNeighbor(node1));
@@ -58,7 +61,17 @@ public class GraphTest {
 
     @Test
     public void testGetNeighbors() {
-
+        Graph<String> testGraph = new Graph<>();
+        Node node1 = new Node("Main St.");
+        Node node2 = new Node("1st Ave.");
+        Node node3 = new Node("2nd Ave.");
+        testGraph.addNode(node1);
+        testGraph.addNode(node2);
+        testGraph.addNode(node3);
+        testGraph.addEdge(node1, node2, 10);
+        assertTrue("If getNeighbors called on node1, should contain node2.", node1.hasNeighbor(node2));
+        assertTrue("If getNeighbors called on node2, should contain node1.", node1.hasNeighbor(node2));
+        assertFalse("node3 should not have any neighbors.", node3.hasNeighbor(node1));
     }
 
     @Test
@@ -81,4 +94,5 @@ public class GraphTest {
         assertEquals("Size of Graph should be '3' after three adds.", 3, testGraph.size());
         assertFalse("The isEmpty() function should return 'false'.", testGraph.isEmpty());
     }
+
 }
