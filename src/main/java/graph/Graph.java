@@ -67,6 +67,8 @@ public class Graph<T> {
     public List<Node> breadthFirst(Node start) {
         // Create the result list
         List<Node> result = new LinkedList<>();
+
+        // **Make this a HashSet
         // Create list of visited Nodes
         List<Node> haveVisited = new LinkedList<>();
         // Put all first neighbors in a list, no risk of dupes yet.
@@ -104,8 +106,54 @@ public class Graph<T> {
         return result;
     }
 
+    /*
+    Write a function which takes in a graph, and an array of city names.
+     Without utilizing any of the built-in methods available to your language,
+     return whether the full trip is possible with direct flights, and how
+     much it would cost.
+     */
+    public Connection getEdge(String[] cities) {
 
+        int price = 0;
 
+        // If any city in the input array is not in graph, it returns a false Connection
+        for(String city : cities) {
+            if(!this.hasCity(city)) {
+                return new Connection(false, 0);
+            }
+        }
+
+        for(int i = 0; i < cities.length - 1; i++) {
+            for(Node<T> n : graph) {
+                if(n.value.equals(cities[i])) {
+                    for(Edge e : n.neighbors) {
+                        if(e.neighbor.equals(cities[i + 1])) {
+                            price += e.weight;
+                        }
+                        else {
+                            // No direct connection to the follow-up city (i+1)
+                            return new Connection(false, 0);
+                        }
+                    }
+                }
+
+            }
+
+        }
+        return new Connection(true, price);
+
+        // Last city in the input array not in the graph
+//        return new Connection(false, 0);
+    }
+
+    private boolean hasCity(String city) {
+        for(Node<String> n: graph) {
+            if(n.value.equals(city)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 
 
