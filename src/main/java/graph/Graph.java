@@ -115,6 +115,7 @@ public class Graph<T> {
     public Connection getEdge(String[] cities) {
 
         int price = 0;
+        boolean followupFound = false;
 
         // If any city in the input array is not in graph, it returns a false Connection
         for(String city : cities) {
@@ -123,27 +124,32 @@ public class Graph<T> {
             }
         }
 
+        // Length is -1 because we need to check cities in the array: i to the i+1 position.
         for(int i = 0; i < cities.length - 1; i++) {
+            followupFound = false;
             for(Node<T> n : graph) {
                 if(n.value.equals(cities[i])) {
+                    // Found the node that matches the primary city
+
                     for(Edge e : n.neighbors) {
-                        if(e.neighbor.equals(cities[i + 1])) {
+                        // Follow-up city found in neighbors list, get the weight of the edge.
+                        if(e.neighbor.value.equals(cities[i + 1])) {
                             price += e.weight;
-                        }
-                        else {
-                            // No direct connection to the follow-up city (i+1)
-                            return new Connection(false, 0);
+                            followupFound = true;
                         }
                     }
+                    // Follow-up city not found
+                    if(!followupFound) {
+                        return new Connection(false, 0);
+                    }
                 }
-
             }
-
+        }
+        // If given an array with just one city, return false Connection
+        if(!followupFound) {
+            return new Connection(false, 0);
         }
         return new Connection(true, price);
-
-        // Last city in the input array not in the graph
-//        return new Connection(false, 0);
     }
 
     private boolean hasCity(String city) {

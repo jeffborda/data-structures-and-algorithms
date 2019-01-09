@@ -195,11 +195,27 @@ public class GraphTest {
         //                  / \  /
         //                 E   D
 
-        Connection testConnection = new Connection(true, 10);
-        String[] testCities = {"A", "B", "F"};
 
-        System.out.println(testGraph.getEdge(testCities).getPrice());
+        String[] testCities1 = {"A", "B"};
+        assertEquals("Any two cities that are direct neighbors should return a Connection object with values 'true' and price equals to the weight of the edge between them.", new Connection(true, 10), testGraph.getEdge(testCities1));
 
+        String[] testCities2 = {"E", "D"};
+        assertEquals("Cities that are NOT direct neighbors should return a Connection object with values 'false' and  price of '0'.", new Connection(false, 0), testGraph.getEdge(testCities2));
+
+        String[] testCities3 = {"G", "H", "I"};
+        assertEquals("If given more than two cities that are all direct neighbors from the one before it, should return Connection object with values 'true' and price equals to the sum total of the weight of the edges between them.", new Connection(true, 20), testGraph.getEdge(testCities3));
+
+        String[] testCities4 = {"D", "A", "G", "H", "I"};
+        assertEquals("If given more than two cities that are all direct neighbors from the one before it, should return Connection object with values 'true' and price equals to the sum total of the weight of the edges between them.", new Connection(true, 40), testGraph.getEdge(testCities4));
+
+        String[] testCities5 = {"D", "A", "B", "H", "I"};
+        assertEquals("If given more than two cities and any one of them can not be reached in one step from the other, than return Connection object with values 'false' and '0.", new Connection(false, 0), testGraph.getEdge(testCities5));
+
+        String[] testCities6 = {"Z", "A", "B", "H", "I"};
+        assertEquals("If any city in the input array is not in the graph, the Connection object should return with values 'false' and '0'.", new Connection(false, 0), testGraph.getEdge(testCities6));
+
+        String[] testCities7 = {"I"};
+        assertEquals("If only given an array with one city, the Connection object should return with values 'false' and '0'.", new Connection(false, 0), testGraph.getEdge(testCities7));
     }
 
 }
