@@ -151,4 +151,71 @@ public class GraphTest {
         assertEquals("First should get surrounding neighbors, in order that edges were added.", "I",testResults.get(7).value);
     }
 
+    @Test
+    public void testGetEdge() {
+        Graph<String> testGraph = new Graph<>();
+        Node node1 = new Node("A");
+        Node node2 = new Node("B");
+        Node node3 = new Node("C");
+        Node node4 = new Node("D");
+        Node node5 = new Node("E");
+        Node node6 = new Node("F");
+        Node node7 = new Node("G");
+        Node node8 = new Node("H");
+        Node node9 = new Node("I");
+
+        testGraph.addNode(node1);
+        testGraph.addNode(node2);
+        testGraph.addNode(node3);
+        testGraph.addNode(node4);
+        testGraph.addNode(node5);
+        testGraph.addNode(node6);
+        testGraph.addNode(node7);
+        testGraph.addNode(node8);
+        testGraph.addNode(node9);
+
+        testGraph.addEdge(node1, node2, 10); // A - B
+        testGraph.addEdge(node1, node3, 10); // A - C
+        testGraph.addEdge(node1, node4, 10); // A - D
+        testGraph.addEdge(node1, node5, 10); // A - E
+        testGraph.addEdge(node1, node7, 10); // A - G
+        testGraph.addEdge(node3, node4, 10); // C - D
+        testGraph.addEdge(node6, node7, 10); // F - G
+        testGraph.addEdge(node7, node3, 10); // G - C
+        testGraph.addEdge(node7, node8, 10); // G - H
+        testGraph.addEdge(node8, node9, 10); // H - I
+
+        //                         I
+        //                       /
+        //                     H
+        //                    /
+        //            ┌---F--G - C
+        //            B      | /  \
+        //            └----- A    |
+        //                  / \  /
+        //                 E   D
+
+
+        String[] testCities1 = {"A", "B"};
+        assertEquals("Any two cities that are direct neighbors should return a Connection object with values 'true' and price equals to the weight of the edge between them.", new Connection(true, 10), testGraph.getEdge(testCities1));
+
+        String[] testCities2 = {"E", "D"};
+        assertEquals("Cities that are NOT direct neighbors should return a Connection object with values 'false' and  price of '0'.", new Connection(false, 0), testGraph.getEdge(testCities2));
+
+        String[] testCities3 = {"G", "H", "I"};
+        assertEquals("If given more than two cities that are all direct neighbors from the one before it, should return Connection object with values 'true' and price equals to the sum total of the weight of the edges between them.", new Connection(true, 20), testGraph.getEdge(testCities3));
+
+        String[] testCities4 = {"D", "A", "G", "H", "I"};
+        assertEquals("If given more than two cities that are all direct neighbors from the one before it, should return Connection object with values 'true' and price equals to the sum total of the weight of the edges between them.", new Connection(true, 40), testGraph.getEdge(testCities4));
+
+        String[] testCities5 = {"D", "A", "B", "H", "I"};
+        assertEquals("If given more than two cities and any one of them can not be reached in one step from the other, than return Connection object with values 'false' and '0.", new Connection(false, 0), testGraph.getEdge(testCities5));
+
+        String[] testCities6 = {"Z", "A", "B", "H", "I"};
+        assertEquals("If any city in the input array is not in the graph, the Connection object should return with values 'false' and '0'.", new Connection(false, 0), testGraph.getEdge(testCities6));
+
+        String[] testCities7 = {"I"};
+        assertEquals("If only given an array with one city, the Connection object should return with values 'false' and '0'.", new Connection(false, 0), testGraph.getEdge(testCities7));
+    }
+
 }
