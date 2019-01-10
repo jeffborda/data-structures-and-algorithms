@@ -190,6 +190,12 @@ public class Graph<T> {
             }
         }
 
+        // If there are any "island" nodes, then add those to the result list
+        for(Node n : graph) {
+            if(!visited.contains(n)) {
+                result.add(n);
+            }
+        }
         return result;
     }
 
