@@ -1,6 +1,7 @@
 package graph;
 
 import stacksandqueues.Queue;
+import stacksandqueues.Stack;
 
 import java.util.*;
 
@@ -9,6 +10,7 @@ public class Graph<T> {
     protected Set<Node> graph;
 
     public Graph() {
+
         this.graph = new HashSet<>();
     }
 
@@ -117,13 +119,6 @@ public class Graph<T> {
         int price = 0;
         boolean followupFound = false;
 
-        // If any city in the input array is not in graph, it returns a false Connection
-        for(String city : cities) {
-            if(!this.hasCity(city)) {
-                return new Connection(false, 0);
-            }
-        }
-
         // Length is -1 because we need to check cities in the array: i to the i+1 position.
         for(int i = 0; i < cities.length - 1; i++) {
             followupFound = false;
@@ -161,6 +156,42 @@ public class Graph<T> {
         return false;
     }
 
+
+    /*
+    Perform a depth first, pre-order traversal of the input graph, starting with the input node.
+     */
+    public static List<Node> depthFirst(Graph inputGraph, String startValue) {
+
+        // Put all Nodes into array - in case there are any "island" Nodes
+        List<Node> graph = new ArrayList<Node>(inputGraph.graph);
+        List<Node> result = new LinkedList<>();
+        Stack<Node> stack = new Stack<>();
+        Set<Node> visited = new HashSet<>();
+
+        if(graph.isEmpty()) {
+            return result;
+        }
+        // Push target node on stack and into visited HashSet
+        for(Node n : graph) {
+            if(n.value.equals(startValue)) {
+                stack.push(n);
+                visited.add(n);
+            }
+        }
+
+        while(!stack.isEmpty()) {
+            Node temp = stack.pop();
+            result.add(temp);
+            for(Edge e : (List<Edge>) temp.neighbors) {
+                if(!visited.contains(e.neighbor)) {
+                    stack.push(e.neighbor);
+                    visited.add(e.neighbor);
+                }
+            }
+        }
+
+        return result;
+    }
 
 
 }
