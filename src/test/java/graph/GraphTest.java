@@ -288,6 +288,22 @@ public class GraphTest {
         assertEquals("First position should be the same value as the input.", "A", result3.get(0).getValue());
         assertEquals("Result list should be size '1'.", 1, result3.size());
 
+        Graph<String> testGraph4 = new Graph<>();
+        Node linkedA = new Node("A");
+        Node linkedB = new Node("B");
+        Node islandA = new Node("island-A");
+        Node islandB = new Node("island-B");
+        testGraph4.addNode(linkedA);
+        testGraph4.addNode(linkedB);
+        testGraph4.addNode(islandA);
+        testGraph4.addNode(islandB);
+        testGraph4.addEdge(linkedA, linkedB, 10);
+        List<Node> result4 = new ArrayList<>(Graph.depthFirst(testGraph4, "A"));
+
+        assertEquals("First position should be the same value as the input.", "A", result4.get(0).getValue());
+        assertEquals("Second position should be 'B'.", "B", result4.get(1).getValue());
+        assertEquals("Island nodes should print after all the linked nodes.", "island-B", result4.get(2).getValue());
+        assertEquals("Island nodes should print after all the linked nodes.", "island-A", result4.get(3).getValue());
     }
 
 }

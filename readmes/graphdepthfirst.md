@@ -19,12 +19,12 @@ To perform a depth first pre-order traversal, I utilized a Stack.  Basically, th
 
 # Testing
 
-I tested this with graph with some complexity, a graph with only one Node, and on an empty graph.
+I tested this with graph with some complexity, a graph with only one Node, and on an empty graph.  Also it was tested with "island" nodes in the graph to make sure they get added to the output.
 
 
 # Solution
 
-  <img src="../assets/graph-depthfirst.jpg"
+  <img src="../assets/graph-depth-first.jpg"
        alt="White Board Picture"
        style="float: left; margin-right: 10px; width: 200px;" />
 
