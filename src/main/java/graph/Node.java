@@ -8,6 +8,10 @@ public class Node<T> {
     protected T value;
     protected List<Edge<T>> neighbors;
 
+    public Node() {
+        this.neighbors = new LinkedList<>();
+    }
+
     public Node(T value) {
         this.value = value;
         this.neighbors = new LinkedList<>();
@@ -35,12 +39,8 @@ public class Node<T> {
 
     @Override
     public String toString() {
-//        String neighborsString = "";
-//        for(Edge edge : neighbors) {
-//            neighborsString += "Neighbor: " + edge.vertex2 + " | Weight: " + edge.weight;
-//        }
-//        return "[Node(value: " + this.value + " | Neighbors: " + neighborsString;
-        return this.value.toString();
+
+        return (String)this.value;
     }
 
 
