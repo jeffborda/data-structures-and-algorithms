@@ -20,3 +20,4 @@ This repo is home to my Java 401 code challenges at Code Fellows.
 * [Challenge 26 - Graph: Breadth First Traversal](readmes/graphbreadthfirst.md)
 * [Challenge 27 - Graph: Get Edge](readmes/graphgetedge.md)
 * [Challenge 28 - Graph: Depth First Traversal](readmes/graphdepthfirst.md)
+* [Challenge 29 - Hashtable](readmes/hashtable.md)

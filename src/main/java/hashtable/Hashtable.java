@@ -32,6 +32,7 @@ public class Hashtable<V> {
         // Check if that element of the array has not been used yet, and add it there if possible.
         if(this.table[index].next == null) {
             this.table[index].next = new Node(insertKey, insertValue, null);
+            load++;
             return;
         }
         // If that element is already full, start creating a list of Nodes
@@ -40,6 +41,7 @@ public class Hashtable<V> {
             current = current.next;
         }
         current.next = new Node(insertKey, insertValue, null);
+        load++;
         return;
     }
 
@@ -57,7 +59,7 @@ public class Hashtable<V> {
             }
         }
         // Then check for key if there are collisions there
-        Node current = this.table[index].next;
+        Node current = this.table[index];
         while(current.next != null) {
             current = current.next;
             if(current.key.equals(searchKey)) {
@@ -74,6 +76,11 @@ public class Hashtable<V> {
         int index = getHash(key);
 
         Node current = this.table[index].next;
+        // First check location if there are no collisions.
+        if(current.key.equals(key)) {
+            return current;
+        }
+        // If there were collisions, iterate through the list
         while(current != null) {
             if(current.key.equals(key)) {
                 return current;
@@ -101,8 +108,12 @@ public class Hashtable<V> {
         return Math.abs(resultHash);
     }
 
-
-
+    /**
+     * Returns how many items are being stored in the Hashtable.
+     */
+    public int size() {
+        return this.load;
+    }
 
 
 

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hashtable/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hashtable/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+            <state relative-caret-position="2856">
+              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,13 +55,38 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readmes/hashtable.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="323">
+                <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readmes/graph.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="153">
+                <caret line="9" column="22" selection-end-line="26" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+            <state relative-caret-position="190">
+              <caret line="61" column="40" lean-forward="true" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3425#3426#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,6 +137,7 @@
       <find>hasNe</find>
       <find>and an</find>
       <find>K</find>
+      <find>Syste</find>
     </findStrings>
     <replaceStrings>
       <replace>T</replace>
@@ -123,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../src/main/java/stacksandqueues/Stack.java" />
         <option value="$PROJECT_DIR$/../src/test/java/stacksandqueues/StackTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/stacksandqueues/StackTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java" />
@@ -167,17 +192,18 @@
         <option value="$PROJECT_DIR$/readmes/getedge.md" />
         <option value="$PROJECT_DIR$/readmes/graphgetedge.md" />
         <option value="$PROJECT_DIR$/src/main/java/graph/Node.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/graph/Graph.java" />
         <option value="$PROJECT_DIR$/src/test/java/graph/GraphTest.java" />
         <option value="$PROJECT_DIR$/readmes/graphdepthfirst.md" />
         <option value="$PROJECT_DIR$/src/main/java/hashtable/Node.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java" />
+        <option value="$PROJECT_DIR$/readmes/hashtable.md" />
         <option value="$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -200,6 +226,11 @@
             <path>
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="readmes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -214,14 +245,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hashtable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -261,7 +284,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547499009071" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547500985232" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -303,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HashtableTest.testAdd">
+  <component name="RunManager" selected="JUnit.HashtableTest">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -369,7 +392,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashtableTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashtableTest.testGetHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
@@ -379,13 +402,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="hashtable" />
       <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
-      <option name="METHOD_NAME" value="testFind" />
+      <option name="METHOD_NAME" value="testGetHash" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashtableTest.testHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashtableTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
@@ -395,7 +418,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="hashtable" />
       <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
-      <option name="METHOD_NAME" value="testHash" />
+      <option name="METHOD_NAME" value="testSize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -403,11 +426,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HashtableTest.testAdd" />
-        <item itemvalue="JUnit.HashtableTest.testFind" />
         <item itemvalue="JUnit.HashtableTest" />
         <item itemvalue="JUnit.HashtableTest.testContains" />
-        <item itemvalue="JUnit.HashtableTest.testHash" />
+        <item itemvalue="JUnit.HashtableTest.testSize" />
+        <item itemvalue="JUnit.HashtableTest.testGetHash" />
+        <item itemvalue="JUnit.HashtableTest.testAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -425,42 +448,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 45m 28s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testSize - 2019.01.14 at 13h 05m 59s.xml">
+      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 46m 10s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testSize - 2019.01.14 at 13h 06m 58s.xml">
+      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 46m 13s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testSize - 2019.01.14 at 13h 07m 14s.xml">
+      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 46m 14s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testSize - 2019.01.14 at 13h 08m 54s.xml">
+      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 46m 17s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest - 2019.01.14 at 13h 13m 28s.xml">
+      <configuration name="HashtableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 46m 18s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest - 2019.01.14 at 13h 14m 52s.xml">
+      <configuration name="HashtableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 46m 20s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testContains - 2019.01.14 at 13h 15m 25s.xml">
+      <configuration name="HashtableTest.testContains" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 46m 22s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testContains - 2019.01.14 at 13h 17m 38s.xml">
+      <configuration name="HashtableTest.testContains" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 46m 50s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest - 2019.01.14 at 13h 17m 46s.xml">
+      <configuration name="HashtableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashtableTest_testAdd - 2019.01.14 at 12h 46m 52s.xml">
-      <configuration name="HashtableTest.testAdd" configurationId="JUnit" />
+    <history-entry file="HashtableTest - 2019.01.14 at 13h 22m 26s.xml">
+      <configuration name="HashtableTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.4327323" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20872483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -521,8 +544,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../src/test/java/BinarySearchTest.java" />
-    <entry file="file://$PROJECT_DIR$/../src/main/java/tree/BinarySearchTree.java" />
     <entry file="file://$PROJECT_DIR$/../src/test/java/fizzbuzztree/FizzBuzzTreeTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/graph/Edge.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/graph/Graph.java" />
@@ -603,16 +624,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="153">
             <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="357">
-            <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
           </first_editor>
           <second_editor />
         </state>
@@ -744,23 +755,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="374">
+            <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/graph.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="22" selection-end-line="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        <state relative-caret-position="190">
+          <caret line="61" column="40" lean-forward="true" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3425#3426#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+        <state relative-caret-position="2856">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/hashtable.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

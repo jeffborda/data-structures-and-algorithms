@@ -53,10 +53,6 @@ public class HashtableTest {
         else {
             assertEquals("Check value if there was no collision.", 3, testTable.table[index3].next.value);
         }
-
-
-
-
     }
 
     @Test
@@ -107,10 +103,6 @@ public class HashtableTest {
         assertEquals("Make sure it can get values when there must be collisions.", "eighteen", testTable.find("18").value);
         assertEquals("Make sure it can get values when there must be collisions.", "nineteen", testTable.find("19").value);
         assertEquals("Make sure it can get values when there must be collisions.", "twenty", testTable.find("20").value);
-
-        for(int i = 0; i < testTable.table.length; i++) {
-            System.out.println(testTable.table[i]);
-        }
     }
 
     @Test
@@ -159,9 +151,6 @@ public class HashtableTest {
         assertTrue("Should return 'true' when input is a key that was added to the Hashtable.", testTable.contains("20"));
         assertFalse("Should return 'false' when input NOT in Hashtable.", testTable.contains("99999"));
         assertFalse("Should return 'false' when input NOT in Hashtable.", testTable.contains("FALSE"));
-
-
-
     }
 
 
@@ -178,21 +167,42 @@ public class HashtableTest {
         int resultInt3 = testTable.getHash(testKey3);
         int resultInt4 = testTable.getHash(testKey4);
 
-
-
-        System.out.println(resultInt1);
-        System.out.println(resultInt2);
-        System.out.println(resultInt3);
-        System.out.println(resultInt4);
-
-
-        assertTrue("Hash should return a number between 0 and 16.", resultInt1 >= 0 && resultInt1 <= 16);
-        assertTrue("Hash should return a number between 0 and 16.", resultInt2 >= 0 && resultInt1 <= 16);
-        assertTrue("Hash should return a number between 0 and 16.", resultInt3 >= 0 && resultInt1 <= 16);
-        assertTrue("Hash should return a number between 0 and 16.", resultInt4 >= 0 && resultInt1 <= 16);
+        assertTrue("Hash should return a number between 0 and 16.", resultInt1 >= 0 && resultInt1 <= testTable.table.length);
+        assertTrue("Hash should return a number between 0 and 16.", resultInt2 >= 0 && resultInt1 <= testTable.table.length);
+        assertTrue("Hash should return a number between 0 and 16.", resultInt3 >= 0 && resultInt1 <= testTable.table.length);
+        assertTrue("Hash should return a number between 0 and 16.", resultInt4 >= 0 && resultInt1 <= testTable.table.length);
+        assertFalse("Should be extraordinarily unlikely for all four hashes to give same number.", resultInt1 == resultInt2 && resultInt1 == resultInt3 && resultInt1 == resultInt4 && resultInt2 == resultInt3 && resultInt2 == resultInt4 && resultInt3 == resultInt4);
 
         String testKey5 = "Test";
         int resultInt5 = testTable.getHash(testKey5);
         assertEquals("Hash should return the same int given the same string.", resultInt4, resultInt5);
+    }
+
+    @Test
+    public void testSize() {
+        Hashtable<String> testTable = new Hashtable<>();
+        assertEquals("Size should be '0' when instantiated.", 0, testTable.size());
+        testTable.add("thing one", "thing");
+        testTable.add("thing two", "thing");
+        assertEquals("Size should now be '2'.", 2, testTable.size());
+        testTable.add("3", "three");
+        testTable.add("4", "four");
+        testTable.add("5", "five");
+        testTable.add("6", "six");
+        testTable.add("7", "seven");
+        testTable.add("8", "eight");
+        testTable.add("9", "nine");
+        testTable.add("10", "ten");
+        testTable.add("11", "eleven");
+        testTable.add("12", "twelve");
+        testTable.add("13", "thirteen");
+        testTable.add("14", "fourteen");
+        testTable.add("15", "fifteen");
+        testTable.add("16", "sixteen");
+        testTable.add("17", "seventeen");
+        testTable.add("18", "eighteen");
+        testTable.add("19", "nineteen");
+        testTable.add("20", "twenty");
+        assertEquals("Confirm it returns the correct size when there have been collisions.", 20, testTable.size());
     }
 }
