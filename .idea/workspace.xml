@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readmes/graphdepthfirst.md" beforeDir="false" afterPath="$PROJECT_DIR$/readmes/graphdepthfirst.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/graph/GraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graph/GraphTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -44,44 +44,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/graph/GraphTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="304" column="88" lean-forward="true" selection-start-line="304" selection-start-column="88" selection-end-line="304" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readmes/graphgetedge.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="153">
-                <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="357">
-                <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="2856">
+              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readmes/graphdepthfirst.md">
+        <entry file="file://$PROJECT_DIR$/readmes/hashtable.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="319">
-                <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+              <first_editor relative-caret-position="323">
+                <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
               </first_editor>
               <second_editor />
             </state>
@@ -89,72 +68,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graph/Edge.java">
+        <entry file="file://$PROJECT_DIR$/readmes/graph.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="153">
+                <caret line="9" column="22" selection-end-line="26" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="61" column="40" lean-forward="true" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3425#3426#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <folding>
+                <element signature="e#176#177#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/linkedlist/Node.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graph/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-              <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graph/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="192" column="77" selection-start-line="192" selection-start-column="77" selection-end-line="192" selection-end-column="77" />
-              <folding>
-                <element signature="e#4803#4809#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#534#535#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/HashSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2414">
-              <caret line="172" selection-start-line="172" selection-end-line="172" />
-              <folding>
-                <element signature="e#6542#6543#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/graph/Connection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-              <folding>
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#916#917#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -164,8 +118,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -182,6 +136,8 @@
       <find>getNod</find>
       <find>hasNe</find>
       <find>and an</find>
+      <find>K</find>
+      <find>Syste</find>
     </findStrings>
     <replaceStrings>
       <replace>T</replace>
@@ -193,10 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../src/main/java/stacksandqueues/Node.java" />
-        <option value="$PROJECT_DIR$/../src/main/java/stacksandqueues/Queue.java" />
-        <option value="$PROJECT_DIR$/../src/test/java/stacksandqueues/QueueTest.java" />
-        <option value="$PROJECT_DIR$/../src/main/java/stacksandqueues/Stack.java" />
         <option value="$PROJECT_DIR$/../src/test/java/stacksandqueues/StackTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/stacksandqueues/StackTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java" />
@@ -240,14 +192,18 @@
         <option value="$PROJECT_DIR$/readmes/getedge.md" />
         <option value="$PROJECT_DIR$/readmes/graphgetedge.md" />
         <option value="$PROJECT_DIR$/src/main/java/graph/Node.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/graph/Graph.java" />
         <option value="$PROJECT_DIR$/src/test/java/graph/GraphTest.java" />
         <option value="$PROJECT_DIR$/readmes/graphdepthfirst.md" />
+        <option value="$PROJECT_DIR$/src/main/java/hashtable/Node.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java" />
+        <option value="$PROJECT_DIR$/readmes/hashtable.md" />
+        <option value="$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -260,19 +216,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -303,15 +252,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="multibracketvalidation" type="462c0819:PsiDirectoryNode" />
+              <item name="linkedlist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -338,10 +279,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547140846208" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547500985232" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -353,11 +296,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="hashtable" />
       <recent name="graph" />
       <recent name="fizzbuzztree" />
       <recent name="tree" />
       <recent name="multibracketvalidation" />
-      <recent name="fifoanimalshelter" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="graph" />
@@ -383,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GraphTest.testDepthFirst">
+  <component name="RunManager" selected="JUnit.HashtableTest">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -403,63 +346,79 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GraphTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashtableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="hashtable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.GraphTest" />
+      <option name="PACKAGE_NAME" value="hashtable" />
+      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphTest.testAddNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashtableTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="hashtable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.GraphTest" />
-      <option name="METHOD_NAME" value="testAddNode" />
+      <option name="PACKAGE_NAME" value="hashtable" />
+      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
+      <option name="METHOD_NAME" value="testAdd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphTest.testDepthFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashtableTest.testContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="hashtable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.GraphTest" />
-      <option name="METHOD_NAME" value="testDepthFirst" />
+      <option name="PACKAGE_NAME" value="hashtable" />
+      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
+      <option name="METHOD_NAME" value="testContains" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphTest.testGetEdge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HashtableTest.testGetHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="hashtable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="graph" />
-      <option name="MAIN_CLASS_NAME" value="graph.GraphTest" />
-      <option name="METHOD_NAME" value="testGetEdge" />
+      <option name="PACKAGE_NAME" value="hashtable" />
+      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
+      <option name="METHOD_NAME" value="testGetHash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashtableTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hashtable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hashtable" />
+      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
+      <option name="METHOD_NAME" value="testSize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -467,10 +426,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GraphTest.testDepthFirst" />
-        <item itemvalue="JUnit.GraphTest.testGetEdge" />
-        <item itemvalue="JUnit.GraphTest" />
-        <item itemvalue="JUnit.GraphTest.testAddNode" />
+        <item itemvalue="JUnit.HashtableTest" />
+        <item itemvalue="JUnit.HashtableTest.testContains" />
+        <item itemvalue="JUnit.HashtableTest.testSize" />
+        <item itemvalue="JUnit.HashtableTest.testGetHash" />
+        <item itemvalue="JUnit.HashtableTest.testAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -488,42 +448,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.09 at 20h 56m 07s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testSize - 2019.01.14 at 13h 05m 59s.xml">
+      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.09 at 21h 00m 01s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testSize - 2019.01.14 at 13h 06m 58s.xml">
+      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.09 at 21h 00m 30s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testSize - 2019.01.14 at 13h 07m 14s.xml">
+      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.09 at 21h 00m 57s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testSize - 2019.01.14 at 13h 08m 54s.xml">
+      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.09 at 21h 01m 06s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest - 2019.01.14 at 13h 13m 28s.xml">
+      <configuration name="HashtableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.09 at 21h 01m 23s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest - 2019.01.14 at 13h 14m 52s.xml">
+      <configuration name="HashtableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.10 at 09h 16m 18s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testContains - 2019.01.14 at 13h 15m 25s.xml">
+      <configuration name="HashtableTest.testContains" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.10 at 09h 16m 55s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest_testContains - 2019.01.14 at 13h 17m 38s.xml">
+      <configuration name="HashtableTest.testContains" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.10 at 09h 18m 41s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest - 2019.01.14 at 13h 17m 46s.xml">
+      <configuration name="HashtableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphTest_testDepthFirst - 2019.01.10 at 09h 18m 59s.xml">
-      <configuration name="GraphTest.testDepthFirst" configurationId="JUnit" />
+    <history-entry file="HashtableTest - 2019.01.14 at 13h 22m 26s.xml">
+      <configuration name="HashtableTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20134228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20872483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -532,7 +492,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32152975" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -584,24 +544,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../src/test/java/linkedlist/LinkedListTest.java" />
-    <entry file="file://$PROJECT_DIR$/../src/main/java/stacksandqueues/Queue.java" />
-    <entry file="file://$PROJECT_DIR$/../readmes/stacksandqueues.md" />
-    <entry file="file://$PROJECT_DIR$/../readmes/binarytreefindmaxvalue.md" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="128" column="32" lean-forward="true" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
-          <folding>
-            <element signature="e#55263#55264#0" expanded="true" />
-            <element signature="e#55302#55303#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../src/test/java/tree/BinaryTreeTest.java" />
-    <entry file="file://$PROJECT_DIR$/../src/test/java/BinarySearchTest.java" />
-    <entry file="file://$PROJECT_DIR$/../src/main/java/tree/BinarySearchTree.java" />
     <entry file="file://$PROJECT_DIR$/../src/test/java/fizzbuzztree/FizzBuzzTreeTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/graph/Edge.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/graph/Graph.java" />
@@ -621,42 +563,6 @@
     <entry file="file://$PROJECT_DIR$/../readmes/multibracketvalidation.md" />
     <entry file="file://$PROJECT_DIR$/../gradlew" />
     <entry file="file://$PROJECT_DIR$/../build.gradle" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="369" selection-start-line="369" selection-end-line="369" />
-          <folding>
-            <element signature="e#2922#2923#0" expanded="true" />
-            <element signature="e#2966#2967#0" expanded="true" />
-            <element signature="e#10310#10449#0" expanded="true" />
-            <element signature="e#10448#10449#0" expanded="true" />
-            <element signature="e#11040#11204#0" expanded="true" />
-            <element signature="e#11203#11204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../readmes/graph.md" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/linkedlist/LinkedList.java" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/linkedlist/Node.java" />
@@ -696,9 +602,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/multibracketvalidation/MultiBracketValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/graphdepthfirst.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="319">
+            <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/graphgetedge.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#534#535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/HashSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
+        <state relative-caret-position="389">
           <caret line="172" selection-start-line="172" selection-end-line="172" />
           <folding>
             <element signature="e#6542#6543#0" expanded="true" />
@@ -717,10 +660,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/multibracketvalidation/MultiBracketValidation.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/graph/GraphTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="5066">
+          <caret line="304" column="88" selection-start-line="304" selection-start-column="88" selection-end-line="304" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -731,23 +674,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="621">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="192" column="77" selection-start-line="192" selection-start-column="77" selection-end-line="192" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedlist/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedlist/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="369" selection-start-line="369" selection-end-line="369" />
           <folding>
-            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="e#2966#2967#0" expanded="true" />
+            <element signature="e#10310#10449#0" expanded="true" />
+            <element signature="e#10448#10449#0" expanded="true" />
+            <element signature="e#11040#11204#0" expanded="true" />
+            <element signature="e#11203#11204#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graph/Node.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="833" selection-start-line="833" selection-end-line="833" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -755,45 +758,49 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="357">
-            <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+          <first_editor relative-caret-position="374">
+            <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/graph/Graph.java">
+    <entry file="file://$PROJECT_DIR$/readmes/graph.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="22" selection-end-line="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="192" column="77" selection-start-line="192" selection-start-column="77" selection-end-line="192" selection-end-column="77" />
+        <state relative-caret-position="190">
+          <caret line="61" column="40" lean-forward="true" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
           <folding>
-            <element signature="e#4803#4809#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3425#3426#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/graph/GraphTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="304" column="88" lean-forward="true" selection-start-line="304" selection-start-column="88" selection-end-line="304" selection-end-column="88" />
+        <state relative-caret-position="2856">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readmes/graphgetedge.md">
+    <entry file="file://$PROJECT_DIR$/readmes/hashtable.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readmes/graphdepthfirst.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="319">
-            <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <first_editor relative-caret-position="323">
+            <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           </first_editor>
           <second_editor />
         </state>
