@@ -15,6 +15,8 @@ If after iterating over the input string no duplicate words are found, the metho
 
 ## Methods and Big-O
 
+The input string is only looped through once, but I am creating a "split" array and a HashSet -both of which could take up n space.
+
 | Method                    | Description                                                                              | Big-O Time  | Big-O Space  |
 |---------------------------|------------------------------------------------------------------------------------------|-------------|--------------|
 | `findFirstRepeatedWord()` | Public static method that will return the first repeated word from an input string.      | O(n)        | O(n)         |
