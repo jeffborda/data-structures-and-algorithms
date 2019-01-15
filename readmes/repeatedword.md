@@ -17,7 +17,7 @@ If after iterating over the input string no duplicate words are found, the metho
 
 | Method                    | Description                                                                              | Big-O Time  | Big-O Space  |
 |---------------------------|------------------------------------------------------------------------------------------|-------------|--------------|
-| `findFirstRepeatedWord()` | Public static method that will return the first repeated word from an input string.      | O(n)        | O(1)         |
+| `findFirstRepeatedWord()` | Public static method that will return the first repeated word from an input string.      | O(n)        | O(n)         |
 
 ## Testing
 
