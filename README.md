@@ -21,3 +21,4 @@ This repo is home to my Java 401 code challenges at Code Fellows.
 * [Challenge 27 - Graph: Get Edge](readmes/graphgetedge.md)
 * [Challenge 28 - Graph: Depth First Traversal](readmes/graphdepthfirst.md)
 * [Challenge 29 - Hashtable](readmes/hashtable.md)
+* [Challenge 30 - Repeated Word](readmes/repeatedword.md)
