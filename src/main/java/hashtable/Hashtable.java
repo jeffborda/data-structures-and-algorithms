@@ -6,19 +6,14 @@ import java.util.Random;
 public class Hashtable<V> {
 
     protected Node<V>[] table;
-    protected static double RANDOM_DOUBLE;
-    protected static int PRIME_NUMBER = 17;
+    protected final double RANDOM_DOUBLE;
+    protected static final int PRIME_NUMBER = 17; // TODO: Add to hash fuction?
     protected int load;
 
     public Hashtable() {
         this.table = new Node[16];
-//         this.table = (Node<T>[]) new Node<?>[16];
-
-        for(int i = 0; i < this.table.length; i++) {
-            this.table[i] = new Node<V>();
-        }
         Random r = new Random();
-        this.RANDOM_DOUBLE = Math.abs(r.nextDouble());
+        this.RANDOM_DOUBLE = r.nextDouble();
         this.load = 0;
     }
 
@@ -30,13 +25,13 @@ public class Hashtable<V> {
         // Hash the search key to get the index
         int index = getHash(insertKey);
         // Check if that element of the array has not been used yet, and add it there if possible.
-        if(this.table[index].next == null) {
-            this.table[index].next = new Node(insertKey, insertValue, null);
+        if(this.table[index] == null) {
+            this.table[index] = new Node(insertKey, insertValue, null);
             load++;
             return;
         }
         // If that element is already full, start creating a list of Nodes
-        Node current = this.table[index].next;
+        Node current = this.table[index];
         while(current.next != null) {
             current = current.next;
         }
@@ -53,18 +48,21 @@ public class Hashtable<V> {
         // Hash the search key to get the index
         int index = getHash(searchKey);
         // First check that part of the array assuming there are no  collisions
-        if(this.table[index].next != null) {
-            if(this.table[index].next.key.equals(searchKey)) {
+        if(this.table[index] != null) {
+            if(this.table[index].key.equals(searchKey)) {
                 return true;
             }
         }
         // Then check for key if there are collisions there
+
+
+
         Node current = this.table[index];
-        while(current.next != null) {
-            current = current.next;
+        while(current != null) {
             if(current.key.equals(searchKey)) {
                 return true;
             }
+            current = current.next;
         }
         return false;
     }
@@ -75,12 +73,14 @@ public class Hashtable<V> {
     public Node find(String key) {
         int index = getHash(key);
 
-        Node current = this.table[index].next;
+
         // First check location if there are no collisions.
-        if(current.key.equals(key)) {
-            return current;
+        if(this.table[index].key.equals(key)) {
+            return this.table[index];
         }
+
         // If there were collisions, iterate through the list
+        Node current = this.table[index];
         while(current != null) {
             if(current.key.equals(key)) {
                 return current;
