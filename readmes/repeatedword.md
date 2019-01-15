@@ -29,6 +29,10 @@ I used JUnit testing on the following cases:
 * An input string with no spaces.
 * An empty input string.
 
+## Credit
+
+* Help on forming the Regex to remove trailing punctuation: https://stackoverflow.com/questions/7899525/how-to-split-a-string-by-space
+
 ## Solution
 
   <img src="../assets/repeated-word.jpg"
