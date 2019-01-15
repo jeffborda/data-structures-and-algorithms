@@ -10,7 +10,9 @@ public class HashtableTest {
     public void testConstructor() {
         Hashtable<String> testTable = new Hashtable<>();
         assertEquals("Table should have array of size '16' when instantiated.", 16, testTable.table.length);
-        //TODO: add more tests here
+        for(int i = 0; i < testTable.table.length; i++) {
+            assertEquals("Table should only have 'null' values before adding anything.", null, testTable.table[i]);
+        }
     }
 
     @Test
@@ -59,7 +61,6 @@ public class HashtableTest {
         assertEquals("Confirm it returns matching Node when there are multiple Nodes in the Hashtable.", "Luna", testTable.find("smallest dog").value);
         assertEquals("Confirm it returns matching Node when there are multiple Nodes in the Hashtable.", "Elsa", testTable.find("naughty dog").value);
 
-        // TODO: Put all these repeated parts in a loop.
         String[] strs = new String[]{"four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"};
         for(int i = 0; i < strs.length; i++) {
             testTable.add(Integer.toString(i + 4), strs[i]);
@@ -89,7 +90,6 @@ public class HashtableTest {
             assertTrue("Should return 'true' when input is a key that was added to the Hashtable.", testTable.contains( ((Integer)i).toString())  );
         }
 
-        
         assertFalse("Should return 'false' when input NOT in Hashtable.", testTable.contains("99999"));
         assertFalse("Should return 'false' when input NOT in Hashtable.", testTable.contains("FALSE"));
     }
@@ -126,24 +126,13 @@ public class HashtableTest {
         testTable.add("thing one", "thing");
         testTable.add("thing two", "thing");
         assertEquals("Size should now be '2'.", 2, testTable.size());
-        testTable.add("3", "three");
-        testTable.add("4", "four");
-        testTable.add("5", "five");
-        testTable.add("6", "six");
-        testTable.add("7", "seven");
-        testTable.add("8", "eight");
-        testTable.add("9", "nine");
-        testTable.add("10", "ten");
-        testTable.add("11", "eleven");
-        testTable.add("12", "twelve");
-        testTable.add("13", "thirteen");
-        testTable.add("14", "fourteen");
-        testTable.add("15", "fifteen");
-        testTable.add("16", "sixteen");
-        testTable.add("17", "seventeen");
-        testTable.add("18", "eighteen");
-        testTable.add("19", "nineteen");
-        testTable.add("20", "twenty");
-        assertEquals("Confirm it returns the correct size when there have been collisions.", 20, testTable.size());
+
+        String[] strs = new String[]{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"};
+        for(int i = 1; i < strs.length; i++) {
+            testTable.add(((Integer)i).toString(), strs[i]);
+
+        }
+
+        assertEquals("Confirm it returns the correct size when there have been collisions.", 21, testTable.size());
     }
 }

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+            <state relative-caret-position="221">
+              <caret line="13" column="112" selection-start-line="13" selection-start-column="112" selection-end-line="13" selection-end-column="112" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -283,7 +282,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547510988626" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547511284162" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -325,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HashtableTest.testContains">
+  <component name="RunManager" selected="JUnit.HashtableTest.testConstructor">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -355,22 +354,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="hashtable" />
       <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HashtableTest.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hashtable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hashtable" />
-      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
-      <option name="METHOD_NAME" value="testAdd" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -423,13 +406,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HashtableTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hashtable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hashtable" />
+      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
+      <option name="METHOD_NAME" value="testSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HashtableTest.testConstructor" />
+        <item itemvalue="JUnit.HashtableTest.testSize" />
         <item itemvalue="JUnit.HashtableTest.testContains" />
         <item itemvalue="JUnit.HashtableTest.testFind" />
         <item itemvalue="JUnit.HashtableTest" />
-        <item itemvalue="JUnit.HashtableTest.testAdd" />
-        <item itemvalue="JUnit.HashtableTest.testConstructor" />
       </list>
     </recent_temporary>
   </component>
@@ -447,12 +446,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HashtableTest_testFind - 2019.01.14 at 15h 31m 55s.xml">
-      <configuration name="HashtableTest.testFind" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HashtableTest_testContains - 2019.01.14 at 15h 32m 11s.xml">
-      <configuration name="HashtableTest.testContains" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HashtableTest_testContains - 2019.01.14 at 15h 32m 41s.xml">
       <configuration name="HashtableTest.testContains" configurationId="JUnit" />
     </history-entry>
@@ -476,6 +469,12 @@
     </history-entry>
     <history-entry file="HashtableTest_testFind - 2019.01.14 at 15h 55m 44s.xml">
       <configuration name="HashtableTest.testFind" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HashtableTest_testContains - 2019.01.14 at 16h 09m 50s.xml">
+      <configuration name="HashtableTest.testContains" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HashtableTest_testSize - 2019.01.14 at 16h 11m 52s.xml">
+      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -798,8 +797,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+        <state relative-caret-position="221">
+          <caret line="13" column="112" selection-start-line="13" selection-start-column="112" selection-end-line="13" selection-end-column="112" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
