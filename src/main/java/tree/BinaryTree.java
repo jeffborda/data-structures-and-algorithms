@@ -2,7 +2,8 @@ package tree;
 
 import stacksandqueues.Queue;
 
-import java.util.ArrayList;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class BinaryTree<T> {
 
@@ -13,6 +14,46 @@ public class BinaryTree<T> {
     }
     public BinaryTree(Node<T> root) {
         this.root  = root;
+    }
+
+
+    /**
+     * Takes in two binary trees and returns a set of values found in both trees.
+     */
+    public static Set treeIntersection(BinaryTree<Node<Integer>> treeOne, BinaryTree<Node<Integer>> treeTwo) {
+        Set<Integer> setTreeOne = integerTreeToSet(treeOne);
+        Set<Integer> setTreeTwo = integerTreeToSet(treeTwo);
+        Set<Integer> sharedValues = new HashSet<>();
+
+        for(Integer n : setTreeTwo) {
+            if(!setTreeOne.add(n)) {
+                // If it can't add to the Set of the first tree values, then it's a dupe value
+                sharedValues.add(n);
+            }
+        }
+        return sharedValues;
+    }
+
+    /**
+     * Takes in a BinaryTree and returns it in a breadth-first ordered list.
+     */
+    public static Set integerTreeToSet(BinaryTree<Node<Integer>> input) {
+        Queue<Node> nodes = new Queue<>();
+        Set<Integer> result = new HashSet<>();
+        if(input.root != null) {
+            nodes.enqueue(input.root);
+        }
+        while(nodes.size() > 0) {
+            Node current = nodes.dequeue();
+            result.add((Integer) current.value);
+            if(current.left != null) {
+                nodes.enqueue(current.left);
+            }
+            if(current.right != null) {
+                nodes.enqueue(current.right);
+            }
+        }
+        return result;
     }
 
     /*
