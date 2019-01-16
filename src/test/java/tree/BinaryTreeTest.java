@@ -8,6 +8,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 import static org.junit.Assert.*;
 
@@ -252,6 +255,40 @@ public class BinaryTreeTest {
 
         BinaryTree testTree5 = new BinaryTree();
         assertEquals("Sum of empty tree, should be '0'.", 0, BinaryTree.sumOfOdds(testTree5.root));
+    }
+
+    @Test
+    public void testTreeIntersection() {
+        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        BinaryTree testTree1 = new BinaryTree(n1);
+        assertEquals("Sum of odds in this tree is '16'.", 16, BinaryTree.sumOfOdds(testTree1.root));
+
+        Node n2 = new Node(4, new Node(2, new Node(1, null, new Node(99, null, null)), new Node(3, null, null)), new Node(6, new Node(5, null, null), new Node(7, new Node(66, null, null), null)));
+        //      4
+        //    2    6
+        //  1   3  5   7
+        //   99       66
+        BinaryTree testTree2 = new BinaryTree(n2);
+        // Shared values: 1, 2, 3, 4, 5, 6, 7
+        Set<Integer> expected = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
+        assertEquals("Should return a Set of all the values the two tree have in common.", expected, BinaryTree.treeIntersection(testTree1, testTree2));
+
+
+        Node n3 = new Node(1, new Node(2, null, null), new Node(3, null, null));
+        Node n4 = new Node(5, new Node(6, null, null), new Node(7, null, null));
+        BinaryTree testTree3 = new BinaryTree(n3);
+        BinaryTree testTree4 = new BinaryTree(n4);
+        // No shared values
+        Set<Integer> expected2 = new HashSet<>();
+        assertEquals("If no shared values between two trees, than it should return an empty Set.", expected2, BinaryTree.treeIntersection(testTree3, testTree4));
+
+        BinaryTree testTree5 = new BinaryTree();
+        BinaryTree testTree6 = new BinaryTree();
+        assertEquals("If given one or two empty trees, it should return an empty Set (and not break in the process).", expected2, BinaryTree.treeIntersection(testTree5, testTree6));
+
     }
 
 }

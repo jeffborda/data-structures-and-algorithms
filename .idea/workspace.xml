@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/readmes/repeatedword.md" beforeDir="false" afterPath="$PROJECT_DIR$/readmes/repeatedword.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -12,6 +15,17 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/data_structures_and_algorithms$RepeatedWordTest.ic" NAME="RepeatedWordTest Coverage Results" MODIFIED="1547607136332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>repeatedword.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/data_structures_and_algorithms$BinaryTreeTest.ic" NAME="BinaryTreeTest Coverage Results" MODIFIED="1547608063746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>tree.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/..">
@@ -41,19 +55,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/repeatedword/RepeatedWordTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+            <state relative-caret-position="105">
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readmes/treeintersection.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="208">
+                <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repeatedword/RepeatedWord.java">
+        <entry file="file://$PROJECT_DIR$/readmes/repeatedword.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="214">
+                <caret line="26" column="18" selection-end-line="45" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="516">
+              <caret line="289" column="178" selection-start-line="289" selection-start-column="178" selection-end-line="289" selection-end-column="178" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,26 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readmes/repeatedword.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="256">
-                <caret line="33" selection-start-line="33" selection-end-line="33" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readmes/fizzbuzztree.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="85">
-                <caret line="5" column="31" selection-end-line="28" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/main/java/tree/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -121,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/readmes/stacksandqueues.md" />
         <option value="$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java" />
         <option value="$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java" />
         <option value="$PROJECT_DIR$/src/main/java/QueueWithStacks/QueueWithStacks.java" />
@@ -150,8 +172,6 @@
         <option value="$PROJECT_DIR$/readmes/binarytreefindmaxvalue.md" />
         <option value="$PROJECT_DIR$/../readmes/binarytreefindmaxvalue.md" />
         <option value="$PROJECT_DIR$/../src/main/java/tree/BinaryTree.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" />
         <option value="$PROJECT_DIR$/../src/main/java/tree/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/test/java/graph/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/graph/Edge.java" />
@@ -168,10 +188,13 @@
         <option value="$PROJECT_DIR$/readmes/hashtable.md" />
         <option value="$PROJECT_DIR$/src/main/java/hashtable/Hashtable.java" />
         <option value="$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/repeatedword/RepeatedWord.java" />
         <option value="$PROJECT_DIR$/src/test/java/repeatedword/RepeatedWordTest.java" />
         <option value="$PROJECT_DIR$/readmes/repeatedword.md" />
+        <option value="$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tree/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/readmes/treeintersection.md" />
       </list>
     </option>
   </component>
@@ -188,6 +211,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,6 +262,14 @@
               <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -255,16 +287,23 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="graph" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="data-structures-and-algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-and-algorithms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547525799603" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547610997755" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -272,7 +311,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -306,7 +345,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RepeatedWordTest.testFindFirstRepeatedWord">
+  <component name="RunManager" selected="JUnit.BinaryTreeTest.testTreeIntersection">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -326,6 +365,36 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="BinaryTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.BinaryTreeTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeTest.testTreeIntersection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tree" />
+      <option name="MAIN_CLASS_NAME" value="tree.BinaryTreeTest" />
+      <option name="METHOD_NAME" value="testTreeIntersection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HashtableTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
@@ -342,50 +411,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashtableTest.testContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RepeatedWordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hashtable.*" />
+          <option name="PATTERN" value="repeatedword.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hashtable" />
-      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
-      <option name="METHOD_NAME" value="testContains" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HashtableTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hashtable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hashtable" />
-      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
-      <option name="METHOD_NAME" value="testFind" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HashtableTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hashtable.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hashtable" />
-      <option name="MAIN_CLASS_NAME" value="hashtable.HashtableTest" />
-      <option name="METHOD_NAME" value="testSize" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="repeatedword" />
+      <option name="MAIN_CLASS_NAME" value="repeatedword.RepeatedWordTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -408,11 +443,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinaryTreeTest.testTreeIntersection" />
+        <item itemvalue="JUnit.BinaryTreeTest" />
+        <item itemvalue="JUnit.RepeatedWordTest" />
         <item itemvalue="JUnit.RepeatedWordTest.testFindFirstRepeatedWord" />
         <item itemvalue="JUnit.HashtableTest.testConstructor" />
-        <item itemvalue="JUnit.HashtableTest.testSize" />
-        <item itemvalue="JUnit.HashtableTest.testContains" />
-        <item itemvalue="JUnit.HashtableTest.testFind" />
       </list>
     </recent_temporary>
   </component>
@@ -430,42 +465,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HashtableTest_testContains - 2019.01.14 at 16h 09m 50s.xml">
-      <configuration name="HashtableTest.testContains" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HashtableTest_testSize - 2019.01.14 at 16h 11m 52s.xml">
-      <configuration name="HashtableTest.testSize" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HashtableTest_testConstructor - 2019.01.14 at 16h 14m 46s.xml">
-      <configuration name="HashtableTest.testConstructor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RepeatedWordTest_testFindFirstRepeatedWord - 2019.01.14 at 19h 37m 25s.xml">
-      <configuration name="RepeatedWordTest.testFindFirstRepeatedWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RepeatedWordTest_testFindFirstRepeatedWord - 2019.01.14 at 19h 39m 59s.xml">
-      <configuration name="RepeatedWordTest.testFindFirstRepeatedWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RepeatedWordTest_testFindFirstRepeatedWord - 2019.01.14 at 19h 42m 33s.xml">
-      <configuration name="RepeatedWordTest.testFindFirstRepeatedWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RepeatedWordTest_testFindFirstRepeatedWord - 2019.01.14 at 19h 44m 53s.xml">
-      <configuration name="RepeatedWordTest.testFindFirstRepeatedWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RepeatedWordTest_testFindFirstRepeatedWord - 2019.01.14 at 19h 50m 22s.xml">
-      <configuration name="RepeatedWordTest.testFindFirstRepeatedWord" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RepeatedWordTest_testFindFirstRepeatedWord - 2019.01.14 at 20h 08m 19s.xml">
       <configuration name="RepeatedWordTest.testFindFirstRepeatedWord" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RepeatedWordTest_testFindFirstRepeatedWord - 2019.01.14 at 20h 09m 06s.xml">
       <configuration name="RepeatedWordTest.testFindFirstRepeatedWord" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RepeatedWordTest - 2019.01.15 at 18h 48m 39s.xml">
+      <configuration name="RepeatedWordTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RepeatedWordTest - 2019.01.15 at 18h 52m 20s.xml">
+      <configuration name="RepeatedWordTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTest - 2019.01.15 at 19h 07m 36s.xml">
+      <configuration name="BinaryTreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTest - 2019.01.15 at 19h 07m 48s.xml">
+      <configuration name="BinaryTreeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTest_testTreeIntersection - 2019.01.15 at 19h 31m 31s.xml">
+      <configuration name="BinaryTreeTest.testTreeIntersection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTest_testTreeIntersection - 2019.01.15 at 19h 38m 42s.xml">
+      <configuration name="BinaryTreeTest.testTreeIntersection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTest_testTreeIntersection - 2019.01.15 at 19h 40m 35s.xml">
+      <configuration name="BinaryTreeTest.testTreeIntersection" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTest_testTreeIntersection - 2019.01.15 at 19h 52m 59s.xml">
+      <configuration name="BinaryTreeTest.testTreeIntersection" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20872483" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.4362416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -474,7 +509,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32152975" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32152975" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -484,6 +519,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -526,16 +562,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../src/main/java/tree/Node.java" />
-    <entry file="file://$PROJECT_DIR$/../src/main/java/fizzbuzztree/FizzBuzzTree.java" />
-    <entry file="file://$PROJECT_DIR$/../src/main/java/stacksandqueues/Stack.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="562" selection-start-line="562" selection-end-line="562" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../src/main/java/multibracketvalidation/MultiBracketValidation.java" />
     <entry file="file://$PROJECT_DIR$/../readmes/multibracketvalidation.md" />
     <entry file="file://$PROJECT_DIR$/../gradlew" />
@@ -733,13 +759,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repeatedword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repeatedword.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/hashtable/HashtableTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -781,13 +801,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="391">
-            <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/repeatedword/RepeatedWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -801,16 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repeatedword/RepeatedWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/repeatedword/RepeatedWordTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -818,11 +828,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="289" column="178" selection-start-line="289" selection-start-column="178" selection-end-line="289" selection-end-column="178" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="327">
+            <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readmes/repeatedword.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="256">
-            <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <first_editor relative-caret-position="214">
+            <caret line="26" column="18" selection-end-line="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/treeintersection.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="208">
+            <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           </first_editor>
           <second_editor />
         </state>
