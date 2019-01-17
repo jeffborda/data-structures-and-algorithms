@@ -6,10 +6,11 @@ In this challenge, the inputs are two HashMaps with String key/value pairs. The 
 A LEFT JOIN will return all key/values in the left table, and for any key in the right table that also appears in the left table, that right table's value will also be put into the HashMap. 
 
 ## Example
-
-<img src="../assets/left-join-example.png"
-       alt="White Board Picture"
-       style="float: left; margin-right: 10px; width: 200px;" />
+       
+<p align="center">
+  <img src="../assets/left-join-example.png" title="Example Output">
+  <img src="your_relative_path_here_number_2_large_name" width="350" alt="Example Output">
+</p>
 
 ## Approach
 
@@ -46,7 +47,7 @@ I used JUnit testing on the following cases:
 
 ## Solution
 
-  <img src="../assets/left-join-example.jpg"
+  <img src="../assets/left-join.jpg"
        alt="White Board Picture"
        style="float: left; margin-right: 10px; width: 200px;" />
 
