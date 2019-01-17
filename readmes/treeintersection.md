@@ -30,5 +30,5 @@ I used JUnit testing on the following cases:
 
 ## Solution
 
-<img src="../assets/tree-intersection.jpg" width="500">
+<img src="../assets/tree-intersection.jpg" width="800">
 
