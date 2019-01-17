@@ -7,7 +7,7 @@ A LEFT JOIN will return all key/values in the left table, and for any key in the
 
 ## Example
 
-<img src="../assets/example-left-join.png"
+<img src="../assets/left-join-example.png"
        alt="White Board Picture"
        style="float: left; margin-right: 10px; width: 200px;" />
 
