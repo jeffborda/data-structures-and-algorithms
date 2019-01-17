@@ -43,6 +43,9 @@ I used JUnit testing on the following cases:
 * The fact that the result should always be the same size as the left input HashMap.
 * The fact that the list of values for each key in the result is size 2.
 
+## References
+* Using a for each loop to iterate through a Map: https://stackoverflow.com/questions/1066589/iterate-through-a-hashmap
+
 ## Solution
 
 <img src="../assets/left-join.jpg" width="800">
