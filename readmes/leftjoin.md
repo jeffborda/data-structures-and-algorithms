@@ -6,11 +6,9 @@ In this challenge, the inputs are two HashMaps with String key/value pairs. The 
 A LEFT JOIN will return all key/values in the left table, and for any key in the right table that also appears in the left table, that right table's value will also be put into the HashMap. 
 
 ## Example
-       
-<p align="center">
-  <img src="../assets/left-join-example.png" title="Example Output">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="Example Output">
-</p>
+
+<img src="../assets/left-join-example.png" width="500">
+
 
 ## Approach
 
