@@ -1,52 +1,36 @@
 # Tree Intersection
-* [Code](../src/main/java/leftjoin)
+* [Code](../src/main/java/tree)
 
-In this challenge, the inputs are two HashMaps with String key/value pairs. The method is required to perform a LEFT JOIN and return a data structure containing the results.  I chose to return another HashMap which has String keys, and a list of String values.
-
-A LEFT JOIN will return all key/values in the left table, and for any key in the right table that also appears in the left table, that right table's value will also be put into the HashMap. 
-
-## Example
-
-<img src="../assets/example-left-join.png"
-       alt="White Board Picture"
-       style="float: left; margin-right: 10px; width: 200px;" />
+In this challenge, the inputs are two BinaryTrees. The method is required to return a Set of values that appear in both trees.
 
 ## Approach
 
-I chose to return a HashMap since HashMaps will contains unique keys and will perform lookups in constant time.  The steps of the algorithm are:
+My approach was to utilize a HashSet. The functionality of a HashSet's function `add()` is to return false if the HashSet already contains the same value.  Therefore I made the first tree into a HashSet with my helper function which does a Breadth First Traversal.  I do the same for the second tree, and also make a third Set which will contain the shared values between the two trees.  The algorithm then follows these steps:
 
-1. Iterate through the left HashMap.  
-2. Make a list which will contain the String values. 
-3. Add the left HashMap value to the list always.
-4. Check if the right table has the same key.
-5. If so, add it's value to the list.
-6. If not, add a 'null' to the list.
-7. Put the Key/Value(list) pair into the result HashMap.
-8. Return the result HashMap.
-
-
+1. Iterate through HashSet #2 (containing Tree two's values).  
+2. Using `.add()`, try to put the value from HashSet #2, into HashSet #1. 
+3. If `.add()` returns false (it will return false if that value is already in the set), add that value to the Set of shared values.
+4. Return the shared values Set.
 
 ## Methods and Big-O
 
-There is only loop in the method, and lookups are constant time with HashMaps.  I make a copy HashMap to return which could be size n.
+There are several loops in the algorithm, but only one is used at any given time.  I make copies of values in tree one, tree two, and any shared values.
 
 | Method                    | Description                                                                                                                        | Big-O Time  | Big-O Space  |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------|--------------|
-| `leftJoin()`              | Public static method that takes in two HashMaps, and will return a HashMap with the result of the LEFT JOIN.                       | O(n)        | O(n)         |
-
+| `treeIntersection()`      | Public static method that takes in two BinaryTrees, and will return a set of Integers shared between both trees.                   | O(n)        | O(n)         |
+| `integerTreeToSet()`      | Helper method that takes in one BinaryTree and returns a Set of that tree's values by doing a breadth first traversal.             | O(n)        | O(n)         |
 
 ## Testing
 
 I used JUnit testing on the following cases:
-* HashMaps with size > 1 and many shared keys.
-* HashMaps with size > 1 and no shared keys.
-* Empty HashMaps.
-* The fact that the result should always be the same size as the left input HashMap.
-* The fact that the list of values for each key in the result is size 2.
+* Trees with many branches and many shared values.
+* Trees with no shared values (should return empty Set).
+* Empty trees (should return empty Set).
 
 ## Solution
 
-  <img src="../assets/left-join.jpg"
+  <img src="../assets/tree-intersection.jpg"
        alt="White Board Picture"
        style="float: left; margin-right: 10px; width: 200px;" />
 
