@@ -30,9 +30,5 @@ I used JUnit testing on the following cases:
 
 ## Solution
 
-  <img src="../assets/tree-intersection.jpg"
-       alt="White Board Picture"
-       style="float: left; margin-right: 10px; width: 200px;" />
-
-
+<img src="../assets/tree-intersection.jpg" width="500">
 
