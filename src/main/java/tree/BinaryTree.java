@@ -17,6 +17,12 @@ public class BinaryTree<T> {
     }
 
 
+
+    public static boolean isBinaryTree(BinaryTree inputTree) {
+
+        return false;
+    }
+
     /**
      * Takes in two binary trees and returns a set of values found in both trees.
      */
