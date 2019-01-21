@@ -291,4 +291,22 @@ public class BinaryTreeTest {
 
     }
 
+    @Test
+    public void testIsBinaryTree() {
+//        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
+//        //     1
+//        //  3     2
+//        //5   7  6   4
+//        BinaryTree testTree1 = new BinaryTree(n1);
+//        assertFalse("A Binary Tree that is NOT a BST should return 'false'.", BinaryTree.isBinaryTree(testTree1));
+//
+//        Node n2 = new Node(10, new Node(3, new Node(1, null, null), new Node(7, null, null)), new Node(20, new Node(15, null, null), new Node(30, null, null)));
+//        //     10
+//        //  3     20
+//        //1   7  15   30
+//        BinaryTree testTree2 = new BinaryTree(n2);
+//        assertTrue("A Binary Search Tree should return 'true'.", BinaryTree.isBinaryTree(testTree2));
+
+    }
+
 }

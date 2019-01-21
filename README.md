@@ -24,3 +24,4 @@ This repo is home to my Java 401 code challenges at Code Fellows.
 * [Challenge 31 - Repeated Word](readmes/repeatedword.md)
 * [Challenge 32 - Tree Intersection](readmes/treeintersection.md)
 * [Challenge 33 - Left Join Two HashMaps](readmes/leftjoin.md)
+* [Challenge 34 - InsertionSort](readmes/insertionsort.md)
