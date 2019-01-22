@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readmes/insertionsort.md" beforeDir="false" afterPath="$PROJECT_DIR$/readmes/insertionsort.md" afterDir="false" />
-    </list>
+    <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -21,6 +17,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/data_structures_and_algorithms$RepeatedWordTest.ic" NAME="RepeatedWordTest Coverage Results" MODIFIED="1547607136332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>repeatedword.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/data_structures_and_algorithms$SortTest_testMerge.ic" NAME="SortTest.testMerge Coverage Results" MODIFIED="1548131277217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sort.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/data_structures_and_algorithms$BinaryTreeTest.ic" NAME="BinaryTreeTest Coverage Results" MODIFIED="1547608063746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>tree.*</FILTER>
@@ -57,34 +56,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/leftjoin/Join.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/sort/SortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinaryTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="307" column="103" lean-forward="true" selection-start-line="295" selection-start-column="10" selection-end-line="307" selection-end-column="103" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="25" column="152" selection-start-line="25" selection-start-column="152" selection-end-line="25" selection-end-column="152" />
             </state>
           </provider>
         </entry>
@@ -92,51 +67,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sort/Sort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/sort/SortTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="-31">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readmes/insertionsort.md">
+        <entry file="file://$PROJECT_DIR$/readmes/mergesort.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="578">
-                <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="361">
-                <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readmes/leftjoin.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="239">
-                <caret line="38" column="16" selection-end-line="54" />
+              <first_editor relative-caret-position="183">
+                <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
               </first_editor>
               <second_editor />
             </state>
@@ -179,8 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/fifoanimalshelter/FIFOAnimalShelterTest.java" />
-        <option value="$PROJECT_DIR$/readmes/fifoanimalshelter.md" />
         <option value="$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" />
         <option value="$PROJECT_DIR$/src/test/java/multibracketvalidation/MultiBracketValidationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/multibracketvalidation/MultiBracketValidation.java" />
@@ -227,16 +170,18 @@
         <option value="$PROJECT_DIR$/src/test/java/insertionsort/InsertionSortTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/sort/InsertionSortTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sort/InsertionSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sort/Sort.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/readmes/insertionsort.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/sort/Sort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/sort/SortTest.java" />
+        <option value="$PROJECT_DIR$/readmes/mergesort.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -314,7 +259,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548044557617" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548136984556" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -356,7 +301,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InsertionSortTest.testInsertionSort (1)">
+  <component name="RunManager" selected="JUnit.SortTest.testInsertionSort">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -376,22 +321,6 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BinaryTreeTest.testIsBinaryTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tree" />
-      <option name="MAIN_CLASS_NAME" value="tree.BinaryTreeTest" />
-      <option name="METHOD_NAME" value="testIsBinaryTree" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InsertionSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
@@ -406,7 +335,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSortTest.testInsertionSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
         <pattern>
@@ -414,26 +343,8 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="insertionsort" />
-      <option name="MAIN_CLASS_NAME" value="insertionsort.InsertionSortTest" />
-      <option name="METHOD_NAME" value="testInsertionSort" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JoinTest.testLeftJoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leftjoin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leftjoin" />
-      <option name="MAIN_CLASS_NAME" value="leftjoin.JoinTest" />
-      <option name="METHOD_NAME" value="testLeftJoin" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="sort" />
+      <option name="MAIN_CLASS_NAME" value="sort.SortTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -454,13 +365,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortTest.testMerge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sort" />
+      <option name="MAIN_CLASS_NAME" value="sort.SortTest" />
+      <option name="METHOD_NAME" value="testMerge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTest.testMergeSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sort" />
+      <option name="MAIN_CLASS_NAME" value="sort.SortTest" />
+      <option name="METHOD_NAME" value="testMergeSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InsertionSortTest.testInsertionSort (1)" />
+        <item itemvalue="JUnit.SortTest.testInsertionSort" />
+        <item itemvalue="JUnit.SortTest.testMergeSort" />
+        <item itemvalue="JUnit.SortTest.testMerge" />
+        <item itemvalue="JUnit.SortTest" />
         <item itemvalue="JUnit.InsertionSortTest" />
-        <item itemvalue="JUnit.InsertionSortTest.testInsertionSort" />
-        <item itemvalue="JUnit.BinaryTreeTest.testIsBinaryTree" />
-        <item itemvalue="JUnit.JoinTest.testLeftJoin" />
       </list>
     </recent_temporary>
   </component>
@@ -478,42 +421,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InsertionSortTest_testInsertionSort - 2019.01.20 at 18h 14m 52s.xml">
-      <configuration name="InsertionSortTest.testInsertionSort" configurationId="JUnit" />
+    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 47m 01s.xml">
+      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSortTest - 2019.01.20 at 19h 46m 14s.xml">
-      <configuration name="InsertionSortTest" configurationId="JUnit" />
+    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 48m 17s.xml">
+      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSortTest - 2019.01.20 at 19h 46m 56s.xml">
-      <configuration name="InsertionSortTest" configurationId="JUnit" />
+    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 48m 48s.xml">
+      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSortTest - 2019.01.20 at 19h 48m 02s.xml">
-      <configuration name="InsertionSortTest" configurationId="JUnit" />
+    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 48m 59s.xml">
+      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSortTest - 2019.01.20 at 19h 49m 57s.xml">
-      <configuration name="InsertionSortTest" configurationId="JUnit" />
+    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 49m 03s.xml">
+      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSortTest - 2019.01.20 at 19h 53m 23s.xml">
-      <configuration name="InsertionSortTest" configurationId="JUnit" />
+    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 49m 15s.xml">
+      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSortTest - 2019.01.20 at 19h 53m 46s.xml">
-      <configuration name="InsertionSortTest" configurationId="JUnit" />
+    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 21h 14m 43s.xml">
+      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSortTest - 2019.01.20 at 19h 55m 11s.xml">
-      <configuration name="InsertionSortTest" configurationId="JUnit" />
+    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 21h 17m 57s.xml">
+      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSortTest - 2019.01.20 at 19h 55m 25s.xml">
-      <configuration name="InsertionSortTest" configurationId="JUnit" />
+    <history-entry file="SortTest_testInsertionSort - 2019.01.21 at 21h 57m 19s.xml">
+      <configuration name="SortTest.testInsertionSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertionSortTest_testInsertionSort_(1) - 2019.01.20 at 19h 57m 11s.xml">
-      <configuration name="InsertionSortTest.testInsertionSort (1)" configurationId="JUnit" />
+    <history-entry file="SortTest_testInsertionSort - 2019.01.21 at 21h 57m 33s.xml">
+      <configuration name="SortTest.testInsertionSort" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.10805369" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12348993" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -575,7 +518,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../src/main/java/graph/Edge.java" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/graph/Node.java" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/graph/Graph.java" />
     <entry file="file://$PROJECT_DIR$/../README.md" />
@@ -874,6 +816,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/trees.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="70" selection-end-line="31" selection-end-column="139" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/leftjoin/Join.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -886,16 +838,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tree/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="255">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readmes/trees.md">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4947">
+          <caret line="307" column="103" selection-start-line="295" selection-start-column="10" selection-end-line="307" selection-end-column="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/insertionsort.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="16" column="70" selection-end-line="31" selection-end-column="139" />
+          <first_editor relative-caret-position="170">
+            <caret line="10" column="25" lean-forward="true" selection-end-line="39" />
           </first_editor>
           <second_editor />
         </state>
@@ -904,52 +866,45 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="361">
-            <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <first_editor relative-caret-position="459">
+            <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readmes/leftjoin.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="239">
-            <caret line="38" column="16" selection-end-line="54" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tree/BinaryTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="307" column="103" lean-forward="true" selection-start-line="295" selection-start-column="10" selection-end-line="307" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sort/Sort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/sort/SortTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <caret line="25" column="152" selection-start-line="25" selection-start-column="152" selection-end-line="25" selection-end-column="152" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readmes/insertionsort.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/Sort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/leftjoin.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="578">
-            <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+          <first_editor relative-caret-position="242">
+            <caret line="50" selection-start-line="50" selection-end-line="51" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/mergesort.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="183">
+            <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
           </first_editor>
           <second_editor />
         </state>

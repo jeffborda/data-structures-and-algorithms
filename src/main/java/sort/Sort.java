@@ -1,5 +1,8 @@
 package sort;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Sort {
 
     /**
@@ -17,7 +20,7 @@ public class Sort {
             // Start one index below i
             int j = i - 1;
 
-            // While the currentValue at index i is less than the current value below it -starting with j and moving left
+            // While the currentValue from index i is less than the current value below it -starting with j and moving left
             while(j >= 0 && currentValue < inputArray[j]){
                 // Move the value below up a position
                 inputArray[j + 1] = inputArray[j];
@@ -28,5 +31,46 @@ public class Sort {
         }
         // Returning the same array that was passed into the method.
         return inputArray;
+    }
+
+    public static int[] mergeSort(int[] inputArray) {
+        if(inputArray.length < 2) {
+            return inputArray;
+        }
+
+        int[] firstHalf = Arrays.copyOfRange(inputArray, 0, inputArray.length/2);
+        int[] secondHalf = Arrays.copyOfRange(inputArray, ((inputArray.length/2)), inputArray.length);
+
+        return merge(mergeSort(firstHalf), mergeSort(secondHalf));
+    }
+
+    protected static int[] merge(int[] inputArray1, int[] inputArray2) {
+
+        int[] result = new int[inputArray1.length + inputArray2.length];
+        int index1 = 0;
+        int index2 = 0;
+        int i = 0;
+        while(index1 < inputArray1.length && index2 < inputArray2.length) {
+            if(inputArray1[index1] < inputArray2[index2]) {
+                result[i] = inputArray1[index1];
+                index1++;
+            }
+            else {
+                result[i] = inputArray2[index2];
+                index2++;
+            }
+            i++;
+        }
+        while(index1 < inputArray1.length) {
+            result[i] = inputArray1[index1];
+            index1++;
+            i++;
+        }
+        while(index2 < inputArray2.length) {
+            result[i] = inputArray2[index2];
+            index2++;
+            i++;
+        }
+        return result;
     }
 }
