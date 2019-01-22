@@ -25,3 +25,4 @@ This repo is home to my Java 401 code challenges at Code Fellows.
 * [Challenge 32 - Tree Intersection](readmes/treeintersection.md)
 * [Challenge 33 - Left Join Two HashMaps](readmes/leftjoin.md)
 * [Challenge 34 - Insertion Sort](readmes/insertionsort.md)
+* [Challenge 36 - Merge Sort](readmes/mergesort.md)
