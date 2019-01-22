@@ -18,9 +18,12 @@ The recursive part of the method calls itself by passing in the input array spli
 
 ## Methods and Big-O
 
+Since, `mergeSort()` will split the input array of n length until it reaches less than size 2, the time complexity is: log n.  However, the `merge()` helper method must also iterate through the entire length n, of the input array.  So, the resulting time complexity is O(n log n)  Since, `merge()` also makes a copy of all values into a return array, this gives it the space complexity of O(n).
+
+
 | Method                    | Description                                                                                                                        | Big-O Time  | Big-O Space  |
 |---------------------------|-----------------------------------------------------------------------------------|-------------|--------------|
-| `mergeSort()`             | Takes the input array and sorts it used the merge sort algorithm.                 | O(n)        | O(n)         |
+| `mergeSort()`             | Takes the input array and sorts it used the merge sort algorithm.                 | O(n log n)  | O(n)         |
 
 
 ## Testing
