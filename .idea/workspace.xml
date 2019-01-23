@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="" />
+    <list default="true" id="7f945bed-72bf-4465-a46e-ddce8ff6f737" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sort/SortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sort/SortTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -58,8 +63,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/sort/SortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="152" selection-start-line="25" selection-start-column="152" selection-end-line="25" selection-end-column="152" />
+            <state relative-caret-position="482">
+              <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="108" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readmes/quicksort.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="115">
+                <caret line="45" selection-start-line="45" selection-end-line="45" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -67,23 +84,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sort/Sort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-31">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="645">
+              <caret line="147" column="34" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readmes/mergesort.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="183">
-                <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -124,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../src/main/java/fifoanimalshelter/FIFOAnimalShelter.java" />
         <option value="$PROJECT_DIR$/src/test/java/multibracketvalidation/MultiBracketValidationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/multibracketvalidation/MultiBracketValidation.java" />
         <option value="$PROJECT_DIR$/readmes/multibracketvalidation.md" />
@@ -171,15 +175,16 @@
         <option value="$PROJECT_DIR$/src/test/java/sort/InsertionSortTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sort/InsertionSort.java" />
         <option value="$PROJECT_DIR$/readmes/insertionsort.md" />
+        <option value="$PROJECT_DIR$/readmes/mergesort.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/sort/Sort.java" />
+        <option value="$PROJECT_DIR$/readmes/quicksort.md" />
         <option value="$PROJECT_DIR$/src/test/java/sort/SortTest.java" />
-        <option value="$PROJECT_DIR$/readmes/mergesort.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -191,7 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -256,10 +260,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548136984556" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548228492409" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -301,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SortTest.testInsertionSort">
+  <component name="RunManager" selected="JUnit.SortTest.quickSort">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -321,20 +326,6 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="InsertionSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="insertionsort" />
-      <option name="MAIN_CLASS_NAME" value="insertionsort.InsertionSortTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
       <extension name="coverage">
@@ -345,6 +336,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="sort" />
       <option name="MAIN_CLASS_NAME" value="sort.SortTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTest.quickSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.jeffborda.dsandalgorithms.data-structures-and-algorithms.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sort" />
+      <option name="MAIN_CLASS_NAME" value="sort.SortTest" />
+      <option name="METHOD_NAME" value="quickSort" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -399,11 +406,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SortTest.quickSort" />
+        <item itemvalue="JUnit.SortTest" />
         <item itemvalue="JUnit.SortTest.testInsertionSort" />
         <item itemvalue="JUnit.SortTest.testMergeSort" />
         <item itemvalue="JUnit.SortTest.testMerge" />
-        <item itemvalue="JUnit.SortTest" />
-        <item itemvalue="JUnit.InsertionSortTest" />
       </list>
     </recent_temporary>
   </component>
@@ -421,42 +428,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 47m 01s.xml">
-      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 22h 30m 53s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 48m 17s.xml">
-      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 22h 31m 04s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 48m 48s.xml">
-      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 22h 38m 04s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 48m 59s.xml">
-      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 22h 39m 38s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 49m 03s.xml">
-      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 22h 46m 02s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 20h 49m 15s.xml">
-      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 22h 46m 22s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 21h 14m 43s.xml">
-      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 22h 46m 49s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest_testMergeSort - 2019.01.21 at 21h 17m 57s.xml">
-      <configuration name="SortTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 22h 47m 04s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest_testInsertionSort - 2019.01.21 at 21h 57m 19s.xml">
-      <configuration name="SortTest.testInsertionSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 23h 08m 59s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest_testInsertionSort - 2019.01.21 at 21h 57m 33s.xml">
-      <configuration name="SortTest.testInsertionSort" configurationId="JUnit" />
+    <history-entry file="SortTest_quickSort - 2019.01.22 at 23h 27m 52s.xml">
+      <configuration name="SortTest.quickSort" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12348993" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1261745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -465,7 +472,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32152975" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32152975" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -517,10 +524,21 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/sort/Sort.java</url>
+          <line>95</line>
+          <properties class="sort.Sort" method="quickSortHelper">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../src/main/java/graph/Node.java" />
-    <entry file="file://$PROJECT_DIR$/../src/main/java/graph/Graph.java" />
-    <entry file="file://$PROJECT_DIR$/../README.md" />
     <entry file="file://$PROJECT_DIR$/../readmes/fizzbuzztree.md" />
     <entry file="file://$PROJECT_DIR$/../src/main/java/tree/BinaryTree.java" />
     <entry file="file://$PROJECT_DIR$/../readmes/graphbreadthfirst.md" />
@@ -656,35 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="137" selection-start-line="137" selection-end-line="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="369" selection-start-line="369" selection-end-line="369" />
-          <folding>
-            <element signature="e#2922#2923#0" expanded="true" />
-            <element signature="e#2966#2967#0" expanded="true" />
-            <element signature="e#10310#10449#0" expanded="true" />
-            <element signature="e#10448#10449#0" expanded="true" />
-            <element signature="e#11040#11204#0" expanded="true" />
-            <element signature="e#11203#11204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="833" selection-start-line="833" selection-end-line="833" />
         </state>
       </provider>
     </entry>
@@ -863,33 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="459">
-            <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/sort/SortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="152" selection-start-line="25" selection-start-column="152" selection-end-line="25" selection-end-column="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sort/Sort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readmes/leftjoin.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -900,11 +862,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/ExactComparisonCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+          <folding>
+            <element signature="e#3920#3921#0" expanded="true" />
+            <element signature="e#3966#3967#0" expanded="true" />
+            <element signature="e#4403#4404#0" expanded="true" />
+            <element signature="e#4455#4456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/ComparisonCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#2391#2392#0" expanded="true" />
+            <element signature="e#2463#2464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="328" selection-start-line="328" selection-end-line="328" />
+          <folding>
+            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="e#2966#2967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="327">
+            <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readmes/mergesort.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="183">
-            <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <first_editor relative-caret-position="273">
+            <caret line="36" column="23" selection-end-line="52" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/Sort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="147" column="34" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/sort/SortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="108" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readmes/quicksort.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="115">
+            <caret line="45" selection-start-line="45" selection-end-line="45" />
           </first_editor>
           <second_editor />
         </state>

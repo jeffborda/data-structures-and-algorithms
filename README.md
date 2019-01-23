@@ -26,3 +26,4 @@ This repo is home to my Java 401 code challenges at Code Fellows.
 * [Challenge 33 - Left Join Two HashMaps](readmes/leftjoin.md)
 * [Challenge 34 - Insertion Sort](readmes/insertionsort.md)
 * [Challenge 36 - Merge Sort](readmes/mergesort.md)
+* [Challenge 37 - Quick Sort](readmes/quicksort.md)
