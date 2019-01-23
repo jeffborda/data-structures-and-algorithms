@@ -84,17 +84,10 @@ public class SortTest {
         Sort.quickSort(testArray5);
         assertArrayEquals("Passing in an array sorted high to low should give back array in reverse order.", new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}, testArray5);
 
-//        int[] testArray6 = new int[]{45, 1, 94, 40, 65, 71, 74, 82, 62, 34, 57, 67, 35, 79, 63, 90, 76, 13, 58, 9, 66, 28, 72, 31, 32, 88, 10, 29, 83, 0, 95, 30, 5, 47, 52, 46, 56, 61, 75, 49, 33, 27, 91, 22, 7, 39, 50, 48, 89, 84};
-//        int[] expected6 = new int[] {0, 1, 5, 7, 9, 10, 13, 22, 27, 28, 29, 30, 31, 32, 33, 34, 35, 39, 40, 45, 46, 47, 48, 49, 50, 52, 56, 57, 58, 61, 62, 63, 65, 66, 67, 71, 72, 74, 75, 76, 79, 82, 83, 84, 88, 89, 90, 91, 94, 95};
-//        Sort.quickSort(testArray6);
-//        assertArrayEquals("Test a large list.", expected6, testArray6);
-
-
-
-//        int[] testArray6 = new int[]{12, 6, 13, 15, 3, 19, 8, 7, 17, 20, 2, 14, 0, 11}; //breaking at size 14
-//        int[] expected6 = new int[] {0, 2, 3, 6, 7, 8, 11, 12, 13, 14, 15, 17, 19, 20};
-//        Sort.quickSort(testArray6);
-//        assertArrayEquals("Test a medium list", expected6, testArray6);
+        int[] testArray6 = new int[]{45, 1, 94, 40, 65, 71, 74, 82, 62, 34, 57, 67, 35, 79, 63, 90, 76, 13, 58, 9, 66, 28, 72, 31, 32, 88, 10, 29, 83, 0, 95, 30, 5, 47, 52, 46, 56, 61, 75, 49, 33, 27, 91, 22, 7, 39, 50, 48, 89, 84};
+        int[] expected6 = new int[] {0, 1, 5, 7, 9, 10, 13, 22, 27, 28, 29, 30, 31, 32, 33, 34, 35, 39, 40, 45, 46, 47, 48, 49, 50, 52, 56, 57, 58, 61, 62, 63, 65, 66, 67, 71, 72, 74, 75, 76, 79, 82, 83, 84, 88, 89, 90, 91, 94, 95};
+        Sort.quickSort(testArray6);
+        assertArrayEquals("Test a large list.", expected6, testArray6);
 
         int[] testArray7 = new int[]{99, 1};
         Sort.quickSort(testArray7);
@@ -104,9 +97,22 @@ public class SortTest {
         Sort.quickSort(testArray8);
         assertArrayEquals("Three element array.", new int[]{-1, 1, 50, 99, 110}, testArray8);
 
-//        int[] testArray9 = new int[]{7, 8, 1, 9, 10};
-//        Sort.quickSort(testArray9);
-//        assertArrayEquals("Test case where the pivot gets swapped initially.", new int[]{1, 7, 8, 9, 10},  testArray9);
+        int[] testArray9 = new int[]{7, 8, 1, 9, 10};
+        Sort.quickSort(testArray9);
+        assertArrayEquals("Test case where the pivot gets swapped initially.", new int[]{1, 7, 8, 9, 10},  testArray9);
+
+        int[] testArray10 = new int[]{12, 6, 13, 15, 3, 19, 8, 7, 17, 20, 2, 14, 0, 11}; //breaking at size 14
+        int[] expected10 = new int[] {0, 2, 3, 6, 7, 8, 11, 12, 13, 14, 15, 17, 19, 20};
+        Sort.quickSort(testArray10);
+        assertArrayEquals("Test a medium list", expected10, testArray10);
 
     }
+
+    @Test
+    public void testQuickSortWithBuckets() {
+        int[] testArray7 = new int[]{99, 1};
+
+        assertArrayEquals("Two element array.", new int[]{1, 99}, Sort.quickSortWithBuckets(testArray7));
+    }
+
 }
