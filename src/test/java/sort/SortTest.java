@@ -108,11 +108,4 @@ public class SortTest {
 
     }
 
-    @Test
-    public void testQuickSortWithBuckets() {
-        int[] testArray7 = new int[]{99, 1};
-
-        assertArrayEquals("Two element array.", new int[]{1, 99}, Sort.quickSortWithBuckets(testArray7));
-    }
-
 }

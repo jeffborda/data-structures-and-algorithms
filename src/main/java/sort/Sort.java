@@ -141,10 +141,8 @@ public class Sort {
 //        right++; // -->
 
         // BASE CASE IS:  if (bucket.length < 2)
-        // So do recursion until the size of the bucket is less than 2
-        // Using pointers to determine length: if (start == left || right == end)  is the same as having one element.
+        // So do recursion until the size of the bucket is less than 2 using pointers left and right
         if(left < end) {
-            // Call helper on small side bucket: start to right
             quickSortHelper(inputArray, left, end);
         }
         if(right > start) {
