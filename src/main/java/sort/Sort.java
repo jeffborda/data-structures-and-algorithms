@@ -1,8 +1,8 @@
 package sort;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Random;
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Sort {
 
@@ -93,7 +93,7 @@ public class Sort {
 
 
 
-    protected static void quickSortHelper(int[] inputArray, int start, int end) {
+    private static void quickSortHelper(int[] inputArray, int start, int end) {
 
         int left = start;
         int right = end;
@@ -104,10 +104,7 @@ public class Sort {
         // Put the numbers into their left and right buckets
         //   Smaller on the left, larger on the right
         // Do this until the left and right pointers converge
-
-        //TODO: ERROR TRACING: what if every number is smaller or bigger than the pivot ie[7, 8, 1, 9, 10]
-        //   ??This must be <= because if every number in the array is less than pivot or every number is greater
-        while(left < right) {
+        while(left <= right) {
             // Move the left pointer -->  until it finds a number bigger than the pivot (or it hits the pivot number)
             while(inputArray[left] < pivot) {
                 left++; // -->
@@ -131,27 +128,25 @@ public class Sort {
                 right--; // <--
 
             }
-//            else {
-//                left++;
-//                right--;
-//            }
+            else if (left == right) {
+                left++;
+                right--;
+            }
         }
         // Upon dropping out of loop, left and right are centered on the pivot element
         //  OR they are past each other in a 2 element array
 
         // Reset left to the left of the pivot, reset right to the right of the pivot
-        left--; // <--
-        right++; // -->
+//        left--; // <--
+//        right++; // -->
 
         // BASE CASE IS:  if (bucket.length < 2)
-        // So do recursion until the size of the bucket is less than 2
-        // Using pointers to determine length: if (start == left || right == end)  is the same as having one element.
-        if(start < left) {
-            // Call helper on small side bucket: start to right
-            quickSortHelper(inputArray, start, left);
+        // So do recursion until the size of the bucket is less than 2 using pointers left and right
+        if(left < end) {
+            quickSortHelper(inputArray, left, end);
         }
-        if(right < end) {
-            quickSortHelper(inputArray, right, end);
+        if(right > start) {
+            quickSortHelper(inputArray, start, right);
         }
     }
 }
