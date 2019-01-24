@@ -14,12 +14,13 @@ public class Sort {
     public static int[] insertionSort(int[] inputArray) {
 
         int currentValue;
+        int j;
 
         for(int i = 1; i < inputArray.length; i++) {
             // Save the value we are looking at, starting at the second element
             currentValue = inputArray[i];
             // Start one index below i
-            int j = i - 1;
+            j = i - 1;
 
             // While the currentValue from index i is less than the current value below it -starting with j and moving left
             while(j >= 0 && currentValue < inputArray[j]){
@@ -148,5 +149,68 @@ public class Sort {
         if(right > start) {
             quickSortHelper(inputArray, start, right);
         }
+    }
+
+
+
+
+    // RE: TO help make queue: https://stackoverflow.com/questions/8559092/create-an-array-of-arraylists
+    public static int[] radixSort(int[] inputArray) {
+
+        int base = 10;
+        List<Integer>[] buckets = new ArrayList[base];
+        int[] result = new int[inputArray.length];
+
+        for(int i = 0; i < base; i++) {
+            buckets[i] = new ArrayList<>();
+        }
+
+
+        // Put all the numbers into their buckets based on their ones digit
+        for(int i = 0; i < inputArray.length; i++) {
+            int onesDigit = inputArray[i] % base;
+            buckets[onesDigit].add(inputArray[i]);
+        }
+
+        //Start sorting the buckets
+        for(int i = 0; i < base; i++) {
+
+            for(int j = 0; j < buckets[i].size(); j++) {
+                // TODO: num is for readability, can be integrated into solution and deleted later
+                int num = buckets[i].get(j);
+                int tensPlace = (num / 10) % 10;
+                buckets[tensPlace].add(num);
+            }
+        }
+
+        int[] result = new int[inputArray.length];
+        int counter = 0;
+        int temp = -1;
+        for(int i = 0; i < base; i++) {
+
+//            for(int j = 0; j < buckets[i].size(); j++) {
+//                int num = buckets[i].get(j);
+//                result[counter] = num;
+//                counter++;
+//            }
+
+            for(Integer num : inputArray) {
+                temp = num / 10
+            }
+        }
+
+
+        return result;
+
+    }
+
+    private int findMax(int[] inputArray) {
+        int max = inputArray[0];
+        for(int i = 1; i < inputArray.length; i++) {
+            if(inputArray[i] > max) {
+                max = inputArray[i];
+            }
+        }
+        return max;
     }
 }

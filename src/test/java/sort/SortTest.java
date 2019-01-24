@@ -108,4 +108,13 @@ public class SortTest {
 
     }
 
+
+    @Test
+    public void testRadixSort() {
+        int[] testArray1 = new int[]{56, 79, 64, 51, 21, 11, 32, 25, 86, 32, 27, 74};
+        int[] expected1 = new int[]{ 11, 21, 25, 27, 32, 32, 51,56, 64, 74, 79, 86};
+        assertArrayEquals(expected1, Sort.radixSort(testArray1));
+
+    }
+
 }
