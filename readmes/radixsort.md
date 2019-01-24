@@ -20,12 +20,12 @@ This approach returns a new array, preserving the input array.  However, it coul
 
 ## Methods and Big-O
 
-The time complexity is linear in this algorithm, and I believe I maintained that since the nested loop is not based on n, but the number of digits, which is fixed with int.
+The time complexity based on the number of digits, d, in the largest number, the base, b, of the number system, and the number of items, n, in the input array.
 
 
-| Method                    | Description                                                                                                                        | Big-O Time  | Big-O Space  |
+| Method                    | Description                                                                       | Big-O Time  | Big-O Space  |
 |---------------------------|-----------------------------------------------------------------------------------|-------------|--------------|
-| `radixSort()`             | Takes the input array and sorts it used the radix sort algorithm.                 | O(n)        | O(n)         |
+| `radixSort()`             | Takes the input array and sorts it used the radix sort algorithm.                 | O(d·b·n)    | O(n)         |
 | `getMaxDigits()`          | Helper that returns the number of digits in the number with the most digits inside the array. | O(n)        | O(1)         |
 
 ## Testing
