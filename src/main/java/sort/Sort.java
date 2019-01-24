@@ -175,7 +175,7 @@ public class Sort {
         int maxDigits = getMaxDigits(result); // maxDigits determines how many times the main loop must iterate base on the number with the most digits
         boolean sorted = false;
         int place = 1; // place is for what place is being sorted, ones place the first loops, then tens place, etc
-        while(!sorted) {
+        while(maxDigits >= 0) {
             // Put all the numbers into their buckets based on their ones digit (tens digit on next iteration, etc)
             for(int i = 0; i < result.length; i++) {
                 int digit = (result[i] / place) % BASE;
@@ -194,9 +194,6 @@ public class Sort {
                 buckets[i].clear();
             }
             maxDigits--;
-            if(maxDigits <= 0) {
-                sorted = true;
-            }
         }
         return result;
     }
