@@ -108,4 +108,40 @@ public class SortTest {
 
     }
 
+
+    @Test
+    public void testRadixSort() {
+        int[] testArray1 = new int[]{9, 8, 5, 6, 7, 0};
+        int[] expected1 = new int[]{0, 5, 6, 7, 8, 9};
+        assertArrayEquals("Single digits test with a '0' input.", expected1, Sort.radixSort(testArray1));
+
+        int[] testArray2 = new int[]{56, 79, 64, 51, 21, 11, 32, 25, 86, 32, 27, 74};
+        int[] expected2 = new int[] {11, 21, 25, 27, 32, 32, 51, 56, 64, 74, 79, 86};
+        assertArrayEquals("Double digits test", expected2, Sort.radixSort(testArray2));
+
+        int[] testArray3 = new int[]{493, 311, 677, 274, 328, 376, 841, 298, 823, 768, 987, 683, 988, 886, 640, 109, 656, 517, 209, 801};
+        int[] expected3 =  new int[]{109, 209, 274, 298, 311, 328, 376, 493, 517, 640, 656, 677, 683, 768, 801, 823, 841, 886, 987, 988};
+        assertArrayEquals("Three digits test", expected3, Sort.radixSort(testArray3));
+
+        int[] testArray4 = new int[]{9610, 3129, 9642, 5438, 2339, 3123, 7764, 67, 7610, 2480, 7811, 19, 4025, 4704, 6187, 9237, 4790, 1461, 4124, 843};
+        int[] expected4  = new int[]{19, 67, 843, 1461, 2339, 2480, 3123, 3129, 4025, 4124, 4704, 4790, 5438, 6187, 7610, 7764, 7811, 9237, 9610, 9642};
+        assertArrayEquals("Should handle input array with numbers of different length.", expected4, Sort.radixSort(testArray4));
+
+        int[] testArray5 = new int[]{};
+        int[] expected5 = new int[]{};
+        assertArrayEquals("Should pass back empty arrays and one element arrays.", expected5, Sort.radixSort(testArray5));
+
+        int[] testArray6 = new int[]{1};
+        int[] expected6 = new int[]{1};
+        assertArrayEquals("Should pass back empty arrays and one element arrays.", expected6, Sort.radixSort(testArray6));
+
+        int[] testArray7 = new int[]{1, 10, 20, 900};
+        int[] expected7 = new int[]{1, 10, 20, 900};
+        assertArrayEquals("Passing a sorted array should get back a copy of the array.", expected7, Sort.radixSort(testArray7));
+
+        int[] testArray8 = new int[]{1000, 100, 10, 1};
+        int[] expected8 = new int[]{1, 10, 100, 1000};
+        assertArrayEquals("Passing a reverse sorted array should get sorted.", expected8, Sort.radixSort(testArray8));
+    }
+
 }

@@ -14,12 +14,13 @@ public class Sort {
     public static int[] insertionSort(int[] inputArray) {
 
         int currentValue;
+        int j;
 
         for(int i = 1; i < inputArray.length; i++) {
             // Save the value we are looking at, starting at the second element
             currentValue = inputArray[i];
             // Start one index below i
-            int j = i - 1;
+            j = i - 1;
 
             // While the currentValue from index i is less than the current value below it -starting with j and moving left
             while(j >= 0 && currentValue < inputArray[j]){
@@ -148,5 +149,66 @@ public class Sort {
         if(right > start) {
             quickSortHelper(inputArray, start, right);
         }
+    }
+
+
+
+
+
+    public static int[] radixSort(int[] inputArray) {
+        if(inputArray.length < 2) {
+            return inputArray;
+        }
+        final int BASE = 10;
+        Queue<Integer>[] buckets = new LinkedList[BASE];
+        int[] result = new int[inputArray.length];
+        // Copy input to a results array
+        //  To do an in-place sort, this step could be skipped, and transfer buckets to input
+        for(int i = 0; i < result.length; i++) {
+            result[i] = inputArray[i];
+        }
+
+        for(int i = 0; i < buckets.length; i++) {
+            buckets[i] = new LinkedList<>();
+        }
+
+        int maxDigits = getMaxDigits(result); // maxDigits determines how many times the main loop must iterate base on the number with the most digits
+        boolean sorted = false;
+        int place = 1; // place is for what place is being sorted, ones place the first loops, then tens place, etc
+        while(!sorted) {
+            // Put all the numbers into their buckets based on their ones digit (tens digit on next iteration, etc)
+            for(int i = 0; i < result.length; i++) {
+                int digit = (result[i] / place) % BASE;
+                buckets[digit].add(result[i]);
+            }
+            // place starts at 1, then 10, then 100, etc.
+            place = place * BASE;
+
+            //Move from buckets -> result[]
+            int index = 0;
+            for(int i = 0; i < BASE; i++) {
+                for(Integer num : buckets[i]) {
+                    result[index] = num;
+                    index++;
+                }
+                buckets[i].clear();
+            }
+            maxDigits--;
+            if(maxDigits <= 0) {
+                sorted = true;
+            }
+        }
+        return result;
+    }
+
+
+    private static int getMaxDigits(int[] inputArray) {
+        int max = inputArray[0];
+        for(int i = 1; i < inputArray.length; i++) {
+            if(inputArray[i] > max) {
+                max = inputArray[i];
+            }
+        }
+        return Integer.toString(max).length();
     }
 }
