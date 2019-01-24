@@ -154,8 +154,11 @@ public class Sort {
 
 
 
-    // RE: TO help make queue: https://stackoverflow.com/questions/8559092/create-an-array-of-arraylists
+
     public static int[] radixSort(int[] inputArray) {
+        if(inputArray.length < 2) {
+            return inputArray;
+        }
         final int BASE = 10;
         Queue<Integer>[] buckets = new LinkedList[BASE];
         int[] result = new int[inputArray.length];
@@ -168,7 +171,6 @@ public class Sort {
         for(int i = 0; i < buckets.length; i++) {
             buckets[i] = new LinkedList<>();
         }
-
 
         int maxDigits = getMaxDigits(result); // maxDigits determines how many times the main loop must iterate base on the number with the most digits
         boolean sorted = false;
@@ -189,7 +191,6 @@ public class Sort {
                     result[index] = num;
                     index++;
                 }
-                // RE: Clearing a List - https://howtodoinjava.com/java/collections/arraylist/empty-clear-arraylist/
                 buckets[i].clear();
             }
             maxDigits--;
