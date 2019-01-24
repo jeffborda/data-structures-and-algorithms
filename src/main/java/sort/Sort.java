@@ -156,61 +156,58 @@ public class Sort {
 
     // RE: TO help make queue: https://stackoverflow.com/questions/8559092/create-an-array-of-arraylists
     public static int[] radixSort(int[] inputArray) {
-
-        int base = 10;
-        List<Integer>[] buckets = new ArrayList[base];
+        final int BASE = 10;
+        Queue<Integer>[] buckets = new LinkedList[BASE];
         int[] result = new int[inputArray.length];
+        // Copy input to a results array
+        //  To do an in-place sort, this step could be skipped, and transfer buckets to input
+        for(int i = 0; i < result.length; i++) {
+            result[i] = inputArray[i];
+        }
 
-        for(int i = 0; i < base; i++) {
-            buckets[i] = new ArrayList<>();
+        for(int i = 0; i < buckets.length; i++) {
+            buckets[i] = new LinkedList<>();
         }
 
 
-        // Put all the numbers into their buckets based on their ones digit
-        for(int i = 0; i < inputArray.length; i++) {
-            int onesDigit = inputArray[i] % base;
-            buckets[onesDigit].add(inputArray[i]);
-        }
+        int maxDigits = getMaxDigits(result); // maxDigits determines how many times the main loop must iterate base on the number with the most digits
+        boolean sorted = false;
+        int place = 1; // place is for what place is being sorted, ones place the first loops, then tens place, etc
+        while(!sorted) {
+            // Put all the numbers into their buckets based on their ones digit (tens digit on next iteration, etc)
+            for(int i = 0; i < result.length; i++) {
+                int digit = (result[i] / place) % BASE;
+                buckets[digit].add(result[i]);
+            }
+            // place starts at 1, then 10, then 100, etc.
+            place = place * BASE;
 
-        //Start sorting the buckets
-        for(int i = 0; i < base; i++) {
-
-            for(int j = 0; j < buckets[i].size(); j++) {
-                // TODO: num is for readability, can be integrated into solution and deleted later
-                int num = buckets[i].get(j);
-                int tensPlace = (num / 10) % 10;
-                buckets[tensPlace].add(num);
+            //Move from buckets -> result[]
+            int index = 0;
+            for(int i = 0; i < BASE; i++) {
+                for(Integer num : buckets[i]) {
+                    result[index] = num;
+                    index++;
+                }
+                // RE: Clearing a List - https://howtodoinjava.com/java/collections/arraylist/empty-clear-arraylist/
+                buckets[i].clear();
+            }
+            maxDigits--;
+            if(maxDigits <= 0) {
+                sorted = true;
             }
         }
-
-        int[] result = new int[inputArray.length];
-        int counter = 0;
-        int temp = -1;
-        for(int i = 0; i < base; i++) {
-
-//            for(int j = 0; j < buckets[i].size(); j++) {
-//                int num = buckets[i].get(j);
-//                result[counter] = num;
-//                counter++;
-//            }
-
-            for(Integer num : inputArray) {
-                temp = num / 10
-            }
-        }
-
-
         return result;
-
     }
 
-    private int findMax(int[] inputArray) {
+
+    private static int getMaxDigits(int[] inputArray) {
         int max = inputArray[0];
         for(int i = 1; i < inputArray.length; i++) {
             if(inputArray[i] > max) {
                 max = inputArray[i];
             }
         }
-        return max;
+        return Integer.toString(max).length();
     }
 }
