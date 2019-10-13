@@ -1,4 +1,4 @@
-package QueueWithStacks;
+package queuewithstacks;
 
 import org.junit.Test;
 
