@@ -6,6 +6,25 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree {
         super();
     }
 
+
+    //Given a sorted array (low to high) return a balanced BST
+    public static BinarySearchTree<Integer> sortedArrayToBST(int[] sortedArr) {
+        BinarySearchTree<Integer> answer = new BinarySearchTree<>();
+        answer.root = sortedArrayToBST(sortedArr, 0, sortedArr.length - 1);
+        return answer;
+    }
+
+    private static Node<Integer> sortedArrayToBST(int[] arr, int start, int end) {
+        if(end < start) {
+            return null;
+        }
+        int mid = (start + end) / 2;
+        Node<Integer> n = new Node<>(arr[mid]);
+        n.left = sortedArrayToBST(arr, start, mid - 1);
+        n.right = sortedArrayToBST(arr, mid + 1, end);
+        return n;
+    }
+
     public boolean add(T value) {
         Node<T> current = root;
         // Check if tree is empty, if so, set the root to new node

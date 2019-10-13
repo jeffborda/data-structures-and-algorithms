@@ -12,6 +12,11 @@ public class Node<T> {
         this.right = right;
     }
 
+    public Node(T value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
 
 
 }
