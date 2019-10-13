@@ -170,6 +170,7 @@ public class LinkedList {
     public String kFromEnd(int k) {
 
         if(k < 0 || head == null) {
+            //throw an illegalArgumentException
             return null;
         }
 
