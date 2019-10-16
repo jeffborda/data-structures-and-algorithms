@@ -1,9 +1,13 @@
 package tree;
 
+// My data structures
 import stacksandqueues.Queue;
+import linkedlist.LinkedList;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
 
 public class BinaryTree<T> {
 
@@ -17,16 +21,54 @@ public class BinaryTree<T> {
     }
 
 
-
-    public static boolean isBinaryTree(BinaryTree inputTree) {
-
+    /**
+     *  This method takes in a BinaryTree and returns boolean on whether or not it is a BinarySearchTree
+     */
+    public static boolean isBinarySearchTree(BinaryTree inputTree) {
+        //TODO: Write logic for this method
         return false;
+    }
+
+    /**
+     * This method takes the binary tree and returns an ArrayList of LinkedLists of the nodes at each depth of the tree.
+     */
+    public ArrayList<LinkedList<T>> binaryTreeToLinkedListByDepth() {
+        Queue<Node<T>> qOne = new Queue<>(); // Using my Queue class
+        Queue<Node<T>> qTwo = new Queue<>();
+        ArrayList<LinkedList<T>> result = new ArrayList<>(); // Using java.util.ArrayList
+
+        if(this.root != null) {
+            qOne.enqueue(this.root);
+        }
+
+        LinkedList<T> depthList = new LinkedList<>(); // Using my LinkedList class
+
+        while(!qOne.isEmpty()) {
+            Node<T> n = qOne.dequeue();
+            depthList.insert(n.value);
+            // Enqueue right first so values are added left to right since LinkedList insert adds from the head.
+            if(n.right != null) {
+                qTwo.enqueue(n.right);
+            }
+            if(n.left != null) {
+                qTwo.enqueue(n.left);
+            }
+
+            if(qOne.isEmpty()) {
+                qOne = qTwo;
+                qTwo = new Queue<>();
+                result.add(depthList);
+                depthList = new LinkedList<>();
+            }
+        }
+        return result;
     }
 
     /**
      * Takes in two binary trees and returns a set of values found in both trees.
      */
     public static Set treeIntersection(BinaryTree<Node<Integer>> treeOne, BinaryTree<Node<Integer>> treeTwo) {
+        // TODO: Refactor the unchecked assignment
         Set<Integer> setTreeOne = integerTreeToSet(treeOne);
         Set<Integer> setTreeTwo = integerTreeToSet(treeTwo);
         Set<Integer> sharedValues = new HashSet<>();
@@ -176,7 +218,5 @@ public class BinaryTree<T> {
         postOrderHelper(list, current.right);
         list.add(current.value);
     }
-
-
 
 }

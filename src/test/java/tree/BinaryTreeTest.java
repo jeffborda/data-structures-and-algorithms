@@ -1,5 +1,6 @@
 package tree;
 
+import linkedlist.LinkedList;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,10 +8,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -30,13 +28,13 @@ public class BinaryTreeTest {
     }
 
     @Test
-    public void testInOrder() {
+    public void testInOrder_testOne() {
         // IN-ORDER: Left, Root, Right
-        Node n4 = new Node(4, new Node(2, new Node(1, null, null), new Node(3, null, null)), new Node(6, new Node(5, null, null), new Node(7, null, null)));
+        Node<Integer> root = new Node<>(4, new Node<>(2, new Node<>(1, null, null), new Node<>(3, null, null)), new Node<>(6, new Node<>(5, null, null), new Node<>(7, null, null)));
         //     4
         //   2    6
         // 1   3  5   7
-        BinaryTree testTree = new BinaryTree(n4);
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
         ArrayList<Integer> inOrderExpected = new ArrayList<>();
         inOrderExpected.add(1);
         inOrderExpected.add(2);
@@ -45,13 +43,16 @@ public class BinaryTreeTest {
         inOrderExpected.add(5);
         inOrderExpected.add(6);
         inOrderExpected.add(7);
-        assertTrue(testTree.inOrder().equals(inOrderExpected));
+        assertArrayEquals("In-order traversal should return ArrayList with values in order: left, root, right.", testTree.inOrder().toArray(), inOrderExpected.toArray());
+    }
 
-        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
+    @Test
+    public void testInOrder_testTwo() {
+        Node<Integer> root = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
         //     1
         //  3     2
         //5   7  6   4
-        BinaryTree testTree2 = new BinaryTree(n1);
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
         ArrayList<Integer> inOrderExpected2 = new ArrayList<>();
         inOrderExpected2.add(5);
         inOrderExpected2.add(3);
@@ -60,19 +61,21 @@ public class BinaryTreeTest {
         inOrderExpected2.add(6);
         inOrderExpected2.add(2);
         inOrderExpected2.add(4);
-        assertTrue(testTree2.inOrder().equals(inOrderExpected2));
+        assertArrayEquals(testTree.inOrder().toArray(), inOrderExpected2.toArray());
+    }
 
-        Node n7 = new Node(7, null, null);
-        BinaryTree testTree3 = new BinaryTree(n7);
+    @Test
+    public void testInOrder_singleNodeTree() {
+        Node<Integer> root = new Node<>(7, null, null);
+        BinaryTree<Integer> testTree3 = new BinaryTree<>(root);
         ArrayList<Integer> inOrderExpected3 = new ArrayList<>();
         inOrderExpected3.add(7);
         assertTrue("Check on one node tree.", testTree3.inOrder().equals(inOrderExpected3));
-
     }
 
     @Test
     public void testPreOrder() {
-        // PRE-ORDER: Root, Left, Right
+        // PRE-ORDER: Root, Left,
 
         Node n4 = new Node(4, new Node(2, new Node(1, null, null), new Node(3, null, null)), new Node(6, new Node(5, null, null), new Node(7, null, null)));
         //     4
@@ -292,21 +295,55 @@ public class BinaryTreeTest {
     }
 
     @Test
-    public void testIsBinaryTree() {
-//        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
-//        //     1
-//        //  3     2
-//        //5   7  6   4
-//        BinaryTree testTree1 = new BinaryTree(n1);
-//        assertFalse("A Binary Tree that is NOT a BST should return 'false'.", BinaryTree.isBinaryTree(testTree1));
-//
-//        Node n2 = new Node(10, new Node(3, new Node(1, null, null), new Node(7, null, null)), new Node(20, new Node(15, null, null), new Node(30, null, null)));
-//        //     10
-//        //  3     20
-//        //1   7  15   30
-//        BinaryTree testTree2 = new BinaryTree(n2);
-//        assertTrue("A Binary Search Tree should return 'true'.", BinaryTree.isBinaryTree(testTree2));
+    public void testIsBinaryTree_notBST() {
+        Node<Integer> root = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        BinaryTree<Integer> testTree1 = new BinaryTree<>(root);
+        assertFalse("A Binary Tree that is NOT a BST should return 'false'.", BinaryTree.isBinarySearchTree(testTree1));
+    }
 
+    @Test
+    public void testIstBinaryTree_isBST() {
+        Node<Integer> root = new Node<>(10, new Node<>(3, new Node<>(1, null, null), new Node<>(7, null, null)), new Node<>(20, new Node<>(15, null, null), new Node<>(30, null, null)));
+        //     10
+        //  3     20
+        //1   7  15   30
+        BinaryTree<Integer> testTree2 = new BinaryTree<>(root);
+        assertTrue("A Binary Search Tree should return 'true'.", BinaryTree.isBinarySearchTree(testTree2));
+    }
+
+
+    @Test
+    public void testBinaryTreeToLinkedListByDepth() {
+        // Test tree structure:
+        //                   1
+        //         10                 20
+        //    100     200         300    400
+        //1000           2000  3000 4000    5000
+
+        Node<Integer> root = new Node<>(1, new Node<>(10, new Node<>(100, new Node<>(1000), null), new Node<>(200, null, new Node<>(2000))), new Node<Integer>(20, new Node<>(300, new Node<>(3000), new Node<>(4000)), new Node<>(400, null, new Node<>(5000))));
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        Integer[][] expected = new Integer[][]{{1}, {10, 20}, {100, 200, 300, 400}, {1000, 2000, 3000, 4000, 5000}};
+        ArrayList<linkedlist.LinkedList<Integer>> result = testTree.binaryTreeToLinkedListByDepth();
+
+        for(int i = 0; i < result.size(); i++) {
+            linkedlist.Node<Integer> curr = result.get(i).getHead();
+            for(int j = 0; j < expected[i].length; j++) {
+                assertEquals("Check all LinkedList values from each level of the tree, left to right: " +
+                                "[1],[10->20], [100->200->300->400], [1000->2000->3000->4000->5000]"
+                                , expected[i][j], curr.value);
+                curr = curr.next;
+            }
+        }
+    }
+
+    @Test
+    public void testBinaryTreeToLinkedListByDepth_emptyTree() {
+        BinaryTree<String> testTree = new BinaryTree<>();
+        ArrayList<LinkedList<String>> result = testTree.binaryTreeToLinkedListByDepth();
+        assertTrue("If BinaryTree is empty, should return an empty ArrayList.", result.isEmpty());
     }
 
 }

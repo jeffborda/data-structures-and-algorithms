@@ -1,11 +1,16 @@
 package linkedlist;
 
-public class Node {
+public class Node<T> {
 
-    protected String value;
-    protected Node next = null;
+    public T value;
+    public Node<T> next;
 
-    protected Node(String value, Node next) {
+    public Node() {
+        this.value = null;
+        this.next = null;
+    }
+
+    public Node(T value, Node<T> next) {
         this.value = value;
         this.next = next;
     }
