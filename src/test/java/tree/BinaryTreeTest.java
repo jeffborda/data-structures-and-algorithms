@@ -28,7 +28,7 @@ public class BinaryTreeTest {
     }
 
     @Test
-    public void testInOrder_testOne() {
+    public void testInOrder_manyNodes_testOne() {
         // IN-ORDER: Left, Root, Right
         Node<Integer> root = new Node<>(4, new Node<>(2, new Node<>(1, null, null), new Node<>(3, null, null)), new Node<>(6, new Node<>(5, null, null), new Node<>(7, null, null)));
         //     4
@@ -43,45 +43,44 @@ public class BinaryTreeTest {
         inOrderExpected.add(5);
         inOrderExpected.add(6);
         inOrderExpected.add(7);
-        assertArrayEquals("In-order traversal should return ArrayList with values in order: left, root, right.", testTree.inOrder().toArray(), inOrderExpected.toArray());
+        assertArrayEquals("Should return an ArrayList with values In-Order (left, root, right).", testTree.inOrder().toArray(), inOrderExpected.toArray());
     }
 
     @Test
-    public void testInOrder_testTwo() {
+    public void testInOrder_manyNodes_testTwo() {
         Node<Integer> root = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
         //     1
         //  3     2
         //5   7  6   4
         BinaryTree<Integer> testTree = new BinaryTree<>(root);
-        ArrayList<Integer> inOrderExpected2 = new ArrayList<>();
-        inOrderExpected2.add(5);
-        inOrderExpected2.add(3);
-        inOrderExpected2.add(7);
-        inOrderExpected2.add(1);
-        inOrderExpected2.add(6);
-        inOrderExpected2.add(2);
-        inOrderExpected2.add(4);
-        assertArrayEquals(testTree.inOrder().toArray(), inOrderExpected2.toArray());
+        ArrayList<Integer> inOrderExpected = new ArrayList<>();
+        inOrderExpected.add(5);
+        inOrderExpected.add(3);
+        inOrderExpected.add(7);
+        inOrderExpected.add(1);
+        inOrderExpected.add(6);
+        inOrderExpected.add(2);
+        inOrderExpected.add(4);
+        assertArrayEquals(testTree.inOrder().toArray(), inOrderExpected.toArray());
     }
 
     @Test
-    public void testInOrder_singleNodeTree() {
+    public void testInOrder_oneNodeTree() {
         Node<Integer> root = new Node<>(7, null, null);
-        BinaryTree<Integer> testTree3 = new BinaryTree<>(root);
-        ArrayList<Integer> inOrderExpected3 = new ArrayList<>();
-        inOrderExpected3.add(7);
-        assertTrue("Check on one node tree.", testTree3.inOrder().equals(inOrderExpected3));
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        ArrayList<Integer> inOrderExpected = new ArrayList<>();
+        inOrderExpected.add(7);
+        assertArrayEquals("Check inOrder() on one node tree.", testTree.inOrder().toArray(), inOrderExpected.toArray());
     }
 
     @Test
-    public void testPreOrder() {
-        // PRE-ORDER: Root, Left,
-
-        Node n4 = new Node(4, new Node(2, new Node(1, null, null), new Node(3, null, null)), new Node(6, new Node(5, null, null), new Node(7, null, null)));
+    public void testPreOrder_manyNodes_testOne() {
+        // PRE-ORDER: Root, Left, Right
+        Node<Integer> root = new Node<>(4, new Node<>(2, new Node<>(1, null, null), new Node<>(3, null, null)), new Node<>(6, new Node<>(5, null, null), new Node<>(7, null, null)));
         //     4
         //   2    6
         // 1   3  5   7
-        BinaryTree testTree = new BinaryTree(n4);
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
         //Expect: 4, 2, 1, 3, 6, 5, 7
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(4);
@@ -91,40 +90,46 @@ public class BinaryTreeTest {
         expected.add(6);
         expected.add(5);
         expected.add(7);
-        assertTrue(testTree.preOrder().equals(expected));
-
-        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
-        //     1
-        //  3     2
-        //5   7  6   4
-        BinaryTree testTree2 = new BinaryTree(n1);
-        ArrayList<Integer> expected2 = new ArrayList<>();
-        //Expect: 1, 3, 5, 7, 2, 6, 4
-        expected2.add(1);
-        expected2.add(3);
-        expected2.add(5);
-        expected2.add(7);
-        expected2.add(2);
-        expected2.add(6);
-        expected2.add(4);
-        assertTrue(testTree2.preOrder().equals(expected2));
-
-        Node n7 = new Node(7, null, null);
-        BinaryTree testTree3 = new BinaryTree(n7);
-        ArrayList<Integer> expected3 = new ArrayList<>();
-        expected3.add(7);
-        assertTrue("Check on one node tree.", testTree3.preOrder().equals(expected3));
+        assertArrayEquals("Should return an ArrayList in Pre-Order (root, left, right).", expected.toArray(), testTree.preOrder().toArray());
     }
 
     @Test
-    public void testPostOrder() {
+    public void testPreOrder_manyNodes_testTwo() {
+        Node<Integer> root = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        ArrayList<Integer> expected = new ArrayList<>();
+        //Expect: 1, 3, 5, 7, 2, 6, 4
+        expected.add(1);
+        expected.add(3);
+        expected.add(5);
+        expected.add(7);
+        expected.add(2);
+        expected.add(6);
+        expected.add(4);
+        assertArrayEquals("Should return an ArrayList in Pre-Order (root, left, right).", expected.toArray(), testTree.preOrder().toArray());
+    }
+
+    @Test
+    public void testPreOrder_oneNodeTree() {
+        Node<Integer> root = new Node<>(7, null, null);
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(7);
+        assertArrayEquals("Check preOrder() on one node tree.", expected.toArray(), testTree.preOrder().toArray());
+    }
+
+    @Test
+    public void testPostOrder_manyNodes_testOne() {
         // POST-ORDER: Left, Right, Root
 
-        Node n4 = new Node(4, new Node(2, new Node(1, null, null), new Node(3, null, null)), new Node(6, new Node(5, null, null), new Node(7, null, null)));
+        Node<Integer> root = new Node<>(4, new Node<>(2, new Node<>(1, null, null), new Node<>(3, null, null)), new Node<>(6, new Node<>(5, null, null), new Node<>(7, null, null)));
         //     4
         //   2    6
         // 1   3  5   7
-        BinaryTree testTree = new BinaryTree(n4);
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
         //Expect: 1, 3, 2, 5, 7, 6, 4
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(1);
@@ -134,30 +139,35 @@ public class BinaryTreeTest {
         expected.add(7);
         expected.add(6);
         expected.add(4);
-        assertTrue(testTree.postOrder().equals(expected));
+        assertArrayEquals("Should return an ArrayList in Post-Order (left, right, root).", testTree.postOrder().toArray(), expected.toArray());
+    }
 
-        Node n1 = new Node(1, new Node(3, new Node(5, null, null), new Node(7, null, null)), new Node(2, new Node(6, null, null), new Node(4, null, null)));
+    @Test
+    public void testPostOrder_manyNodes_testTwo() {
+        Node<Integer> root = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
         //     1
         //  3     2
         //5   7  6   4
-        BinaryTree testTree2 = new BinaryTree(n1);
-        ArrayList<Integer> expected2 = new ArrayList<>();
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        ArrayList<Integer> expected = new ArrayList<>();
         //Expect: 5, 7, 3, 6, 4, 2, 1
-        expected2.add(5);
-        expected2.add(7);
-        expected2.add(3);
-        expected2.add(6);
-        expected2.add(4);
-        expected2.add(2);
-        expected2.add(1);
+        expected.add(5);
+        expected.add(7);
+        expected.add(3);
+        expected.add(6);
+        expected.add(4);
+        expected.add(2);
+        expected.add(1);
+        assertArrayEquals("Should return an ArrayList in Post-Order (left, right, root).", testTree.postOrder().toArray(), expected.toArray());
+    }
 
-        assertTrue(testTree2.postOrder().equals(expected2));
-
-        Node n7 = new Node(7, null, null);
-        BinaryTree testTree3 = new BinaryTree(n7);
-        ArrayList<Integer> expected3 = new ArrayList<>();
-        expected3.add(7);
-        assertTrue("Check on one node tree.", testTree3.postOrder().equals(expected3));
+    @Test
+    public void testPostOrder_oneNodeTree() {
+        Node<Integer> root = new Node<>(7, null, null);
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(7);
+        assertArrayEquals("Check postOrder() on one node tree.", testTree.postOrder().toArray(), expected.toArray());
 
     }
 
