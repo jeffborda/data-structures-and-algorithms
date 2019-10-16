@@ -1,6 +1,6 @@
 package tree;
 
-public class Node<T extends Comparable<? super T>> {
+public class Node<T> {
 
     public T value;
     public Node<T> left;

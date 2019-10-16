@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.lang.reflect.Array;
 import java.util.*;
 
 import static org.junit.Assert.*;
@@ -288,41 +287,41 @@ public class BinaryTreeTest {
         assertEquals("Sum of empty tree, should be '0'.", 0, BinaryTree.sumOfOdds(testTree.root));
     }
 
-//    @Test
-//    public void testTreeIntersection_manySharedValues() {
-//        Node<Integer> r1 = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
-//        //     1
-//        //  3     2
-//        //5   7  6   4
-//        BinaryTree<Integer> testTree1 = new BinaryTree<>(r1);
-//        Node<Integer> r2 = new Node<>(4, new Node<>(2, new Node<>(1, null, new Node<>(99, null, null)), new Node<>(3, null, null)), new Node<>(6, new Node<>(5, null, null), new Node<>(7, new Node<>(66, null, null), null)));
-//        //      4
-//        //    2    6
-//        //  1   3  5   7
-//        //   99       66
-//        BinaryTree<Integer> testTree2 = new BinaryTree<>(r2);
-//        // Shared values: 1, 2, 3, 4, 5, 6, 7
-//        Set<Integer> expected = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
-//        assertEquals("Should return a Set of all the values the two tree have in common.", expected, BinaryTree.treeIntersection(testTree1, testTree2));
-//    }
-//
-//    @Test
-//    public void testTreeIntersection_noSharedValues() {
-//        Node<Integer> n3 = new Node(1, new Node(2, null, null), new Node(3, null, null));
-//        Node n4 = new Node(5, new Node(6, null, null), new Node(7, null, null));
-//        BinaryTree testTree3 = new BinaryTree(n3);
-//        BinaryTree testTree4 = new BinaryTree(n4);
-//        // No shared values
-//        Set<Integer> expected2 = new HashSet<>();
-//        assertEquals("If no shared values between two trees, than it should return an empty Set.", expected2, BinaryTree.treeIntersection(testTree3, testTree4));
-//    }
-//
-//    @Test
-//    public void testTreeIntersection_twoEmptyTrees() {
-//        BinaryTree testTree5 = new BinaryTree();
-//        BinaryTree testTree6 = new BinaryTree();
-//        assertEquals("If given one or two empty trees, it should return an empty Set (and not break in the process).", expected2, BinaryTree.treeIntersection(testTree5, testTree6));
-//    }
+    @Test
+    public void testTreeIntersection_manySharedValues() {
+        Node<Integer> r1 = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        BinaryTree<Integer> testTree1 = new BinaryTree<>(r1);
+        Node<Integer> r2 = new Node<>(4, new Node<>(2, new Node<>(1, null, new Node<>(99, null, null)), new Node<>(3, null, null)), new Node<>(6, new Node<>(5, null, null), new Node<>(7, new Node<>(66, null, null), null)));
+        //      4
+        //    2    6
+        //  1   3  5   7
+        //   99       66
+        BinaryTree<Integer> testTree2 = new BinaryTree<>(r2);
+        // Shared values: 1, 2, 3, 4, 5, 6, 7
+        Set<Integer> expected = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
+        assertEquals("Should return a Set of all the values the two tree have in common.", expected, BinaryTree.treeIntersection(testTree1, testTree2));
+    }
+
+    @Test
+    public void testTreeIntersection_noSharedValues() {
+        Node<Integer> n3 = new Node<>(1, new Node<>(2, null, null), new Node<>(3, null, null));
+        Node<Integer> n4 = new Node<>(5, new Node<>(6, null, null), new Node<>(7, null, null));
+        BinaryTree<Integer> testTree3 = new BinaryTree<>(n3);
+        BinaryTree<Integer> testTree4 = new BinaryTree<>(n4);
+        // No shared values
+        Set<Integer> expected2 = new HashSet<>();
+        assertEquals("If no shared values between two trees, than it should return an empty Set.", expected2, BinaryTree.treeIntersection(testTree3, testTree4));
+    }
+
+    @Test
+    public void testTreeIntersection_twoEmptyTrees() {
+        BinaryTree testTree5 = new BinaryTree();
+        BinaryTree testTree6 = new BinaryTree();
+        assertTrue("If given one or two empty trees, it should return an empty Set (and not break in the process).", BinaryTree.treeIntersection(testTree5, testTree6).isEmpty());
+    }
 
     @Test
     public void testIsBinaryTree_notBST() {
