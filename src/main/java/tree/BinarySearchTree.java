@@ -1,6 +1,6 @@
 package tree;
 
-public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree {
+public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTree {
 
     public BinarySearchTree() {
         super();

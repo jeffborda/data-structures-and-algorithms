@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-public class BinaryTree<T> {
+public class BinaryTree<T extends Comparable<? super T>> {
 
     public Node<T> root;
 
@@ -67,42 +67,42 @@ public class BinaryTree<T> {
     /**
      * Takes in two binary trees and returns a set of values found in both trees.
      */
-    public static Set treeIntersection(BinaryTree<Node<Integer>> treeOne, BinaryTree<Node<Integer>> treeTwo) {
-        // TODO: Refactor the unchecked assignment
-        Set<Integer> setTreeOne = integerTreeToSet(treeOne);
-        Set<Integer> setTreeTwo = integerTreeToSet(treeTwo);
-        Set<Integer> sharedValues = new HashSet<>();
-
-        for(Integer n : setTreeTwo) {
-            if(!setTreeOne.add(n)) {
-                // If it can't add to the Set of the first tree values, then it's a dupe value
-                sharedValues.add(n);
-            }
-        }
-        return sharedValues;
-    }
-
-    /**
-     * Takes in a BinaryTree and returns it in a breadth-first ordered list.
-     */
-    public static Set integerTreeToSet(BinaryTree<Node<Integer>> input) {
-        Queue<Node> nodes = new Queue<>();
-        Set<Integer> result = new HashSet<>();
-        if(input.root != null) {
-            nodes.enqueue(input.root);
-        }
-        while(nodes.size() > 0) {
-            Node current = nodes.dequeue();
-            result.add((Integer) current.value);
-            if(current.left != null) {
-                nodes.enqueue(current.left);
-            }
-            if(current.right != null) {
-                nodes.enqueue(current.right);
-            }
-        }
-        return result;
-    }
+//    public static Set<T> treeIntersection(BinaryTree<T> treeOne, BinaryTree<T> treeTwo) {
+//        // TODO: Refactor the unchecked assignment
+//        Set<T> setTreeOne = integerTreeToSet(treeOne);
+//        Set<T> setTreeTwo = integerTreeToSet(treeTwo);
+//        Set<T> sharedValues = new HashSet<>();
+//
+//        for(T n : setTreeTwo) {
+//            if(!setTreeOne.add(n)) {
+//                // If it can't add to the Set of the first tree values, then it's a dupe value
+//                sharedValues.add(n);
+//            }
+//        }
+//        return sharedValues;
+//    }
+//
+//    /**
+//     * Takes in a BinaryTree and returns it in a breadth-first ordered list.
+//     */
+//    private static Set<T> integerTreeToSet(BinaryTree<T> input) {
+//        Queue<Node<T>> nodes = new Queue<>();
+//        Set<T> result = new HashSet<>();
+//        if(input.root != null) {
+//            nodes.enqueue(input.root);
+//        }
+//        while(!nodes.isEmpty()) {
+//            Node<T> current = nodes.dequeue();
+//            result.add(current.value);
+//            if(current.left != null) {
+//                nodes.enqueue(current.left);
+//            }
+//            if(current.right != null) {
+//                nodes.enqueue(current.right);
+//            }
+//        }
+//        return result;
+//    }
 
     /*
      * This method prints the input tree with a breadth traversal.
