@@ -1,12 +1,12 @@
 package linkedlist;
 
-public class LinkedList {
+import java.util.StringJoiner;
 
-    private Node head;
-    private Node current;
+public class LinkedList<T> {
+
+    protected Node<T> head;
 
     public LinkedList() {
-
         this.head = null;
     }
 
@@ -24,20 +24,20 @@ public class LinkedList {
 
         Node list1Leader = one.head.next;
         Node list1Follower = one.head;
-        two.current = two.head;
+        Node twoCurrent = two.head;
 
         while(list1Leader != null) {
-            two.head = two.current.next;
-            list1Follower.next = two.current;
-            two.current.next = list1Leader;
+            two.head = twoCurrent.next;
+            list1Follower.next = twoCurrent;
+            twoCurrent.next = list1Leader;
             if(two.head == null) {
                 return one;
             }
-            two.current = two.head;
+            twoCurrent = two.head;
             list1Follower = list1Leader;
             list1Leader = list1Leader.next;
         }
-        list1Follower.next = two.current;
+        list1Follower.next = twoCurrent;
         return one;
 
     }
@@ -45,10 +45,9 @@ public class LinkedList {
     /**
      * Inserts a value to the first position of the list.
      */
-    public void insert(String value) {
+    public void insert(T value) {
 
-        head = new Node(value, head);
-
+        this.head = new Node<T>(value, this.head);
     }
 
     public int size() {
@@ -57,7 +56,7 @@ public class LinkedList {
             return 0;
         }
         int count = 0;
-        current = head;
+        Node<T> current = this.head;
         while(current != null) {
             count++;
             current = current.next;
@@ -69,17 +68,17 @@ public class LinkedList {
     /**
      * Adds a value to the last position of the list.
      */
-    public void append(String value) {
+    public void append(T value) {
 
-        current = head;
-        if(head == null) {
-            head = new Node(value, null);
+        if(this.head == null) {
+            this.head = new Node<T>(value, null);
         }
         else {
-            while(this.hasNext()) {
+            Node<T> current = head;
+            while(current.next != null) {
                 current = current.next;
             }
-            current.next = new Node(value, null);
+            current.next = new Node<T>(value, null);
         }
     }
 
@@ -87,19 +86,19 @@ public class LinkedList {
      * Checks if list contains a value, if so, it inserts the newValue before the search value and returns true.
      * If value is not found in list, no insert is made, and method returns false.
      */
-    public boolean insertBefore(String value, String newValue) {
+    public boolean insertBefore(T value, T newValue) {
 
-        current = head;
-        if(head == null) {
+        Node<T> current = head;
+        if(this.head == null) {
             return false;
         }
-        if(head.value == value) {
-            head = new Node(newValue, head);
+        if(this.head.value == value) {
+            this.head = new Node<T>(newValue, this.head);
             return true;
         }
         while(current.next != null) {
             if(current.next.value == value) {
-                current.next = new Node(newValue, current.next);
+                current.next = new Node<T>(newValue, current.next);
                 return true;
             }
             current = current.next;
@@ -111,12 +110,12 @@ public class LinkedList {
      * Checks if list contains a value, if so, it inserts the newValue after the search value and returns true.
      * If value is not found in list, no insert is made, and method returns false.
      */
-    public boolean insertAfter(String value, String newValue) {
+    public boolean insertAfter(T value, T newValue) {
 
-        current = head;
+        Node<T> current = this.head;
         while(current != null) {
             if(current.value == value) {
-                current.next = new Node(newValue, current.next);
+                current.next = new Node<T>(newValue, current.next);
                 return true;
             }
             current = current.next;
@@ -128,9 +127,9 @@ public class LinkedList {
      * Deletes a value from the list.  If multiple values exist in list, it will delete the first occurrence.
      * Returns true if value found and deleted.  Returns false if value was not found.
      */
-    public boolean deleteValue(String value) {
+    public boolean deleteValue(T value) {
 
-        current = head;
+        Node<T> current = this.head;
         if(head == null) {
             return false;
         }
@@ -151,11 +150,11 @@ public class LinkedList {
     /**
      * Checks if list contains a value, returns true/false.
      */
-    public boolean includes(String value) {
+    public boolean includes(T value) {
 
-        current = head;
+        Node<T> current = this.head;
         while(current != null) {
-            if(current.value == value) {
+            if(current.value.equals(value)) {
                 return true;
             }
             current = current.next;
@@ -167,18 +166,18 @@ public class LinkedList {
      * Takes in an int, and returns the kth from the end Node's String.  If in is out of bounds,
      * the method returns null.
      */
-    public String kFromEnd(int k) {
+    public T kFromEnd(int k) {
 
-        if(k < 0 || head == null) {
+        if(k < 0 || this.head == null) {
             //throw an illegalArgumentException
             return null;
         }
 
-        current = head;
-        Node follower = head;
+        Node<T> current = this.head;
+        Node<T> follower = this.head;
         int count = 0;
 
-        while(this.hasNext()) {
+        while(current.next != null) {
             current = current.next;
             count++;
             if(count > k) {
@@ -195,7 +194,7 @@ public class LinkedList {
     /**
      * Finds the Node in the middle of the LinkedList and returns its value.
      */
-    public String findMiddleNode() {
+    public T findMiddleNode() {
         //if empty list, return null
         //set current to head
         //make a follower pointer
@@ -208,8 +207,8 @@ public class LinkedList {
             return null;
         }
 
-        current = head;
-        Node follower = head;
+        Node<T> current = this.head;
+        Node<T> follower = this.head;
         while(current.next != null) {
             if(current.next.next != null) {
                 current = current.next.next;
@@ -228,22 +227,28 @@ public class LinkedList {
      */
     public void reverseList() {
 
-        if(head == null) {
+        if(this.head == null) {
             return;
         }
-        Node follow = head;
-        current = head;
-        Node leader = head.next;
-        current.next = null;
+
+        Node<T> leader = this.head.next;
+        Node<T> current = this.head;
+        Node<T> follow = this.head;
+
+        this.head.next = null;
 
         while(leader != null) {
+
+            // "Hop" current over to leader
             current = leader;
+            // Iterate leader forward one
             leader = leader.next;
+            // Set the current Node's next back to follower
             current.next = follow;
+            // "Hop" follower over to current
             follow = current;
         }
-        head = current;
-        return;
+        this.head = current;
     }
 
     /**
@@ -251,10 +256,7 @@ public class LinkedList {
      */
     public boolean isEmpty() {
 
-        if(head == null) {
-            return true;
-        }
-        return false;
+        return this.head == null;
     }
 
     /**
@@ -262,7 +264,7 @@ public class LinkedList {
      */
     public void deleteAll() {
 
-        head = null;
+        this.head = null;
     }
 
 
@@ -271,53 +273,58 @@ public class LinkedList {
      * Prints the entire list with commas in between values.
      */
     public void print() {
-        current = head;
+        Node<T> current = this.head;
+        StringJoiner stringJoiner = new StringJoiner(", ");
         while(current != null) {
-            System.out.print(current.value);
-            if(current.next != null) {
-                System.out.print(", ");
-            }
+            stringJoiner.add(current.value.toString());
             current = current.next;
         }
-        if(head != null) {
-            System.out.println();
+        if(this.head != null) {
+            System.out.println(stringJoiner);
         }
     }
-
 
     /**
      * Helper function for testing, returns the value of head, or returns null for an empty list.
      */
-    public String getHeadValue() {
-        if(head == null) {
+    public T getHeadValue() {
+        if(this.head == null) {
             return null;
         }
-        return head.value;
+        return this.head.value;
     }
 
     /**
      * Helper function for testing, returns the last value in the list, or returns null for an empty list.
      */
-    public String getLastValue() {
-        if(head == null) {
+    public T getLastValue() {
+        if(this.head == null) {
             return null;
         }
-        current = head;
-        while(this.hasNext()) {
+        Node<T> current = this.head;
+        while(current.next != null) {
             current = current.next;
         }
         return current.value;
     }
 
-    private boolean hasNext() {
-        if(current.next != null) {
-            return true;
-        }
-        return false;
+    private boolean hasNext(Node<T> current) {
+        return current != null;
     }
 
-//    @Override
-//    public String toString() {
-//        return null;
-//    }
+
+    public Node<T> getHead() {
+        return this.head;
+    }
+
+    @Override
+    public String toString() {
+        StringJoiner stringJoiner = new StringJoiner(", ");
+        Node<T> current = this.head;
+        while(current != null) {
+            stringJoiner.add(current.value.toString());
+            current = current.next;
+        }
+        return stringJoiner.toString();
+    }
 }

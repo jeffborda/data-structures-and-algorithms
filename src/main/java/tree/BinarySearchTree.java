@@ -1,6 +1,6 @@
 package tree;
 
-public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree {
+public class BinarySearchTree<T extends Comparable<? super T>> extends BinaryTree {
 
     public BinarySearchTree() {
         super();
@@ -60,7 +60,7 @@ public class BinarySearchTree<T extends Comparable<T>> extends BinaryTree {
     }
 
     public Node<T> find(T value) {
-        Node<T> current = root;
+        Node<T> current = this.root;
 
         while (current != null) {
 

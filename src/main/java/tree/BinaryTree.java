@@ -1,11 +1,15 @@
 package tree;
 
+// My data structures
 import stacksandqueues.Queue;
+import linkedlist.LinkedList;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
-public class BinaryTree<T> {
+
+public class BinaryTree<T extends Comparable<? super T>> {
 
     public Node<T> root;
 
@@ -17,21 +21,59 @@ public class BinaryTree<T> {
     }
 
 
-
-    public static boolean isBinaryTree(BinaryTree inputTree) {
-
+    /**
+     *  This method takes in a BinaryTree and returns boolean on whether or not it is a BinarySearchTree
+     */
+    public static boolean isBinarySearchTree(BinaryTree inputTree) {
+        //TODO: Write logic for this method
         return false;
+    }
+
+    /**
+     * This method takes the binary tree and returns an ArrayList of LinkedLists of the nodes at each depth of the tree.
+     */
+    public ArrayList<LinkedList<T>> binaryTreeToLinkedListByDepth() {
+        Queue<Node<T>> qOne = new Queue<>(); // Using my Queue class
+        Queue<Node<T>> qTwo = new Queue<>();
+        ArrayList<LinkedList<T>> result = new ArrayList<>(); // Using java.util.ArrayList
+
+        if(this.root != null) {
+            qOne.enqueue(this.root);
+        }
+
+        LinkedList<T> depthList = new LinkedList<>(); // Using my LinkedList class
+
+        while(!qOne.isEmpty()) {
+            Node<T> n = qOne.dequeue();
+            depthList.insert(n.value);
+            // Enqueue right first so values are added left to right since LinkedList insert adds from the head.
+            if(n.right != null) {
+                qTwo.enqueue(n.right);
+            }
+            if(n.left != null) {
+                qTwo.enqueue(n.left);
+            }
+
+            if(qOne.isEmpty()) {
+                qOne = qTwo;
+                qTwo = new Queue<>();
+                result.add(depthList);
+                depthList = new LinkedList<>();
+            }
+        }
+        return result;
     }
 
     /**
      * Takes in two binary trees and returns a set of values found in both trees.
      */
-    public static Set treeIntersection(BinaryTree<Node<Integer>> treeOne, BinaryTree<Node<Integer>> treeTwo) {
-        Set<Integer> setTreeOne = integerTreeToSet(treeOne);
-        Set<Integer> setTreeTwo = integerTreeToSet(treeTwo);
-        Set<Integer> sharedValues = new HashSet<>();
+    public static <T> Set<T> treeIntersection(BinaryTree treeOne, BinaryTree treeTwo) {
+        // TODO: Refactor the unchecked assignment
+        Set<T> setTreeOne = integerTreeToSet(treeOne);
+        Set<T> setTreeTwo = integerTreeToSet(treeTwo);
+        Set<T> sharedValues = new HashSet<>();
 
-        for(Integer n : setTreeTwo) {
+        for(T n : setTreeTwo) {
             if(!setTreeOne.add(n)) {
                 // If it can't add to the Set of the first tree values, then it's a dupe value
                 sharedValues.add(n);
@@ -43,20 +85,20 @@ public class BinaryTree<T> {
     /**
      * Takes in a BinaryTree and returns it in a breadth-first ordered list.
      */
-    public static Set integerTreeToSet(BinaryTree<Node<Integer>> input) {
-        Queue<Node> nodes = new Queue<>();
-        Set<Integer> result = new HashSet<>();
+    private static <T> Set<T> integerTreeToSet(BinaryTree input) {
+        java.util.Queue<Node<T>> nodes = new java.util.LinkedList<>();
+        Set<T> result = new HashSet<>();
         if(input.root != null) {
-            nodes.enqueue(input.root);
+            nodes.add(input.root);
         }
-        while(nodes.size() > 0) {
-            Node current = nodes.dequeue();
-            result.add((Integer) current.value);
+        while(!nodes.isEmpty()) {
+            Node<T> current = nodes.remove();
+            result.add(current.value);
             if(current.left != null) {
-                nodes.enqueue(current.left);
+                nodes.add(current.left);
             }
             if(current.right != null) {
-                nodes.enqueue(current.right);
+                nodes.add(current.right);
             }
         }
         return result;
@@ -176,7 +218,5 @@ public class BinaryTree<T> {
         postOrderHelper(list, current.right);
         list.add(current.value);
     }
-
-
 
 }
