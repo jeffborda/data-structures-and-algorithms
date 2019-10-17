@@ -24,9 +24,24 @@ public class BinaryTree<T extends Comparable<? super T>> {
     /**
      *  This method takes in a BinaryTree and returns boolean on whether or not it is a BinarySearchTree
      */
-    public static boolean isBinarySearchTree(BinaryTree inputTree) {
-        //TODO: Write logic for this method
-        return false;
+    public static boolean isBinarySearchTree(BinaryTree<Integer> inputTree) {
+        // Call the recursive helper method
+        return isBinarySearchTree(inputTree.root, null, null);
+    }
+
+    private static boolean isBinarySearchTree(Node<Integer> root, Node<Integer> left, Node<Integer> right) {
+
+        if(root == null) {
+            return true;
+        }
+        if(left != null && left.value >= root.value) {
+            return false;
+        }
+        if(right != null && right.value <= root.value) {
+            return false;
+        }
+
+        return isBinarySearchTree(root.left, left, root) && isBinarySearchTree(root.right, root, right);
     }
 
     /**
