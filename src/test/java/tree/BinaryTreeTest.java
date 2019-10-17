@@ -318,31 +318,65 @@ public class BinaryTreeTest {
 
     @Test
     public void testTreeIntersection_twoEmptyTrees() {
-        BinaryTree testTree5 = new BinaryTree();
-        BinaryTree testTree6 = new BinaryTree();
+        BinaryTree<Integer> testTree5 = new BinaryTree<>();
+        BinaryTree<Integer> testTree6 = new BinaryTree<>();
         assertTrue("If given one or two empty trees, it should return an empty Set (and not break in the process).", BinaryTree.treeIntersection(testTree5, testTree6).isEmpty());
     }
 
     @Test
-    public void testIsBinaryTree_notBST() {
+    public void testIsBinarySearchTree_emptyTree() {
+        BinaryTree<Integer> testTree = new BinaryTree<>();
+        assertTrue("An empty Binary Tree is always a BST, should return 'true'.", BinaryTree.isBinarySearchTree(testTree));
+    }
+
+    @Test
+    public void testIsBinarySearchTree_oneNode() {
+        Node<Integer> root = new Node<>(50);
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        assertTrue("A one node Binary Tree is always a BST, should return 'true'.", BinaryTree.isBinarySearchTree(testTree));
+    }
+
+    @Test
+    public void testIsBinarySearchTree_singleTree() {
+        Node<Integer> root = new Node<>(2, new Node<>(1, null, null), new Node<>(3, null, null));
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        assertTrue("A BST, height of 2. Should return 'true'.", BinaryTree.isBinarySearchTree(testTree));
+    }
+
+    @Test
+    public void testIsBinarySearchTree_manyNodes_testOne() {
         Node<Integer> root = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
         //     1
         //  3     2
         //5   7  6   4
-        BinaryTree<Integer> testTree1 = new BinaryTree<>(root);
-        assertFalse("A Binary Tree that is NOT a BST should return 'false'.", BinaryTree.isBinarySearchTree(testTree1));
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        assertFalse("A Binary Tree that is NOT a BST should return 'false'.", BinaryTree.isBinarySearchTree(testTree));
     }
 
     @Test
-    public void testIstBinaryTree_isBST() {
+    public void testIsBinarySearchTree_manyNodes_testTwo() {
         Node<Integer> root = new Node<>(10, new Node<>(3, new Node<>(1, null, null), new Node<>(7, null, null)), new Node<>(20, new Node<>(15, null, null), new Node<>(30, null, null)));
         //     10
         //  3     20
         //1   7  15   30
-        BinaryTree<Integer> testTree2 = new BinaryTree<>(root);
-        assertTrue("A Binary Search Tree should return 'true'.", BinaryTree.isBinarySearchTree(testTree2));
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        assertTrue("A Binary Search Tree should return 'true'.", BinaryTree.isBinarySearchTree(testTree));
     }
 
+    @Test
+    public void testIsBinarySearchTree_manyNodes_testThree() {
+        Node<Integer> root = new Node<>(50, new Node<>(25, new Node<>(12, new Node<>(-9), new Node<>(18, null,  new Node<>(21, null, new Node<>(23)))), new Node<>(37)), new Node<>(75, new Node<>(63, null, new Node<>(69)), new Node<>(87, new Node<>(81), null)));
+        //               50
+        //        25            75
+        //    12      37   63         87
+        //  -9  18           69     81
+        //        21
+        //          23
+        //           ^
+        //           Unbalanced segment of tree
+        BinaryTree<Integer> testTree = new BinaryTree<>(root);
+        assertTrue("This tests an unbalanced BST of height 6, containing a negative value. Should return 'true'.", BinaryTree.isBinarySearchTree(testTree));
+    }
 
     @Test
     public void testBinaryTreeToLinkedListByDepth() {
