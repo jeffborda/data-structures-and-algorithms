@@ -3,18 +3,19 @@ package graph;
 import stacksandqueues.Queue;
 import stacksandqueues.Stack;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Graph<T> {
 
-    protected Set<Node> graph;
+    protected Set<Node<T>> graph;
 
     public Graph() {
 
         this.graph = new HashSet<>();
     }
 
-    public boolean addNode(Node node) {
+    public boolean addNode(Node<T> node) {
 
         return graph.add(node);
     }
@@ -37,14 +38,12 @@ public class Graph<T> {
 
 
 
-    public List getNeighbors(Node input) {
-        List<Edge> result = new LinkedList<>();
-        if(graph.contains(input)) {
-            if(input.neighbors != null) {
-                return input.neighbors;
-            }
+    public List<Edge<T>> getNeighbors(Node<T> input) {
+        if(graph.contains(input) && input.neighbors != null) {
+            return input.neighbors;
         }
-        return null;
+        // TODO: Or would it be better to just return 'null'?
+        return new LinkedList<>();
     }
 
     // Returns number of Nodes in the Graph
@@ -58,7 +57,7 @@ public class Graph<T> {
 
     // Returns whether or not value is contained in list.
     public boolean hasNodeValue(T inputValue) {
-        for(Node node : graph) {
+        for(Node<T> node : graph) {
             if(node.getValue().equals(inputValue)) {
                 return true;
             }
@@ -66,15 +65,15 @@ public class Graph<T> {
         return false;
     }
 
-    public List<Node> breadthFirst(Node start) {
+    public List<Node<T>> breadthFirst(Node<T> start) {
         // Create the result list
-        List<Node> result = new LinkedList<>();
+        List<Node<T>> result = new LinkedList<>();
 
         // **Make this a HashSet
         // Create list of visited Nodes
-        List<Node> haveVisited = new LinkedList<>();
+        List<Node<T>> haveVisited = new LinkedList<>();
         // Put all first neighbors in a list, no risk of dupes yet.
-        List<Edge> firstNeighbors = start.neighbors;
+        List<Edge<T>> firstNeighbors = start.neighbors;
 
         // Check if there are no neighbors, if so return empty list
         if(firstNeighbors.isEmpty()) {
@@ -82,10 +81,10 @@ public class Graph<T> {
         }
 
         // Create a Queue
-        Queue<Node> neighbors = new Queue<>();
+        Queue<Node<T>> neighbors = new Queue<>();
 
         // Put all the first neighbors in the queue and haveVisited
-        for(Edge e : firstNeighbors) {
+        for(Edge<T> e : firstNeighbors) {
             neighbors.enqueue(e.neighbor);
             haveVisited.add(e.neighbor);
         }
@@ -94,7 +93,7 @@ public class Graph<T> {
         while(!neighbors.isEmpty()) {
 
             // Peek at the Queue, enqueue all of it's neighbors
-            List<Edge> temp = neighbors.peek().neighbors;
+            List<Edge<T>> temp = neighbors.peek().neighbors;
             for(Edge e : temp) {
                 if(e.neighbor != start && !haveVisited.contains(e.neighbor)) {
                     neighbors.enqueue(e.neighbor);
@@ -106,6 +105,10 @@ public class Graph<T> {
 
         }
         return result;
+    }
+
+    public Set<Node<T>> getGraph() {
+        return graph;
     }
 
     /*
@@ -148,7 +151,7 @@ public class Graph<T> {
     }
 
     private boolean hasCity(String city) {
-        for(Node<String> n: graph) {
+        for(Node<T> n: this.graph) {
             if(n.value.equals(city)) {
                 return true;
             }
@@ -158,21 +161,22 @@ public class Graph<T> {
 
 
     /*
-    Perform a depth first, pre-order traversal of the input graph, starting with the input node.
+    Perform a depth first, pre-order traversal of the input graphk, starting with the input node.
      */
-    public static List<Node> depthFirst(Graph inputGraph, String startValue) {
+    public static <T> List<Node<T>> depthFirst(Graph<T> inputGraph, T startValue) {
 
         // Put all Nodes into array - in case there are any "island" Nodes
-        List<Node> graph = new ArrayList<Node>(inputGraph.graph);
-        List<Node> result = new LinkedList<>();
-        Stack<Node> stack = new Stack<>();
-        Set<Node> visited = new HashSet<>();
+//        List<Node<T>> graph = new ArrayList<Node<T>>(inputGraph.graph);
+        Set<Node<T>> graph = inputGraph.getGraph();
+        List<Node<T>> result = new LinkedList<>();
+        Stack<Node<T>> stack = new Stack<>();
+        Set<Node<T>> visited = new HashSet<>();
 
         if(graph.isEmpty()) {
             return result;
         }
         // Push target node on stack and into visited HashSet
-        for(Node n : graph) {
+        for(Node<T> n : graph) {
             if(n.value.equals(startValue)) {
                 stack.push(n);
                 visited.add(n);
@@ -180,9 +184,9 @@ public class Graph<T> {
         }
 
         while(!stack.isEmpty()) {
-            Node temp = stack.pop();
+            Node<T> temp = stack.pop();
             result.add(temp);
-            for(Edge e : (List<Edge>) temp.neighbors) {
+            for(Edge<T> e : temp.neighbors) {
                 if(!visited.contains(e.neighbor)) {
                     stack.push(e.neighbor);
                     visited.add(e.neighbor);
@@ -191,7 +195,7 @@ public class Graph<T> {
         }
 
         // If there are any "island" nodes, then add those to the result list
-        for(Node n : graph) {
+        for(Node<T> n : graph) {
             if(!visited.contains(n)) {
                 result.add(n);
             }

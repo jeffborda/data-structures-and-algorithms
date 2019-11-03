@@ -15,9 +15,9 @@ public class GraphTest {
 
         Graph<String> testGraph = new Graph<>();
         assertTrue("Graph should be empty upon instantiation.", testGraph.isEmpty());
-        Node node1 = new Node("Main St.");
-        Node node2 = new Node("1st Ave.");
-        Node node3 = new Node("2nd Ave.");
+        Node<String> node1 = new Node<>("Main St.");
+        Node<String> node2 = new Node<>("1st Ave.");
+        Node<String> node3 = new Node<>("2nd Ave.");
         assertTrue("Should return 'true' when Node is added successfully.", testGraph.addNode(node1));
         assertFalse("Graph should not be empty now.", testGraph.isEmpty());
         assertTrue("Should return 'true' when Node is added successfully.", testGraph.addNode(node2));
@@ -30,9 +30,9 @@ public class GraphTest {
     @Test
     public void testAddEdge() {
         Graph<String> testGraph = new Graph<>();
-        Node node1 = new Node("Main St.");
-        Node node2 = new Node("1st Ave.");
-        Node node3 = new Node("2nd Ave.");
+        Node<String> node1 = new Node<>("Main St.");
+        Node<String> node2 = new Node<>("1st Ave.");
+        Node<String> node3 = new Node<>("2nd Ave.");
         testGraph.addNode(node1);
         testGraph.addNode(node2);
         testGraph.addNode(node3);
@@ -50,11 +50,11 @@ public class GraphTest {
     public void testGetNodes() {
         Graph<String> testGraph = new Graph<>();
         assertTrue("List of Nodes should be empty before anything added.", testGraph.getNodes().isEmpty());
-        Node node1 = new Node("Main St.");
+        Node<String> node1 = new Node<>("Main St.");
         testGraph.addNode(node1);
         assertTrue("List of Nodes should have a Node with value of 'Main St.' in it.", testGraph.getNodes().contains(node1));
-        Node node2 = new Node("1st Ave.");
-        Node node3 = new Node("2nd Ave.");
+        Node<String> node2 = new Node<>("1st Ave.");
+        Node<String> node3 = new Node<>("2nd Ave.");
         testGraph.addNode(node2);
         testGraph.addNode(node3);
         assertEquals("List should be size '3' after adding three Nodes.", 3, testGraph.getNodes().size());
@@ -64,9 +64,9 @@ public class GraphTest {
     @Test
     public void testGetNeighbors() {
         Graph<String> testGraph = new Graph<>();
-        Node node1 = new Node("Main St.");
-        Node node2 = new Node("1st Ave.");
-        Node node3 = new Node("2nd Ave.");
+        Node<String> node1 = new Node<>("Main St.");
+        Node<String> node2 = new Node<>("1st Ave.");
+        Node<String> node3 = new Node<>("2nd Ave.");
         testGraph.addNode(node1);
         testGraph.addNode(node2);
         testGraph.addNode(node3);
@@ -78,12 +78,12 @@ public class GraphTest {
 
     @Test
     public void testSize() {
-        Graph<String> testGraph = new Graph<>();
+        Graph<Integer> testGraph = new Graph<>();
         assertEquals("Size of Graph should be '0' upon instantiation.", 0, testGraph.size());
         assertTrue("The isEmpty() function should also return 'true'.", testGraph.isEmpty());
-        Node node1 = new Node(1);
-        Node node2 = new Node(2);
-        Node node3 = new Node(3);
+        Node<Integer> node1 = new Node<>(1);
+        Node<Integer> node2 = new Node<>(2);
+        Node<Integer> node3 = new Node<>(3);
         testGraph.addNode(node1);
         assertEquals("Size of Graph should be '1' after one add.", 1, testGraph.size());
         assertFalse("The isEmpty() function should now return 'false'.", testGraph.isEmpty());
@@ -100,15 +100,15 @@ public class GraphTest {
     @Test
     public void testBreadthFirst() {
         Graph<String> testGraph = new Graph<>();
-        Node node1 = new Node("A");
-        Node node2 = new Node("B");
-        Node node3 = new Node("C");
-        Node node4 = new Node("D");
-        Node node5 = new Node("E");
-        Node node6 = new Node("F");
-        Node node7 = new Node("G");
-        Node node8 = new Node("H");
-        Node node9 = new Node("I");
+        Node<String> node1 = new Node<>("A");
+        Node<String> node2 = new Node<>("B");
+        Node<String> node3 = new Node<>("C");
+        Node<String> node4 = new Node<>("D");
+        Node<String> node5 = new Node<>("E");
+        Node<String> node6 = new Node<>("F");
+        Node<String> node7 = new Node<>("G");
+        Node<String> node8 = new Node<>("H");
+        Node<String> node9 = new Node<>("I");
 
         testGraph.addNode(node1);
         testGraph.addNode(node2);
@@ -141,7 +141,7 @@ public class GraphTest {
         //                  / \  /
         //                 E   D
 
-        List<Node> testResults = testGraph.breadthFirst(node1);
+        List<Node<String>> testResults = testGraph.breadthFirst(node1);
         assertEquals("Size of list should be '8'", 8, testResults.size());
         assertEquals("First should get surrounding neighbors, in order that edges were added.", "B",testResults.get(0).value);
         assertEquals("First should get surrounding neighbors, in order that edges were added.", "C",testResults.get(1).value);
@@ -156,15 +156,15 @@ public class GraphTest {
     @Test
     public void testGetEdge() {
         Graph<String> testGraph = new Graph<>();
-        Node node1 = new Node("A");
-        Node node2 = new Node("B");
-        Node node3 = new Node("C");
-        Node node4 = new Node("D");
-        Node node5 = new Node("E");
-        Node node6 = new Node("F");
-        Node node7 = new Node("G");
-        Node node8 = new Node("H");
-        Node node9 = new Node("I");
+        Node<String> node1 = new Node<>("A");
+        Node<String> node2 = new Node<>("B");
+        Node<String> node3 = new Node<>("C");
+        Node<String> node4 = new Node<>("D");
+        Node<String> node5 = new Node<>("E");
+        Node<String> node6 = new Node<>("F");
+        Node<String> node7 = new Node<>("G");
+        Node<String> node8 = new Node<>("H");
+        Node<String> node9 = new Node<>("I");
 
         testGraph.addNode(node1);
         testGraph.addNode(node2);
@@ -223,15 +223,15 @@ public class GraphTest {
     @Test
     public void testDepthFirst() {
         Graph<String> testGraph = new Graph<>();
-        Node node1 = new Node("A");
-        Node node2 = new Node("B");
-        Node node3 = new Node("C");
-        Node node4 = new Node("D");
-        Node node5 = new Node("E");
-        Node node6 = new Node("F");
-        Node node7 = new Node("G");
-        Node node8 = new Node("H");
-        Node node9 = new Node("I");
+        Node<String> node1 = new Node<>("A");
+        Node<String> node2 = new Node<>("B");
+        Node<String> node3 = new Node<>("C");
+        Node<String> node4 = new Node<>("D");
+        Node<String> node5 = new Node<>("E");
+        Node<String> node6 = new Node<>("F");
+        Node<String> node7 = new Node<>("G");
+        Node<String> node8 = new Node<>("H");
+        Node<String> node9 = new Node<>("I");
 
         testGraph.addNode(node1);
         testGraph.addNode(node2);
@@ -278,27 +278,27 @@ public class GraphTest {
         assertEquals("B", result.get(8).getValue());
         assertEquals(9, result.size());
 
-        Graph<String> testGraph2 = new Graph();
+        Graph<String> testGraph2 = new Graph<>();
         assertTrue("An empty graph as input should return an empty list.", Graph.depthFirst(testGraph2, "A").isEmpty());
 
-        Graph<String> testGraph3 = new Graph();
-        Node nodeA = new Node("A");
+        Graph<String> testGraph3 = new Graph<>();
+        Node<String> nodeA = new Node<>("A");
         testGraph3.addNode(nodeA);
         List<Node> result3 = new ArrayList<>(Graph.depthFirst(testGraph3, "A"));
         assertEquals("First position should be the same value as the input.", "A", result3.get(0).getValue());
         assertEquals("Result list should be size '1'.", 1, result3.size());
 
         Graph<String> testGraph4 = new Graph<>();
-        Node linkedA = new Node("A");
-        Node linkedB = new Node("B");
-        Node islandA = new Node("island-A");
-        Node islandB = new Node("island-B");
+        Node<String> linkedA = new Node<>("A");
+        Node<String> linkedB = new Node<>("B");
+        Node<String> islandA = new Node<>("island-A");
+        Node<String> islandB = new Node<>("island-B");
         testGraph4.addNode(linkedA);
         testGraph4.addNode(linkedB);
         testGraph4.addNode(islandA);
         testGraph4.addNode(islandB);
         testGraph4.addEdge(linkedA, linkedB, 10);
-        List<Node> result4 = new ArrayList<>(Graph.depthFirst(testGraph4, "A"));
+        List<Node<String>> result4 = new ArrayList<>(Graph.depthFirst(testGraph4, "A"));
 
         assertEquals("First position should be the same value as the input.", "A", result4.get(0).getValue());
         assertEquals("Second position should be 'B'.", "B", result4.get(1).getValue());

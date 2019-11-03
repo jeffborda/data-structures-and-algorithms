@@ -115,10 +115,4 @@ public class Hashtable<V> {
         return this.load;
     }
 
-
-
-
-
-
-
 }

@@ -373,7 +373,7 @@ public class BinaryTreeTest {
         //        21
         //          23
         //           ^
-        //           Unbalanced segment of tree
+        //           Unbalanced branch
         BinaryTree<Integer> testTree = new BinaryTree<>(root);
         assertTrue("This tests an unbalanced BST of height 6, containing a negative value. Should return 'true'.", BinaryTree.isBinarySearchTree(testTree));
     }
