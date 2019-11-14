@@ -39,7 +39,7 @@ public class Graph<T> {
 
 
     public List<Edge<T>> getNeighbors(Node<T> input) {
-        if(graph.contains(input) && input.neighbors != null) {
+        if(graph.contains(input)) {
             return input.neighbors;
         }
         // TODO: Or would it be better to just return 'null'?
@@ -165,8 +165,6 @@ public class Graph<T> {
      */
     public static <T> List<Node<T>> depthFirst(Graph<T> inputGraph, T startValue) {
 
-        // Put all Nodes into array - in case there are any "island" Nodes
-//        List<Node<T>> graph = new ArrayList<Node<T>>(inputGraph.graph);
         Set<Node<T>> graph = inputGraph.getGraph();
         List<Node<T>> result = new LinkedList<>();
         Stack<Node<T>> stack = new Stack<>();

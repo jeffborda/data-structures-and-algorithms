@@ -409,4 +409,74 @@ public class BinaryTreeTest {
         assertTrue("If BinaryTree is empty, should return an empty ArrayList.", result.isEmpty());
     }
 
+    @Test
+    public void testAreIdentical_emptyTrees() {
+        BinaryTree<Integer> t1 = new BinaryTree<>();
+        BinaryTree<Integer> t2 = new BinaryTree<>();
+        assertTrue("Two empty trees are identical and should return 'true'.", BinaryTree.areIdentical(t1, t2));
+    }
+
+    @Test
+    public void testAreIdentical_identicalOneNodeTrees() {
+        Node<Integer> n1 = new Node<>(1);
+        Node<Integer> n2 = new Node<>(1);
+        BinaryTree<Integer> tree1 = new BinaryTree<>(n1);
+        BinaryTree<Integer> tree2 = new BinaryTree<>(n2);
+        assertTrue("Trees are identical, should return 'true'.", BinaryTree.areIdentical(tree1, tree2));
+    }
+
+    @Test
+    public void testAreIdentical_notIdenticalOneNodeTrees() {
+        Node<Integer> n1 = new Node<>(1);
+        Node<Integer> n2 = new Node<>(2);
+        BinaryTree<Integer> tree1 = new BinaryTree<>(n1);
+        BinaryTree<Integer> tree2 = new BinaryTree<>(n2);
+        assertFalse("Trees are identical, should return 'false'.", BinaryTree.areIdentical(tree1, tree2));
+    }
+
+    @Test
+    public void testAreIdentical_identicalManyNodeTrees() {
+        Node<Integer> n1 = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        Node<Integer> n2 = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        BinaryTree<Integer> tree1 = new BinaryTree<>(n1);
+        BinaryTree<Integer> tree2 = new BinaryTree<>(n2);
+        assertTrue("Two identical trees should return 'true'.", BinaryTree.areIdentical(tree1, tree2));
+    }
+
+    @Test
+    public void testAreIdentical_notIdenticalManyNodeTrees() {
+        Node<Integer> n1 = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        Node<Integer> n2 = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(99, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
+        //     1
+        //  3     2
+        //5  99  6   4
+        BinaryTree<Integer> tree1 = new BinaryTree<>(n1);
+        BinaryTree<Integer> tree2 = new BinaryTree<>(n2);
+        assertFalse("Trees that have different values, should return 'false'.", BinaryTree.areIdentical(tree1, tree2));
+    }
+
+    @Test
+    public void testAreIdentical_sameValuesDifferentStructure() {
+        Node<Integer> n1 = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(4, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(7, null, null)));
+        //     1
+        //  3     2
+        //5   4  6   7
+        Node<Integer> n2 = new Node<>(1, new Node<>(3, new Node<>(5, null, null), new Node<>(7, null, null)), new Node<>(2, new Node<>(6, null, null), new Node<>(4, null, null)));
+        //     1
+        //  3     2
+        //5   7  6   4
+        BinaryTree<Integer> tree1 = new BinaryTree<>(n1);
+        BinaryTree<Integer> tree2 = new BinaryTree<>(n2);
+        assertFalse("If two trees contain all the same values, but structure is not identical, should return 'false'.", BinaryTree.areIdentical(tree1, tree2));
+    }
+
 }
