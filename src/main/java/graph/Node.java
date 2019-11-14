@@ -24,7 +24,7 @@ public class Node<T> {
     }
 
     // Helper function to determine if a Node is neighbors with the input Node.
-    public boolean hasNeighbor(Node checkNode) {
+    public boolean hasNeighbor(Node<T> checkNode) {
         for(Edge edge : neighbors) {
             if(edge.neighbor == checkNode) {
                 return true;

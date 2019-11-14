@@ -20,6 +20,25 @@ public class BinaryTree<T extends Comparable<? super T>> {
         this.root  = root;
     }
 
+    /**
+     *  Method takes in two binary tree's and returns whether or not the two trees are identical.
+     */
+    public static boolean areIdentical(BinaryTree<Integer> tree1, BinaryTree<Integer> tree2) {
+        return areIdentical(tree1.root, tree2.root);
+    }
+
+    private static boolean areIdentical(Node<Integer> n1, Node<Integer> n2) {
+
+        if(n1 == null && n2 == null) {
+            return true;
+        }
+        if(n1 != null && n2 != null) {
+            return (n1.value == n2.value) && (areIdentical(n1.left, n2.left) && areIdentical(n1.right, n2.right));
+        }
+        // This return statement will catch if one node is null and the other is not
+        return false;
+    }
+
 
     /**
      *  This method takes in a BinaryTree and returns boolean on whether or not it is a BinarySearchTree
