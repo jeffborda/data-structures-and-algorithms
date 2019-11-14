@@ -2,6 +2,9 @@ package arrays;
 
 import arrays.ArrayShift;
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class ArrayShiftTest {
@@ -38,4 +41,34 @@ public class ArrayShiftTest {
         assertArrayEquals("insertArrayShift should insert number 99 to the middle", test4Expected, ArrayShift.insertShiftArray(test4, 99));
         assertArrayEquals("insertArrayShift should insert number 99 to the middle", test5Expected, ArrayShift.insertShiftArray(test5, 99));
     }
+
+    @Test
+    public void testShiftZerosToEnd() {
+        int[] input = {0, 1, 0, 2, 0, 3, 0, 4, 0, 5};
+        int[] expected = {1, 2, 3, 4, 5, 0, 0, 0, 0, 0};
+        assertArrayEquals("Should shift all zero's to the right, and maintain relative order of the other numbers.", expected, ArrayShift.shiftZerosToEnd(input));
+    }
+
+    @Test
+    public void testShiftZerosToEnd_lengthOneArray() {
+        int[] input = {0};
+        int[] expected = {0};
+        assertArrayEquals("Should return the same array.", expected, ArrayShift.shiftZerosToEnd(input));
+    }
+
+    @Test
+    public void testShiftZerosToEnd_zerosAlreadyToEnd() {
+        int[] input = {-10, 9, -100, 0, 0, 0};
+        int[] expected = {-10, 9, -100, 0, 0, 0};
+        assertArrayEquals("Should return the same array.", expected, ArrayShift.shiftZerosToEnd(input));
+    }
+
+    @Test
+    public void testShiftZerosToEnd_someZerosAtEnd() {
+        int[] input = {1, 0, 0, 0, 2, 3, 0, 4, 5, 0, 0, 0};
+        int[] expected = {1, 2, 3, 4, 5, 0, 0, 0, 0, 0, 0, 0};
+        assertArrayEquals("Should shift zeros to the end.", expected, ArrayShift.shiftZerosToEnd(input));
+    }
+
+
 }

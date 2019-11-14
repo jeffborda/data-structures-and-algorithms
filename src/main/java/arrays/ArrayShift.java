@@ -33,4 +33,32 @@ public class ArrayShift {
 
         return result;
     }
+
+    /**
+     *  Takes in an array and moves all the zero's to the end of the array, while
+     *    maintaining the relative order of other numbers.
+     */
+    public static int[] shiftZerosToEnd(int[] nums) {
+
+        // Count of non-zero elements
+        int count = 0;
+        // Traverse the array. If arr[i] is
+        // non-zero, then swap the element at
+        // index 'count' with the element at
+        // index 'i'
+        for (int i = 0; i < nums.length; i++) {
+            //This will move the zero's to right, and other numbers left
+            if (nums[i] != 0) {
+                int temp = nums[count];
+                nums[count] = nums[i];
+                nums[i] = temp;
+                count++;
+            }
+            // example:
+            // [1, 0, 2, 3, 0]
+            // [1, 2, 0, 3, 0]
+            // [1, 2, 3, 0, 0]
+        }
+        return nums;
+    }
 }
