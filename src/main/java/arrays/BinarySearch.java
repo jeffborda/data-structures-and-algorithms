@@ -1,12 +1,6 @@
 package arrays;
 
 public class BinarySearch {
-    public static void main(String[] args) {
-
-        int[] test = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-
-        System.out.println(binarySearch(test, 10));
-    }
 
     /**
      * Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key.

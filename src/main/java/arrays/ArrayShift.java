@@ -3,9 +3,6 @@ package arrays;
 import java.util.Arrays;
 
 public class ArrayShift {
-    public static void main(String[] args) {
-
-    }
 
     /*
      * Takes in an array and the value to be added. Without utilizing any of the built-in methods available to your
