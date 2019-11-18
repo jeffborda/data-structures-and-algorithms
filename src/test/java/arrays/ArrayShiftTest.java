@@ -13,35 +13,35 @@ public class ArrayShiftTest {
     public void testInsertShiftArray_oddLengthInput() {
         int[] input = {1, 2, 3, 4, 5};
         int[] expected = {1, 2, 3, 99, 4, 5};
-        assertArrayEquals("insertArrayShift should insert number 99 to the right of middle element.", expected, ArrayShift.insertShiftArray(input, 99));
+        assertArrayEquals("Should insert number 99 to the right of middle element if input array is an odd length.", expected, ArrayShift.insertShiftArray(input, 99));
     }
 
     @Test
     public void testInsertShiftArray_evenLengthInput() {
         int[] input = {1, 2, 3, 4};
         int[] expected = {1, 2, 99, 3, 4};
-        assertArrayEquals("insertArrayShift should insert number 99 to the middle", expected, ArrayShift.insertShiftArray(input, 99));
+        assertArrayEquals("Should insert number 99 to the middle of array if input is even numbered length.", expected, ArrayShift.insertShiftArray(input, 99));
     }
 
     @Test
     public void testInsertShiftArray_length1Input() {
         int[] input = {1};
         int[] expected = {1, 99};
-        assertArrayEquals("insertArrayShift should insert number 99 to the middle", expected, ArrayShift.insertShiftArray(input, 99));
+        assertArrayEquals("Should insert the number to end of array if input array is length 1.", expected, ArrayShift.insertShiftArray(input, 99));
     }
 
     @Test
     public void testInsertShiftArray_length2Input() {
         int[] input = {1, 2};
         int[] expected = {1, 99, 2};
-        assertArrayEquals("insertArrayShift should insert number 99 to the middle", expected, ArrayShift.insertShiftArray(input, 99));
+        assertArrayEquals("Should insert number 99 to the middle of input array.", expected, ArrayShift.insertShiftArray(input, 99));
     }
 
     @Test
     public void testInsertShiftArray_largerOddLengthInput() {
         int[] input = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23};
         int[] expected = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 99, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23};
-        assertArrayEquals("insertArrayShift should insert number 99 to the middle", expected, ArrayShift.insertShiftArray(input, 99));
+        assertArrayEquals("Should insert number 99 to the right side of the middle with odd input array length.", expected, ArrayShift.insertShiftArray(input, 99));
     }
 
     @Test
