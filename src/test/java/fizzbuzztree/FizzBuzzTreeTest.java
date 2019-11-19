@@ -11,48 +11,62 @@ import static org.junit.Assert.*;
 public class FizzBuzzTreeTest {
 
     @Test
-    public void testFizzBuzzTree() {
+    public void testFizzBuzzTree_emptyTree() {
+        BinaryTree<String> testTree = new BinaryTree<>();
+        assertTrue("Should get back empty array list if tree is empty.", FizzBuzzTree.fizzBuzzTree(testTree).inOrder().isEmpty());
+    }
 
-        Node<String> n1 = new Node<>("5", new Node<>("50", new Node<>("1", null, null), new Node<>("15", null, null)), new Node<>("6", new Node<>("21", null, null), new Node<>("30", null, null)));
+    @Test
+    public void testFizzBuzzTree_oneNodeTree() {
+        Node<String> root = new Node<>("1");
+        BinaryTree<String> testTree = new BinaryTree<>(root);
+        FizzBuzzTree.fizzBuzzTree(testTree);
+        assertEquals("Should give back array list with one value.", "1", testTree.root.value);
+    }
+
+    @Test
+    public void testFizzBuzzTree_balancedHeight3Tree() {
+        Node<String> root = new Node<>("5", new Node<>("50", new Node<>("1", null, null), new Node<>("15", null, null)), new Node<>("6", new Node<>("21", null, null), new Node<>("30", null, null)));
         //       5
         //   50      6
         // 1  15   21 30
-
-        BinaryTree<String> test = new BinaryTree<>(n1);
-        ArrayList<String> inOrderExpected = new ArrayList<>();
+        BinaryTree<String> testTree = new BinaryTree<>(root);
+        ArrayList<String> expected = new ArrayList<>();
         //IN-ORDER: 1, 50, 15, 5, 21, 6, 30
-        inOrderExpected.add("1");
-        inOrderExpected.add("Buzz"); //50
-        inOrderExpected.add("FizzBuzz"); //15
-        inOrderExpected.add("Buzz"); //5
-        inOrderExpected.add("Fizz"); //21
-        inOrderExpected.add("Fizz"); //6
-        inOrderExpected.add("FizzBuzz"); //30
-        FizzBuzzTree.fizzBuzzTree(test);
-        assertArrayEquals("Should match with the expected array when doing in-order traversal.", test.inOrder().toArray(), inOrderExpected.toArray());
+        expected.add("1");
+        expected.add("Buzz"); //50
+        expected.add("FizzBuzz"); //15
+        expected.add("Buzz"); //5
+        expected.add("Fizz"); //21
+        expected.add("Fizz"); //6
+        expected.add("FizzBuzz"); //30
+        FizzBuzzTree.fizzBuzzTree(testTree);
+        assertArrayEquals("Should match with the expected array when doing in-order traversal.", testTree.inOrder().toArray(), expected.toArray());
+    }
 
-        BinaryTree<String> test2 = new BinaryTree<>();
-
-        assertTrue("Should get back empty array list if tree is empty.", FizzBuzzTree.fizzBuzzTree(test2).inOrder().isEmpty());
-
-
-        Node<String> n3 = new Node<>("10", new Node<>("4", new Node<>("33", null, null), null), new Node<>("9", new Node<>("45", null, null), new Node<>("8", null, null)));
-        BinaryTree<String> unevenTree = new BinaryTree<>(n3);
+    @Test
+    public void testFizzBuzzTree_unbalancedHeight5Tree() {
+        Node<String> root = new Node<>("10", new Node<>("4", new Node<>("33", null, null), null), new Node<>("9", new Node<>("45", null, null), new Node<>("8", null, new Node<>("44", null, new Node<>("15", null, null)))));
         //       10
         //   4      9
         // 33     45  8
+        //              44
+        //                15
+        BinaryTree<String> testTree = new BinaryTree<>(root);
 
-        ArrayList<String> unevenTreeExpected = new ArrayList<>();
+        ArrayList<String> expected = new ArrayList<>();
         //IN-ORDER: 33, 4, 10, 45, 9, 8
-        unevenTreeExpected.add("Fizz"); //33
-        unevenTreeExpected.add("4"); //4
-        unevenTreeExpected.add("Buzz"); //10
-        unevenTreeExpected.add("FizzBuzz"); //45
-        unevenTreeExpected.add("Fizz"); //9
-        unevenTreeExpected.add("8"); //8
+        expected.add("Fizz"); //33
+        expected.add("4"); //4
+        expected.add("Buzz"); //10
+        expected.add("FizzBuzz"); //45
+        expected.add("Fizz"); //9
+        expected.add("8"); //8
+        expected.add("44");
+        expected.add("FizzBuzz");
 
-        FizzBuzzTree.fizzBuzzTree(unevenTree);
-        assertArrayEquals("Should match the expected array when doing in-order traversal.", unevenTree.inOrder().toArray(), unevenTreeExpected.toArray());
+        FizzBuzzTree.fizzBuzzTree(testTree);
+        assertArrayEquals("Should match the expected array when doing in-order traversal.", testTree.inOrder().toArray(), expected.toArray());
     }
 
 }
