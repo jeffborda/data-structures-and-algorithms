@@ -23,7 +23,7 @@ public class FIFOAnimalShelter {
     }
 
     // Returns the dog that has been at the shelter the longest.
-    public Dog dequeueDog() throws IllegalStateException {
+    public Dog getNextDog() throws IllegalStateException {
         if(dogs.isEmpty()) {
             throw new IllegalStateException("There are no dogs in the shelter.");
         }
@@ -31,7 +31,7 @@ public class FIFOAnimalShelter {
     }
 
     // Returns the cat that has been at the shelter the longest.
-    public Cat dequeueCat() throws IllegalStateException {
+    public Cat getNextCat() throws IllegalStateException {
         if(cats.isEmpty()) {
             throw new IllegalStateException("There are no cats in the shelter.");
         }
