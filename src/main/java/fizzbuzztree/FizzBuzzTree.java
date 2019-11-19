@@ -19,20 +19,16 @@ public class FizzBuzzTree {
         }
         if(Integer.parseInt(current.value) % 3 == 0 && Integer.parseInt(current.value) % 5 == 0) {
             current.value = "FizzBuzz";
-            //current.value = 666999; //FizzBuzz
         }
         else if(Integer.parseInt(current.value) % 3 == 0) {
-            current.value = "Fizz"; //Fizz
+            current.value = "Fizz";
         }
         else if(Integer.parseInt(current.value) % 5 == 0) {
-            current.value = "Buzz"; //Buzz
+            current.value = "Buzz";
         }
 
         fizzBuzzHelper(current.left);
         fizzBuzzHelper(current.right);
     }
-
-
-
 
 }
