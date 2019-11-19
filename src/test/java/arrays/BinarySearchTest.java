@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class BinarySearchTest {
 
-    private int[] testArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+    private int[] testArray = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
     @Test
     public void testBinarySearch_firstElement() {
@@ -36,15 +36,15 @@ public class BinarySearchTest {
 
     @Test
     public void testBinarySearch_length2Array() {
-        int[] smallArray = {1, 2};
-        assertEquals("binarySearch method should return 0, the index of target number", 0, BinarySearch.binarySearch(smallArray, 1));
-        assertEquals("binarySearch method should return 1, the index of target number", 1, BinarySearch.binarySearch(smallArray, 2));
+        int[] smallArray = {100_000, 200_000};
+        assertEquals("binarySearch method should return 0, the index of target number", 0, BinarySearch.binarySearch(smallArray, 100_000));
+        assertEquals("binarySearch method should return 1, the index of target number", 1, BinarySearch.binarySearch(smallArray, 200_000));
     }
 
     @Test
     public void testBinarySearch_length1Array() {
-        int[] oneElementArray = {1};
-        assertEquals("binarySearch method should return 0, the index of target number", 0, BinarySearch.binarySearch(oneElementArray, 1));
+        int[] oneElementArray = {11};
+        assertEquals("binarySearch method should return 0, the index of target number", 0, BinarySearch.binarySearch(oneElementArray, 11));
     }
 
     @Test

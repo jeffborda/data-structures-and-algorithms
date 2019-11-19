@@ -45,30 +45,51 @@ public class ArrayShiftTest {
     }
 
     @Test
-    public void testShiftZerosToEnd() {
+    public void testShiftZerosToEnd_zeroAtFirstElement() {
         int[] input = {0, 1, 0, 2, 0, 3, 0, 4, 0, 5};
         int[] expected = {1, 2, 3, 4, 5, 0, 0, 0, 0, 0};
         assertArrayEquals("Should shift all zero's to the right, and maintain relative order of the other numbers.", expected, ArrayShift.shiftZerosToEnd(input));
     }
 
     @Test
-    public void testShiftZerosToEnd_lengthOneArray() {
+    public void testShiftZerosToEnd_zeroAtFirstAndLastElement() {
+        int[] input = {0, 1, 0, 2, 0, 3, 0, 4, 0, 5};
+        int[] expected = {1, 2, 3, 4, 5, 0, 0, 0, 0, 0};
+        assertArrayEquals("Should shift all zero's to the right, and maintain relative order of the other numbers.", expected, ArrayShift.shiftZerosToEnd(input));
+    }
+
+    @Test
+    public void testShiftZerosToEnd_consecutiveZeros() {
+        int[] input = {0, 0, 0, 111, 0, 0, 0, 222, 0, 0, 0};
+        int[] expected = {111, 222, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        assertArrayEquals("Should shift all zero's to the right, and maintain relative order of the other numbers.", expected, ArrayShift.shiftZerosToEnd(input));
+    }
+
+    @Test
+    public void testShiftZerosToEnd_lengthOneArrayWithZero() {
         int[] input = {0};
         int[] expected = {0};
         assertArrayEquals("Should return the same array.", expected, ArrayShift.shiftZerosToEnd(input));
     }
 
     @Test
-    public void testShiftZerosToEnd_zerosAlreadyToEnd() {
-        int[] input = {-10, 9, -100, 0, 0, 0};
-        int[] expected = {-10, 9, -100, 0, 0, 0};
+    public void testShiftZerosToEnd_lengthOneArrayWithNonZero() {
+        int[] input = {42};
+        int[] expected = {42};
         assertArrayEquals("Should return the same array.", expected, ArrayShift.shiftZerosToEnd(input));
     }
 
     @Test
-    public void testShiftZerosToEnd_someZerosAtEnd() {
-        int[] input = {1, 0, 0, 0, 2, 3, 0, 4, 5, 0, 0, 0};
-        int[] expected = {1, 2, 3, 4, 5, 0, 0, 0, 0, 0, 0, 0};
-        assertArrayEquals("Should shift zeros to the end.", expected, ArrayShift.shiftZerosToEnd(input));
+    public void testShiftZerosToEnd_zerosAlreadyAtEnd() {
+        int[] input = {-10, 9, -100, 0, 0, 0};
+        int[] expected = {-10, 9, -100, 0, 0, 0};
+        assertArrayEquals("If array already in correct order, should return the same array.", expected, ArrayShift.shiftZerosToEnd(input));
+    }
+
+    @Test
+    public void testShiftZerosToEnd_allZeros() {
+        int[] input = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] expected = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        assertArrayEquals("Test array with all zeros, should return the same array.", expected, ArrayShift.shiftZerosToEnd(input));
     }
 }
