@@ -8,17 +8,17 @@ public class FIFOAnimalShelter {
     private Queue<Dog> dogs;
 
     public FIFOAnimalShelter() {
-        cats = new Queue<Cat>();
-        dogs = new Queue<Dog>();
+        this.cats = new Queue<>();
+        this.dogs = new Queue<>();
     }
 
     public void enqueue(Cat cat) {
-
+        cat.setIntakeDate();
         cats.enqueue(cat);
     }
 
     public void enqueue(Dog dog) {
-
+        dog.setIntakeDate();
         dogs.enqueue(dog);
     }
 

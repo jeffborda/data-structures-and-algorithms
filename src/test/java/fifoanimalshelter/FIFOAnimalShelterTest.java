@@ -1,10 +1,6 @@
 package fifoanimalshelter;
 
 import org.junit.Test;
-import stacksandqueues.Queue;
-
-import java.io.FileWriter;
-
 import static org.junit.Assert.*;
 
 public class FIFOAnimalShelterTest {
@@ -12,9 +8,28 @@ public class FIFOAnimalShelterTest {
     @Test
     public void testConstructor() {
         FIFOAnimalShelter testShelter = new FIFOAnimalShelter();
-        assertTrue("Both Cat and Dog queues should be empty on instantiation.", testShelter.isEmpty());
-        assertEquals("Make sure the dog queue exists, and is size '0'.", 0, testShelter.getDogs().size());
-        assertEquals("Make sure the cat queue exists, and is size '0'.", 0, testShelter.getCats().size());
+        assertEquals("Dog queue exist, and is size '0'.", 0, testShelter.getDogs().size());
+        assertEquals("Cat queue exist, and is size '0'.", 0, testShelter.getCats().size());
+    }
+
+    @Test
+    public void testIsEmpty() {
+        FIFOAnimalShelter testShelter = new FIFOAnimalShelter();
+        assertTrue("isEmpty() method should return 'true' if both queues are empty.", testShelter.isEmpty());
+    }
+
+    @Test
+    public void testIsEmpty_withCats() {
+        FIFOAnimalShelter testShelter = new FIFOAnimalShelter();
+        testShelter.enqueue(new Cat());
+        assertFalse("If there is a cat in the shelter, isEmpty should return 'false'.", testShelter.isEmpty());
+    }
+
+    @Test
+    public void testIsEmpty_withDogs() {
+        FIFOAnimalShelter testShelter = new FIFOAnimalShelter();
+        testShelter.enqueue(new Dog());
+        assertFalse("If there is a dog in the shelter, isEmpty should return 'false'.", testShelter.isEmpty());
     }
 
     @Test
@@ -62,6 +77,6 @@ public class FIFOAnimalShelterTest {
         assertEquals("Dog queue should now be size '1'.", 1, testShelter.getDogs().size());
         assertTrue("Confirm when 'dog' is requested, a Dog is dequeued.", testShelter.dequeue("dog") instanceof  Dog);
         assertEquals("Dog queue should now be size '0'.", 0, testShelter.getDogs().size());
-        assertEquals("If 'dog' dequeue request made on empty Queue, should return 'null'.", null, testShelter.dequeue("dog"));
+        assertNull("If 'dog' dequeue request made on empty Queue, should return 'null'.", testShelter.dequeue("dog"));
     }
 }
