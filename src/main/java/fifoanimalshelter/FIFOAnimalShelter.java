@@ -22,14 +22,38 @@ public class FIFOAnimalShelter {
         dogs.enqueue(dog);
     }
 
-    public Animal dequeue(String preference) {
-        if(preference.toLowerCase().equals("cat")) {
+    // Returns the dog that has been at the shelter the longest.
+    public Dog dequeueDog() throws IllegalStateException {
+        if(dogs.isEmpty()) {
+            throw new IllegalStateException("There are no dogs in the shelter.");
+        }
+        return dogs.dequeue();
+    }
+
+    // Returns the cat that has been at the shelter the longest.
+    public Cat dequeueCat() throws IllegalStateException {
+        if(cats.isEmpty()) {
+            throw new IllegalStateException("There are no cats in the shelter.");
+        }
+        return cats.dequeue();
+    }
+
+    // Returns the animal, either cat or dog, which has been at the shelter the longest.
+    public Animal getNextAnimal() throws IllegalStateException {
+        // Logic handling if one or both of the queues is empty
+        if(cats.isEmpty() && dogs.isEmpty()) {
+            throw new IllegalStateException("The shelter is empty");
+        } else if(cats.isEmpty()) {
+            return dogs.dequeue();
+        } else if(dogs.isEmpty()) {
             return cats.dequeue();
         }
-        if(preference.toLowerCase().equals("dog")) {
+        if(cats.peek().intakeDate.before(dogs.peek().intakeDate)) {
+            return cats.dequeue();
+        }
+        else {
             return dogs.dequeue();
         }
-        return null;
     }
 
     // Returns whether there are any animals in the shelter
