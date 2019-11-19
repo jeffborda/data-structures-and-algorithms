@@ -2,6 +2,9 @@ package fifoanimalshelter;
 
 import org.junit.Test;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import static org.junit.Assert.*;
 
 public class AnimalTest {
@@ -30,4 +33,13 @@ public class AnimalTest {
         assertNull("'intakeDate' should be 'null' upon instantiation.", animal.intakeDate);
     }
 
+    @Test
+    public void testSetIntakeDate() {
+        Animal animal = new Animal();
+        animal.setIntakeDate();
+        Date compareDate = Calendar.getInstance().getTime();
+        // RE: https://stackoverflow.com/questions/21585892/comparing-dates-with-junit-testing
+        assertTrue("The test animal's intakeTime should be within 500 ms to the 'compareTime",
+                (compareDate.getTime() - animal.intakeDate.getTime()) < 500);
+    }
 }
