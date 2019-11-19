@@ -32,11 +32,9 @@ public class FIFOAnimalShelter {
         return null;
     }
 
+    // Returns whether there are any animals in the shelter
     public boolean isEmpty() {
-        if(cats.isEmpty() && dogs.isEmpty()) {
-            return true;
-        }
-        return false;
+        return cats.isEmpty() && dogs.isEmpty();
     }
 
     protected Queue<Cat> getCats() {

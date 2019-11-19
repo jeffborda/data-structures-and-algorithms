@@ -22,14 +22,22 @@ public class FIFOAnimalShelterTest {
     public void testIsEmpty_withCats() {
         FIFOAnimalShelter testShelter = new FIFOAnimalShelter();
         testShelter.enqueue(new Cat());
-        assertFalse("If there is a cat in the shelter, isEmpty should return 'false'.", testShelter.isEmpty());
+        assertFalse("If there are one or more cats in the shelter, isEmpty should return 'false'.", testShelter.isEmpty());
     }
 
     @Test
     public void testIsEmpty_withDogs() {
         FIFOAnimalShelter testShelter = new FIFOAnimalShelter();
         testShelter.enqueue(new Dog());
-        assertFalse("If there is a dog in the shelter, isEmpty should return 'false'.", testShelter.isEmpty());
+        assertFalse("If there are one or more dogs in the shelter, isEmpty should return 'false'.", testShelter.isEmpty());
+    }
+
+    @Test
+    public void testEmpty_withDogsAndCats() {
+        FIFOAnimalShelter testShelter = new FIFOAnimalShelter();
+        testShelter.enqueue(new Cat());
+        testShelter.enqueue(new Dog());
+        assertFalse("If there are  dog in the shelter, isEmpty should return 'false'.", testShelter.isEmpty());
     }
 
     @Test
