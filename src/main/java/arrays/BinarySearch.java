@@ -12,7 +12,7 @@ public class BinarySearch {
         int right = sortedArray.length - 1;
         int middle = 0;
         while(left <= right) {
-            middle = (int) Math.floor((left + right) / 2);
+            middle = (left + right) /2;
             if(sortedArray[middle] < target) {
                 left = middle + 1;
             }
