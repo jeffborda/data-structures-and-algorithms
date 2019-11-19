@@ -8,16 +8,15 @@ public class ArrayShift {
      * Takes in an array and the value to be added. Without utilizing any of the built-in methods available to your
      *  language, return an array with the new value added at the middle index.
      * NOTE: Insert number on the "right" side of the middle when input array is of odd number length.
-     *   example: insertShiftArray(new int[1, 2, 3], 99)  --returns--> [1, 2, 99, 3]
+     *   example: insertShiftArray(new int[]{1, 2, 3}, 99)  --returns--> [1, 2, 99, 3]
      */
     public static int[] insertShiftArray(int[] input, int insertionNumber) {
 
         int[] result = new int[input.length + 1];
-        int middle = input.length / 2;
-        middle += 0.5; //For rounding
-//        middle = Math.floor(middle); //Truncate the decimal
+        // Adding +1 to the length so numbers are inserted to the "right" side of middle in odd length arrays.
+        int middle = (input.length + 1) / 2;
 
-        for(int i = 0; i < input.length + 1; i++) {
+        for(int i = 0; i < result.length; i++) {
 
             if(i < middle) {
                 result[i] = input[i];
@@ -40,10 +39,8 @@ public class ArrayShift {
 
         // Count of non-zero elements
         int count = 0;
-        // Traverse the array. If arr[i] is
-        // non-zero, then swap the element at
-        // index 'count' with the element at
-        // index 'i'
+        // Traverse the array. If arr[i] is non-zero, then swap the element at
+        //   index 'count' with the element at index 'i'
         for (int i = 0; i < nums.length; i++) {
             //This will move the zero's to right, and other numbers left
             if (nums[i] != 0) {
