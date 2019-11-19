@@ -1,7 +1,5 @@
 package arrays;
 
-import java.util.Arrays;
-
 public class ArrayReverse {
 
     public static String[] reverseArray(String[] original) {
