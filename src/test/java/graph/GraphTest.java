@@ -47,18 +47,26 @@ public class GraphTest {
     }
 
     @Test
+    public void testGetNodes_emptyGraph() {
+        Graph<String> testGraph = new Graph<>();
+        Node<String> node1 = new Node<>("Some value"); // Note: NOT added to graph
+        assertFalse("Should return 'false' since the node was not added to the graph.", testGraph.getNodes().contains(node1));
+        assertTrue("List of Nodes should be empty nodes have not been added to graph.", testGraph.getNodes().isEmpty());
+    }
+
+    @Test
     public void testGetNodes() {
         Graph<String> testGraph = new Graph<>();
-        assertTrue("List of Nodes should be empty before anything added.", testGraph.getNodes().isEmpty());
         Node<String> node1 = new Node<>("Main St.");
-        testGraph.addNode(node1);
-        assertTrue("List of Nodes should have a Node with value of 'Main St.' in it.", testGraph.getNodes().contains(node1));
         Node<String> node2 = new Node<>("1st Ave.");
         Node<String> node3 = new Node<>("2nd Ave.");
+        testGraph.addNode(node1);
         testGraph.addNode(node2);
         testGraph.addNode(node3);
-        assertEquals("List should be size '3' after adding three Nodes.", 3, testGraph.getNodes().size());
+        assertTrue("List of Nodes should have a Node with value of 'Main St.' in it.", testGraph.getNodes().contains(node1));
+        assertTrue("List of Nodes should have a Node with value of '1st Ave.' in it.", testGraph.getNodes().contains(node2));
         assertTrue("List of Nodes should have a Node with value of '1st Ave.' in it.", testGraph.getNodes().contains(node3));
+        assertEquals("List should be size '3' after adding three Nodes.", 3, testGraph.getNodes().size());
     }
 
     @Test
@@ -72,7 +80,7 @@ public class GraphTest {
         testGraph.addNode(node3);
         testGraph.addEdge(node1, node2, 10);
         assertTrue("If getNeighbors called on node1, should contain node2.", node1.hasNeighbor(node2));
-        assertTrue("If getNeighbors called on node2, should contain node1.", node1.hasNeighbor(node2));
+        assertTrue("If getNeighbors called on node2, should contain node1.", node2.hasNeighbor(node1));
         assertFalse("node3 should not have any neighbors.", node3.hasNeighbor(node1));
     }
 
@@ -265,8 +273,7 @@ public class GraphTest {
         //                 E   D
 
         List<Node> result = new ArrayList<>(Graph.depthFirst(testGraph, "A"));
-
-
+        
         assertEquals("Depth first traversal should return a list, with the following order.", "A", result.get(0).getValue());
         assertEquals("G", result.get(1).getValue());
         assertEquals("H", result.get(2).getValue());
