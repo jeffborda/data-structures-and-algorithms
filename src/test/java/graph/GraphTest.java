@@ -80,7 +80,7 @@ public class GraphTest {
         testGraph.addNode(node3);
         testGraph.addEdge(node1, node2, 10);
         assertTrue("If getNeighbors called on node1, should contain node2.", node1.hasNeighbor(node2));
-        assertTrue("If getNeighbors called on node2, should contain node1.", node1.hasNeighbor(node2));
+        assertTrue("If getNeighbors called on node2, should contain node1.", node2.hasNeighbor(node1));
         assertFalse("node3 should not have any neighbors.", node3.hasNeighbor(node1));
     }
 
