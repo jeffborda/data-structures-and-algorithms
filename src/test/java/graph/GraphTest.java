@@ -273,8 +273,7 @@ public class GraphTest {
         //                 E   D
 
         List<Node> result = new ArrayList<>(Graph.depthFirst(testGraph, "A"));
-
-
+        
         assertEquals("Depth first traversal should return a list, with the following order.", "A", result.get(0).getValue());
         assertEquals("G", result.get(1).getValue());
         assertEquals("H", result.get(2).getValue());
