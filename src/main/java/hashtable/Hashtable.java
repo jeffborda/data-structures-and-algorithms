@@ -1,17 +1,19 @@
 package hashtable;
 
-import javax.lang.model.element.NestingKind;
 import java.util.Random;
 
 public class Hashtable<V> {
 
     protected Node<V>[] table;
     protected final double RANDOM_DOUBLE;
-    protected static final int PRIME_NUMBER = 17; // TODO: Add to hash fuction?
-    protected int load;
+    protected static final int PRIME_NUMBER = 17; // TODO: Add to hash function?
+    protected int load; // This is really just the size, and have not implemented a way for the table to grow.
 
     public Hashtable() {
-        this.table = new Node[16];
+        // Generic array creation not allowed in Java
+        //   RE: https://www.ibm.com/developerworks/java/library/j-jtp01255/index.html
+        //   RE: https://stackoverflow.com/questions/7131652/generic-array-creation-error
+        this.table = (Node<V>[])new Node<?>[16];
         Random r = new Random();
         this.RANDOM_DOUBLE = r.nextDouble();
         this.load = 0;
@@ -26,18 +28,17 @@ public class Hashtable<V> {
         int index = getHash(insertKey);
         // Check if that element of the array has not been used yet, and add it there if possible.
         if(this.table[index] == null) {
-            this.table[index] = new Node(insertKey, insertValue, null);
+            this.table[index] = new Node<>(insertKey, insertValue, null);
             load++;
             return;
         }
         // If that element is already full, start creating a list of Nodes
-        Node current = this.table[index];
+        Node<V> current = this.table[index];
         while(current.next != null) {
             current = current.next;
         }
-        current.next = new Node(insertKey, insertValue, null);
+        current.next = new Node<>(insertKey, insertValue, null);
         load++;
-        return;
     }
 
     /**
@@ -57,7 +58,7 @@ public class Hashtable<V> {
 
 
 
-        Node current = this.table[index];
+        Node<V> current = this.table[index];
         while(current != null) {
             if(current.key.equals(searchKey)) {
                 return true;
@@ -70,9 +71,8 @@ public class Hashtable<V> {
     /**
      * Takes in the key and returns the value from key/value pair
      */
-    public Node find(String key) {
+    public Node<V> find(String key) {
         int index = getHash(key);
-
 
         // First check location if there are no collisions.
         if(this.table[index].key.equals(key)) {
@@ -80,7 +80,7 @@ public class Hashtable<V> {
         }
 
         // If there were collisions, iterate through the list
-        Node current = this.table[index];
+        Node<V> current = this.table[index];
         while(current != null) {
             if(current.key.equals(key)) {
                 return current;
@@ -97,14 +97,11 @@ public class Hashtable<V> {
     protected int getHash(String keyToHash) {
 
         int resultHash = 1;
-
-
         for(int i = 0; i < keyToHash.length(); i++) {
             resultHash += resultHash * keyToHash.charAt(i) * RANDOM_DOUBLE;
         }
         resultHash *= keyToHash.length();
         resultHash %= this.table.length;
-
         return Math.abs(resultHash);
     }
 
