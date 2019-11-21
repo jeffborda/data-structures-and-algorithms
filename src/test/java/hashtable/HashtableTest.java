@@ -82,7 +82,6 @@ public class HashtableTest {
             testTable.add(((Integer)i).toString(), strs[i]);
 
         }
-
         for(int i = 1; i < strs.length; i++) {
             assertTrue("Should return 'true' when input is a key that was added to the Hashtable.", testTable.contains( ((Integer)i).toString())  );
         }
@@ -129,7 +128,6 @@ public class HashtableTest {
             testTable.add(((Integer)i).toString(), strs[i]);
 
         }
-
         assertEquals("Confirm it returns the correct size when there have been collisions.", 21, testTable.size());
     }
 }
