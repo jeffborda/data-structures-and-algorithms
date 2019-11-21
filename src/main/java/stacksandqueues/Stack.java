@@ -13,7 +13,7 @@ public class Stack<T> {
     }
 
     /**
-     * Pushes a new Node with a value on the top of the stack.
+     * Pushes a new Entry with a value on the top of the stack.
      * @param value
      */
     public void push(T value) {
@@ -21,7 +21,7 @@ public class Stack<T> {
     }
 
     /**
-     * Returns the value of the top of the stack, pop of the top Node.
+     * Returns the value of the top of the stack, pop of the top Entry.
      * @return value at the top of the stack.
      */
     public T pop() {
@@ -34,7 +34,7 @@ public class Stack<T> {
     }
 
     /**
-     * Returns the value of the top Node, but does NOT pop it off.
+     * Returns the value of the top Entry, but does NOT pop it off.
      * @return value at the top of the stack.
      */
     public T peek() {

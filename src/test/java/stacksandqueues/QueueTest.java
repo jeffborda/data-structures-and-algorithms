@@ -58,7 +58,7 @@ public class QueueTest {
         Queue<String> testQueue = new Queue<>();
         testQueue.enqueue("1");
         assertEquals("Front of the Queue should contain the value '1'.", "1", testQueue.peek());
-        assertEquals("The rear should have the same value as the front with one Node in the Queue.", "1", testQueue.getRearValue());
+        assertEquals("The rear should have the same value as the front with one Entry in the Queue.", "1", testQueue.getRearValue());
         assertEquals("Size of the queue should be '1'.", 1, testQueue.size());
         testQueue.enqueue("2");
         assertEquals("Front of the Queue should still contain the value '1'.", "1", testQueue.peek());

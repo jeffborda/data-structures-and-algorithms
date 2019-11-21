@@ -163,7 +163,7 @@ public class LinkedList<T> {
     }
 
     /**
-     * Takes in an int, and returns the kth from the end Node's String.  If in is out of bounds,
+     * Takes in an int, and returns the kth from the end Entry's String.  If in is out of bounds,
      * the method returns null.
      */
     public T kFromEnd(int k) {
@@ -192,7 +192,7 @@ public class LinkedList<T> {
     }
 
     /**
-     * Finds the Node in the middle of the LinkedList and returns its value.
+     * Finds the Entry in the middle of the LinkedList and returns its value.
      */
     public T findMiddleNode() {
         //if empty list, return null
@@ -243,7 +243,7 @@ public class LinkedList<T> {
             current = leader;
             // Iterate leader forward one
             leader = leader.next;
-            // Set the current Node's next back to follower
+            // Set the current Entry's next back to follower
             current.next = follow;
             // "Hop" follower over to current
             follow = current;

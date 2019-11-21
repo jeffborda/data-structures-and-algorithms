@@ -22,7 +22,7 @@ public class Graph<T> {
 
     public void addEdge(Node<T> node1, Node<T> node2, Integer weight) {
         if(!graph.contains(node1) || !graph.contains(node2)) {
-            throw new IllegalArgumentException("Node not in graph.");
+            throw new IllegalArgumentException("Entry not in graph.");
         }
         node1.addEdge(node2, weight);
         node2.addEdge(node1, weight);
@@ -100,7 +100,7 @@ public class Graph<T> {
                     haveVisited.add(e.neighbor);
                 }
             }
-            // Dequeue and add Node to results
+            // Dequeue and add Entry to results
             result.add(neighbors.dequeue());
 
         }

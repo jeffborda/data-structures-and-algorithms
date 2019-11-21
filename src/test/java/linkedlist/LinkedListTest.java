@@ -88,9 +88,9 @@ public class LinkedListTest {
         String newLine = System.lineSeparator();
         testList.print();
         assertEquals("Check list order through the print method, '4' should be at the end.", "1, 2, 3, 4" + newLine, outContent.toString());
-        assertEquals("Check the last Node's value, should be '4'.", "4", testList.getLastValue());
+        assertEquals("Check the last Entry's value, should be '4'.", "4", testList.getLastValue());
         testList.append("I am last");
-        assertEquals("Check the last Node's value after another append, should be 'I am last'.", "I am last", testList.getLastValue());
+        assertEquals("Check the last Entry's value after another append, should be 'I am last'.", "I am last", testList.getLastValue());
     }
 
     @Test
@@ -189,7 +189,7 @@ public class LinkedListTest {
         LinkedList<String> testList = new LinkedList<>();
         assertTrue("List should be empty, returning 'true'.", testList.isEmpty());
         testList.insert("Hello");
-        assertFalse("List should have one Node, returning 'false'.", testList.isEmpty());
+        assertFalse("List should have one Entry, returning 'false'.", testList.isEmpty());
     }
 
     @Test
