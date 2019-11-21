@@ -11,40 +11,39 @@ public class HashtableTest {
         Hashtable<String> testTable = new Hashtable<>();
         assertEquals("Table should have array of size '16' when instantiated.", 16, testTable.table.length);
         for(int i = 0; i < testTable.table.length; i++) {
-            assertEquals("Table should only have 'null' values before adding anything.", null, testTable.table[i]);
+            assertNull("Table should only have 'null' values before adding anything.", testTable.table[i]);
         }
     }
 
     @Test
     public void testAdd() {
         Hashtable<Integer> testTable = new Hashtable<>();
-        int index1 = testTable.getHash("one");
-        int index2 = testTable.getHash("two");
-        int index3 = testTable.getHash("three");
-        int index4 = testTable.getHash("four");
+        int index1Hash = testTable.getHash("one");
+        int index2Hash = testTable.getHash("two");
+        int index3Hash = testTable.getHash("three");
         testTable.add("one", 1);
         testTable.add("two", 2);
         testTable.add("three", 3);
         testTable.add("four", 4);
 
-        assertEquals("Check value when there is no possibility of collisions.", (Integer) 1, testTable.table[index1].value);
+        assertEquals("Check value when there is no possibility of collisions.", (Integer) 1, testTable.table[index1Hash].value);
         // If there was a collision, this test will run
-        if(index2 == index1) {
-            assertEquals("This test will run if there was a collision when adding the 2.", (Integer) 2, testTable.table[index2].next.value);
+        if(index2Hash == index1Hash) {
+            assertEquals("This test will run if there was a collision when adding the 2.", 2, testTable.table[index2Hash].next.value);
         }
         else {
-            assertEquals("Check value when there was no collision", (Integer) 2, testTable.table[index2].value);
+            assertEquals("Check value when there was no collision", (Integer) 2, testTable.table[index2Hash].value);
         }
 
 
-        if(index3 == index2 && index1 == index2) {
-            assertEquals("This test will run if there was a collision with '1' and '3' or '2' and '3'.",(Integer) 3, testTable.table[index3].next.value);
+        if(index3Hash == index2Hash && index1Hash == index2Hash) {
+            assertEquals("This test will run if there was a collision with '1' and '3' or '2' and '3'.",(Integer) 3, testTable.table[index3Hash].next.value);
         }
-        else if(index3 == index2 || index3 == index1) {
-            assertEquals("If all nodes were added to the same index, a triple collision, this test will run.", (Integer) 3, testTable.table[index3].next.next.value);
+        else if(index3Hash == index2Hash || index3Hash == index1Hash) {
+            assertEquals("If all nodes were added to the same index, a triple collision, this test will run.", (Integer) 3, testTable.table[index3Hash].next.next.value);
         }
         else {
-            assertEquals("Check value if there was no collision.", (Integer) 3, testTable.table[index3].value);
+            assertEquals("Check value if there was no collision.", (Integer) 3, testTable.table[index3Hash].value);
         }
     }
 
