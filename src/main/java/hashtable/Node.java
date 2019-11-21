@@ -4,13 +4,13 @@ public class Node<V> {
 
     protected String key;
     protected V value;
-    protected Node next;
+    protected Node<V> next;
 
     public Node() {
         this.next = null;
     }
 
-    public Node(String key, V value, Node next) {
+    public Node(String key, V value, Node<V> next) {
         this.key = key;
         this.value = value;
         this.next = next;
