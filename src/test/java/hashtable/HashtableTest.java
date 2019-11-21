@@ -51,29 +51,27 @@ public class HashtableTest {
     public void testFind() {
         Hashtable<String> testTable = new Hashtable<>();
         testTable.add("best dog", "Scoutdog");
-        assertEquals("Make sure it returns the matching Node when it is the only key/value pair in the Hashtable", "Scoutdog", testTable.find("best dog").value);
-        assertEquals("Confirm the key returns correctly also.", "best dog", testTable.find("best dog").key);
+        assertEquals("Given a key, should return the value associated with it.", "Scoutdog", testTable.find("best dog").value);
+        assertEquals("Should store key correctly.", "best dog", testTable.find("best dog").key);
 
+        // Add two more K/V pairs
         testTable.add("smallest dog", "Luna");
         testTable.add("naughty dog", "Elsa");
 
         assertEquals("Confirm it returns matching Node when there are multiple Nodes in the Hashtable.", "Luna", testTable.find("smallest dog").value);
         assertEquals("Confirm it returns matching Node when there are multiple Nodes in the Hashtable.", "Elsa", testTable.find("naughty dog").value);
+    }
 
-        String[] strs = new String[]{"four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"};
+    @Test
+    public void testAdd_withCollisions() {
+        Hashtable<String> testTable = new Hashtable<>();
+        String[] strs = new String[]{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"};
         for(int i = 0; i < strs.length; i++) {
-            testTable.add(Integer.toString(i + 4), strs[i]);
+            testTable.add(Integer.toString(i + 1), strs[i]);
         }
         for(int i = 0; i < strs.length; i++) {
-            assertEquals("Make sure it can get values when there must be collisions.", strs[i], testTable.find(((Integer)(i+4)).toString()).value);
+            assertEquals("Make sure it can get values when there must be collisions.", strs[i], testTable.find(((Integer)(i+1)).toString()).value);
         }
-
-        assertEquals("Confirm original values are still in the Hashtable", "Scoutdog", testTable.find("best dog").value);
-        assertEquals("Confirm original values are still in the Hashtable", "Luna", testTable.find("smallest dog").value);
-        assertEquals("Confirm original values are still in the Hashtable", "Elsa", testTable.find("naughty dog").value);
-
-
-
     }
 
     @Test
