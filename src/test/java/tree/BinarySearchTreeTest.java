@@ -57,8 +57,8 @@ public class BinarySearchTreeTest {
         //          5        15
         //        0   7     12  20
 
-        assertEquals("Make sure the value of the Node found matches input.", 7, testTree.find(7).value);
-        assertEquals("Make sure the value of the Node found matches input.", 15, testTree.find(15).value);
+        assertEquals("Make sure the value of the Entry found matches input.", 7, testTree.find(7).value);
+        assertEquals("Make sure the value of the Entry found matches input.", 15, testTree.find(15).value);
         assertEquals("The right of '15' should contain the value of '20'.", 20, testTree.find(15).right.value);
         assertEquals("Should return null if value not in the tree.", null, testTree.find(99));
 

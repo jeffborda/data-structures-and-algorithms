@@ -18,10 +18,10 @@ public class GraphTest {
         Node<String> node1 = new Node<>("Main St.");
         Node<String> node2 = new Node<>("1st Ave.");
         Node<String> node3 = new Node<>("2nd Ave.");
-        assertTrue("Should return 'true' when Node is added successfully.", testGraph.addNode(node1));
+        assertTrue("Should return 'true' when Entry is added successfully.", testGraph.addNode(node1));
         assertFalse("Graph should not be empty now.", testGraph.isEmpty());
-        assertTrue("Should return 'true' when Node is added successfully.", testGraph.addNode(node2));
-        assertTrue("Should return 'true' when Node is added successfully.", testGraph.addNode(node3));
+        assertTrue("Should return 'true' when Entry is added successfully.", testGraph.addNode(node2));
+        assertTrue("Should return 'true' when Entry is added successfully.", testGraph.addNode(node3));
         assertEquals("Size of the Graph should now be '3'.", 3, testGraph.size());
         assertTrue("Graph should contain the value 'Main St.'.", testGraph.hasNodeValue("Main St."));
         assertFalse("Graph should NOT contain the value 'Rucker St.'.", testGraph.hasNodeValue("Rucker St."));
@@ -63,9 +63,9 @@ public class GraphTest {
         testGraph.addNode(node1);
         testGraph.addNode(node2);
         testGraph.addNode(node3);
-        assertTrue("List of Nodes should have a Node with value of 'Main St.' in it.", testGraph.getNodes().contains(node1));
-        assertTrue("List of Nodes should have a Node with value of '1st Ave.' in it.", testGraph.getNodes().contains(node2));
-        assertTrue("List of Nodes should have a Node with value of '1st Ave.' in it.", testGraph.getNodes().contains(node3));
+        assertTrue("List of Nodes should have a Entry with value of 'Main St.' in it.", testGraph.getNodes().contains(node1));
+        assertTrue("List of Nodes should have a Entry with value of '1st Ave.' in it.", testGraph.getNodes().contains(node2));
+        assertTrue("List of Nodes should have a Entry with value of '1st Ave.' in it.", testGraph.getNodes().contains(node3));
         assertEquals("List should be size '3' after adding three Nodes.", 3, testGraph.getNodes().size());
     }
 

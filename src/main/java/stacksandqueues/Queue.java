@@ -15,7 +15,7 @@ public class Queue<T> {
     }
 
     /**
-     * Adds a Node to the back of the Queue with the input value.
+     * Adds a Entry to the back of the Queue with the input value.
      * @param value
      */
     public void enqueue(T value) {
@@ -31,8 +31,8 @@ public class Queue<T> {
     }
 
     /**
-     * Removes the Node at the front of the Queue and returns its value.
-     * @return the value of the front Node.
+     * Removes the Entry at the front of the Queue and returns its value.
+     * @return the value of the front Entry.
      */
     public T dequeue() {
         if(front != null) {
@@ -69,7 +69,7 @@ public class Queue<T> {
     }
 
     /**
-     * Finds the size of the Queue.  Empty Queue returns 0, one Node in Queue returns 1, etc.
+     * Finds the size of the Queue.  Empty Queue returns 0, one Entry in Queue returns 1, etc.
      * @return number of Nodes in the Queue.
      */
     public int size() {
@@ -86,7 +86,7 @@ public class Queue<T> {
     }
 
     /**
-     * Helper function for testing purposes. Returns the last Node's value in the Queue.
+     * Helper function for testing purposes. Returns the last Entry's value in the Queue.
      * @return the value at the back of the Queue, or null if Queue is empty.
      */
     protected T getRearValue() {

@@ -29,7 +29,7 @@ public class HashtableTest {
         assertEquals("Check value when there is no possibility of collisions.", (Integer) 1, testTable.table[index1Hash].value);
         // If there was a collision, this test will run
         if(index2Hash == index1Hash) {
-            assertEquals("This test will run if there was a collision when adding the 2.", 2, testTable.table[index2Hash].next.value);
+            assertEquals("This test will run if there was a collision when adding the 2.", (Integer) 2, testTable.table[index2Hash].next.value);
         }
         else {
             assertEquals("Check value when there was no collision", (Integer) 2, testTable.table[index2Hash].value);
@@ -58,8 +58,8 @@ public class HashtableTest {
         testTable.add("smallest dog", "Luna");
         testTable.add("naughty dog", "Elsa");
 
-        assertEquals("Confirm it returns matching Node when there are multiple Nodes in the Hashtable.", "Luna", testTable.find("smallest dog").value);
-        assertEquals("Confirm it returns matching Node when there are multiple Nodes in the Hashtable.", "Elsa", testTable.find("naughty dog").value);
+        assertEquals("Confirm it returns matching Entry when there are multiple Nodes in the Hashtable.", "Luna", testTable.find("smallest dog").value);
+        assertEquals("Confirm it returns matching Entry when there are multiple Nodes in the Hashtable.", "Elsa", testTable.find("naughty dog").value);
     }
 
     @Test

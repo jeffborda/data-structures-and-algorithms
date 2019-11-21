@@ -1,16 +1,16 @@
 package hashtable;
 
-public class Node<V> {
+public class Entry<V> {
 
     protected String key;
     protected V value;
-    protected Node<V> next;
+    protected Entry<V> next;
 
-    public Node() {
+    public Entry() {
         this.next = null;
     }
 
-    public Node(String key, V value, Node<V> next) {
+    public Entry(String key, V value, Entry<V> next) {
         this.key = key;
         this.value = value;
         this.next = next;

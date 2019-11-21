@@ -23,7 +23,7 @@ public class Node<T> {
         return neighbors.add(edge);
     }
 
-    // Helper function to determine if a Node is neighbors with the input Node.
+    // Helper function to determine if a Entry is neighbors with the input Entry.
     public boolean hasNeighbor(Node<T> checkNode) {
         for(Edge edge : neighbors) {
             if(edge.neighbor == checkNode) {

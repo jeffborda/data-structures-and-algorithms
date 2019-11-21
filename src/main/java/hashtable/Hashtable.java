@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Hashtable<V> {
 
-    protected Node<V>[] table;
+    protected Entry<V>[] table;
     protected final double RANDOM_DOUBLE;
     protected static final int PRIME_NUMBER = 17; // TODO: Add to hash function?
     protected int load; // This is really just the size, and have not implemented a way for the table to grow.
@@ -13,7 +13,7 @@ public class Hashtable<V> {
         // Generic array creation not allowed in Java
         //   RE: https://www.ibm.com/developerworks/java/library/j-jtp01255/index.html
         //   RE: https://stackoverflow.com/questions/7131652/generic-array-creation-error
-        this.table = (Node<V>[])new Node<?>[16];
+        this.table = (Entry<V>[])new Entry<?>[16];
         Random r = new Random();
         this.RANDOM_DOUBLE = r.nextDouble();
         this.load = 0;
@@ -28,16 +28,16 @@ public class Hashtable<V> {
         int index = getHash(insertKey);
         // Check if that element of the array has not been used yet, and add it there if possible.
         if(this.table[index] == null) {
-            this.table[index] = new Node<>(insertKey, insertValue, null);
+            this.table[index] = new Entry<>(insertKey, insertValue, null);
             load++;
             return;
         }
         // If that element is already full, start creating a list of Nodes
-        Node<V> current = this.table[index];
+        Entry<V> current = this.table[index];
         while(current.next != null) {
             current = current.next;
         }
-        current.next = new Node<>(insertKey, insertValue, null);
+        current.next = new Entry<>(insertKey, insertValue, null);
         load++;
     }
 
@@ -58,7 +58,7 @@ public class Hashtable<V> {
 
 
 
-        Node<V> current = this.table[index];
+        Entry<V> current = this.table[index];
         while(current != null) {
             if(current.key.equals(searchKey)) {
                 return true;
@@ -71,7 +71,7 @@ public class Hashtable<V> {
     /**
      * Takes in the key and returns the value from key/value pair
      */
-    public Node<V> find(String key) {
+    public Entry<V> find(String key) {
         int index = getHash(key);
 
         // First check location if there are no collisions.
@@ -80,7 +80,7 @@ public class Hashtable<V> {
         }
 
         // If there were collisions, iterate through the list
-        Node<V> current = this.table[index];
+        Entry<V> current = this.table[index];
         while(current != null) {
             if(current.key.equals(key)) {
                 return current;
