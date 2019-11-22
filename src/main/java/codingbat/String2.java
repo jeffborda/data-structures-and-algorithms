@@ -18,30 +18,26 @@ public class String2 {
             }
             return a;
         }
-
         StringBuilder answer = new StringBuilder();
-
         if(a.length() <= b.length()) {
             int i;
             for(i = 0; i < a.length(); i++) {
-                answer.append(String.valueOf(a.charAt(i)));
-                answer.append(String.valueOf(b.charAt(i)));
+                answer.append((a.charAt(i)));
+                answer.append((b.charAt(i)));
             }
             if(i < b.length()) {
-                answer.append(b.substring(i, b.length()));
+                answer.append(b.substring(i));
             }
-            return answer.toString();
         }
         else {
             int i;
             for(i = 0; i < b.length(); i++) {
-                answer.append(String.valueOf(a.charAt(i)));
-                answer.append(String.valueOf(b.charAt(i)));
+                answer.append((a.charAt(i)));
+                answer.append((b.charAt(i)));
             }
-            answer.append(a.substring(i, a.length()));
-            return answer.toString();
+            answer.append(a.substring(i));
         }
+        return answer.toString();
     }
-
 
 }
