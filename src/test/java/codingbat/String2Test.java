@@ -4,9 +4,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-
+/**
+ * RE: https://codingbat.com/java/String-2
+ * Majority of tests are from CodingBat, which I migrated to junit.
+ */
 public class String2Test {
-
 
     @Test
     public void mixStringTest_1() {
@@ -43,4 +45,38 @@ public class String2Test {
         assertEquals("Abc", String2.mixString("Abc", ""));
     }
 
+    @Test
+    public void mixStringTest_8() {
+        assertEquals("", String2.mixString("", ""));
+    }
+
+    @Test
+    public void mixStringTest_9() {
+        assertEquals("ab", String2.mixString("a", "b"));
+    }
+
+    @Test
+    public void mixStringTest_10() {
+        assertEquals("abx", String2.mixString("a", "bx"));
+    }
+
+    @Test
+    public void mixStringTest_11() {
+        assertEquals("abx", String2.mixString("ax", "b"));
+    }
+
+    @Test
+    public void mixStringTest_12() {
+        assertEquals("SLoong", String2.mixString("So", "Long"));
+    }
+
+    @Test
+    public void mixStringTest_13() {
+        assertEquals("LSoong", String2.mixString("Long", "So"));
+    }
+
+    @Test
+    public void mixStringTest_14() {
+        assertEquals("&7@#+*.,:;%%%", String2.mixString("&@+.:", "7#*,;%%%"));
+    }
 }
