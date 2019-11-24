@@ -11,6 +11,18 @@ import static org.junit.Assert.*;
 public class String2Test {
 
     @Test
+    public void doubleChar_01() {
+        assertEquals("TThhee", String2.doubleChar("The"));
+    }
+
+
+
+
+
+
+
+    // RE: https://codingbat.com/prob/p125185
+    @Test
     public void mixStringTest_01() {
         assertEquals("axbycz", String2.mixString("abc", "xyz"));
     }
