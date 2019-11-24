@@ -25,6 +25,21 @@ public class String2Test {
         assertEquals("HHii--TThheerree", String2.doubleChar("Hi-There"));
     }
 
+    @Test
+    public void doubleChar_04() {
+        assertEquals("WWoorrdd!!", String2.doubleChar("Word!"));
+    }
+
+    @Test
+    public void doubleChar_05() {
+        assertEquals("!!!!", String2.doubleChar("!!"));
+    }
+
+    @Test
+    public void doubleChar_06() {
+        assertEquals("", String2.doubleChar(""));
+    }
+
 
 
     // RE: https://codingbat.com/prob/p125185
