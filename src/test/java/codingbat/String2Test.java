@@ -10,6 +10,54 @@ import static org.junit.Assert.*;
  */
 public class String2Test {
 
+    // RE: https://codingbat.com/prob/p165312
+    @Test
+    public void doubleCharTest_01() {
+        assertEquals("TThhee", String2.doubleChar("The"));
+    }
+
+    @Test
+    public void doubleCharTest_02() {
+        assertEquals("AAAAbbbb", String2.doubleChar("AAbb"));
+    }
+
+    @Test
+    public void doubleCharTest_03() {
+        assertEquals("HHii--TThheerree", String2.doubleChar("Hi-There"));
+    }
+
+    @Test
+    public void doubleCharTest_04() {
+        assertEquals("WWoorrdd!!", String2.doubleChar("Word!"));
+    }
+
+    @Test
+    public void doubleCharTest_05() {
+        assertEquals("!!!!", String2.doubleChar("!!"));
+    }
+
+    @Test
+    public void doubleCharTest_06() {
+        assertEquals("", String2.doubleChar(""));
+    }
+
+    @Test
+    public void doubleCharTest_07() {
+        assertEquals("aa", String2.doubleChar("a"));
+    }
+
+    @Test
+    public void doubleCharTest_08() {
+        assertEquals("..", String2.doubleChar("."));
+    }
+
+    @Test
+    public void doubleCharTest_09() {
+        assertEquals("aaaa", String2.doubleChar("aa"));
+    }
+
+
+    // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
         assertEquals("axbycz", String2.mixString("abc", "xyz"));
@@ -79,4 +127,5 @@ public class String2Test {
     public void mixStringTest_14() {
         assertEquals("&7@#+*.,:;%%%", String2.mixString("&@+.:", "7#*,;%%%"));
     }
+    
 }
