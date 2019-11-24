@@ -40,6 +40,20 @@ public class String2Test {
         assertEquals("", String2.doubleChar(""));
     }
 
+    @Test
+    public void doubleChar_07() {
+        assertEquals("aa", String2.doubleChar("a"));
+    }
+
+    @Test
+    public void doubleChar_08() {
+        assertEquals("..", String2.doubleChar("."));
+    }
+
+    @Test
+    public void doubleChar_09() {
+        assertEquals("aaaa", String2.doubleChar("aa"));
+    }
 
 
     // RE: https://codingbat.com/prob/p125185
