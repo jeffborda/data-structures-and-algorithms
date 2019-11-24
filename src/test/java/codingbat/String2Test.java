@@ -127,4 +127,5 @@ public class String2Test {
     public void mixStringTest_14() {
         assertEquals("&7@#+*.,:;%%%", String2.mixString("&@+.:", "7#*,;%%%"));
     }
+    
 }

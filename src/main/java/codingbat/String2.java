@@ -11,9 +11,13 @@ public class String2 {
      * Given a string, return a string where for every char in the original, there are two chars.
      */
     public static String doubleChar(String str) {
-
-        return null;
+        StringBuilder answer = new StringBuilder();
+        for(int i = 0; i < str.length(); i++) {
+            answer.append(String.valueOf(str.charAt(i)) + String.valueOf(str.charAt(i)));
+        }
+        return answer.toString();
     }
+
 
     /**
      * RE: https://codingbat.com/prob/p125185
