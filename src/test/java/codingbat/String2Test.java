@@ -15,9 +15,15 @@ public class String2Test {
         assertEquals("TThhee", String2.doubleChar("The"));
     }
 
+    @Test
+    public void doubleChar_02() {
+        assertEquals("AAAAbbbb", String2.doubleChar("AAbb"));
+    }
 
-
-
+    @Test
+    public void doubleChar_03() {
+        assertEquals("HHii--TThheerree", String2.doubleChar("Hi-There"));
+    }
 
 
 
