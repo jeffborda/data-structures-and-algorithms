@@ -107,17 +107,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p111624
     @Test
     public void catDogTest_01() {
-
+        assertTrue(String2.catDog("catdog"));
     }
 
     @Test
     public void catDogTest_02() {
-
+        assertFalse(String2.catDog("catcat"));
     }
 
     @Test
     public void catDogTest_03() {
-
+        assertTrue(String2.catDog("1cat1cadodog"));
     }
 
     @Test
