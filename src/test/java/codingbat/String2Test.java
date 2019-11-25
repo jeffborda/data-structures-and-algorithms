@@ -57,6 +57,53 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p147448
+    @Test
+    public void countHiTest_01() {
+        assertEquals(1, String2.countHi("abc hi ho"));
+    }
+
+    @Test
+    public void countHiTest_02() {
+        assertEquals(2, String2.countHi("ABChi hi"));
+    }
+
+    @Test
+    public void countHiTest_03() {
+        assertEquals(2, String2.countHi("hihi"));
+    }
+
+    @Test
+    public void countHiTest_04() {
+        assertEquals(2, String2.countHi("hiHIhi"));
+    }
+
+    @Test
+    public void countHiTest_05() {
+        assertEquals(0, String2.countHi(""));
+    }
+
+    @Test
+    public void countHiTest_06() {
+        assertEquals(0, String2.countHi("h"));
+    }
+
+    @Test
+    public void countHiTest_07() {
+        assertEquals(1, String2.countHi("hi"));
+    }
+
+    @Test
+    public void countHiTest_08() {
+        assertEquals(0, String2.countHi("Hi is no HI on ahI"));
+    }
+
+    @Test
+    public void countHiTest_09() {
+        assertEquals(2, String2.countHi("hiho not HOHIhi"));
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
