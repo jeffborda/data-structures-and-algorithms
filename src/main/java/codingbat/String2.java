@@ -18,7 +18,6 @@ public class String2 {
         return answer.toString();
     }
 
-
     /**
      *  RE: https://codingbat.com/prob/p147448
      *  Return the number of times that the string "hi" appears anywhere in the given string.
