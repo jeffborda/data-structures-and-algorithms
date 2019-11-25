@@ -60,17 +60,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p147448
     @Test
     public void countHiTest_01() {
-
+        assertEquals(1, String2.countHi("abc hi ho"));
     }
 
     @Test
     public void countHiTest_02() {
-
+        assertEquals(2, String2.countHi("ABChi hi"));
     }
 
     @Test
     public void countHiTest_03() {
-
+        assertEquals(2, String2.countHi("hihi"));
     }
 
     @Test
