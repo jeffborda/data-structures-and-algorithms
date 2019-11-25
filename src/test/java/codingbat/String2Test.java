@@ -137,17 +137,17 @@ public class String2Test {
 
     @Test
     public void catDogTest_07() {
-
+        assertFalse(String2.catDog("dogdogcat"));
     }
 
     @Test
     public void catDogTest_08() {
-
+        assertTrue(String2.catDog("dogogcat"));
     }
 
     @Test
     public void catDogTest_09() {
-
+        assertFalse(String2.catDog("dog"));
     }
 
 
