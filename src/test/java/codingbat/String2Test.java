@@ -104,6 +104,74 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p111624
+    @Test
+    public void catDogTest_01() {
+        assertTrue(String2.catDog("catdog"));
+    }
+
+    @Test
+    public void catDogTest_02() {
+        assertFalse(String2.catDog("catcat"));
+    }
+
+    @Test
+    public void catDogTest_03() {
+        assertTrue(String2.catDog("1cat1cadodog"));
+    }
+
+    @Test
+    public void catDogTest_04() {
+        assertFalse(String2.catDog("catxxdogxxxdog"));
+    }
+
+    @Test
+    public void catDogTest_05() {
+        assertTrue(String2.catDog("catxdogxdogxcat"));
+    }
+
+    @Test
+    public void catDogTest_06() {
+        assertFalse(String2.catDog("catxdogxdogxca"));
+    }
+
+    @Test
+    public void catDogTest_07() {
+        assertFalse(String2.catDog("dogdogcat"));
+    }
+
+    @Test
+    public void catDogTest_08() {
+        assertTrue(String2.catDog("dogogcat"));
+    }
+
+    @Test
+    public void catDogTest_09() {
+        assertFalse(String2.catDog("dog"));
+    }
+
+    @Test
+    public void catDogTest_10() {
+        assertFalse(String2.catDog("cat"));
+    }
+
+    @Test
+    public void catDogTest_11() {
+        assertTrue(String2.catDog("ca"));
+    }
+
+    @Test
+    public void catDogTest_12() {
+        assertTrue(String2.catDog("c"));
+    }
+
+    @Test
+    public void catDogTest_13() {
+        assertTrue(String2.catDog(""));
+    }
+
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
