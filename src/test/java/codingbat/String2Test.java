@@ -90,17 +90,17 @@ public class String2Test {
 
     @Test
     public void countHiTest_07() {
-
+        assertEquals(1, String2.countHi("hi"));
     }
 
     @Test
     public void countHiTest_08() {
-
+        assertEquals(0, String2.countHi("Hi is no HI on ahI"));
     }
 
     @Test
     public void countHiTest_09() {
-
+        assertEquals(2, String2.countHi("hiho not HOHIhi"));
     }
 
 
