@@ -152,22 +152,22 @@ public class String2Test {
 
     @Test
     public void catDogTest_10() {
-
+        assertFalse(String2.catDog("cat"));
     }
 
     @Test
     public void catDogTest_11() {
-
+        assertFalse(String2.catDog("ca"));
     }
 
     @Test
     public void catDogTest_12() {
-
+        assertFalse(String2.catDog("c"));
     }
 
     @Test
     public void catDogTest_13() {
-        
+        assertFalse(String2.catDog(""));
     }
 
 
