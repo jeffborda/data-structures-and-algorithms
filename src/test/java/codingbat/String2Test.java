@@ -75,17 +75,17 @@ public class String2Test {
 
     @Test
     public void countHiTest_04() {
-
+        assertEquals(2, String2.countHi("hiHIhi"));
     }
 
     @Test
     public void countHiTest_05() {
-
+        assertEquals(0, String2.countHi(""));
     }
 
     @Test
     public void countHiTest_06() {
-
+        assertEquals(0, String2.countHi("h"));
     }
 
     @Test
