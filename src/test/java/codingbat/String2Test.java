@@ -57,6 +57,53 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p147448
+    @Test
+    public void countHiTest_01() {
+
+    }
+
+    @Test
+    public void countHiTest_02() {
+
+    }
+
+    @Test
+    public void countHiTest_03() {
+
+    }
+
+    @Test
+    public void countHiTest_04() {
+
+    }
+
+    @Test
+    public void countHiTest_05() {
+
+    }
+
+    @Test
+    public void countHiTest_06() {
+
+    }
+
+    @Test
+    public void countHiTest_07() {
+
+    }
+
+    @Test
+    public void countHiTest_08() {
+
+    }
+
+    @Test
+    public void countHiTest_09() {
+
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
