@@ -33,6 +33,15 @@ public class String2 {
     }
 
     /**
+     *  RE: https://codingbat.com/prob/p111624
+     *  Return true if the string "cat" and "dog" appear the same number of times in the given string.
+     */
+    public static boolean catDog(String str) {
+
+        return false;
+    }
+
+    /**
      * RE: https://codingbat.com/prob/p125185
      * Given two strings, a and b, create a bigger string made of the first char of a, the first char of b, the second
      * char of a, the second char of b, and so on. Any leftover chars go at the end of the result.
