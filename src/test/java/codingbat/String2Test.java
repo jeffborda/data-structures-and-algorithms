@@ -104,6 +104,53 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p111624
+    @Test
+    public void catDogTest_01() {
+
+    }
+
+    @Test
+    public void catDogTest_02() {
+
+    }
+
+    @Test
+    public void catDogTest_03() {
+
+    }
+
+    @Test
+    public void catDogTest_04() {
+
+    }
+
+    @Test
+    public void catDogTest_05() {
+
+    }
+
+    @Test
+    public void catDogTest_06() {
+
+    }
+
+    @Test
+    public void catDogTest_07() {
+
+    }
+
+    @Test
+    public void catDogTest_08() {
+
+    }
+
+    @Test
+    public void catDogTest_09() {
+
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
