@@ -150,6 +150,26 @@ public class String2Test {
         assertFalse(String2.catDog("dog"));
     }
 
+    @Test
+    public void catDogTest_10() {
+
+    }
+
+    @Test
+    public void catDogTest_11() {
+
+    }
+
+    @Test
+    public void catDogTest_12() {
+
+    }
+
+    @Test
+    public void catDogTest_13() {
+        
+    }
+
 
     // RE: https://codingbat.com/prob/p125185
     @Test
