@@ -157,20 +157,21 @@ public class String2Test {
 
     @Test
     public void catDogTest_11() {
-        assertFalse(String2.catDog("ca"));
+        assertTrue(String2.catDog("ca"));
     }
 
     @Test
     public void catDogTest_12() {
-        assertFalse(String2.catDog("c"));
+        assertTrue(String2.catDog("c"));
     }
 
     @Test
     public void catDogTest_13() {
-        assertFalse(String2.catDog(""));
+        assertTrue(String2.catDog(""));
     }
 
 
+    
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
