@@ -51,9 +51,25 @@ public class String2 {
     }
 
     /**
+     *  RE: https://codingbat.com/prob/p123614
+     *  Return the number of times that the string "code" appears anywhere in the given string, except we'll accept any
+     *    letter for the 'd', so "cope" and "cooe" count.
+     */
+    public static int countCode(String str) {
+        int answer = 0;
+        for(int i = 0; i < str.length() - 3; i++) {
+            if(str.substring(i, i + 2).equals("co") && str.charAt(i + 3) == 'e' ) {
+                answer++;
+            }
+        }
+        return answer;
+    }
+
+
+    /**
      * RE: https://codingbat.com/prob/p125185
      * Given two strings, a and b, create a bigger string made of the first char of a, the first char of b, the second
-     * char of a, the second char of b, and so on. Any leftover chars go at the end of the result.
+     *   char of a, the second char of b, and so on. Any leftover chars go at the end of the result.
      */
     public static String mixString(String a, String b) {
         if(a.isEmpty() || b.isEmpty()) {

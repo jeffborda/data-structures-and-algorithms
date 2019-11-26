@@ -171,6 +171,77 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p123614
+    @Test
+    public void countCodeTest_01() {
+        assertEquals(1, String2.countCode("aaacodebbb"));
+    }
+
+    @Test
+    public void countCodeTest_02() {
+        assertEquals(2, String2.countCode("codexxcode"));
+    }
+
+    @Test
+    public void countCodeTest_03() {
+        assertEquals(2, String2.countCode("cozexxcope"));
+    }
+
+    @Test
+    public void countCodeTest_04() {
+        assertEquals(1, String2.countCode("cozfxxcope"));
+    }
+
+    @Test
+    public void countCodeTest_05() {
+        assertEquals(1, String2.countCode("xxcozeyycop"));
+    }
+
+    @Test
+    public void countCodeTest_06() {
+        assertEquals(0, String2.countCode("cozcop"));
+    }
+
+    @Test
+    public void countCodeTest_07() {
+        assertEquals(0, String2.countCode("abcxyz"));
+    }
+
+    @Test
+    public void countCodeTest_08() {
+        assertEquals(1, String2.countCode("code"));
+    }
+
+    @Test
+    public void countCodeTest_09() {
+        assertEquals(0, String2.countCode("ode"));
+    }
+
+    @Test
+    public void countCodeTest_10() {
+        assertEquals(0, String2.countCode("c"));
+    }
+
+    @Test
+    public void countCodeTest_11() {
+        assertEquals(0, String2.countCode(""));
+    }
+
+    @Test
+    public void countCodeTest_12() {
+        assertEquals(3, String2.countCode("AAcodeBBcoleCCccoreDD"));
+    }
+
+    @Test
+    public void countCodeTest_13() {
+        assertEquals(2, String2.countCode("AAcodeBBcoleCCccorfDD"));
+    }
+
+    @Test
+    public void countCodeTest_14() {
+        assertEquals(3, String2.countCode("coAcodeBcoleccoreDD"));
+    }
+
 
     // RE: https://codingbat.com/prob/p125185
     @Test
