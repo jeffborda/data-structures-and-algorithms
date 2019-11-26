@@ -234,12 +234,12 @@ public class String2Test {
 
     @Test
     public void countCodeTest_13() {
-
+        assertEquals(2, String2.countCode("AAcodeBBcoleCCccorfDD"));
     }
 
     @Test
     public void countCodeTest_14() {
-
+        assertEquals(3, String2.countCode("coAcodeBcoleccoreDD"));
     }
 
 
