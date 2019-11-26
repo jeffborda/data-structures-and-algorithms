@@ -171,6 +171,76 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p123614
+    @Test
+    public void countCodeTest_01() {
+
+    }
+
+    @Test
+    public void countCodeTest_02() {
+
+    }
+
+    @Test
+    public void countCodeTest_03() {
+
+    }
+
+    @Test
+    public void countCodeTest_04() {
+
+    }
+
+    @Test
+    public void countCodeTest_05() {
+
+    }
+
+    @Test
+    public void countCodeTest_06() {
+
+    }
+
+    @Test
+    public void countCodeTest_07() {
+
+    }
+
+    @Test
+    public void countCodeTest_08() {
+    }
+
+    @Test
+    public void countCodeTest_09() {
+
+    }
+
+    @Test
+    public void countCodeTest_10() {
+
+    }
+
+    @Test
+    public void countCodeTest_11() {
+
+    }
+
+    @Test
+    public void countCodeTest_12() {
+
+    }
+
+    @Test
+    public void countCodeTest_13() {
+
+    }
+
+    @Test
+    public void countCodeTest_14() {
+
+    }
+
 
     // RE: https://codingbat.com/prob/p125185
     @Test
