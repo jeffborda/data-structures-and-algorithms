@@ -189,17 +189,17 @@ public class String2Test {
 
     @Test
     public void countCodeTest_04() {
-
+        assertEquals(1, String2.countCode("cozfxxcope"));
     }
 
     @Test
     public void countCodeTest_05() {
-
+        assertEquals(1, String2.countCode("xxcozeyycop"));
     }
 
     @Test
     public void countCodeTest_06() {
-
+        assertEquals(0, String2.countCode("cozcop"));
     }
 
     @Test
