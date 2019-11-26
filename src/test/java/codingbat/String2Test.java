@@ -204,16 +204,17 @@ public class String2Test {
 
     @Test
     public void countCodeTest_07() {
-
+        assertEquals(0, String2.countCode("abcxyz"));
     }
 
     @Test
     public void countCodeTest_08() {
+        assertEquals(1, String2.countCode("code"));
     }
 
     @Test
     public void countCodeTest_09() {
-
+        assertEquals(0, String2.countCode("ode"));
     }
 
     @Test
