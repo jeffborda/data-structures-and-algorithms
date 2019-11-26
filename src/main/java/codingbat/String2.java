@@ -56,9 +56,15 @@ public class String2 {
      *    letter for the 'd', so "cope" and "cooe" count.
      */
     public static int countCode(String str) {
-
-        return 0;
+        int answer = 0;
+        for(int i = 0; i < str.length() - 3; i++) {
+            if(str.substring(i, i + 2).equals("co") && str.charAt(i + 3) == 'e' ) {
+                answer++;
+            }
+        }
+        return answer;
     }
+
 
     /**
      * RE: https://codingbat.com/prob/p125185
