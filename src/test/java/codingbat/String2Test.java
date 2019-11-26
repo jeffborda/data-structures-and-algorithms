@@ -219,17 +219,17 @@ public class String2Test {
 
     @Test
     public void countCodeTest_10() {
-
+        assertEquals(0, String2.countCode("c"));
     }
 
     @Test
     public void countCodeTest_11() {
-
+        assertEquals(0, String2.countCode(""));
     }
 
     @Test
     public void countCodeTest_12() {
-
+        assertEquals(3, String2.countCode("AAcodeBBcoleCCccoreDD"));
     }
 
     @Test
