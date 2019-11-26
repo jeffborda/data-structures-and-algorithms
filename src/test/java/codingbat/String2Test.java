@@ -174,17 +174,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p123614
     @Test
     public void countCodeTest_01() {
-
+        assertEquals(1, String2.countCode("aaacodebbb"));
     }
 
     @Test
     public void countCodeTest_02() {
-
+        assertEquals(2, String2.countCode("codexxcode"));
     }
 
     @Test
     public void countCodeTest_03() {
-
+        assertEquals(2, String2.countCode("cozexxcope"));
     }
 
     @Test
