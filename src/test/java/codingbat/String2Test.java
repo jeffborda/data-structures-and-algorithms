@@ -316,6 +316,75 @@ public class String2Test {
 
 
     // RE: https://codingbat.com/prob/p136594
+    @Test
+    public void xyzThereTest_01() {
+
+    }
+
+    @Test
+    public void xyzThereTest_02() {
+
+    }
+
+    @Test
+    public void xyzThereTest_03() {
+
+    }
+
+    @Test
+    public void xyzThereTest_04() {
+
+    }
+
+    @Test
+    public void xyzThereTest_05() {
+
+    }
+
+    @Test
+    public void xyzThereTest_06() {
+
+    }
+
+    @Test
+    public void xyzThereTest_07() {
+
+    }
+
+    @Test
+    public void xyzThereTest_08() {
+
+    }
+
+    @Test
+    public void xyzThereTest_09() {
+
+    }
+
+    @Test
+    public void xyzThereTest_10() {
+
+    }
+
+    @Test
+    public void xyzThereTest_11() {
+
+    }
+
+    @Test
+    public void xyzThereTest_12() {
+
+    }
+
+    @Test
+    public void xyzThereTest_13() {
+
+    }
+
+    @Test
+    public void xyzThereTest_14() {
+
+    }
 
 
     // RE: https://codingbat.com/prob/p125185
