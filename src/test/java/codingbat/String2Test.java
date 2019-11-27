@@ -246,17 +246,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p126880
     @Test
     public void endOtherTest_01() {
-
+        assertTrue(String2.endOther("Hiabc", "abc"));
     }
 
     @Test
     public void endOtherTest_02() {
-
+        assertTrue(String2.endOther("AbC", "HiaBc"));
     }
 
     @Test
     public void endOtherTest_03() {
-
+        assertTrue(String2.endOther("abc", "abXabc"));
     }
 
     @Test
