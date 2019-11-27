@@ -318,22 +318,22 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p136594
     @Test
     public void xyzThereTest_01() {
-
+        assertTrue(String2.xyzThere("abcxyz"));
     }
 
     @Test
     public void xyzThereTest_02() {
-
+        assertFalse(String2.xyzThere("abc.xyz"));
     }
 
     @Test
     public void xyzThereTest_03() {
-
+        assertTrue(String2.xyzThere("xyz.abc"));
     }
 
     @Test
     public void xyzThereTest_04() {
-
+        
     }
 
     @Test
