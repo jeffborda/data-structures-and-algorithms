@@ -315,6 +315,78 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p136594
+    @Test
+    public void xyzThereTest_01() {
+        assertTrue(String2.xyzThere("abcxyz"));
+    }
+
+    @Test
+    public void xyzThereTest_02() {
+        assertFalse(String2.xyzThere("abc.xyz"));
+    }
+
+    @Test
+    public void xyzThereTest_03() {
+        assertTrue(String2.xyzThere("xyz.abc"));
+    }
+
+    @Test
+    public void xyzThereTest_04() {
+        assertFalse(String2.xyzThere("abcxy"));
+    }
+
+    @Test
+    public void xyzThereTest_05() {
+        assertTrue(String2.xyzThere("xyz"));
+    }
+
+    @Test
+    public void xyzThereTest_06() {
+        assertFalse(String2.xyzThere("xy"));
+    }
+
+    @Test
+    public void xyzThereTest_07() {
+        assertFalse(String2.xyzThere("x"));
+    }
+
+    @Test
+    public void xyzThereTest_08() {
+        assertFalse(String2.xyzThere(""));
+    }
+
+    @Test
+    public void xyzThereTest_09() {
+        assertTrue(String2.xyzThere("abc.xyzxyz"));
+    }
+
+    @Test
+    public void xyzThereTest_10() {
+        assertTrue(String2.xyzThere("abc.xxyz"));
+    }
+
+    @Test
+    public void xyzThereTest_11() {
+        assertFalse(String2.xyzThere(".xyz"));
+    }
+
+    @Test
+    public void xyzThereTest_12() {
+        assertFalse(String2.xyzThere("12.xyz"));
+    }
+
+    @Test
+    public void xyzThereTest_13() {
+        assertTrue(String2.xyzThere("12xyz"));
+    }
+
+    @Test
+    public void xyzThereTest_14() {
+        assertFalse(String2.xyzThere("1.xyz.xyz2.xyz"));
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
