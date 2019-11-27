@@ -243,6 +243,78 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p126880
+    @Test
+    public void endOtherTest_01() {
+        assertTrue(String2.endOther("Hiabc", "abc"));
+    }
+
+    @Test
+    public void endOtherTest_02() {
+        assertTrue(String2.endOther("AbC", "HiaBc"));
+    }
+
+    @Test
+    public void endOtherTest_03() {
+        assertTrue(String2.endOther("abc", "abXabc"));
+    }
+
+    @Test
+    public void endOtherTest_04() {
+        assertFalse(String2.endOther("Hiabc", "abcd"));
+    }
+
+    @Test
+    public void endOtherTest_05() {
+        assertTrue(String2.endOther("Hiabc", "bc"));
+    }
+
+    @Test
+    public void endOtherTest_06() {
+        assertFalse(String2.endOther("Hiabcx", "bc"));
+    }
+
+    @Test
+    public void endOtherTest_07() {
+        assertTrue(String2.endOther("abc", "abc"));
+    }
+
+    @Test
+    public void endOtherTest_08() {
+        assertTrue(String2.endOther("xyz", "12xyz"));
+    }
+
+    @Test
+    public void endOtherTest_09() {
+        assertFalse(String2.endOther("yz", "12xz"));
+    }
+
+    @Test
+    public void endOtherTest_10() {
+        assertTrue(String2.endOther("Z", "12xz"));
+    }
+
+    @Test
+    public void endOtherTest_11() {
+        assertTrue(String2.endOther("12", "12"));
+    }
+
+    @Test
+    public void endOtherTest_12() {
+        assertFalse(String2.endOther("abcXYZ", "abcDEF"));
+    }
+
+    @Test
+    public void endOtherTest_13() {
+        assertFalse(String2.endOther("ab", "ab12"));
+    }
+
+    @Test
+    public void endOtherTest_14() {
+        assertTrue(String2.endOther("ab", "12ab"));
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {

@@ -65,6 +65,17 @@ public class String2 {
         return answer;
     }
 
+    /**
+     *  RE: https://codingbat.com/prob/p126880
+     *  Given two strings, return true if either of the strings appears at the very end of the other string, ignoring
+     *    upper/lower case differences (in other words, the computation should not be "case sensitive"). Note:
+     *    str.toLowerCase() returns the lowercase version of a string.
+     */
+    public static boolean endOther(String a, String b) {
+        // Ridiculous one liner :)
+        return a.length() >= b.length() ? a.substring(a.length() - b.length()).toLowerCase().equals(b.toLowerCase()) : b.substring(b.length() - a.length()).toLowerCase().equals(a.toLowerCase());
+    }
+
 
     /**
      * RE: https://codingbat.com/prob/p125185
