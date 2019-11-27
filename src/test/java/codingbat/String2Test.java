@@ -306,12 +306,12 @@ public class String2Test {
 
     @Test
     public void endOtherTest_13() {
-
+        assertFalse(String2.endOther("ab", "ab12"));
     }
 
     @Test
     public void endOtherTest_14() {
-
+        assertTrue(String2.endOther("ab", "12ab"));
     }
 
 
