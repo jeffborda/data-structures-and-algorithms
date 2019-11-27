@@ -276,17 +276,17 @@ public class String2Test {
 
     @Test
     public void endOtherTest_07() {
-
+        assertTrue(String2.endOther("abc", "abc"));
     }
 
     @Test
     public void endOtherTest_08() {
-
+        assertTrue(String2.endOther("xyz", "12xyz"));
     }
 
     @Test
     public void endOtherTest_09() {
-
+        assertFalse(String2.endOther("yz", "12xz"));
     }
 
     @Test
