@@ -378,12 +378,12 @@ public class String2Test {
 
     @Test
     public void xyzThereTest_13() {
-
+        assertTrue(String2.xyzThere("12xyz"));
     }
 
     @Test
     public void xyzThereTest_14() {
-
+        assertFalse(String2.xyzThere("1.xyz.xyz2.xyz"));
     }
 
 
