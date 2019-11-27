@@ -333,22 +333,22 @@ public class String2Test {
 
     @Test
     public void xyzThereTest_04() {
-        
+        assertFalse(String2.xyzThere("abcxy"));
     }
 
     @Test
     public void xyzThereTest_05() {
-
+        assertTrue(String2.xyzThere("xyz"));
     }
 
     @Test
     public void xyzThereTest_06() {
-
+        assertFalse(String2.xyzThere("xy"));
     }
 
     @Test
     public void xyzThereTest_07() {
-
+        
     }
 
     @Test
