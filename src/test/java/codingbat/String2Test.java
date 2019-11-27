@@ -261,17 +261,17 @@ public class String2Test {
 
     @Test
     public void endOtherTest_04() {
-
+        assertFalse(String2.endOther("Hiabc", "abcd"));
     }
 
     @Test
     public void endOtherTest_05() {
-
+        assertTrue(String2.endOther("Hiabc", "bc"));
     }
 
     @Test
     public void endOtherTest_06() {
-
+        assertFalse(String2.endOther("Hiabcx", "bc"));
     }
 
     @Test
