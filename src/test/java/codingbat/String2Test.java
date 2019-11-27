@@ -363,17 +363,17 @@ public class String2Test {
 
     @Test
     public void xyzThereTest_10() {
-
+        assertTrue(String2.xyzThere("abc.xxyz"));
     }
 
     @Test
     public void xyzThereTest_11() {
-
+        assertFalse(String2.xyzThere(".xyz"));
     }
 
     @Test
     public void xyzThereTest_12() {
-
+        assertFalse(String2.xyzThere("12.xyz"));
     }
 
     @Test
