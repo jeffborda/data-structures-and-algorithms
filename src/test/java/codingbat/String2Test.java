@@ -243,6 +243,78 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p126880
+    @Test
+    public void endOtherTest_01() {
+
+    }
+
+    @Test
+    public void endOtherTest_02() {
+
+    }
+
+    @Test
+    public void endOtherTest_03() {
+
+    }
+
+    @Test
+    public void endOtherTest_04() {
+
+    }
+
+    @Test
+    public void endOtherTest_05() {
+
+    }
+
+    @Test
+    public void endOtherTest_06() {
+
+    }
+
+    @Test
+    public void endOtherTest_07() {
+
+    }
+
+    @Test
+    public void endOtherTest_08() {
+
+    }
+
+    @Test
+    public void endOtherTest_09() {
+
+    }
+
+    @Test
+    public void endOtherTest_10() {
+
+    }
+
+    @Test
+    public void endOtherTest_11() {
+
+    }
+
+    @Test
+    public void endOtherTest_12() {
+
+    }
+
+    @Test
+    public void endOtherTest_13() {
+
+    }
+
+    @Test
+    public void endOtherTest_14() {
+
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
