@@ -76,6 +76,16 @@ public class String2 {
         return a.length() >= b.length() ? a.substring(a.length() - b.length()).toLowerCase().equals(b.toLowerCase()) : b.substring(b.length() - a.length()).toLowerCase().equals(a.toLowerCase());
     }
 
+    /**
+     *  RE: https://codingbat.com/prob/p136594
+     *  Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a
+     *    period (.). So "xxyz" counts but "x.xyz" does not.
+     */
+    public static boolean xyzThere(String str) {
+
+        return false;
+    }
+
 
     /**
      * RE: https://codingbat.com/prob/p125185
