@@ -663,17 +663,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p128796
     @Test
     public void repeatFrontTest_01() {
-
+        assertEquals("ChocChoChC", String2.repeatFront("Chocolate", 4));
     }
 
     @Test
     public void repeatFrontTest_02() {
-
+        assertEquals("ChoChC", String2.repeatFront("Chocolate", 3));
     }
 
     @Test
     public void repeatFrontTest_03() {
-
+        assertEquals("IcI", String2.repeatFront("Ice Cream", 2));
     }
 
     @Test
