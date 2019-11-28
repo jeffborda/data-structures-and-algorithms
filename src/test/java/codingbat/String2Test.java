@@ -390,17 +390,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p175762
     @Test
     public void bobThereTest_01() {
-
+        assertTrue(String2.bobThere("abcbob"));
     }
 
     @Test
     public void bobThereTest_02() {
-
+        assertTrue(String2.bobThere("b9b"));
     }
 
     @Test
     public void bobThereTest_03() {
-
+        assertFalse(String2.bobThere("bac"));
     }
 
     @Test
