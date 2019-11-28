@@ -621,17 +621,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void repeatEndTest_01() {
-
+        assertEquals("llollollo", String2.repeatEnd("Hello", 3));
     }
 
     @Test
     public void repeatEndTest_02() {
-
+        assertEquals("lolo", String2.repeatEnd("Hello", 2));
     }
 
     @Test
     public void repeatEndTest_03() {
-
+        assertEquals("o", String2.repeatEnd("Hello", 1));
     }
 
     @Test
