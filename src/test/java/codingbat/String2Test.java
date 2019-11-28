@@ -660,4 +660,50 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p128796
+    @Test
+    public void repeatFrontTest_01() {
+        assertEquals("ChocChoChC", String2.repeatFront("Chocolate", 4));
+    }
+
+    @Test
+    public void repeatFrontTest_02() {
+        assertEquals("ChoChC", String2.repeatFront("Chocolate", 3));
+    }
+
+    @Test
+    public void repeatFrontTest_03() {
+        assertEquals("IcI", String2.repeatFront("Ice Cream", 2));
+    }
+
+    @Test
+    public void repeatFrontTest_04() {
+        assertEquals("I", String2.repeatFront("Ice Cream", 1));
+    }
+
+    @Test
+    public void repeatFrontTest_05() {
+        assertEquals("", String2.repeatFront("Ice Cream", 0));
+    }
+
+    @Test
+    public void repeatFrontTest_06() {
+        assertEquals("xyzxyx", String2.repeatFront("xyz", 3));
+    }
+
+    @Test
+    public void repeatFrontTest_07() {
+        assertEquals("", String2.repeatFront("", 0));
+    }
+
+    @Test
+    public void repeatFrontTest_08() {
+        assertEquals("JavaJavJaJ", String2.repeatFront("Java", 4));
+    }
+
+    @Test
+    public void repeatFrontTest_09() {
+        assertEquals("J", String2.repeatFront("Java", 1));
+    }
+
 }
