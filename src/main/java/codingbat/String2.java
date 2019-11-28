@@ -111,7 +111,7 @@ public class String2 {
      */
     public static boolean xyBalance(String str) {
 
-        return false;
+        return str.lastIndexOf("x") <= str.lastIndexOf("y");
     }
 
     /**
