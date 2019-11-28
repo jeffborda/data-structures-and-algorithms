@@ -91,6 +91,15 @@ public class String2 {
         return false;
     }
 
+    /**
+     *  RE: https://codingbat.com/prob/p175762
+     *  Return true if the given string contains a "bob" string, but where the middle 'o' char can be any char.
+     */
+    public static boolean bobThere(String str) {
+
+        return false;
+    }
+
 
     /**
      * RE: https://codingbat.com/prob/p125185
