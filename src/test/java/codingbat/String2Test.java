@@ -454,6 +454,98 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p134250
+    @Test
+    public void xyBalanceTest_01() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_02() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_03() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_04() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_05() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_06() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_07() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_08() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_09() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_10() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_11() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_12() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_13() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_14() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_15() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_16() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_17() {
+
+    }
+
+    @Test
+    public void xyBalanceTest_18() {
+
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
