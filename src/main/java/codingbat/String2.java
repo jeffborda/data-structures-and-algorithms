@@ -148,4 +148,14 @@ public class String2 {
         return answer.toString();
     }
 
+    /**
+     *  RE: https://codingbat.com/prob/p152339
+     *  Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You
+     *    may assume that n is between 0 and the length of the string, inclusive.
+     */
+    public static String repeatEnd(String str, int n) {
+
+        return null;
+    }
+
 }
