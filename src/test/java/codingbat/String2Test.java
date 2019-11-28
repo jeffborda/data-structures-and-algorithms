@@ -636,17 +636,17 @@ public class String2Test {
 
     @Test
     public void repeatEndTest_04() {
-
+        assertEquals("", String2.repeatEnd("Hello", 0));
     }
 
     @Test
     public void repeatEndTest_05() {
-
+        assertEquals("abcabcabc", String2.repeatEnd("abc", 3));
     }
 
     @Test
     public void repeatEndTest_06() {
-
+        assertEquals("3434", String2.repeatEnd("1234", 2));
     }
 
     @Test
