@@ -457,17 +457,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p134250
     @Test
     public void xyBalanceTest_01() {
-
+        assertTrue(String2.xyBalance("aaxbby"));
     }
 
     @Test
     public void xyBalanceTest_02() {
-
+        assertFalse(String2.xyBalance("aaxbb"));
     }
 
     @Test
     public void xyBalanceTest_03() {
-
+        assertFalse(String2.xyBalance("yaaxbb"));
     }
 
     @Test
