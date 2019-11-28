@@ -660,4 +660,50 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p128796
+    @Test
+    public void repeatFrontTest_01() {
+
+    }
+
+    @Test
+    public void repeatFrontTest_02() {
+
+    }
+
+    @Test
+    public void repeatFrontTest_03() {
+
+    }
+
+    @Test
+    public void repeatFrontTest_04() {
+
+    }
+
+    @Test
+    public void repeatFrontTest_05() {
+
+    }
+
+    @Test
+    public void repeatFrontTest_06() {
+
+    }
+
+    @Test
+    public void repeatFrontTest_07() {
+
+    }
+
+    @Test
+    public void repeatFrontTest_08() {
+
+    }
+
+    @Test
+    public void repeatFrontTest_09() {
+
+    }
+
 }
