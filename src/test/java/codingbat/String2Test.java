@@ -454,6 +454,98 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p134250
+    @Test
+    public void xyBalanceTest_01() {
+        assertTrue(String2.xyBalance("aaxbby"));
+    }
+
+    @Test
+    public void xyBalanceTest_02() {
+        assertFalse(String2.xyBalance("aaxbb"));
+    }
+
+    @Test
+    public void xyBalanceTest_03() {
+        assertFalse(String2.xyBalance("yaaxbb"));
+    }
+
+    @Test
+    public void xyBalanceTest_04() {
+        assertTrue(String2.xyBalance("yaaxbby"));
+    }
+
+    @Test
+    public void xyBalanceTest_05() {
+        assertTrue(String2.xyBalance("xaxxbby"));
+    }
+
+    @Test
+    public void xyBalanceTest_06() {
+        assertFalse(String2.xyBalance("xaxxbbyx"));
+    }
+
+    @Test
+    public void xyBalanceTest_07() {
+        assertTrue(String2.xyBalance("xxbxy"));
+    }
+
+    @Test
+    public void xyBalanceTest_08() {
+        assertFalse(String2.xyBalance("xxbx"));
+    }
+
+    @Test
+    public void xyBalanceTest_09() {
+        assertTrue(String2.xyBalance("bbb"));
+    }
+
+    @Test
+    public void xyBalanceTest_10() {
+        assertFalse(String2.xyBalance("bxbb"));
+    }
+
+    @Test
+    public void xyBalanceTest_11() {
+        assertTrue(String2.xyBalance("bxyb"));
+    }
+
+    @Test
+    public void xyBalanceTest_12() {
+        assertTrue(String2.xyBalance("xy"));
+    }
+
+    @Test
+    public void xyBalanceTest_13() {
+        assertTrue(String2.xyBalance("y"));
+    }
+
+    @Test
+    public void xyBalanceTest_14() {
+        assertFalse(String2.xyBalance("x"));
+    }
+
+    @Test
+    public void xyBalanceTest_15() {
+        assertTrue(String2.xyBalance(""));
+    }
+
+    @Test
+    public void xyBalanceTest_16() {
+        assertFalse(String2.xyBalance("yxyxyxyx"));
+    }
+
+    @Test
+    public void xyBalanceTest_17() {
+        assertTrue(String2.xyBalance("yxyxyxyxy"));
+    }
+
+    @Test
+    public void xyBalanceTest_18() {
+        assertTrue(String2.xyBalance("12xabxxydxyxyzz"));
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
