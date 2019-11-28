@@ -387,6 +387,73 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p175762
+    @Test
+    public void bobThereTest_01() {
+        assertTrue(String2.bobThere("abcbob"));
+    }
+
+    @Test
+    public void bobThereTest_02() {
+        assertTrue(String2.bobThere("b9b"));
+    }
+
+    @Test
+    public void bobThereTest_03() {
+        assertFalse(String2.bobThere("bac"));
+    }
+
+    @Test
+    public void bobThereTest_04() {
+        assertTrue(String2.bobThere("bbb"));
+    }
+
+    @Test
+    public void bobThereTest_05() {
+        assertFalse(String2.bobThere("abcdefb"));
+    }
+
+    @Test
+    public void bobThereTest_06() {
+        assertTrue(String2.bobThere("123abcbcdbabxyz"));
+    }
+
+    @Test
+    public void bobThereTest_07() {
+        assertFalse(String2.bobThere("b12"));
+    }
+
+    @Test
+    public void bobThereTest_08() {
+        assertTrue(String2.bobThere("b1b"));
+    }
+
+    @Test
+    public void bobThereTest_09() {
+        assertTrue(String2.bobThere("b12b1b"));
+    }
+
+    @Test
+    public void bobThereTest_10() {
+        assertFalse(String2.bobThere("bbc"));
+    }
+
+    @Test
+    public void bobThereTest_11() {
+        assertTrue(String2.bobThere("bbb"));
+    }
+
+    @Test
+    public void bobThereTest_12() {
+        assertFalse(String2.bobThere("bb"));
+    }
+
+    @Test
+    public void bobThereTest_13() {
+        assertFalse(String2.bobThere("b"));
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
