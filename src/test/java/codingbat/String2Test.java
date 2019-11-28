@@ -420,22 +420,22 @@ public class String2Test {
 
     @Test
     public void bobThereTest_07() {
-
+        assertFalse(String2.bobThere("b12"));
     }
 
     @Test
     public void bobThereTest_08() {
-
+        assertTrue(String2.bobThere("b1b"));
     }
 
     @Test
     public void bobThereTest_09() {
-
+        assertTrue(String2.bobThere("b12b1b"));
     }
 
     @Test
     public void bobThereTest_10() {
-
+        assertFalse(String2.bobThere("bbc"));
     }
 
     @Test
