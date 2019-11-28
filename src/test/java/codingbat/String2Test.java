@@ -387,6 +387,73 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p175762
+    @Test
+    public void bobThereTest_01() {
+
+    }
+
+    @Test
+    public void bobThereTest_02() {
+
+    }
+
+    @Test
+    public void bobThereTest_03() {
+
+    }
+
+    @Test
+    public void bobThereTest_04() {
+
+    }
+
+    @Test
+    public void bobThereTest_05() {
+
+    }
+
+    @Test
+    public void bobThereTest_06() {
+
+    }
+
+    @Test
+    public void bobThereTest_07() {
+
+    }
+
+    @Test
+    public void bobThereTest_08() {
+
+    }
+
+    @Test
+    public void bobThereTest_09() {
+
+    }
+
+    @Test
+    public void bobThereTest_10() {
+
+    }
+
+    @Test
+    public void bobThereTest_11() {
+
+    }
+
+    @Test
+    public void bobThereTest_12() {
+
+    }
+
+    @Test
+    public void bobThereTest_13() {
+
+    }
+
+
     // RE: https://codingbat.com/prob/p125185
     @Test
     public void mixStringTest_01() {
