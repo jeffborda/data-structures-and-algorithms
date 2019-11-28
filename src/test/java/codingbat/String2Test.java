@@ -678,17 +678,17 @@ public class String2Test {
 
     @Test
     public void repeatFrontTest_04() {
-
+        assertEquals("I", String2.repeatFront("Ice Cream", 1));
     }
 
     @Test
     public void repeatFrontTest_05() {
-
+        assertEquals("", String2.repeatFront("Ice Cream", 0));
     }
 
     @Test
     public void repeatFrontTest_06() {
-
+        assertEquals("xyzxyx", String2.repeatFront("xyz", 3));
     }
 
     @Test
