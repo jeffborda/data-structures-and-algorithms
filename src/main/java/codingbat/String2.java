@@ -168,8 +168,11 @@ public class String2 {
      *    inclusive (i.e. n >= 0 and n <= str.length()).
      */
     public static String repeatFront(String str, int n) {
-
-        return null;
+        StringBuilder answer = new StringBuilder();
+        for(int i = 0; i < n; i++) {
+            answer.append(str.substring(0, n - i));
+        }
+        return answer.toString();
     }
 
 }
