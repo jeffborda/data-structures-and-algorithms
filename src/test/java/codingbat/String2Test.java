@@ -405,17 +405,17 @@ public class String2Test {
 
     @Test
     public void bobThereTest_04() {
-
+        assertTrue(String2.bobThere("bbb"));
     }
 
     @Test
     public void bobThereTest_05() {
-
+        assertFalse(String2.bobThere("abcdefb"));
     }
 
     @Test
     public void bobThereTest_06() {
-
+        assertTrue(String2.bobThere("123abcbcdbabxyz"));
     }
 
     @Test
