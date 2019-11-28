@@ -651,12 +651,13 @@ public class String2Test {
 
     @Test
     public void repeatEndTest_07() {
-
+        assertEquals("234234234", String2.repeatEnd("1234", 3));
     }
 
     @Test
     public void repeatEndTest_08() {
-
+        assertEquals("", String2.repeatEnd("", 0));
     }
+
     
 }
