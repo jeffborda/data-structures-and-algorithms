@@ -616,5 +616,48 @@ public class String2Test {
     public void mixStringTest_14() {
         assertEquals("&7@#+*.,:;%%%", String2.mixString("&@+.:", "7#*,;%%%"));
     }
-    
+
+
+    // RE: https://codingbat.com/prob/p125185
+    @Test
+    public void repeatEndTest_01() {
+        assertEquals("llollollo", String2.repeatEnd("Hello", 3));
+    }
+
+    @Test
+    public void repeatEndTest_02() {
+        assertEquals("lolo", String2.repeatEnd("Hello", 2));
+    }
+
+    @Test
+    public void repeatEndTest_03() {
+        assertEquals("o", String2.repeatEnd("Hello", 1));
+    }
+
+    @Test
+    public void repeatEndTest_04() {
+        assertEquals("", String2.repeatEnd("Hello", 0));
+    }
+
+    @Test
+    public void repeatEndTest_05() {
+        assertEquals("abcabcabc", String2.repeatEnd("abc", 3));
+    }
+
+    @Test
+    public void repeatEndTest_06() {
+        assertEquals("3434", String2.repeatEnd("1234", 2));
+    }
+
+    @Test
+    public void repeatEndTest_07() {
+        assertEquals("234234234", String2.repeatEnd("1234", 3));
+    }
+
+    @Test
+    public void repeatEndTest_08() {
+        assertEquals("", String2.repeatEnd("", 0));
+    }
+
+
 }
