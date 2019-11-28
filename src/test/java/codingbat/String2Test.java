@@ -693,17 +693,17 @@ public class String2Test {
 
     @Test
     public void repeatFrontTest_07() {
-
+        assertEquals("", String2.repeatFront("", 0));
     }
 
     @Test
     public void repeatFrontTest_08() {
-
+        assertEquals("JavaJavJaJ", String2.repeatFront("Java", 4));
     }
 
     @Test
     public void repeatFrontTest_09() {
-
+        assertEquals("J", String2.repeatFront("Java", 1));
     }
 
 }
