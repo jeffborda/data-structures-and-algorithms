@@ -440,17 +440,17 @@ public class String2Test {
 
     @Test
     public void bobThereTest_11() {
-
+        assertTrue(String2.bobThere("bbb"));
     }
 
     @Test
     public void bobThereTest_12() {
-
+        assertFalse(String2.bobThere("bb"));
     }
 
     @Test
     public void bobThereTest_13() {
-
+        assertFalse(String2.bobThere("b"));
     }
 
 
