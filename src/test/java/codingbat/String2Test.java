@@ -659,5 +659,5 @@ public class String2Test {
         assertEquals("", String2.repeatEnd("", 0));
     }
 
-    
+
 }

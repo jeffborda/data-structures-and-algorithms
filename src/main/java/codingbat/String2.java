@@ -154,8 +154,11 @@ public class String2 {
      *    may assume that n is between 0 and the length of the string, inclusive.
      */
     public static String repeatEnd(String str, int n) {
-
-        return null;
+        StringBuilder answer = new StringBuilder();
+        for(int i = 0; i < n; i++) {
+            answer.append(str.substring(str.length() - n) );
+        }
+        return answer.toString();
     }
 
 }
