@@ -472,17 +472,17 @@ public class String2Test {
 
     @Test
     public void xyBalanceTest_04() {
-
+        assertTrue(String2.xyBalance("yaaxbby"));
     }
 
     @Test
     public void xyBalanceTest_05() {
-
+        assertTrue(String2.xyBalance("xaxxbby"));
     }
 
     @Test
     public void xyBalanceTest_06() {
-
+        assertFalse(String2.xyBalance("xaxxbbyx"));
     }
 
     @Test
