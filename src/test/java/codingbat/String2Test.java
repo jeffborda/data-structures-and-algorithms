@@ -707,4 +707,59 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p109637
+    @Test
+    public void repeatSeparatorTest_01() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_02() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_03() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_04() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_05() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_06() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_07() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_08() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_09() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_10() {
+
+    }
+
+    @Test
+    public void repeatSeparatorTest_11() {
+
+    }
 }
