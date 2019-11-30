@@ -725,17 +725,17 @@ public class String2Test {
 
     @Test
     public void repeatSeparatorTest_04() {
-
+        assertEquals("Hi-n-Hi", String2.repeatSeparator("Hi", "-n-", 2));
     }
 
     @Test
     public void repeatSeparatorTest_05() {
-
+        assertEquals("AAA", String2.repeatSeparator("AAA", "", 1));
     }
 
     @Test
     public void repeatSeparatorTest_06() {
-
+        assertEquals("", String2.repeatSeparator("AAA", "", 0));
     }
 
     @Test
