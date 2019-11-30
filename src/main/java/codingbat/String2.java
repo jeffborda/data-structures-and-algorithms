@@ -175,4 +175,14 @@ public class String2 {
         return answer.toString();
     }
 
+    /**
+     *  RE: https://codingbat.com/prob/p109637
+     *  Given two strings, word and a separator sep, return a big string made of count occurrences of the word,
+     *    separated by the separator string.
+     */
+    public static String repeatSeparator(String str, String sep, int count) {
+
+        return null;
+    }
+
 }

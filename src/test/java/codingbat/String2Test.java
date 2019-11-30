@@ -706,4 +706,5 @@ public class String2Test {
         assertEquals("J", String2.repeatFront("Java", 1));
     }
 
+
 }
