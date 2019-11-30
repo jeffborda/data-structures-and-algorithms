@@ -706,4 +706,60 @@ public class String2Test {
         assertEquals("J", String2.repeatFront("Java", 1));
     }
 
+
+    // RE: https://codingbat.com/prob/p109637
+    @Test
+    public void repeatSeparatorTest_01() {
+        assertEquals("WordXWordXWord", String2.repeatSeparator("Word", "X", 3));
+    }
+
+    @Test
+    public void repeatSeparatorTest_02() {
+        assertEquals("ThisAndThis", String2.repeatSeparator("This", "And", 2));
+    }
+
+    @Test
+    public void repeatSeparatorTest_03() {
+        assertEquals("This", String2.repeatSeparator("This", "And", 1));
+    }
+
+    @Test
+    public void repeatSeparatorTest_04() {
+        assertEquals("Hi-n-Hi", String2.repeatSeparator("Hi", "-n-", 2));
+    }
+
+    @Test
+    public void repeatSeparatorTest_05() {
+        assertEquals("AAA", String2.repeatSeparator("AAA", "", 1));
+    }
+
+    @Test
+    public void repeatSeparatorTest_06() {
+        assertEquals("", String2.repeatSeparator("AAA", "", 0));
+    }
+
+    @Test
+    public void repeatSeparatorTest_07() {
+        assertEquals("ABABABABA", String2.repeatSeparator("A", "B", 5));
+    }
+
+    @Test
+    public void repeatSeparatorTest_08() {
+        assertEquals("abcXXabcXXabc", String2.repeatSeparator("abc", "XX", 3));
+    }
+
+    @Test
+    public void repeatSeparatorTest_09() {
+        assertEquals("abcXXabc", String2.repeatSeparator("abc", "XX", 2));
+    }
+
+    @Test
+    public void repeatSeparatorTest_10() {
+        assertEquals("abc", String2.repeatSeparator("abc", "XX", 1));
+    }
+
+    @Test
+    public void repeatSeparatorTest_11() {
+        assertEquals("XYZaXYZ", String2.repeatSeparator("XYZ", "a", 2));
+    }
 }
