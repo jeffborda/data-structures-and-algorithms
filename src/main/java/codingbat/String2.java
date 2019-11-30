@@ -1,5 +1,7 @@
 package codingbat;
 
+import java.util.StringJoiner;
+
 /**
  * RE: https://codingbat.com/java/String-2
  * This section contains medium level String coding challenges.
@@ -180,9 +182,12 @@ public class String2 {
      *  Given two strings, word and a separator sep, return a big string made of count occurrences of the word,
      *    separated by the separator string.
      */
-    public static String repeatSeparator(String str, String sep, int count) {
-
-        return null;
+    public static String repeatSeparator(String word, String sep, int count) {
+        StringJoiner answer = new StringJoiner(sep);
+        for(int i = 0; i < count; i++) {
+            answer.add(word);
+        }
+        return answer.toString();
     }
 
 }
