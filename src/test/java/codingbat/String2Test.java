@@ -755,11 +755,11 @@ public class String2Test {
 
     @Test
     public void repeatSeparatorTest_10() {
-
+        assertEquals("abc", String2.repeatSeparator("abc", "XX", 1));
     }
 
     @Test
     public void repeatSeparatorTest_11() {
-
+        assertEquals("XYZaXYZ", String2.repeatSeparator("XYZ", "a", 2));
     }
 }
