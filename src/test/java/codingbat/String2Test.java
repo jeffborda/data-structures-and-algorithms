@@ -710,17 +710,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p109637
     @Test
     public void repeatSeparatorTest_01() {
-
+        assertEquals("WordXWordXWord", String2.repeatSeparator("Word", "X", 3));
     }
 
     @Test
     public void repeatSeparatorTest_02() {
-
+        assertEquals("ThisAndThis", String2.repeatSeparator("This", "And", 2));
     }
 
     @Test
     public void repeatSeparatorTest_03() {
-
+        assertEquals("This", String2.repeatSeparator("This", "And", 1));
     }
 
     @Test
