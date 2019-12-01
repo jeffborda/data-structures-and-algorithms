@@ -762,4 +762,71 @@ public class String2Test {
     public void repeatSeparatorTest_11() {
         assertEquals("XYZaXYZ", String2.repeatSeparator("XYZ", "a", 2));
     }
+
+
+    // RE:
+    @Test
+    public void prefixAgainTest_01() {
+        assertTrue(String2.prefixAgain("abXYabc", 1));
+    }
+
+    @Test
+    public void prefixAgainTest_02() {
+        assertTrue(String2.prefixAgain("abXYabc", 2));
+    }
+
+    @Test
+    public void prefixAgainTest_03() {
+        assertFalse(String2.prefixAgain("abXYabc", 3));
+    }
+
+    @Test
+    public void prefixAgainTest_04() {
+
+    }
+
+    @Test
+    public void prefixAgainTest_05() {
+
+    }
+
+    @Test
+    public void prefixAgainTest_06() {
+
+    }
+
+    @Test
+    public void prefixAgainTest_07() {
+
+    }
+
+    @Test
+    public void prefixAgainTest_08() {
+
+    }
+
+    @Test
+    public void prefixAgainTest_09() {
+
+    }
+
+    @Test
+    public void prefixAgainTest_10() {
+
+    }
+
+    @Test
+    public void prefixAgainTest_11() {
+
+    }
+
+    @Test
+    public void prefixAgainTest_12() {
+
+    }
+
+    @Test
+    public void prefixAgainTest_13() {
+
+    }
 }
