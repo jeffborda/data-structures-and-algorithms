@@ -762,4 +762,67 @@ public class String2Test {
     public void repeatSeparatorTest_11() {
         assertEquals("XYZaXYZ", String2.repeatSeparator("XYZ", "a", 2));
     }
+
+
+    // RE:
+    @Test
+    public void prefixAgainTest_01() {
+        assertTrue(String2.prefixAgain("abXYabc", 1));
+    }
+
+    @Test
+    public void prefixAgainTest_02() {
+        assertTrue(String2.prefixAgain("abXYabc", 2));
+    }
+
+    @Test
+    public void prefixAgainTest_03() {
+        assertFalse(String2.prefixAgain("abXYabc", 3));
+    }
+
+    @Test
+    public void prefixAgainTest_04() {
+        assertTrue(String2.prefixAgain("xyzxyxyxy", 2));
+    }
+
+    @Test
+    public void prefixAgainTest_05() {
+        assertFalse(String2.prefixAgain("xyzxyxyxy", 3));
+    }
+
+    @Test
+    public void prefixAgainTest_06() {
+        assertTrue(String2.prefixAgain("Hi12345Hi6789Hi10", 1));
+    }
+
+    @Test
+    public void prefixAgainTest_07() {
+        assertTrue(String2.prefixAgain("Hi12345Hi6789Hi10", 2));
+    }
+
+    @Test
+    public void prefixAgainTest_08() {
+        assertTrue(String2.prefixAgain("Hi12345Hi6789Hi10", 3));
+    }
+
+    @Test
+    public void prefixAgainTest_09() {
+        assertFalse(String2.prefixAgain("Hi12345Hi6789Hi10", 4));
+    }
+
+    @Test
+    public void prefixAgainTest_10() {
+        assertFalse(String2.prefixAgain("a", 1));
+    }
+
+    @Test
+    public void prefixAgainTest_11() {
+        assertTrue(String2.prefixAgain("aa", 1));
+    }
+
+    @Test
+    public void prefixAgainTest_12() {
+        assertFalse(String2.prefixAgain("ab", 1));
+    }
+
 }
