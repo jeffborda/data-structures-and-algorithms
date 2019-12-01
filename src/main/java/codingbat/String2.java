@@ -197,8 +197,8 @@ public class String2 {
      *    1..str.length().
      */
     public static boolean prefixAgain(String str, int n) {
-
-        return false;
+        // first call to substring() returns the substring from n to the end of string
+        return str.substring(n).contains(str.substring(0, n));
     }
 
 }
