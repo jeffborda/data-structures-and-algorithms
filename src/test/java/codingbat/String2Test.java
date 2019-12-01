@@ -797,17 +797,17 @@ public class String2Test {
 
     @Test
     public void prefixAgainTest_07() {
-
+        assertTrue(String2.prefixAgain("Hi12345Hi6789Hi10", 2));
     }
 
     @Test
     public void prefixAgainTest_08() {
-
+        assertTrue(String2.prefixAgain("Hi12345Hi6789Hi10", 3));
     }
 
     @Test
     public void prefixAgainTest_09() {
-
+        assertFalse(String2.prefixAgain("Hi12345Hi6789Hi10", 4));
     }
 
     @Test
