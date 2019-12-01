@@ -812,21 +812,17 @@ public class String2Test {
 
     @Test
     public void prefixAgainTest_10() {
-
+        assertFalse(String2.prefixAgain("a", 1));
     }
 
     @Test
     public void prefixAgainTest_11() {
-
+        assertTrue(String2.prefixAgain("aa", 1));
     }
 
     @Test
     public void prefixAgainTest_12() {
-
+        assertFalse(String2.prefixAgain("ab", 1));
     }
 
-    @Test
-    public void prefixAgainTest_13() {
-
-    }
 }
