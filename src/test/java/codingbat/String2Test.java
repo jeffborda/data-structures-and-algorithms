@@ -854,27 +854,27 @@ public class String2Test {
 
     @Test
     public void xyzMiddleTest_06() {
-
+        assertTrue(String2.xyzMiddle("AAAxyzBB"));
     }
 
     @Test
     public void xyzMiddleTest_07() {
-
+        assertFalse(String2.xyzMiddle("AAAAxyzBB"));
     }
 
     @Test
     public void xyzMiddleTest_08() {
-
+        assertFalse(String2.xyzMiddle("AAAAAxyzBBB"));
     }
 
     @Test
     public void xyzMiddleTest_09() {
-
+        assertFalse(String2.xyzMiddle("1x345xyz12x4"));
     }
 
     @Test
     public void xyzMiddleTest_10() {
-
+        assertTrue(String2.xyzMiddle("xyzAxyzBBB"));
     }
 
     @Test
