@@ -825,4 +825,111 @@ public class String2Test {
         assertFalse(String2.prefixAgain("ab", 1));
     }
 
+
+    // RE: https://codingbat.com/prob/p159772
+    @Test
+    public void xyzMiddleTest_01() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_02() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_03() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_04() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_05() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_06() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_07() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_08() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_09() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_10() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_11() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_12() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_13() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_14() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_15() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_16() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_17() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_18() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_19() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_20() {
+
+    }
+
+    @Test
+    public void xyzMiddleTest_21() {
+
+    }
+
 }
