@@ -869,7 +869,7 @@ public class String2Test {
 
     @Test
     public void xyzMiddleTest_09() {
-        assertFalse(String2.xyzMiddle("1x345xyz12x4"));
+        assertTrue(String2.xyzMiddle("1x345xyz12x4"));
     }
 
     @Test
@@ -879,22 +879,22 @@ public class String2Test {
 
     @Test
     public void xyzMiddleTest_11() {
-        assertFalse(String2.xyzMiddle("xyzAxyzBxyz"));
+        assertTrue(String2.xyzMiddle("xyzAxyzBxyz"));
     }
 
     @Test
     public void xyzMiddleTest_12() {
-        assertFalse(String2.xyzMiddle("xyzxyzAxyzBxyzxyz"));
+        assertTrue(String2.xyzMiddle("xyzxyzAxyzBxyzxyz"));
     }
 
     @Test
     public void xyzMiddleTest_13() {
-        assertFalse(String2.xyzMiddle("xyzxyzxyzBxyzxyz"));
+        assertTrue(String2.xyzMiddle("xyzxyzxyzBxyzxyz"));
     }
 
     @Test
     public void xyzMiddleTest_14() {
-        assertFalse(String2.xyzMiddle("xyzxyzAxyzxyzxyz"));
+        assertTrue(String2.xyzMiddle("xyzxyzAxyzxyzxyz"));
     }
 
     @Test
