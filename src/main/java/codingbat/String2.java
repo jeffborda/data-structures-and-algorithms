@@ -207,34 +207,20 @@ public class String2 {
      *    chars to the left and right of the "xyz" must differ by at most one. This problem is harder than it looks.
      */
     public static boolean xyzMiddle(String str) {
-
-        // Eliminate strings not containing 'xyz'
+        // Eliminate short strings and strings not containing 'xyz'
         if(!str.contains("xyz")) {
             return false;
         }
-        // if(str.equals("xyz")) {
-        //   return true;
-        // }
+        // Plan: Get the middle substring of input, such that if it contains an 'xyz' we return true.
+        // The appropriate middle will vary depending on if input string is even or odd length.
+        int evenLengthStart = (str.length() / 2) - 2;
+        int evenLengthEnd = 4;
+        int oddLengthStart = (str.length() / 2) - 1;
+        int oddLengthEnd = 3;
 
-
-        // Plan:
-        // Find the middle part of the string, such that if there's an 'xyz' there
-        //  than we can return 'true'.
-        // Found out that this^ plan will return a false positive with test #3.
-        // Will have to do something different depending on if the length of the input
-        //  is even or odd.
-        // int offset = str.length() % 2 == 0 ? 2 : 1;
-
-        int evenLengthStartIndex = (str.length() / 2) - 2;
-        int oddLengthStartIndex = (str.length() / 2) - 1;
-
-        if(str.length() % 2 == 0 && str.substring(evenLengthStartIndex, evenLengthStartIndex + 4).contains("xyz")) {
-            return true;
-
+        if(str.length() % 2 == 0) {
+            return str.substring(evenLengthStart, evenLengthStart + evenLengthEnd).contains("xyz");
         }
-
-
-
-        return str.substring(oddLengthStartIndex, oddLengthStartIndex + 3).equals("xyz");
+        return str.substring(oddLengthStart, oddLengthStart + oddLengthEnd).equals("xyz");
     }
 }
