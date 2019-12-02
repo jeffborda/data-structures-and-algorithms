@@ -904,32 +904,32 @@ public class String2Test {
 
     @Test
     public void xyzMiddleTest_16() {
-
+        assertFalse(String2.xyzMiddle("AxyzxyzBB"));
     }
 
     @Test
     public void xyzMiddleTest_17() {
-
+        assertFalse(String2.xyzMiddle(""));
     }
 
     @Test
     public void xyzMiddleTest_18() {
-
+        assertFalse(String2.xyzMiddle("x"));
     }
 
     @Test
     public void xyzMiddleTest_19() {
-
+        assertFalse(String2.xyzMiddle("xy"));
     }
 
     @Test
     public void xyzMiddleTest_20() {
-
+        assertTrue(String2.xyzMiddle("xyz"));
     }
 
     @Test
     public void xyzMiddleTest_21() {
-
+        assertTrue(String2.xyzMiddle("xyzz"));
     }
 
 }
