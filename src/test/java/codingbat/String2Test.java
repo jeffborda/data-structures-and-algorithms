@@ -829,27 +829,27 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p159772
     @Test
     public void xyzMiddleTest_01() {
-
+        assertTrue(String2.xyzMiddle("AAxyzBB"));
     }
 
     @Test
     public void xyzMiddleTest_02() {
-
+        assertTrue(String2.xyzMiddle("AxyzBB"));
     }
 
     @Test
     public void xyzMiddleTest_03() {
-
+        assertFalse(String2.xyzMiddle("AxyzBBB"));
     }
 
     @Test
     public void xyzMiddleTest_04() {
-
+        assertFalse(String2.xyzMiddle("AxyzBBBB"));
     }
 
     @Test
     public void xyzMiddleTest_05() {
-
+        assertFalse(String2.xyzMiddle("AAAxyzB"));
     }
 
     @Test
