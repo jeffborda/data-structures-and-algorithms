@@ -208,6 +208,33 @@ public class String2 {
      */
     public static boolean xyzMiddle(String str) {
 
-        return false;
+        // Eliminate strings not containing 'xyz'
+        if(!str.contains("xyz")) {
+            return false;
+        }
+        // if(str.equals("xyz")) {
+        //   return true;
+        // }
+
+
+        // Plan:
+        // Find the middle part of the string, such that if there's an 'xyz' there
+        //  than we can return 'true'.
+        // Found out that this^ plan will return a false positive with test #3.
+        // Will have to do something different depending on if the length of the input
+        //  is even or odd.
+        // int offset = str.length() % 2 == 0 ? 2 : 1;
+
+        int evenLengthStartIndex = (str.length() / 2) - 2;
+        int oddLengthStartIndex = (str.length() / 2) - 1;
+
+        if(str.length() % 2 == 0 && str.substring(evenLengthStartIndex, evenLengthStartIndex + 4).contains("xyz")) {
+            return true;
+
+        }
+
+
+
+        return str.substring(oddLengthStartIndex, oddLengthStartIndex + 3).equals("xyz");
     }
 }
