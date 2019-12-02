@@ -201,4 +201,26 @@ public class String2 {
         return str.substring(n).contains(str.substring(0, n));
     }
 
+    /**
+     *  RE: https://codingbat.com/prob/p159772
+     *  Given a string, does "xyz" appear in the middle of the string? To define middle, we'll say that the number of
+     *    chars to the left and right of the "xyz" must differ by at most one. This problem is harder than it looks.
+     */
+    public static boolean xyzMiddle(String str) {
+        // Eliminate short strings and strings not containing 'xyz'
+        if(!str.contains("xyz")) {
+            return false;
+        }
+        // Plan: Get the middle substring of input, such that if it contains an 'xyz' we return true.
+        // The appropriate middle will vary depending on if input string is even or odd length.
+        int evenLengthStart = (str.length() / 2) - 2;
+        int evenLengthEnd = 4;
+        int oddLengthStart = (str.length() / 2) - 1;
+        int oddLengthEnd = 3;
+
+        if(str.length() % 2 == 0) {
+            return str.substring(evenLengthStart, evenLengthStart + evenLengthEnd).contains("xyz");
+        }
+        return str.substring(oddLengthStart, oddLengthStart + oddLengthEnd).equals("xyz");
+    }
 }
