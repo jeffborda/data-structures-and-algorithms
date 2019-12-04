@@ -994,4 +994,86 @@ public class String2Test {
         assertEquals("breadbread", String2.getSandwich("breadbreadbreadbread"));
     }
 
+
+    // RE: https://codingbat.com/prob/p194491
+    @Test
+    public void getStarCharTest_01() {
+        assertTrue(String2.sameStarChar("xy*yzz"));
+    }
+
+    @Test
+    public void getStarCharTest_02() {
+        assertFalse(String2.sameStarChar("xy*zzz"));
+    }
+
+    @Test
+    public void getStarCharTest_03() {
+        assertTrue(String2.sameStarChar("xa*az"));
+    }
+
+    @Test
+    public void getStarCharTest_04() {
+        assertFalse(String2.sameStarChar("*xa*bz"));
+    }
+
+    @Test
+    public void getStarCharTest_05() {
+        assertTrue(String2.sameStarChar("*xa*a*"));
+    }
+
+    @Test
+    public void getStarCharTest_06() {
+        assertTrue(String2.sameStarChar(""));
+    }
+
+    @Test
+    public void getStarCharTest_07() {
+        assertTrue(String2.sameStarChar("*xa*a*a"));
+    }
+
+    @Test
+    public void getStarCharTest_08() {
+        assertFalse(String2.sameStarChar("*xa*a*b"));
+    }
+
+    @Test
+    public void getStarCharTest_09() {
+        assertTrue(String2.sameStarChar("*12*2*2"));
+    }
+
+    @Test
+    public void getStarCharTest_10() {
+        assertFalse(String2.sameStarChar("12*2*3*"));
+    }
+
+    @Test
+    public void getStarCharTest_11() {
+        assertTrue(String2.sameStarChar("abcDEF"));
+    }
+
+    @Test
+    public void getStarCharTest_12() {
+        assertFalse(String2.sameStarChar("XY*YYYY*Z*"));
+    }
+
+    @Test
+    public void getStarCharTest_13() {
+        assertTrue(String2.sameStarChar("XY*YYYY*Y*"));
+    }
+
+    @Test
+    public void getStarCharTest_14() {
+        assertFalse(String2.sameStarChar("12*2*3*"));
+    }
+
+    @Test
+    public void getStarCharTest_15() {
+        assertTrue(String2.sameStarChar("*"));
+    }
+
+    @Test
+    public void getStarCharTest_16() {
+        assertTrue(String2.sameStarChar("**"));
+    }
+
 }
