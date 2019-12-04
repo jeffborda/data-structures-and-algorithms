@@ -981,17 +981,17 @@ public class String2Test {
 
     @Test
     public void getSandwichTest_10() {
-
+        assertEquals("breax", String2.getSandwich("breadbreaxbread"));
     }
 
     @Test
     public void getSandwichTest_11() {
-
+        assertEquals("y", String2.getSandwich("breaxbreadybread"));
     }
 
     @Test
     public void getSandwichTest_12() {
-
+        assertEquals("breadbread", String2.getSandwich("breadbreadbreadbread"));
     }
 
 }
