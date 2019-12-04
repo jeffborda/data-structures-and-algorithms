@@ -998,22 +998,22 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p194491
     @Test
     public void getStarCharTest_01() {
-
+        assertTrue(String2.sameStarChar("xy*yzz"));
     }
 
     @Test
     public void getStarCharTest_02() {
-
+        assertFalse(String2.sameStarChar("xy*zzz"));
     }
 
     @Test
     public void getStarCharTest_03() {
-
+        assertTrue(String2.sameStarChar("xa*az"));
     }
 
     @Test
     public void getStarCharTest_04() {
-
+        assertFalse(String2.sameStarChar("*xa*bz"));
     }
 
     @Test
