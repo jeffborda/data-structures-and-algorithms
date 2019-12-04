@@ -994,4 +994,86 @@ public class String2Test {
         assertEquals("breadbread", String2.getSandwich("breadbreadbreadbread"));
     }
 
+
+    // RE: https://codingbat.com/prob/p194491
+    @Test
+    public void getStarCharTest_01() {
+
+    }
+
+    @Test
+    public void getStarCharTest_02() {
+
+    }
+
+    @Test
+    public void getStarCharTest_03() {
+
+    }
+
+    @Test
+    public void getStarCharTest_04() {
+
+    }
+
+    @Test
+    public void getStarCharTest_05() {
+
+    }
+
+    @Test
+    public void getStarCharTest_06() {
+
+    }
+
+    @Test
+    public void getStarCharTest_07() {
+
+    }
+
+    @Test
+    public void getStarCharTest_08() {
+
+    }
+
+    @Test
+    public void getStarCharTest_09() {
+
+    }
+
+    @Test
+    public void getStarCharTest_10() {
+
+    }
+
+    @Test
+    public void getStarCharTest_11() {
+
+    }
+
+    @Test
+    public void getStarCharTest_12() {
+
+    }
+
+    @Test
+    public void getStarCharTest_13() {
+
+    }
+
+    @Test
+    public void getStarCharTest_14() {
+
+    }
+
+    @Test
+    public void getStarCharTest_15() {
+
+    }
+
+    @Test
+    public void getStarCharTest_16() {
+
+    }
+
 }
