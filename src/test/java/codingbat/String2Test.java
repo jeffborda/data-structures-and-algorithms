@@ -1080,22 +1080,22 @@ public class String2Test {
     // RE: RE: https://codingbat.com/prob/p122943
     @Test
     public void oneTwoTest_01() {
-        
+        assertEquals("bca", String2.oneTwo("abc"));
     }
 
     @Test
     public void oneTwoTest_02() {
-
+        assertEquals("cat", String2.oneTwo("tca"));
     }
 
     @Test
     public void oneTwoTest_03() {
-
+        assertEquals("catdog", String2.oneTwo("tcagdo"));
     }
 
     @Test
     public void oneTwoTest_04() {
-
+        assertEquals("hocolctea", String2.oneTwo("chocolate"));
     }
 
     @Test
