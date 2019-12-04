@@ -936,17 +936,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p129952
     @Test
     public void getSandwichTest_01() {
-
+        assertEquals("jam", String2.getSandwich("breadjambread"));
     }
 
     @Test
     public void getSandwichTest_02() {
-
+        assertEquals("jam", String2.getSandwich("xxbreadjambreadyy"));
     }
 
     @Test
     public void getSandwichTest_03() {
-
+        assertEquals("", String2.getSandwich("xxbreadyy"));
     }
 
     @Test
