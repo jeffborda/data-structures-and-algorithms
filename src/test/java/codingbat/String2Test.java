@@ -1076,4 +1076,86 @@ public class String2Test {
         assertTrue(String2.sameStarChar("**"));
     }
 
+
+    // RE: RE: https://codingbat.com/prob/p122943
+    @Test
+    public void oneTwoTest_01() {
+        assertEquals("bca", String2.oneTwo("abc"));
+    }
+
+    @Test
+    public void oneTwoTest_02() {
+        assertEquals("cat", String2.oneTwo("tca"));
+    }
+
+    @Test
+    public void oneTwoTest_03() {
+        assertEquals("catdog", String2.oneTwo("tcagdo"));
+    }
+
+    @Test
+    public void oneTwoTest_04() {
+        assertEquals("hocolctea", String2.oneTwo("chocolate"));
+    }
+
+    @Test
+    public void oneTwoTest_05() {
+        assertEquals("231564897", String2.oneTwo("1234567890"));
+    }
+
+    @Test
+    public void oneTwoTest_06() {
+        assertEquals("abxabxabxabxabxabxabx", String2.oneTwo("xabxabxabxabxabxabxab"));
+    }
+
+    @Test
+    public void oneTwoTest_07() {
+        assertEquals("bcaefd", String2.oneTwo("abcdefx"));
+    }
+
+    @Test
+    public void oneTwoTest_08() {
+        assertEquals("bcaefd", String2.oneTwo("abcdefxy"));
+    }
+
+    @Test
+    public void oneTwoTest_09() {
+        assertEquals("bcaefdyzx", String2.oneTwo("abcdefxyz"));
+    }
+
+    @Test
+    public void oneTwoTest_10() {
+        assertEquals("", String2.oneTwo(""));
+    }
+
+    @Test
+    public void oneTwoTest_11() {
+        assertEquals("", String2.oneTwo("x"));
+    }
+
+    @Test
+    public void oneTwoTest_12() {
+        assertEquals("", String2.oneTwo("xy"));
+    }
+
+    @Test
+    public void oneTwoTest_13() {
+        assertEquals("yzx", String2.oneTwo("xyz"));
+    }
+
+    @Test
+    public void oneTwoTest_14() {
+        assertEquals("bcaefdhigkljmnkpqostrvwuyzx231564897", String2.oneTwo("abcdefghijklkmnopqrstuvwxyz1234567890"));
+    }
+
+    @Test
+    public void oneTwoTest_15() {
+        assertEquals("bcaefdhigkljmnkpqostrvwuyzx231564897", String2.oneTwo("abcdefghijklkmnopqrstuvwxyz123456789"));
+    }
+
+    @Test
+    public void oneTwoTest_16() {
+        assertEquals("bcaefdhigkljmnkpqostrvwuyzx231564", String2.oneTwo("abcdefghijklkmnopqrstuvwxyz12345678"));
+    }
+
 }
