@@ -1207,17 +1207,17 @@ public class String2Test {
 
     @Test
     public void zipZapTest_10() {
-
+        assertEquals("abcppp", String2.zipZap("abcppp"));
     }
 
     @Test
     public void zipZapTest_11() {
-
+        assertEquals("azbcppp", String2.zipZap("azbcppp"));
     }
 
     @Test
     public void zipZapTest_12() {
-
+        assertEquals("azbcpzp", String2.zipZap("azbcpzpp"));
     }
 
 }
