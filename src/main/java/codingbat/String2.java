@@ -273,8 +273,24 @@ public class String2 {
      *   of fewer than 3 chars at the end.
      */
     public static String oneTwo(String str) {
-
-        return null;
+        StringBuilder answer = new StringBuilder();
+        final int SHIFT_INTERVAL = 3;
+        boolean doShift = false;
+        for(int i = 0; i < str.length(); i++) {
+            if(i % SHIFT_INTERVAL != 0 && !doShift) {
+                answer.append(str.charAt(i));
+                doShift = true;
+            }
+            else if(i % SHIFT_INTERVAL != 0 && doShift) {
+                answer.append(str.charAt(i));
+                answer.append(str.charAt(i - 2));
+                doShift = false;
+            }
+            else if(str.length() - i < SHIFT_INTERVAL) {
+                break;
+            }
+        }
+        return answer.toString();
     }
 
 }
