@@ -1158,4 +1158,66 @@ public class String2Test {
         assertEquals("bcaefdhigkljmnkpqostrvwuyzx231564", String2.oneTwo("abcdefghijklkmnopqrstuvwxyz12345678"));
     }
 
+
+    // RE: https://codingbat.com/prob/p180759
+    @Test
+    public void zipZapTest_01() {
+
+    }
+
+    @Test
+    public void zipZapTest_02() {
+
+    }
+
+    @Test
+    public void zipZapTest_03() {
+
+    }
+
+    @Test
+    public void zipZapTest_04() {
+
+    }
+
+    @Test
+    public void zipZapTest_05() {
+
+    }
+
+    @Test
+    public void zipZapTest_06() {
+
+    }
+
+    @Test
+    public void zipZapTest_07() {
+
+    }
+
+    @Test
+    public void zipZapTest_08() {
+
+    }
+
+    @Test
+    public void zipZapTest_09() {
+
+    }
+
+    @Test
+    public void zipZapTest_10() {
+
+    }
+
+    @Test
+    public void zipZapTest_11() {
+
+    }
+
+    @Test
+    public void zipZapTest_12() {
+
+    }
+
 }
