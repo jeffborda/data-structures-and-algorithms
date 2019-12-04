@@ -1177,17 +1177,17 @@ public class String2Test {
 
     @Test
     public void zipZapTest_04() {
-
+        assertEquals("zibzp", String2.zipZap("zibzap"));
     }
 
     @Test
     public void zipZapTest_05() {
-
+        assertEquals("zp", String2.zipZap("zip"));
     }
 
     @Test
     public void zipZapTest_06() {
-
+        assertEquals("zi", String2.zipZap("zi"));
     }
 
     @Test
