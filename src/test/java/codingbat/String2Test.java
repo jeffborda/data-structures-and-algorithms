@@ -1158,4 +1158,66 @@ public class String2Test {
         assertEquals("bcaefdhigkljmnkpqostrvwuyzx231564", String2.oneTwo("abcdefghijklkmnopqrstuvwxyz12345678"));
     }
 
+
+    // RE: https://codingbat.com/prob/p180759
+    @Test
+    public void zipZapTest_01() {
+        assertEquals("zpXzp", String2.zipZap("zipXzap"));
+    }
+
+    @Test
+    public void zipZapTest_02() {
+        assertEquals("zpzp", String2.zipZap("zopzop"));
+    }
+
+    @Test
+    public void zipZapTest_03() {
+        assertEquals("zzzpzp", String2.zipZap("zzzopzop"));
+    }
+
+    @Test
+    public void zipZapTest_04() {
+        assertEquals("zibzp", String2.zipZap("zibzap"));
+    }
+
+    @Test
+    public void zipZapTest_05() {
+        assertEquals("zp", String2.zipZap("zip"));
+    }
+
+    @Test
+    public void zipZapTest_06() {
+        assertEquals("zi", String2.zipZap("zi"));
+    }
+
+    @Test
+    public void zipZapTest_07() {
+        assertEquals("z", String2.zipZap("z"));
+    }
+
+    @Test
+    public void zipZapTest_08() {
+        assertEquals("", String2.zipZap(""));
+    }
+
+    @Test
+    public void zipZapTest_09() {
+        assertEquals("zp", String2.zipZap("zzp"));
+    }
+
+    @Test
+    public void zipZapTest_10() {
+        assertEquals("abcppp", String2.zipZap("abcppp"));
+    }
+
+    @Test
+    public void zipZapTest_11() {
+        assertEquals("azbcppp", String2.zipZap("azbcppp"));
+    }
+
+    @Test
+    public void zipZapTest_12() {
+        assertEquals("azbcpzp", String2.zipZap("azbcpzpp"));
+    }
+
 }
