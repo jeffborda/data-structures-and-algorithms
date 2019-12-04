@@ -1162,17 +1162,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p180759
     @Test
     public void zipZapTest_01() {
-
+        assertEquals("zpXzp", String2.zipZap("zipXzap"));
     }
 
     @Test
     public void zipZapTest_02() {
-
+        assertEquals("zpzp", String2.zipZap("zopzop"));
     }
 
     @Test
     public void zipZapTest_03() {
-
+        assertEquals("zzzpzp", String2.zipZap("zzzopzop"));
     }
 
     @Test
