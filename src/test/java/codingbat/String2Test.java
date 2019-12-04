@@ -1140,22 +1140,22 @@ public class String2Test {
 
     @Test
     public void oneTwoTest_13() {
-
+        assertEquals("yzx", String2.oneTwo("xyz"));
     }
 
     @Test
     public void oneTwoTest_14() {
-
+        assertEquals("bcaefdhigkljmnkpqostrvwuyzx231564897", String2.oneTwo("abcdefghijklkmnopqrstuvwxyz1234567890"));
     }
 
     @Test
     public void oneTwoTest_15() {
-
+        assertEquals("bcaefdhigkljmnkpqostrvwuyzx231564897", String2.oneTwo("abcdefghijklkmnopqrstuvwxyz123456789"));
     }
 
     @Test
     public void oneTwoTest_16() {
-
+        assertEquals("bcaefdhigkljmnkpqostrvwuyzx231564", String2.oneTwo("abcdefghijklkmnopqrstuvwxyz12345678"));
     }
 
 }
