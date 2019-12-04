@@ -1076,4 +1076,86 @@ public class String2Test {
         assertTrue(String2.sameStarChar("**"));
     }
 
+
+    // RE: RE: https://codingbat.com/prob/p122943
+    @Test
+    public void oneTwoTest_01() {
+        
+    }
+
+    @Test
+    public void oneTwoTest_02() {
+
+    }
+
+    @Test
+    public void oneTwoTest_03() {
+
+    }
+
+    @Test
+    public void oneTwoTest_04() {
+
+    }
+
+    @Test
+    public void oneTwoTest_05() {
+
+    }
+
+    @Test
+    public void oneTwoTest_06() {
+
+    }
+
+    @Test
+    public void oneTwoTest_07() {
+
+    }
+
+    @Test
+    public void oneTwoTest_08() {
+
+    }
+
+    @Test
+    public void oneTwoTest_09() {
+
+    }
+
+    @Test
+    public void oneTwoTest_10() {
+
+    }
+
+    @Test
+    public void oneTwoTest_11() {
+
+    }
+
+    @Test
+    public void oneTwoTest_12() {
+
+    }
+
+    @Test
+    public void oneTwoTest_13() {
+
+    }
+
+    @Test
+    public void oneTwoTest_14() {
+
+    }
+
+    @Test
+    public void oneTwoTest_15() {
+
+    }
+
+    @Test
+    public void oneTwoTest_16() {
+
+    }
+
 }

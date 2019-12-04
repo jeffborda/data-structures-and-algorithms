@@ -231,6 +231,9 @@ public class String2 {
      *   bread.
      */
     public static String getSandwich(String str) {
+        // TODO: Consider if refactoring this code using the following string methods would be simpler/more clear:
+        //  indexOf(String str, int fromIndex) Returns the index within this string of the first occurrence of the specified character, starting the search at the specified index.
+        //  lastIndexOf(String str, int fromIndex) Returns the index within this string of the last occurrence of the specified substring, searching backward starting at the specified index.
         String targetWord = "bread";
         int targetWordLength = targetWord.length();
         // Start from the right of the input string
