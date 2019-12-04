@@ -933,4 +933,65 @@ public class String2Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p129952
+    @Test
+    public void getSandwichTest_01() {
+
+    }
+
+    @Test
+    public void getSandwichTest_02() {
+
+    }
+
+    @Test
+    public void getSandwichTest_03() {
+
+    }
+
+    @Test
+    public void getSandwichTest_04() {
+
+    }
+
+    @Test
+    public void getSandwichTest_05() {
+
+    }
+
+    @Test
+    public void getSandwichTest_06() {
+
+    }
+
+    @Test
+    public void getSandwichTest_07() {
+
+    }
+
+    @Test
+    public void getSandwichTest_08() {
+
+    }
+
+    @Test
+    public void getSandwichTest_09() {
+
+    }
+
+    @Test
+    public void getSandwichTest_10() {
+
+    }
+
+    @Test
+    public void getSandwichTest_11() {
+
+    }
+
+    @Test
+    public void getSandwichTest_12() {
+
+    }
+
 }
