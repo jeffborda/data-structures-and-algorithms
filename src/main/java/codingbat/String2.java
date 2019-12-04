@@ -232,6 +232,22 @@ public class String2 {
      */
     public static String getSandwich(String str) {
 
-        return null;
+        String targetWord = "bread";
+        int length = targetWord.length();
+
+        for(int i = 0; i < str.length() - length; i++) {
+
+            if(str.substring(i, i + length).equals(targetWord)) {
+
+                for(int j = i + 1 + length; j < str.length() - length + 1; j++) {
+
+                    if(str.substring(j, j + length).equals(targetWord)) {
+
+                        return str.substring(i + length, j);
+                    }
+                }
+            }
+        }
+        return "";
     }
 }
