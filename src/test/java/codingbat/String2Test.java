@@ -1038,22 +1038,22 @@ public class String2Test {
 
     @Test
     public void getStarCharTest_09() {
-
+        assertTrue(String2.sameStarChar("*12*2*2"));
     }
 
     @Test
     public void getStarCharTest_10() {
-
+        assertFalse(String2.sameStarChar("12*2*3*"));
     }
 
     @Test
     public void getStarCharTest_11() {
-
+        assertTrue(String2.sameStarChar("abcDEF"));
     }
 
     @Test
     public void getStarCharTest_12() {
-
+        assertFalse(String2.sameStarChar("XY*YYYY*Z*"));
     }
 
     @Test
