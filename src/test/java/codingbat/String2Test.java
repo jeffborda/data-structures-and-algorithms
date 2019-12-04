@@ -1018,22 +1018,22 @@ public class String2Test {
 
     @Test
     public void getStarCharTest_05() {
-
+        assertTrue(String2.sameStarChar("*xa*a*"));
     }
 
     @Test
     public void getStarCharTest_06() {
-
+        assertTrue(String2.sameStarChar(""));
     }
 
     @Test
     public void getStarCharTest_07() {
-
+        assertTrue(String2.sameStarChar("*xa*a*a"));
     }
 
     @Test
     public void getStarCharTest_08() {
-
+        assertFalse(String2.sameStarChar("*xa*a*b"));
     }
 
     @Test
