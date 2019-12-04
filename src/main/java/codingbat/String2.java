@@ -248,4 +248,14 @@ public class String2 {
         }
         return "";
     }
+
+    /**
+     *  RE: https://codingbat.com/prob/p194491
+     *  Returns true if for every '*' (star) in the string, if there are chars both immediately before and after the
+     *    star, they are the same.
+     */
+    public static boolean sameStarChar(String str) {
+
+        return false;
+    }
 }
