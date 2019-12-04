@@ -223,4 +223,29 @@ public class String2 {
         }
         return str.substring(oddLengthStart, oddLengthStart + oddLengthEnd).equals("xyz");
     }
+
+    /**
+     *  RE: https://codingbat.com/prob/p129952
+     *  A sandwich is two pieces of bread with something in between. Return the string that is between the first and
+     *    last appearance of "bread" in the given string, or return the empty string "" if there are not two pieces of
+     *    bread.
+     */
+    public static String getSandwich(String str) {
+        String targetWord = "bread";
+        int targetWordLength = targetWord.length();
+        // Start from the right of the input string
+        for(int i = 0; i < str.length() - targetWordLength; i++) {
+            // If the substring matches target string
+            if(str.substring(i, i + targetWordLength).equals(targetWord)) {
+                // Start looping from the left to search for a second occurrence of the target word
+                for(int j = str.length() - targetWordLength; j > i; j--) {
+                    // If a second target word is found, return what's between the two words
+                    if(str.substring(j, j + targetWordLength).equals(targetWord)) {
+                        return str.substring(i + targetWordLength, j);
+                    }
+                }
+            }
+        }
+        return "";
+    }
 }

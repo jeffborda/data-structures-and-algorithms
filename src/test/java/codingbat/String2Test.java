@@ -932,4 +932,66 @@ public class String2Test {
         assertTrue(String2.xyzMiddle("xyzz"));
     }
 
+
+    // RE: https://codingbat.com/prob/p129952
+    @Test
+    public void getSandwichTest_01() {
+        assertEquals("jam", String2.getSandwich("breadjambread"));
+    }
+
+    @Test
+    public void getSandwichTest_02() {
+        assertEquals("jam", String2.getSandwich("xxbreadjambreadyy"));
+    }
+
+    @Test
+    public void getSandwichTest_03() {
+        assertEquals("", String2.getSandwich("xxbreadyy"));
+    }
+
+    @Test
+    public void getSandwichTest_04() {
+        assertEquals("breadjam", String2.getSandwich("xxbreadbreadjambreadyy"));
+    }
+
+    @Test
+    public void getSandwichTest_05() {
+        assertEquals("A", String2.getSandwich("breadAbread"));
+    }
+
+    @Test
+    public void getSandwichTest_06() {
+        assertEquals("", String2.getSandwich("breadbread"));
+    }
+
+    @Test
+    public void getSandwichTest_07() {
+        assertEquals("", String2.getSandwich("abcbreaz"));
+    }
+
+    @Test
+    public void getSandwichTest_08() {
+        assertEquals("", String2.getSandwich("xyz"));
+    }
+
+    @Test
+    public void getSandwichTest_09() {
+        assertEquals("", String2.getSandwich(""));
+    }
+
+    @Test
+    public void getSandwichTest_10() {
+        assertEquals("breax", String2.getSandwich("breadbreaxbread"));
+    }
+
+    @Test
+    public void getSandwichTest_11() {
+        assertEquals("y", String2.getSandwich("breaxbreadybread"));
+    }
+
+    @Test
+    public void getSandwichTest_12() {
+        assertEquals("breadbread", String2.getSandwich("breadbreadbreadbread"));
+    }
+
 }
