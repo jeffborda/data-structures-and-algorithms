@@ -231,19 +231,17 @@ public class String2 {
      *    bread.
      */
     public static String getSandwich(String str) {
-
         String targetWord = "bread";
-        int length = targetWord.length();
-
-        for(int i = 0; i < str.length() - length; i++) {
-
-            if(str.substring(i, i + length).equals(targetWord)) {
-
-                for(int j = i + 1 + length; j < str.length() - length + 1; j++) {
-
-                    if(str.substring(j, j + length).equals(targetWord)) {
-
-                        return str.substring(i + length, j);
+        int targetWordLength = targetWord.length();
+        // Start from the right of the input string
+        for(int i = 0; i < str.length() - targetWordLength; i++) {
+            // If the substring matches target string
+            if(str.substring(i, i + targetWordLength).equals(targetWord)) {
+                // Start looping from the left to search for a second occurrence of the target word
+                for(int j = str.length() - targetWordLength; j > i; j--) {
+                    // If a second target word is found, return what's between the two words
+                    if(str.substring(j, j + targetWordLength).equals(targetWord)) {
+                        return str.substring(i + targetWordLength, j);
                     }
                 }
             }
