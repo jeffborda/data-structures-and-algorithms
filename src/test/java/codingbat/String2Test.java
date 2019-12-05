@@ -1264,22 +1264,22 @@ public class String2Test {
 
     @Test
     public void starOutTest_09() {
-
+        assertEquals("ty", String2.starOut("*str*in*gy"));
     }
 
     @Test
     public void starOutTest_10() {
-
+        assertEquals("abc", String2.starOut("abc"));
     }
 
     @Test
     public void starOutTest_11() {
-
+        assertEquals("c", String2.starOut("a*bc"));
     }
 
     @Test
     public void starOutTest_12() {
-
+        assertEquals("ab", String2.starOut("ab"));
     }
 
     @Test
