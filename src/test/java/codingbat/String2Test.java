@@ -1224,22 +1224,22 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p139564
     @Test
     public void starOutTest_01() {
-
+        assertEquals("ad", String2.starOut("ab*cd"));
     }
 
     @Test
     public void starOutTest_02() {
-
+        assertEquals("ad", String2.starOut("ab**cd"));
     }
 
     @Test
     public void starOutTest_03() {
-
+        assertEquals("silly", String2.starOut("sm*eilly"));
     }
 
     @Test
     public void starOutTest_04() {
-
+        assertEquals("siy", String2.starOut("sm*eil*ly"));
     }
 
     @Test
