@@ -1220,4 +1220,96 @@ public class String2Test {
         assertEquals("azbcpzp", String2.zipZap("azbcpzpp"));
     }
 
+
+    // RE: https://codingbat.com/prob/p139564
+    @Test
+    public void starOutTest_01() {
+
+    }
+
+    @Test
+    public void starOutTest_02() {
+
+    }
+
+    @Test
+    public void starOutTest_03() {
+
+    }
+
+    @Test
+    public void starOutTest_04() {
+
+    }
+
+    @Test
+    public void starOutTest_05() {
+
+    }
+
+    @Test
+    public void starOutTest_06() {
+
+    }
+
+    @Test
+    public void starOutTest_07() {
+
+    }
+
+    @Test
+    public void starOutTest_08() {
+
+    }
+
+    @Test
+    public void starOutTest_09() {
+
+    }
+
+    @Test
+    public void starOutTest_10() {
+
+    }
+
+    @Test
+    public void starOutTest_11() {
+
+    }
+
+    @Test
+    public void starOutTest_12() {
+
+    }
+
+    @Test
+    public void starOutTest_13() {
+
+    }
+
+    @Test
+    public void starOutTest_14() {
+
+    }
+
+    @Test
+    public void starOutTest_15() {
+
+    }
+
+    @Test
+    public void starOutTest_16() {
+
+    }
+
+    @Test
+    public void starOutTest_17() {
+
+    }
+
+    @Test
+    public void starOutTest_18() {
+
+    }
+
 }
