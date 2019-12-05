@@ -1244,22 +1244,22 @@ public class String2Test {
 
     @Test
     public void starOutTest_05() {
-
+        assertEquals("siy", String2.starOut("sm**eil*ly"));
     }
 
     @Test
     public void starOutTest_06() {
-
+        assertEquals("siy", String2.starOut("sm***eil*ly"));
     }
 
     @Test
     public void starOutTest_07() {
-
+        assertEquals("string", String2.starOut("stringy*"));
     }
 
     @Test
     public void starOutTest_08() {
-
+        assertEquals("tringy", String2.starOut("*stringy"));
     }
 
     @Test
