@@ -1284,32 +1284,32 @@ public class String2Test {
 
     @Test
     public void starOutTest_13() {
-
+        assertEquals("", String2.starOut("a*b"));
     }
 
     @Test
     public void starOutTest_14() {
-
+        assertEquals("a", String2.starOut("a"));
     }
 
     @Test
     public void starOutTest_15() {
-
+        assertEquals("", String2.starOut("a*"));
     }
 
     @Test
     public void starOutTest_16() {
-
+        assertEquals("", String2.starOut("*a"));
     }
 
     @Test
     public void starOutTest_17() {
-
+        assertEquals("", String2.starOut("*"));
     }
 
     @Test
     public void starOutTest_18() {
-
+        assertEquals("", String2.starOut(""));
     }
 
 }
