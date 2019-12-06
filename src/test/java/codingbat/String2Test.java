@@ -1361,6 +1361,6 @@ public class String2Test {
 
     @Test
     public void plusOutTest_10() {
-
+        assertEquals("++3++3", String2.plusOut("123123", "3"));
     }
 }
