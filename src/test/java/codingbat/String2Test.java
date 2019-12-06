@@ -1346,17 +1346,17 @@ public class String2Test {
 
     @Test
     public void plusOutTest_07() {
-
+        assertEquals("+++++++XYZ", String2.plusOut("abXYxyzXYZ", "XYZ"));
     }
 
     @Test
     public void plusOutTest_08() {
-
+        assertEquals("++++++", String2.plusOut("--++ab", "++"));
     }
 
     @Test
     public void plusOutTest_09() {
-
+        assertEquals("++xxxx++", String2.plusOut("aaxxxxbb", "xx"));
     }
 
     @Test
