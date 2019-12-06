@@ -1220,4 +1220,96 @@ public class String2Test {
         assertEquals("azbcpzp", String2.zipZap("azbcpzpp"));
     }
 
+
+    // RE: https://codingbat.com/prob/p139564
+    @Test
+    public void starOutTest_01() {
+        assertEquals("ad", String2.starOut("ab*cd"));
+    }
+
+    @Test
+    public void starOutTest_02() {
+        assertEquals("ad", String2.starOut("ab**cd"));
+    }
+
+    @Test
+    public void starOutTest_03() {
+        assertEquals("silly", String2.starOut("sm*eilly"));
+    }
+
+    @Test
+    public void starOutTest_04() {
+        assertEquals("siy", String2.starOut("sm*eil*ly"));
+    }
+
+    @Test
+    public void starOutTest_05() {
+        assertEquals("siy", String2.starOut("sm**eil*ly"));
+    }
+
+    @Test
+    public void starOutTest_06() {
+        assertEquals("siy", String2.starOut("sm***eil*ly"));
+    }
+
+    @Test
+    public void starOutTest_07() {
+        assertEquals("string", String2.starOut("stringy*"));
+    }
+
+    @Test
+    public void starOutTest_08() {
+        assertEquals("tringy", String2.starOut("*stringy"));
+    }
+
+    @Test
+    public void starOutTest_09() {
+        assertEquals("ty", String2.starOut("*str*in*gy"));
+    }
+
+    @Test
+    public void starOutTest_10() {
+        assertEquals("abc", String2.starOut("abc"));
+    }
+
+    @Test
+    public void starOutTest_11() {
+        assertEquals("c", String2.starOut("a*bc"));
+    }
+
+    @Test
+    public void starOutTest_12() {
+        assertEquals("ab", String2.starOut("ab"));
+    }
+
+    @Test
+    public void starOutTest_13() {
+        assertEquals("", String2.starOut("a*b"));
+    }
+
+    @Test
+    public void starOutTest_14() {
+        assertEquals("a", String2.starOut("a"));
+    }
+
+    @Test
+    public void starOutTest_15() {
+        assertEquals("", String2.starOut("a*"));
+    }
+
+    @Test
+    public void starOutTest_16() {
+        assertEquals("", String2.starOut("*a"));
+    }
+
+    @Test
+    public void starOutTest_17() {
+        assertEquals("", String2.starOut("*"));
+    }
+
+    @Test
+    public void starOutTest_18() {
+        assertEquals("", String2.starOut(""));
+    }
+
 }
