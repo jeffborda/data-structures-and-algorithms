@@ -321,8 +321,19 @@ public class String2 {
      *   to its left and right are gone. So "ab*cd" yields "ad" and "ab**cd" also yields "ad".
      */
     public static String starOut(String str) {
-
-        return null;
+        StringBuilder answer = new StringBuilder();
+        for(int i = 0; i < str.length(); i++) {
+            if(str.charAt(i) == '*') {
+            continue; //continue statements not required, but used in place of an empty conditional
+            } else if(i > 0 && str.charAt(i - 1) == '*') {
+                continue;
+            } else if(i < str.length() - 1 && str.charAt(i + 1) == '*') {
+                continue;
+            } else {
+                answer.append(String.valueOf(str.charAt(i)));
+            }
+        }
+        return answer.toString();
     }
 
 }
