@@ -342,8 +342,19 @@ public class String2 {
      *   replaced by pluses ("+"), except for appearances of the word string which are preserved unchanged.
      */
     public static String plusOut(String str, String word) {
-
-        return null;
+        StringBuilder answer = new StringBuilder();
+        for(int i = 0; i < str.length(); i++) {
+            // First condition makes it safe to do the second condition without going out of bounds
+            if(str.charAt(i) != word.charAt(0) || !str.substring(i, i + word.length()).equals(word)) {
+                answer.append("+");
+            }
+            // It must be the match, append it to answer and skip through the length of 'word' in 'str'
+            else {
+                answer.append(word);
+                i += word.length() - 1; //skip the rest of the length since it matches
+            }
+        }
+        return answer.toString();
     }
 
 }
