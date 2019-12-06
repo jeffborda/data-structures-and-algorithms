@@ -1312,4 +1312,54 @@ public class String2Test {
         assertEquals("", String2.starOut(""));
     }
 
+
+    // RE: https://codingbat.com/prob/p170829
+    @Test
+    public void plusOutTest_01() {
+
+    }
+
+    @Test
+    public void plusOutTest_02() {
+    }
+
+    @Test
+    public void plusOutTest_03() {
+
+    }
+
+    @Test
+    public void plusOutTest_04() {
+
+    }
+
+    @Test
+    public void plusOutTest_05() {
+
+    }
+
+    @Test
+    public void plusOutTest_06() {
+
+    }
+
+    @Test
+    public void plusOutTest_07() {
+
+    }
+
+    @Test
+    public void plusOutTest_08() {
+
+    }
+
+    @Test
+    public void plusOutTest_09() {
+
+    }
+
+    @Test
+    public void plusOutTest_10() {
+
+    }
 }
