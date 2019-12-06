@@ -1312,4 +1312,55 @@ public class String2Test {
         assertEquals("", String2.starOut(""));
     }
 
+
+    // RE: https://codingbat.com/prob/p170829
+    @Test
+    public void plusOutTest_01() {
+        assertEquals("++xy++", String2.plusOut("12xy34", "xy"));
+    }
+
+    @Test
+    public void plusOutTest_02() {
+        assertEquals("1+++++", String2.plusOut("12xy34", "1"));
+    }
+
+    @Test
+    public void plusOutTest_03() {
+        assertEquals("++xy++xy+++xy", String2.plusOut("12xy34xyabcxy", "xy"));
+    }
+
+    @Test
+    public void plusOutTest_04() {
+        assertEquals("ab++ab++++", String2.plusOut("abXYabcXYZ", "ab"));
+    }
+
+    @Test
+    public void plusOutTest_05() {
+        assertEquals("++++abc+++", String2.plusOut("abXYabcXYZ", "abc"));
+    }
+
+    @Test
+    public void plusOutTest_06() {
+        assertEquals("++XY+++XY+", String2.plusOut("abXYabcXYZ", "XY"));
+    }
+
+    @Test
+    public void plusOutTest_07() {
+        assertEquals("+++++++XYZ", String2.plusOut("abXYxyzXYZ", "XYZ"));
+    }
+
+    @Test
+    public void plusOutTest_08() {
+        assertEquals("++++++", String2.plusOut("--++ab", "++"));
+    }
+
+    @Test
+    public void plusOutTest_09() {
+        assertEquals("++xxxx++", String2.plusOut("aaxxxxbb", "xx"));
+    }
+
+    @Test
+    public void plusOutTest_10() {
+        assertEquals("++3++3", String2.plusOut("123123", "3"));
+    }
 }
