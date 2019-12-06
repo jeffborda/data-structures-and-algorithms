@@ -1331,17 +1331,17 @@ public class String2Test {
 
     @Test
     public void plusOutTest_04() {
-
+        assertEquals("ab++ab++++", String2.plusOut("abXYabcXYZ", "ab"));
     }
 
     @Test
     public void plusOutTest_05() {
-
+        assertEquals("++++abc+++", String2.plusOut("abXYabcXYZ", "abc"));
     }
 
     @Test
     public void plusOutTest_06() {
-
+        assertEquals("++XY+++XY+", String2.plusOut("abXYabcXYZ", "XY"));
     }
 
     @Test
