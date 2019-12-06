@@ -336,4 +336,14 @@ public class String2 {
         return answer.toString();
     }
 
+    /**
+     *  RE: https://codingbat.com/prob/p170829
+     *  Given a string and a non-empty word string, return a version of the original String where all chars have been
+     *   replaced by pluses ("+"), except for appearances of the word string which are preserved unchanged.
+     */
+    public static String plusOut(String str, String word) {
+
+        return null;
+    }
+
 }
