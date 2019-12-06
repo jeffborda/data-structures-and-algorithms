@@ -1316,16 +1316,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p170829
     @Test
     public void plusOutTest_01() {
-
+        assertEquals("++xy++", String2.plusOut("12xy34", "xy"));
     }
 
     @Test
     public void plusOutTest_02() {
+        assertEquals("1+++++", String2.plusOut("12xy34", "1"));
     }
 
     @Test
     public void plusOutTest_03() {
-
+        assertEquals("++xy++xy+++xy", String2.plusOut("12xy34xyabcxy", "xy"));
     }
 
     @Test
