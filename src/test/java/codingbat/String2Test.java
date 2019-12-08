@@ -1363,4 +1363,71 @@ public class String2Test {
     public void plusOutTest_10() {
         assertEquals("++3++3", String2.plusOut("123123", "3"));
     }
+
+
+    // RE: https://codingbat.com/prob/p147538
+    @Test
+    public void wordEndsTest_01() {
+
+    }
+
+    @Test
+    public void wordEndsTest_02() {
+
+    }
+
+    @Test
+    public void wordEndsTest_03() {
+
+    }
+
+    @Test
+    public void wordEndsTest_04() {
+
+    }
+
+    @Test
+    public void wordEndsTest_05() {
+
+    }
+
+    @Test
+    public void wordEndsTest_06() {
+
+    }
+
+    @Test
+    public void wordEndsTest_07() {
+
+    }
+
+    @Test
+    public void wordEndsTest_08() {
+
+    }
+
+    @Test
+    public void wordEndsTest_09() {
+
+    }
+
+    @Test
+    public void wordEndsTest_10() {
+
+    }
+
+    @Test
+    public void wordEndsTest_11() {
+
+    }
+
+    @Test
+    public void wordEndsTest_12() {
+
+    }
+
+    @Test
+    public void wordEndsTest_13() {
+
+    }
 }
