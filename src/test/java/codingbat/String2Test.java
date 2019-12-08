@@ -1398,17 +1398,17 @@ public class String2Test {
 
     @Test
     public void wordEndsTest_07() {
-
+        assertEquals("", String2.wordEnds("", "XY"));
     }
 
     @Test
     public void wordEndsTest_08() {
-
+        assertEquals("cxziij", String2.wordEnds("abc1xyz1i1j", "1"));
     }
 
     @Test
     public void wordEndsTest_09() {
-
+        assertEquals("cxz", String2.wordEnds("abc1xyz1", "1"));
     }
 
     @Test
