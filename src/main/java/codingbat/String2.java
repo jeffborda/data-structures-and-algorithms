@@ -364,8 +364,18 @@ public class String2 {
      *   may be included twice if it is between two words.
      */
     public static String wordEnds(String str, String word) {
-
-        return null;
+        StringBuilder answer = new StringBuilder();
+        for(int i = 0; i < str.length() - word.length() + 1; i++) {
+            if(str.substring(i, i + word.length()).equals(word)) {
+                if(i > 0) {
+                    answer.append(str.charAt(i - 1));
+                }
+                if(i + word.length() < str.length()) {
+                    answer.append(str.charAt(i + word.length()));
+                }
+            }
+        }
+        return answer.toString();
     }
 
 }
