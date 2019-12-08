@@ -1363,4 +1363,71 @@ public class String2Test {
     public void plusOutTest_10() {
         assertEquals("++3++3", String2.plusOut("123123", "3"));
     }
+
+
+    // RE: https://codingbat.com/prob/p147538
+    @Test
+    public void wordEndsTest_01() {
+        assertEquals("c13i", String2.wordEnds("abcXY123XYijk", "XY"));
+    }
+
+    @Test
+    public void wordEndsTest_02() {
+        assertEquals("13", String2.wordEnds("XY123XY", "XY"));
+    }
+
+    @Test
+    public void wordEndsTest_03() {
+        assertEquals("11", String2.wordEnds("XY1XY", "XY"));
+    }
+
+    @Test
+    public void wordEndsTest_04() {
+        assertEquals("XY", String2.wordEnds("XYXY", "XY"));
+    }
+
+    @Test
+    public void wordEndsTest_05() {
+        assertEquals("", String2.wordEnds("XY", "XY"));
+    }
+
+    @Test
+    public void wordEndsTest_06() {
+        assertEquals("", String2.wordEnds("Hi", "XY"));
+    }
+
+    @Test
+    public void wordEndsTest_07() {
+        assertEquals("", String2.wordEnds("", "XY"));
+    }
+
+    @Test
+    public void wordEndsTest_08() {
+        assertEquals("cxziij", String2.wordEnds("abc1xyz1i1j", "1"));
+    }
+
+    @Test
+    public void wordEndsTest_09() {
+        assertEquals("cxz", String2.wordEnds("abc1xyz1", "1"));
+    }
+
+    @Test
+    public void wordEndsTest_10() {
+        assertEquals("cxz11", String2.wordEnds("abc1xyz11", "1"));
+    }
+
+    @Test
+    public void wordEndsTest_11() {
+        assertEquals("11", String2.wordEnds("abc1xyz1abc", "abc"));
+    }
+
+    @Test
+    public void wordEndsTest_12() {
+        assertEquals("acac", String2.wordEnds("abc1xyz1abc", "b"));
+    }
+
+    @Test
+    public void wordEndsTest_13() {
+        assertEquals("1111", String2.wordEnds("abc1abc1abc", "abc"));
+    }
 }
