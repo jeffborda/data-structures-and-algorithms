@@ -1368,17 +1368,17 @@ public class String2Test {
     // RE: https://codingbat.com/prob/p147538
     @Test
     public void wordEndsTest_01() {
-
+        assertEquals("c13i", String2.wordEnds("abcXY123XYijk", "XY"));
     }
 
     @Test
     public void wordEndsTest_02() {
-
+        assertEquals("13", String2.wordEnds("XY123XY", "XY"));
     }
 
     @Test
     public void wordEndsTest_03() {
-
+        assertEquals("11", String2.wordEnds("XY1XY", "XY"));
     }
 
     @Test
