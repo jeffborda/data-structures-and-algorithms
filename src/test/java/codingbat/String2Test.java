@@ -1413,21 +1413,21 @@ public class String2Test {
 
     @Test
     public void wordEndsTest_10() {
-
+        assertEquals("cxz11", String2.wordEnds("abc1xyz11", "1"));
     }
 
     @Test
     public void wordEndsTest_11() {
-
+        assertEquals("11", String2.wordEnds("abc1xyz1abc", "abc"));
     }
 
     @Test
     public void wordEndsTest_12() {
-
+        assertEquals("acac", String2.wordEnds("abc1xyz1abc", "b"));
     }
 
     @Test
     public void wordEndsTest_13() {
-
+        assertEquals("1111", String2.wordEnds("abc1abc1abc", "abc"));
     }
 }
