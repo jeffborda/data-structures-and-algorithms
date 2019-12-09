@@ -8,4 +8,12 @@ import static org.junit.Assert.*;
  */
 public class String3Test {
 
+    /**
+     *  RE: https://codingbat.com/prob/p199171
+     */
+    public static int countYZ(String str) {
+
+        return -1;
+    }
+
 }
