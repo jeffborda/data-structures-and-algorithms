@@ -43,17 +43,17 @@ public class String3Test {
 
     @Test
     public void countYZTest_07() {
-
+        assertEquals(0, String3.countYZ("yak zak"));
     }
 
     @Test
     public void countYZTest_08() {
-
+        assertEquals(2, String3.countYZ("DAY abc XYZ"));
     }
 
     @Test
     public void countYZTest_09() {
-
+        assertEquals(3, String3.countYZ("aaz yyz my"));
     }
 
     @Test
