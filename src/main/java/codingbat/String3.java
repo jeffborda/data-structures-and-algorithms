@@ -14,7 +14,13 @@ public class String3 {
      *   an alphabetic letter.)
      */
     public static int countYZ(String str) {
-
-        return -1;
+        String[] words = str.split("[^a-zA-Z]");
+        int count = 0;
+        for(String word : words) {
+            if(word.toLowerCase().endsWith("y") || word.toLowerCase().endsWith("z")) {
+                count++;
+            }
+        }
+        return count;
     }
 }
