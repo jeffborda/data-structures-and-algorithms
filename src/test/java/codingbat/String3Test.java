@@ -28,17 +28,17 @@ public class String3Test {
 
     @Test
     public void countYZTest_04() {
-
+        assertEquals(1, String3.countYZ("day yak"));
     }
 
     @Test
     public void countYZTest_05() {
-
+        assertEquals(1, String3.countYZ("day:yak"));
     }
 
     @Test
     public void countYZTest_06() {
-
+        assertEquals(2, String3.countYZ("!!day--yaz!!"));
     }
 
     @Test
