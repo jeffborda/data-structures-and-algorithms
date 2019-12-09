@@ -58,12 +58,12 @@ public class String3Test {
 
     @Test
     public void countYZTest_10() {
-
+        assertEquals(2, String3.countYZ("y2bz"));
     }
 
     @Test
     public void countYZTest_11() {
-
+        assertEquals(0, String3.countYZ("zxyx"));
     }
 
 }
