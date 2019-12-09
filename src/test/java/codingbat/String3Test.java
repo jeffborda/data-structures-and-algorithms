@@ -13,17 +13,17 @@ public class String3Test {
     // RE: https://codingbat.com/prob/p199171
     @Test
     public void countYZTest_01() {
-
+        assertEquals(2, String3.countYZ("fez day"));
     }
 
     @Test
     public void countYZTest_02() {
-
+        assertEquals(2, String3.countYZ("day fez"));
     }
 
     @Test
     public void countYZTest_03() {
-
+        assertEquals(2, String3.countYZ("day fyyyz"));
     }
 
     @Test
@@ -65,5 +65,5 @@ public class String3Test {
     public void countYZTest_11() {
 
     }
-    
+
 }
