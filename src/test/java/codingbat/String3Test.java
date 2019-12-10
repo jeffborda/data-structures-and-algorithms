@@ -216,4 +216,65 @@ public class String3Test {
     }
 
 
+    // RE: https://github.com/jeffborda/data-structures-and-algorithms
+    @Test
+    public void gHappyTest_01() {
+
+    }
+
+    @Test
+    public void gHappyTest_02() {
+
+    }
+
+    @Test
+    public void gHappyTest_03() {
+
+    }
+
+    @Test
+    public void gHappyTest_04() {
+
+    }
+
+    @Test
+    public void gHappyTest_05() {
+
+    }
+
+    @Test
+    public void gHappyTest_06() {
+
+    }
+
+    @Test
+    public void gHappyTest_07() {
+
+    }
+
+    @Test
+    public void gHappyTest_08() {
+
+    }
+
+    @Test
+    public void gHappyTest_09() {
+
+    }
+
+    @Test
+    public void gHappyTest_10() {
+
+    }
+
+    @Test
+    public void gHappyTest_11() {
+
+    }
+
+    @Test
+    public void gHappyTest_12() {
+
+    }
+
 }
