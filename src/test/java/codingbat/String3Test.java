@@ -66,4 +66,102 @@ public class String3Test {
         assertEquals(0, String3.countYZ("zxyx"));
     }
 
+
+    // RE: RE: https://codingbat.com/prob/p192570
+    @Test
+    public void withoutStringTest_01() {
+        assertEquals("He there", String3.withoutString("Hello there", "llo"));
+    }
+
+    @Test
+    public void withoutStringTest_02() {
+        assertEquals("Hllo thr", String3.withoutString("Hello there", "e"));
+    }
+
+    @Test
+    public void withoutStringTest_03() {
+        assertEquals("Hello there", String3.withoutString("Hello there", "x"));
+    }
+
+    @Test
+    public void withoutStringTest_04() {
+        assertEquals("Th  a FH", String3.withoutString("This is a FISH", "IS"));
+}
+
+    @Test
+    public void withoutStringTest_05() {
+        assertEquals("TH  a FH", String3.withoutString("THIS is a FISH", "is"));
+    }
+
+    @Test
+    public void withoutStringTest_06() {
+        assertEquals("TH  a FH", String3.withoutString("THIS is a FISH", "iS"));
+    }
+
+    @Test
+    public void withoutStringTest_07() {
+        assertEquals("abab", String3.withoutString("abxxxxab", "xx"));
+    }
+
+    @Test
+    public void withoutStringTest_08() {
+        assertEquals("abxab", String3.withoutString("abxxxab", "xx"));
+    }
+
+    @Test
+    public void withoutStringTest_09() {
+        assertEquals("abab", String3.withoutString("abxxxab", "x"));
+    }
+
+    @Test
+    public void withoutStringTest_10() {
+        assertEquals("", String3.withoutString("xxx", "x"));
+    }
+
+    @Test
+    public void withoutStringTest_11() {
+        assertEquals("x", String3.withoutString("xxx", "xx"));
+    }
+
+    @Test
+    public void withoutStringTest_12() {
+        assertEquals("xzz", String3.withoutString("xyzzy", "Y"));
+    }
+
+    @Test
+    public void withoutStringTest_13() {
+        assertEquals("", String3.withoutString("", "x"));
+    }
+
+    @Test
+    public void withoutStringTest_14() {
+        assertEquals("acac", String3.withoutString("abcabc", "b"));
+    }
+
+    @Test
+    public void withoutStringTest_15() {
+        assertEquals("AAbb", String3.withoutString("AA22bb", "2"));
+    }
+
+    @Test
+    public void withoutStringTest_16() {
+        assertEquals("", String3.withoutString("1111", "1"));
+    }
+
+    @Test
+    public void withoutStringTest_17() {
+        assertEquals("", String3.withoutString("1111", "11"));
+    }
+
+    @Test
+    public void withoutStringTest_18() {
+        assertEquals("jtx", String3.withoutString("MkjtMkx", "Mk"));
+    }
+
+    @Test
+    public void withoutStringTest_19() {
+        assertEquals("Hi ", String3.withoutString("Hi HoHo", "Ho"));
+    }
+
+
 }
