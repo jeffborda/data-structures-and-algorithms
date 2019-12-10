@@ -216,4 +216,65 @@ public class String3Test {
     }
 
 
+    // RE: https://github.com/jeffborda/data-structures-and-algorithms
+    @Test
+    public void gHappyTest_01() {
+        assertTrue(String3.gHappy("xxggxx"));
+    }
+
+    @Test
+    public void gHappyTest_02() {
+        assertFalse(String3.gHappy("xxgxx"));
+    }
+
+    @Test
+    public void gHappyTest_03() {
+        assertFalse(String3.gHappy("xxggyygxx"));
+    }
+
+    @Test
+    public void gHappyTest_04() {
+        assertFalse(String3.gHappy("g"));
+    }
+
+    @Test
+    public void gHappyTest_05() {
+        assertTrue(String3.gHappy("gg"));
+    }
+
+    @Test
+    public void gHappyTest_06() {
+        assertTrue(String3.gHappy(""));
+    }
+
+    @Test
+    public void gHappyTest_07() {
+        assertTrue(String3.gHappy("xxgggxyz"));
+    }
+
+    @Test
+    public void gHappyTest_08() {
+        assertFalse(String3.gHappy("xxgggxyg"));
+    }
+
+    @Test
+    public void gHappyTest_09() {
+        assertTrue(String3.gHappy("xxgggxygg"));
+    }
+
+    @Test
+    public void gHappyTest_10() {
+        assertFalse(String3.gHappy("mgm"));
+    }
+
+    @Test
+    public void gHappyTest_11() {
+        assertTrue(String3.gHappy("mggm"));
+    }
+
+    @Test
+    public void gHappyTest_12() {
+        assertTrue(String3.gHappy("yyygggxyy"));
+    }
+
 }
