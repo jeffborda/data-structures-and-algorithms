@@ -63,4 +63,14 @@ public class String3 {
         }
         return isCount == notCount;
     }
+
+    /**
+     *  RE: https://github.com/jeffborda/data-structures-and-algorithms
+     *  We'll say that a lowercase 'g' in a string is "happy" if there is another 'g' immediately to its left or right.
+     *   Return true if all the g's in the given string are happy.
+     */
+    public static boolean gHappy(String str) {
+
+        return false;
+    }
 }
