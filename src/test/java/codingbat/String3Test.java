@@ -160,7 +160,7 @@ public class String3Test {
 
     @Test
     public void withoutStringTest_19() {
-
+        assertEquals("Hi ", String3.withoutString("Hi HoHo", "Ho"));
     }
 
 
