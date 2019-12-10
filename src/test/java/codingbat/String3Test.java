@@ -85,17 +85,17 @@ public class String3Test {
 
     @Test
     public void withoutStringTest_04() {
-
+        assertEquals("Th a FH", String3.withoutString("This is a FISH", "IS"));
     }
 
     @Test
     public void withoutStringTest_05() {
-
+        assertEquals("TH a FH", String3.withoutString("THIS is a FISH", "is"));
     }
 
     @Test
     public void withoutStringTest_06() {
-
+        assertEquals("TH a FH", String3.withoutString("THIS is a FISH", "iS"));
     }
 
     @Test
