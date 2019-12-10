@@ -32,18 +32,15 @@ public class String3 {
      */
     public static String withoutString(String base, String remove) {
         StringBuilder answer = new StringBuilder();
-
         for(int i = 0; i < base.length(); i++) {
             if(i <= base.length() - remove.length()) {
                 if(base.substring(i, i + remove.length()).equalsIgnoreCase(remove)) {
                     i += remove.length() - 1;
+                } else {
+                    answer.append(base.charAt(i));
                 }
-                else {
-                    answer.append(String.valueOf(base.charAt(i)));
-                }
-            }
-            else {
-                answer.append(String.valueOf(base.charAt(i)));
+            } else {
+                answer.append(base.charAt(i));
             }
         }
         return answer.toString();
