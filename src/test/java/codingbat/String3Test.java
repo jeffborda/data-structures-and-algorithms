@@ -130,17 +130,17 @@ public class String3Test {
 
     @Test
     public void withoutStringTest_13() {
-
+        assertEquals("", String3.withoutString("", "x"));
     }
 
     @Test
     public void withoutStringTest_14() {
-
+        assertEquals("acac", String3.withoutString("abcabc", "b"));
     }
 
     @Test
     public void withoutStringTest_15() {
-
+        assertEquals("AAbb", String3.withoutString("AA22bb", "2"));
     }
 
     @Test
