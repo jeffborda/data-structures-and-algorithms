@@ -212,7 +212,7 @@ public class String3Test {
 
     @Test
     public void equalIsNotTest_10() {
-
+        assertFalse(String3.equalIsNot("mis3notpotbotis"));
     }
 
 
