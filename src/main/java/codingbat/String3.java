@@ -46,5 +46,21 @@ public class String3 {
         return answer.toString();
     }
 
-
+    /**
+     *  RE: https://codingbat.com/prob/p141736
+     *  Given a string, return true if the number of appearances of "is" anywhere in the string is equal to the number
+     *   of appearances of "not" anywhere in the string (case sensitive).
+     */
+    public static boolean equalIsNot(String str) {
+        int isCount = 0;
+        int notCount = 0;
+        for(int i = 0; i < str.length(); i++) {
+            if(i <= str.length() - "not".length() && str.substring(i, i + "not".length() ).equals("not")) {
+                notCount++;
+            } else if(i <= str.length() - "is".length() && str.substring(i, i + "is".length() ).equals("is") ) {
+                isCount++;
+            }
+        }
+        return isCount == notCount;
+    }
 }

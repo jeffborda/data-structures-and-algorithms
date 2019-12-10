@@ -164,4 +164,56 @@ public class String3Test {
     }
 
 
+    // RE: https://codingbat.com/prob/p141736
+    @Test
+    public void equalIsNotTest_01() {
+        assertFalse(String3.equalIsNot("This is not"));
+    }
+
+    @Test
+    public void equalIsNotTest_02() {
+        assertTrue(String3.equalIsNot("This is notnot"));
+    }
+
+    @Test
+    public void equalIsNotTest_03() {
+        assertTrue(String3.equalIsNot("noisxxnotyynotxisi"));
+    }
+
+    @Test
+    public void equalIsNotTest_04() {
+        assertFalse(String3.equalIsNot("noisxxnotyynotxsi"));
+    }
+
+    @Test
+    public void equalIsNotTest_05() {
+        assertTrue(String3.equalIsNot("xxxyyyzzzintint"));
+    }
+
+    @Test
+    public void equalIsNotTest_06() {
+        assertTrue(String3.equalIsNot(""));
+    }
+
+    @Test
+    public void equalIsNotTest_07() {
+        assertTrue(String3.equalIsNot("isisnotnot"));
+    }
+
+    @Test
+    public void equalIsNotTest_08() {
+        assertFalse(String3.equalIsNot("isisnotno7Not"));
+    }
+
+    @Test
+    public void equalIsNotTest_09() {
+        assertFalse(String3.equalIsNot("isnotis"));
+    }
+
+    @Test
+    public void equalIsNotTest_10() {
+        assertFalse(String3.equalIsNot("mis3notpotbotis"));
+    }
+
+
 }
