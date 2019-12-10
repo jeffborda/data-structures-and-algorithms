@@ -264,17 +264,17 @@ public class String3Test {
 
     @Test
     public void gHappyTest_10() {
-
+        assertFalse(String3.gHappy("mgm"));
     }
 
     @Test
     public void gHappyTest_11() {
-
+        assertTrue(String3.gHappy("mggm"));
     }
 
     @Test
     public void gHappyTest_12() {
-
+        assertTrue(String3.gHappy("yyygggxyy"));
     }
 
 }
