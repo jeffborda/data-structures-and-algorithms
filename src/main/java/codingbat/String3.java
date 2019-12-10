@@ -31,7 +31,23 @@ public class String3 {
      *   Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x".
      */
     public static String withoutString(String base, String remove) {
+        StringBuilder answer = new StringBuilder();
 
-        return null;
+        for(int i = 0; i < base.length(); i++) {
+            if(i <= base.length() - remove.length()) {
+                if(base.substring(i, i + remove.length()).equalsIgnoreCase(remove)) {
+                    i += remove.length() - 1;
+                }
+                else {
+                    answer.append(String.valueOf(base.charAt(i)));
+                }
+            }
+            else {
+                answer.append(String.valueOf(base.charAt(i)));
+            }
+        }
+        return answer.toString();
     }
+
+
 }
