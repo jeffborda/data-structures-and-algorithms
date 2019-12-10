@@ -66,4 +66,102 @@ public class String3Test {
         assertEquals(0, String3.countYZ("zxyx"));
     }
 
+
+    // RE: RE: https://codingbat.com/prob/p192570
+    @Test
+    public void withoutStringTest_01() {
+
+    }
+    
+    @Test
+    public void withoutStringTest_02() {
+
+    }
+
+    @Test
+    public void withoutStringTest_03() {
+
+    }
+
+    @Test
+    public void withoutStringTest_04() {
+
+    }
+
+    @Test
+    public void withoutStringTest_05() {
+
+    }
+
+    @Test
+    public void withoutStringTest_06() {
+
+    }
+
+    @Test
+    public void withoutStringTest_07() {
+
+    }
+
+    @Test
+    public void withoutStringTest_08() {
+
+    }
+
+    @Test
+    public void withoutStringTest_09() {
+
+    }
+
+    @Test
+    public void withoutStringTest_10() {
+
+    }
+
+    @Test
+    public void withoutStringTest_11() {
+
+    }
+
+    @Test
+    public void withoutStringTest_12() {
+
+    }
+
+    @Test
+    public void withoutStringTest_13() {
+
+    }
+
+    @Test
+    public void withoutStringTest_14() {
+
+    }
+
+    @Test
+    public void withoutStringTest_15() {
+
+    }
+
+    @Test
+    public void withoutStringTest_16() {
+
+    }
+
+    @Test
+    public void withoutStringTest_17() {
+
+    }
+
+    @Test
+    public void withoutStringTest_18() {
+
+    }
+
+    @Test
+    public void withoutStringTest_19() {
+
+    }
+
+
 }
