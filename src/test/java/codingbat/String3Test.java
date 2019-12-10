@@ -182,17 +182,17 @@ public class String3Test {
 
     @Test
     public void equalIsNotTest_04() {
-
+        assertFalse(String3.equalIsNot("noisxxnotyynotxsi"));
     }
 
     @Test
     public void equalIsNotTest_05() {
-
+        assertTrue(String3.equalIsNot("xxxyyyzzzintint"));
     }
 
     @Test
     public void equalIsNotTest_06() {
-
+        assertTrue(String3.equalIsNot(""));
     }
 
     @Test
