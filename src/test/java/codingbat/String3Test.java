@@ -219,17 +219,17 @@ public class String3Test {
     // RE: https://github.com/jeffborda/data-structures-and-algorithms
     @Test
     public void gHappyTest_01() {
-
+        assertTrue(String3.gHappy("xxggxx"));
     }
 
     @Test
     public void gHappyTest_02() {
-
+        assertFalse(String3.gHappy("xxgxx"));
     }
 
     @Test
     public void gHappyTest_03() {
-
+        assertFalse(String3.gHappy("xxggyygxx"));
     }
 
     @Test
