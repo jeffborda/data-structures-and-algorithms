@@ -70,17 +70,17 @@ public class String3Test {
     // RE: RE: https://codingbat.com/prob/p192570
     @Test
     public void withoutStringTest_01() {
-
+        assertEquals("He there", String3.withoutString("Hello there", "llo"));
     }
-    
+
     @Test
     public void withoutStringTest_02() {
-
+        assertEquals("Hllo thr", String3.withoutString("Hello there", "e"));
     }
 
     @Test
     public void withoutStringTest_03() {
-
+        assertEquals("Hello there", String3.withoutString("Hello there", "x"));
     }
 
     @Test
