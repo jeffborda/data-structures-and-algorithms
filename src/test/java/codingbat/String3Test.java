@@ -234,17 +234,17 @@ public class String3Test {
 
     @Test
     public void gHappyTest_04() {
-
+        assertFalse(String3.gHappy("g"));
     }
 
     @Test
     public void gHappyTest_05() {
-
+        assertTrue(String3.gHappy("gg"));
     }
 
     @Test
     public void gHappyTest_06() {
-
+        assertTrue(String3.gHappy(""));
     }
 
     @Test
