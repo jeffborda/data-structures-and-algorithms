@@ -115,17 +115,17 @@ public class String3Test {
 
     @Test
     public void withoutStringTest_10() {
-
+        assertEquals("", String3.withoutString("xxx", "x"));
     }
 
     @Test
     public void withoutStringTest_11() {
-
+        assertEquals("x", String3.withoutString("xxx", "xx"));
     }
 
     @Test
     public void withoutStringTest_12() {
-
+        assertEquals("xzz", String3.withoutString("xyzzy", "Y"));
     }
 
     @Test
