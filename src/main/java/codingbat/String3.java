@@ -52,7 +52,15 @@ public class String3 {
      *   of appearances of "not" anywhere in the string (case sensitive).
      */
     public static boolean equalIsNot(String str) {
-
-        return false;
+        int isCount = 0;
+        int notCount = 0;
+        for(int i = 0; i < str.length(); i++) {
+            if(i <= str.length() - "not".length() && str.substring(i, i + "not".length() ).equals("not")) {
+                notCount++;
+            } else if(i <= str.length() - "is".length() && str.substring(i, i + "is".length() ).equals("is") ) {
+                isCount++;
+            }
+        }
+        return isCount == notCount;
     }
 }
