@@ -71,7 +71,9 @@ public class String3 {
      */
     public static boolean gHappy(String str) {
         // Checks if 'str' is only "g", or if it starts or ends with 'g' without another 'g' next to it
-        if(str.equals("g") || (str.startsWith("g") && str.charAt(1) != 'g') || (str.endsWith("g") && str.charAt(str.length() - 2) != 'g')) {
+        if(str.equals("g")
+                || (str.startsWith("g") && str.charAt(1) != 'g')
+                || (str.endsWith("g") && str.charAt(str.length() - 2) != 'g')) {
             return false;
         }
         // Checks str except for first and last letter
@@ -81,6 +83,21 @@ public class String3 {
             }
         }
         return true;
+    }
+
+    /**
+     *  RE: https://codingbat.com/prob/p195714
+     *  We'll say that a "triple" in a string is a char appearing three times in a row. Return the number of triples in
+     *   the given string. The triples may overlap.
+     */
+    public static int countTriple(String str) {
+        int tripleCount = 0;
+        for(int i = 0; i < str.length() - 2; i++) {
+            if(str.charAt(i) == str.charAt(i + 1) && str.charAt(i) == str.charAt(i + 2)) {
+                tripleCount++;
+            }
+        }
+        return tripleCount;
     }
 
 }

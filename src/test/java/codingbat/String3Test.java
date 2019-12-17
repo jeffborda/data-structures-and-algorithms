@@ -277,4 +277,65 @@ public class String3Test {
         assertTrue(String3.gHappy("yyygggxyy"));
     }
 
+    // RE: https://codingbat.com/prob/p195714
+    @Test
+    public void countTripleTest_01() {
+        assertEquals(1, String3.countTriple("abcXXXabc"));
+    }
+
+    @Test
+    public void countTripleTest_02() {
+        assertEquals(3, String3.countTriple("xxxabyyyycd"));
+    }
+
+    @Test
+    public void countTripleTest_03() {
+        assertEquals(0, String3.countTriple("a"));
+    }
+
+    @Test
+    public void countTripleTest_04() {
+        assertEquals(0, String3.countTriple(""));
+    }
+
+    @Test
+    public void countTripleTest_05() {
+        assertEquals(1, String3.countTriple("XXXabc"));
+    }
+
+    @Test
+    public void countTripleTest_06() {
+        assertEquals(2, String3.countTriple("XXXXabc"));
+    }
+
+    @Test
+    public void countTripleTest_07() {
+        assertEquals(3, String3.countTriple("XXXXXabc"));
+    }
+
+    @Test
+    public void countTripleTest_08() {
+        assertEquals(3, String3.countTriple("222abyyycdXXX"));
+    }
+
+    @Test
+    public void countTripleTest_09() {
+        assertEquals(4, String3.countTriple("abYYYabXXXXXab"));
+    }
+
+    @Test
+    public void countTripleTest_10() {
+        assertEquals(0, String3.countTriple("abYYXabXXYXXab"));
+    }
+
+    @Test
+    public void countTripleTest_11() {
+        assertEquals(0, String3.countTriple("abYYXabXXYXXab"));
+    }
+
+    @Test
+    public void countTripleTest_12() {
+        assertEquals(1, String3.countTriple("122abhhh2"));
+    }
+
 }
