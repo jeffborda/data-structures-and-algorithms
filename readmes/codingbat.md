@@ -8,5 +8,5 @@ RE: https://codingbat.com/java
 
 ## Sections
 
-- String2
-- String3 
+- [String2](./../src/main/java/codingbat/String2.java)
+- [String3](./../src/main/java/codingbat/String3.java)
