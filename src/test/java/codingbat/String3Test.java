@@ -325,17 +325,17 @@ public class String3Test {
 
     @Test
     public void countTripleTest_10() {
-
+        assertEquals(0, String3.countTriple("abYYXabXXYXXab"));
     }
 
     @Test
     public void countTripleTest_11() {
-
+        assertEquals(0, String3.countTriple("abYYXabXXYXXab"));
     }
 
     @Test
     public void countTripleTest_12() {
-
+        assertEquals(1, String3.countTriple("122abhhh2"));
     }
 
 }
