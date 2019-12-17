@@ -279,62 +279,62 @@ public class String3Test {
 
     // RE: https://codingbat.com/prob/p195714
     @Test
-    public void tripleCountTest_01() {
-        
+    public void countTripleTest_01() {
+        assertEquals(1, String3.countTriple("abcXXXabc"));
     }
 
     @Test
-    public void tripleCountTest_02() {
-
+    public void countTripleTest_02() {
+        assertEquals(3, String3.countTriple("xxxabyyyycd"));
     }
 
     @Test
-    public void tripleCountTest_03() {
-
+    public void countTripleTest_03() {
+        assertEquals(0, String3.countTriple("a"));
     }
 
     @Test
-    public void tripleCountTest_04() {
-
-    }
-
-    @Test
-    public void tripleCountTest_05() {
+    public void countTripleTest_04() {
 
     }
 
     @Test
-    public void tripleCountTest_06() {
+    public void countTripleTest_05() {
 
     }
 
     @Test
-    public void tripleCountTest_07() {
+    public void countTripleTest_06() {
 
     }
 
     @Test
-    public void tripleCountTest_08() {
+    public void countTripleTest_07() {
 
     }
 
     @Test
-    public void tripleCountTest_09() {
+    public void countTripleTest_08() {
 
     }
 
     @Test
-    public void tripleCountTest_10() {
+    public void countTripleTest_09() {
 
     }
 
     @Test
-    public void tripleCountTest_11() {
+    public void countTripleTest_10() {
 
     }
 
     @Test
-    public void tripleCountTest_12() {
+    public void countTripleTest_11() {
+
+    }
+
+    @Test
+    public void countTripleTest_12() {
 
     }
 
