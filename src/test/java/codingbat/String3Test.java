@@ -277,4 +277,65 @@ public class String3Test {
         assertTrue(String3.gHappy("yyygggxyy"));
     }
 
+    // RE: https://codingbat.com/prob/p195714
+    @Test
+    public void tripleCountTest_01() {
+        
+    }
+
+    @Test
+    public void tripleCountTest_02() {
+
+    }
+
+    @Test
+    public void tripleCountTest_03() {
+
+    }
+
+    @Test
+    public void tripleCountTest_04() {
+
+    }
+
+    @Test
+    public void tripleCountTest_05() {
+
+    }
+
+    @Test
+    public void tripleCountTest_06() {
+
+    }
+
+    @Test
+    public void tripleCountTest_07() {
+
+    }
+
+    @Test
+    public void tripleCountTest_08() {
+
+    }
+
+    @Test
+    public void tripleCountTest_09() {
+
+    }
+
+    @Test
+    public void tripleCountTest_10() {
+
+    }
+
+    @Test
+    public void tripleCountTest_11() {
+
+    }
+
+    @Test
+    public void tripleCountTest_12() {
+
+    }
+
 }
