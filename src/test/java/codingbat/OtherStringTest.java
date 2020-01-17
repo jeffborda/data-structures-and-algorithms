@@ -27,4 +27,14 @@ public class OtherStringTest {
     public void isConcatTest_04() {
         assertFalse(OtherString.isConcat("hello", "world"));
     }
+
+    @Test
+    public void isConcatTest_05() {
+        assertTrue(OtherString.isConcat("aba", "alabama"));
+    }
+
+    @Test
+    public void isConcatTest_06() {
+        assertTrue(OtherString.isConcat("aab", "aaab"));
+    }
 }

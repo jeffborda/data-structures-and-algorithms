@@ -9,7 +9,11 @@ public class OtherString {
      *  Interview question:
      *  Take in two strings and return whether one is a concatenation of the other. You may assume that the second
      *   String argument is equal to or longer than the length of the first.
+     *
+     *   Note: This code will fail under certain circumstances, ex: "aab", "aaab"  (see test #6). Will require double
+     *    for loop. Leaving this as-is for learning purposes.
      */
+    @SuppressWarnings("SpellCheckingInspection")
     public static boolean isConcat(String str1, String str2) {
 
         int j = 0;
