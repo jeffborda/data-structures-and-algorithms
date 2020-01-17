@@ -34,8 +34,9 @@ public class OtherString {
      */
     public static boolean isConcatenation(String str1, String str2) {
 
-        int correctChars = 0;
+        int correctChars;
         for(int i = 0; i < str2.length() - str1.length() + 1; i++) {
+            correctChars = 0;
             for(int j = 0; j < str1.length(); j++) {
                 if(str2.charAt(i + j) == str1.charAt(j)) {
                     correctChars++;
