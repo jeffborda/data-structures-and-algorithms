@@ -24,7 +24,6 @@ I used jUnit testing under the following criteria:
 
 # Solution
 
-  <img src="../assets/binary-tree-find-max-value.jpg"
-       alt="White Board Picture"
-       style="float: left; margin-right: 10px; width: 200px;" />
+  <img src="../assests/binary-tree-findmax.jpg"
+      
 
